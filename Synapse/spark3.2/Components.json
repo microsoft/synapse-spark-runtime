@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.2-Rel-2024-01-10.0-rc.1",
+  "VhdRelease": "Spark3.2-Rel-2024-02-07.0-rc.1",
   "sparkVersion": "spark3.2",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_392",
@@ -80,7 +80,7 @@
       },
       {
         "Name": "Impulse",
-        "Current": "1.1.7"
+        "Current": "1.1.8"
       },
       {
         "Name": "KustoConnector",
@@ -180,7 +180,7 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "3.5.3"
+        "Current": "3.5.3-3"
       },
       {
         "Name": "TridentCore",
@@ -234,7 +234,7 @@
       },
       {
         "Name": "TokenLibrary-assembly",
-        "Current": "3.5.3"
+        "Current": "3.5.3-3"
       },
       {
         "Name": "VegasConnector",
@@ -714,11 +714,11 @@
       },
       {
         "Name": "impulse-core_spark",
-        "Current": "3.2_2.12-1.0.18"
+        "Current": "3.2_2.12-1.0.19"
       },
       {
         "Name": "impulse-telemetry-mds_spark",
-        "Current": "3.2_2.12-1.0.18"
+        "Current": "3.2_2.12-1.0.19"
       },
       {
         "Name": "isolation-forest",
@@ -2980,7 +2980,7 @@
       },
       {
         "Name": "impulse-python-handler",
-        "Current": "1.0.18.1.0.0"
+        "Current": "1.0.19.1.0.0"
       },
       {
         "Name": "intel-openmp",
@@ -7740,7 +7740,7 @@
       },
       {
         "Name": "R.oo",
-        "Current": "1.25.0"
+        "Current": "1.26.0"
       },
       {
         "Name": "R.utils",
