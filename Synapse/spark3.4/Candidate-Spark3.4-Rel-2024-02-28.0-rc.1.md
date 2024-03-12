@@ -10,12 +10,12 @@
 
 |Id|Component|Title|Description|
 |-----|-----|-----|-----|
-|1280239|ExternalHiveMetastoreLibraries/spark34:0.0.5|Remove support of external hive metastore in spark 3.4|Remove support of external hive metastore in spark 3.4.|
+|1260093|ServiceConfigurationTemplates/spark/3.4.0:various|This PR enables the spark dynamic allocation shuffle tracking feature by default|When dynamic allocation shuffle tracing is enabled, spark tracks the shuffle written by an executor. If this shuffle is not used by any job, then it waits for a configured amount of time, spark.dynamicAllocation.shuffleTracking.timeout. Even after that, if the shuffle is not used by any job, then the shuffle block for the executor is marked stale. If all the executor of a node has stale shuffle, then that node is marked for scale down.|
 |1265189|Conda:8.0.7, LibraryManager:1.0.6|Make `semantic-link-sempy` as the default package for Python runtime (Fabric 1.2/Spark 3.4)|Prepare for GA of sempy, we need to install sempy as the default package into Fabric 1.2/Spark 3.4 runtime.|
 |1242149|Gluten:0.5.3|Onboard Gluten|Onboard Gluten Component for Spark 3.4 [First Phase]|
+|1280239|ExternalHiveMetastoreLibraries/spark34:0.0.5|Remove support of external hive metastore in spark 3.4|Remove support of external hive metastore in spark 3.4.|
 |1254761|AutoscaleProbe:3.8.1|Added support for Optimistic Admission Control and fixed bugs in Autoscale|In this release autoscale probe will ask TJS for approval before scaling-up the cluster for optimistic admission control. Also, we did some bug fixes and improvements in autoscale service.|
 |1247980|AzureMLExtension:1.0.3|Enable azureml extension for spark 3.4|Enable spark 3.4 for AML services that are dependent on synapse spark compute.|
-|1260093|ServiceConfigurationTemplates/spark/3.4.0:various|This PR enables the spark dynamic allocation shuffle tracking feature by default|When dynamic allocation shuffle tracing is enabled, spark tracks the shuffle written by an executor. If this shuffle is not used by any job, then it waits for a configured amount of time, spark.dynamicAllocation.shuffleTracking.timeout. Even after that, if the shuffle is not used by any job, then the shuffle block for the executor is marked stale. If all the executor of a node has stale shuffle, then that node is marked for scale down.|
 
 # Improvements
 
@@ -23,15 +23,15 @@
 |-----|-----|-----|-----|
 |1257645|HiveMetaStoreClient:1.1.17|Added retries in shim client to handle connection issues|Added retries in shim client to handle connection issues.|
 |1260031|SparkRPCHistoryServer:1.0.29|Update resource usage API to better support notebook cell level resource usage|Update resource usage API to provide more information for frontend when filtering by start and end time, which is used in notebook cell level resource usage panel.|
-|1276618|Conda:8.0.10|Update Conda version to 8.0.10 in Spark 3.4 to include flaml upgrade|Upgrade FLAML for multiple improvements.|
-|1264812|Delta:2.4.0.9|Miscellaneous infrastructure improvements|Miscellaneous infrastructure improvement.|
-|1244234|Wildfire/spark34:1.9.1|New Wildfire release Release/3.4/20240108|Improvements and bug fixes in livy: Add log for zookeeper error and add formatter.|
 |1261952|Impulse:1.2.1|Impulse release 1.0.19|Impulse release with improved error code classification.|
 |1238026|MMLSpark:1.4.14|Update SynapseML to v1.0.2|Updated the SynapseML distributed machine learning framework libraries shipped as part of Fabric VHD component.|
 |1273976|R/spark34:1.0.3|Add PostgreSQL development package files for R env|PostgreSQL development package files for R Conda environment|
 |1273468|OneLakeClientStarter:spark34/1.0.19.1|Security fixes for Onelake Client Scripts|Secure Onelake Client scripts to avoid any potential Elevation of privileges.|
-|1272026|ComponentName:ComponentVersion|Update Conda version to 8.0.9 in Spark 3.4 to include synapseml-utils and flaml upgrade.|Upgrade synapseml-utils and flaml for multiple improvements.|
+|1272026|Conda:8.0.9|Update Conda version to 8.0.9 in Spark 3.4 to include synapseml-utils and flaml upgrade.|Upgrade synapseml-utils and flaml for multiple improvements.|
 |1266937|Autotune:1.10.0|The autotune bump version to 1.10 and change the autotune listener name|1. Bump up the autotune version to 1.10.0  2. Adjust the AutotuneQueryListenerNew to AutotuneQueryListener|
+|1264812|Delta:2.4.0.9|Miscellaneous infrastructure improvements|Miscellaneous infrastructure improvement.|
+|1276618|Conda:8.0.10|Update Conda version to 8.0.10 in Spark 3.4 to include flaml upgrade|Upgrade FLAML for multiple improvements.|
+|1244234|Wildfire/spark34:1.9.1|New Wildfire release Release/3.4/20240108|Improvements and bug fixes in livy: Add log for zookeeper error and add formatter.|
 
 # Bug Fixes
 
@@ -39,13 +39,13 @@
 |-----|-----|-----|-----|
 |1244507|Vegas:spark34:3.4.08.4|Intelligent Cache Security bug fix|Intelligent Cache Security bug fixes.|
 |1259060|NotebookUtils:1.1.45|Fix nfs startup issue|Fixes the issue of nfs startup failure caused by incorrect IP address.|
-|1276537|SparkRPCHistoryServer:1.0.30|Fix a permissions issue in Spark UI|Fix a permission issue impacting running of Spark UI application|
-|1265760|Wildfire/Spark34:1.9.3|Fixed reliability issue for 1-node Fabric Spark clusters|Fixed issue that services cannot start on 1-node Fabric Spark cluster for the scenario when unhealthy VM node is recreated.|
-|1269309|AutoscaleProbe:3.8.1.1|Revert Autoscale metrics bug|Reverting a change that caused a bug with available metrics for Autoscale probes.|
-|1252931|Conda/Spark34:8.0.5,  LibraryManager:1.0.5|LM release 1.0.5 and Conda release 8.0.5|New LM release supporting minor changes to libraries like Flaml.|
-|1254761|AutoscaleProbe:3.8.1|Added support for Optimistic Admission Control and fixed bugs in Autoscale|In this release autoscale probe will ask TJS for approval before scaling-up the cluster for optimistic admission control. Also, we did some bug fixes and improvements in autoscale service.|
 |1264101|NotebookUtils:1.1.46|Fix to ensure only one unique subnet when starting the nfs service.|Bug was detected where nfs service startup fails due to the presence of multiple unique subnets being detected. This fix corrects the issue.|
 |1267056|Spark:3.4|Install tzdata on Mariner|Install package tzdata that was missing from Azure Linux/Mariner|
+|1265760|Wildfire/Spark34:1.9.3|Fixed reliability issue for 1-node Fabric Spark clusters|Fixed issue that services cannot start on 1-node Fabric Spark cluster for the scenario when unhealthy VM node is recreated.|
+|1269309|AutoscaleProbe:3.8.1.1|Revert Autoscale metrics bug|Reverting a change that caused a bug with available metrics for Autoscale probes.|
+|1276537|SparkRPCHistoryServer:1.0.30|Fix a permissions issue in Spark UI|Fix a permission issue impacting running of Spark UI application|
+|1252931|Conda/Spark34:8.0.5,  LibraryManager:1.0.5|LM release 1.0.5 and Conda release 8.0.5|New LM release supporting minor changes to libraries like Flaml.|
+|1254761|AutoscaleProbe:3.8.1|Added support for Optimistic Admission Control and fixed bugs in Autoscale|In this release autoscale probe will ask TJS for approval before scaling-up the cluster for optimistic admission control. Also, we did some bug fixes and improvements in autoscale service.|
 
 # Components
 
