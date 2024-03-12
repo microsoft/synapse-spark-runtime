@@ -1,0 +1,6701 @@
+{
+  "VhdRelease": "Spark3.3-Rel-2024-02-21.1-rc.1",
+  "sparkVersion": "spark3.3",
+  "operatingSystem": "Ubuntu 18.04.6 LTS",
+  "java": "1.8.0_392",
+  "scala": "2.12.15",
+  "python": "3.10/1.0.5",
+  "deltaLake": "2.2.0.10",
+  "components": {
+    "Spark": [
+      {
+        "Name": "AutoscaleProbe",
+        "Current": "3.8.1.1"
+      },
+      {
+        "Name": "Autotune",
+        "Current": "1.10.0.0"
+      },
+      {
+        "Name": "AzureMLExtensions",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "CDM",
+        "Current": "1.19.7"
+      },
+      {
+        "Name": "CSparkMetricUpdate",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "ClusterGateway",
+        "Current": "spark/2.4.4"
+      },
+      {
+        "Name": "Conda",
+        "Current": "1.0.20"
+      },
+      {
+        "Name": "CosmosDBConnector",
+        "Current": "1.8.10"
+      },
+      {
+        "Name": "DWConnector",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "Delta",
+        "Current": "2.2.0.10"
+      },
+      {
+        "Name": "Dotnet",
+        "Current": "6.0.0"
+      },
+      {
+        "Name": "EventHubConnector",
+        "Current": "2.3.24"
+      },
+      {
+        "Name": "ExternalHiveMetastoreLibraries",
+        "Current": "0.0.6"
+      },
+      {
+        "Name": "FsspecWrapper",
+        "Current": "1.0.12"
+      },
+      {
+        "Name": "Genesis",
+        "Current": "0.27.0"
+      },
+      {
+        "Name": "GenevaAgents",
+        "Current": "spark/2.4.4"
+      },
+      {
+        "Name": "Gluten",
+        "Current": "0.5.5"
+      },
+      {
+        "Name": "HiveMetaStoreClient",
+        "Current": "1.1.17"
+      },
+      {
+        "Name": "Impulse",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "JupyterServices",
+        "Current": "0.0.2"
+      },
+      {
+        "Name": "KustoConnector",
+        "Current": "1.3.4"
+      },
+      {
+        "Name": "LibraryManager",
+        "Current": "1.0.22"
+      },
+      {
+        "Name": "LibraryMetadataCooker",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "MMLSpark",
+        "Current": "1.4.12"
+      },
+      {
+        "Name": "MachineLearningPredict",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "MlflowLibrary",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "MySQLJavaConnector",
+        "Current": "1.0.2"
+      },
+      {
+        "Name": "NodeServices",
+        "Current": "1.2.2"
+      },
+      {
+        "Name": "NotebookUtils",
+        "Current": "1.1.40"
+      },
+      {
+        "Name": "OneLakeClientStarter",
+        "Current": "1.0.19.1"
+      },
+      {
+        "Name": "Peregrine",
+        "Current": "0.10.3"
+      },
+      {
+        "Name": "PostgreSQLJDBCDriver",
+        "Current": "1.0.2"
+      },
+      {
+        "Name": "Python",
+        "Current": "3.10/1.0.5"
+      },
+      {
+        "Name": "R",
+        "Current": "1.0.5"
+      },
+      {
+        "Name": "SQLServerODBCDriver",
+        "Current": "18.1.0"
+      },
+      {
+        "Name": "SStreamOnSparkJar",
+        "Current": "2.3.0"
+      },
+      {
+        "Name": "SparkAdvisor",
+        "Current": "0.0.14"
+      },
+      {
+        "Name": "SparkDiagnosticsLibrary",
+        "Current": "1.0.19"
+      },
+      {
+        "Name": "SparkFinalize",
+        "Current": "1.0.6"
+      },
+      {
+        "Name": "SparkInitialize",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "SparkLighter",
+        "Current": "2.0.7"
+      },
+      {
+        "Name": "SparkNativeParquetWriter",
+        "Current": "0.8.1"
+      },
+      {
+        "Name": "SparkRPCHistoryServer",
+        "Current": "1.0.27"
+      },
+      {
+        "Name": "SparklyrConnector",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "TokenLibrary",
+        "Current": "3.5.8"
+      },
+      {
+        "Name": "TridentCore",
+        "Current": "1.1.41"
+      },
+      {
+        "Name": "TridentTokenLibrary",
+        "Current": "1.6.2"
+      },
+      {
+        "Name": "VSANodeScanAgent",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "Vegas",
+        "Current": "3.3.08.5"
+      },
+      {
+        "Name": "VertiParquet",
+        "Current": "0.8.6"
+      },
+      {
+        "Name": "Wildfire",
+        "Current": "1.7.50"
+      }
+    ],
+    "javaAndScala": [
+      {
+        "Name": "HikariCP",
+        "Current": "2.5.1"
+      },
+      {
+        "Name": "JLargeArrays",
+        "Current": "1.5"
+      },
+      {
+        "Name": "JTransforms",
+        "Current": "3.1"
+      },
+      {
+        "Name": "RoaringBitmap",
+        "Current": "0.9.25"
+      },
+      {
+        "Name": "ST4",
+        "Current": "4.0.4"
+      },
+      {
+        "Name": "SparkCustomEvents",
+        "Current": "3.3.0-1.0.1"
+      },
+      {
+        "Name": "TokenLibrary-assembly",
+        "Current": "3.5.8"
+      },
+      {
+        "Name": "VegasConnector",
+        "Current": "3.3.08"
+      },
+      {
+        "Name": "activation",
+        "Current": "1.1.1"
+      },
+      {
+        "Name": "aircompressor",
+        "Current": "0.21"
+      },
+      {
+        "Name": "algebra",
+        "Current": "2.12-2.0.1"
+      },
+      {
+        "Name": "aliyun-java-sdk-core",
+        "Current": "4.5.10"
+      },
+      {
+        "Name": "aliyun-java-sdk-kms",
+        "Current": "2.11.0"
+      },
+      {
+        "Name": "aliyun-java-sdk-ram",
+        "Current": "3.1.0"
+      },
+      {
+        "Name": "aliyun-sdk-oss",
+        "Current": "3.13.0"
+      },
+      {
+        "Name": "annotations",
+        "Current": "7.0.0"
+      },
+      {
+        "Name": "antlr-runtime",
+        "Current": "3.5.2"
+      },
+      {
+        "Name": "antlr4-runtime",
+        "Current": "4.8"
+      },
+      {
+        "Name": "aopalliance-repackaged",
+        "Current": "2.6.1"
+      },
+      {
+        "Name": "apiguardian-api",
+        "Current": "1.1.0"
+      },
+      {
+        "Name": "arpack",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "arpack_combined_all",
+        "Current": "0.1"
+      },
+      {
+        "Name": "arrow-format",
+        "Current": "7.0.0"
+      },
+      {
+        "Name": "arrow-memory-core",
+        "Current": "7.0.0"
+      },
+      {
+        "Name": "arrow-memory-netty",
+        "Current": "7.0.0"
+      },
+      {
+        "Name": "arrow-vector",
+        "Current": "7.0.0"
+      },
+      {
+        "Name": "audience-annotations",
+        "Current": "0.5.0"
+      },
+      {
+        "Name": "autotune-client",
+        "Current": "2.12-1.10.0-3.3-117562362"
+      },
+      {
+        "Name": "autotune-common",
+        "Current": "2.12-1.10.0-3.3-117562362"
+      },
+      {
+        "Name": "avro",
+        "Current": "1.11.0"
+      },
+      {
+        "Name": "avro-ipc",
+        "Current": "1.11.0"
+      },
+      {
+        "Name": "avro-mapred",
+        "Current": "1.11.0"
+      },
+      {
+        "Name": "aws-java-sdk-bundle",
+        "Current": "1.11.1026"
+      },
+      {
+        "Name": "azure-data-lake-store-sdk",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "azure-eventhubs",
+        "Current": "3.3.0"
+      },
+      {
+        "Name": "azure-eventhubs-spark",
+        "Current": "2.12-2.3.22"
+      },
+      {
+        "Name": "azure-keyvault-core",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "azure-storage",
+        "Current": "7.0.1"
+      },
+      {
+        "Name": "azure-synapse-ml-pandas",
+        "Current": "2.12-0.1.1"
+      },
+      {
+        "Name": "azure-synapse-ml-predict",
+        "Current": "2.12-1.0"
+      },
+      {
+        "Name": "blas",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "bonecp",
+        "Current": "0.8.0.RELEASE"
+      },
+      {
+        "Name": "breeze",
+        "Current": "2.12-1.2"
+      },
+      {
+        "Name": "breeze-macros",
+        "Current": "2.12-1.2"
+      },
+      {
+        "Name": "cats-kernel",
+        "Current": "2.12-2.1.1"
+      },
+      {
+        "Name": "chill",
+        "Current": "2.12-0.10.0"
+      },
+      {
+        "Name": "chill-java",
+        "Current": "0.10.0"
+      },
+      {
+        "Name": "client-sdk",
+        "Current": "1.24.1"
+      },
+      {
+        "Name": "commons-cli",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "commons-codec",
+        "Current": "1.15"
+      },
+      {
+        "Name": "commons-collections",
+        "Current": "3.2.2"
+      },
+      {
+        "Name": "commons-collections4",
+        "Current": "4.4"
+      },
+      {
+        "Name": "commons-compiler",
+        "Current": "3.0.16"
+      },
+      {
+        "Name": "commons-compress",
+        "Current": "1.21"
+      },
+      {
+        "Name": "commons-crypto",
+        "Current": "1.1.0"
+      },
+      {
+        "Name": "commons-dbcp",
+        "Current": "1.4"
+      },
+      {
+        "Name": "commons-io",
+        "Current": "2.11.0"
+      },
+      {
+        "Name": "commons-lang",
+        "Current": "2.6"
+      },
+      {
+        "Name": "commons-lang3",
+        "Current": "3.12.0"
+      },
+      {
+        "Name": "commons-logging",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "commons-math3",
+        "Current": "3.6.1"
+      },
+      {
+        "Name": "commons-pool",
+        "Current": "1.5.4"
+      },
+      {
+        "Name": "commons-pool2",
+        "Current": "2.11.1"
+      },
+      {
+        "Name": "commons-text",
+        "Current": "1.10.0"
+      },
+      {
+        "Name": "compress-lzf",
+        "Current": "1.1"
+      },
+      {
+        "Name": "config",
+        "Current": "1.3.4"
+      },
+      {
+        "Name": "core",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "cos_api-bundle",
+        "Current": "5.6.19"
+      },
+      {
+        "Name": "cosmos-analytics-spark",
+        "Current": "3.3.1-connector-1.8.10"
+      },
+      {
+        "Name": "curator-client",
+        "Current": "2.13.0"
+      },
+      {
+        "Name": "curator-framework",
+        "Current": "2.13.0"
+      },
+      {
+        "Name": "curator-recipes",
+        "Current": "2.13.0"
+      },
+      {
+        "Name": "datanucleus-api-jdo",
+        "Current": "4.2.4"
+      },
+      {
+        "Name": "datanucleus-core",
+        "Current": "4.1.17"
+      },
+      {
+        "Name": "datanucleus-rdbms",
+        "Current": "4.1.19"
+      },
+      {
+        "Name": "delta-core",
+        "Current": "2.12-2.2.0.10"
+      },
+      {
+        "Name": "delta-iceberg",
+        "Current": "2.12-2.2.0.10"
+      },
+      {
+        "Name": "delta-storage",
+        "Current": "2.2.0.10"
+      },
+      {
+        "Name": "derby",
+        "Current": "0.14.2.0"
+      },
+      {
+        "Name": "dropwizard-metrics-hadoop-metrics2-reporter",
+        "Current": "0.1.2"
+      },
+      {
+        "Name": "flatbuffers-java",
+        "Current": "1.12.0"
+      },
+      {
+        "Name": "fluent-logger-jar-with-dependencies-jdk8",
+        "Current": "8"
+      },
+      {
+        "Name": "genesis-client",
+        "Current": "2.12-0.27.0-jar-with-dependencies"
+      },
+      {
+        "Name": "gluten-velox-bundle-spark",
+        "Current": "3.3_2.12-ubuntu_18.04-0.5.0-SNAPSHOT"
+      },
+      {
+        "Name": "gson",
+        "Current": "2.8.6"
+      },
+      {
+        "Name": "guava",
+        "Current": "4.0.1"
+      },
+      {
+        "Name": "hadoop-aliyun",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-annotations",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-aws",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-azure",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-azure-datalake",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-azureml",
+        "Current": "1.0-fs"
+      },
+      {
+        "Name": "hadoop-client-api",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-client-runtime",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-cloud-storage",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-cos",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-openstack",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hadoop-shaded-guava",
+        "Current": "1.1.1"
+      },
+      {
+        "Name": "hadoop-yarn-server-web-proxy",
+        "Current": "3.3.3.5.2-117504963"
+      },
+      {
+        "Name": "hdinsight-spark-metrics",
+        "Current": "3.3.0-1.0.1"
+      },
+      {
+        "Name": "hive-beeline",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-cli",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-common",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-exec",
+        "Current": "2.3.9-core"
+      },
+      {
+        "Name": "hive-jdbc",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-llap-common",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-metastore",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-serde",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-service-rpc",
+        "Current": "3.1.2"
+      },
+      {
+        "Name": "hive-shims",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-shims",
+        "Current": "0.23-2.3.9"
+      },
+      {
+        "Name": "hive-shims-common",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-shims-scheduler",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hive-storage-api",
+        "Current": "2.7.2"
+      },
+      {
+        "Name": "hive-vector-code-gen",
+        "Current": "2.3.9"
+      },
+      {
+        "Name": "hk2-api",
+        "Current": "2.6.1"
+      },
+      {
+        "Name": "hk2-locator",
+        "Current": "2.6.1"
+      },
+      {
+        "Name": "hk2-utils",
+        "Current": "2.6.1"
+      },
+      {
+        "Name": "httpclient",
+        "Current": "4.5.13"
+      },
+      {
+        "Name": "httpclient5",
+        "Current": "5.1.3"
+      },
+      {
+        "Name": "httpcore",
+        "Current": "4.4.14"
+      },
+      {
+        "Name": "httpmime",
+        "Current": "4.5.13"
+      },
+      {
+        "Name": "impulse-core_spark",
+        "Current": "3.3_2.12-1.0.19"
+      },
+      {
+        "Name": "impulse-telemetry-mds_spark",
+        "Current": "3.3_2.12-1.0.19"
+      },
+      {
+        "Name": "ini4j",
+        "Current": "0.5.4"
+      },
+      {
+        "Name": "isolation-forest",
+        "Current": "3.3.3_2.12-3.0.3"
+      },
+      {
+        "Name": "istack-commons-runtime",
+        "Current": "3.0.8"
+      },
+      {
+        "Name": "ivy",
+        "Current": "2.5.1"
+      },
+      {
+        "Name": "jackson-annotations",
+        "Current": "2.13.4"
+      },
+      {
+        "Name": "jackson-core",
+        "Current": "2.13.4"
+      },
+      {
+        "Name": "jackson-core-asl",
+        "Current": "1.9.13"
+      },
+      {
+        "Name": "jackson-databind",
+        "Current": "2.13.4.1"
+      },
+      {
+        "Name": "jackson-dataformat-cbor",
+        "Current": "2.13.4"
+      },
+      {
+        "Name": "jackson-mapper-asl",
+        "Current": "1.9.13"
+      },
+      {
+        "Name": "jackson-module-scala",
+        "Current": "2.12-2.13.4"
+      },
+      {
+        "Name": "jakarta.annotation-api",
+        "Current": "1.3.5"
+      },
+      {
+        "Name": "jakarta.inject",
+        "Current": "2.6.1"
+      },
+      {
+        "Name": "jakarta.servlet-api",
+        "Current": "4.0.3"
+      },
+      {
+        "Name": "jakarta.validation-api",
+        "Current": "2.0.2"
+      },
+      {
+        "Name": "jakarta.ws.rs-api",
+        "Current": "2.1.6"
+      },
+      {
+        "Name": "jakarta.xml.bind-api",
+        "Current": "2.3.2"
+      },
+      {
+        "Name": "janino",
+        "Current": "3.0.16"
+      },
+      {
+        "Name": "javassist",
+        "Current": "3.25.0-GA"
+      },
+      {
+        "Name": "javatuples",
+        "Current": "1.2"
+      },
+      {
+        "Name": "javax.jdo",
+        "Current": "3.2.0-m3"
+      },
+      {
+        "Name": "javolution",
+        "Current": "5.5.1"
+      },
+      {
+        "Name": "jaxb-api",
+        "Current": "2.2.11"
+      },
+      {
+        "Name": "jaxb-runtime",
+        "Current": "2.3.2"
+      },
+      {
+        "Name": "jcl-over-slf4j",
+        "Current": "1.7.32"
+      },
+      {
+        "Name": "jdo-api",
+        "Current": "3.0.1"
+      },
+      {
+        "Name": "jdom2",
+        "Current": "2.0.6"
+      },
+      {
+        "Name": "jersey-client",
+        "Current": "2.36"
+      },
+      {
+        "Name": "jersey-common",
+        "Current": "2.36"
+      },
+      {
+        "Name": "jersey-container-servlet",
+        "Current": "2.36"
+      },
+      {
+        "Name": "jersey-container-servlet-core",
+        "Current": "2.36"
+      },
+      {
+        "Name": "jersey-hk2",
+        "Current": "2.36"
+      },
+      {
+        "Name": "jersey-server",
+        "Current": "2.36"
+      },
+      {
+        "Name": "jettison",
+        "Current": "1.1"
+      },
+      {
+        "Name": "jetty-util",
+        "Current": "9.4.48.v20220622"
+      },
+      {
+        "Name": "jetty-util-ajax",
+        "Current": "9.4.48.v20220622"
+      },
+      {
+        "Name": "jline",
+        "Current": "2.14.6"
+      },
+      {
+        "Name": "joda-time",
+        "Current": "2.10.13"
+      },
+      {
+        "Name": "jodd-core",
+        "Current": "3.5.2"
+      },
+      {
+        "Name": "jpam",
+        "Current": "1.1"
+      },
+      {
+        "Name": "jsch",
+        "Current": "0.1.54"
+      },
+      {
+        "Name": "json",
+        "Current": "1"
+      },
+      {
+        "Name": "json",
+        "Current": "1"
+      },
+      {
+        "Name": "json",
+        "Current": "7"
+      },
+      {
+        "Name": "json",
+        "Current": "1.8"
+      },
+      {
+        "Name": "json-simple",
+        "Current": "1.1.1"
+      },
+      {
+        "Name": "json-simple",
+        "Current": "1.1"
+      },
+      {
+        "Name": "json4s-ast",
+        "Current": "2.12-3.7.0-M11"
+      },
+      {
+        "Name": "json4s-core",
+        "Current": "2.12-3.7.0-M11"
+      },
+      {
+        "Name": "json4s-jackson",
+        "Current": "2.12-3.7.0-M11"
+      },
+      {
+        "Name": "json4s-scalap",
+        "Current": "2.12-3.7.0-M11"
+      },
+      {
+        "Name": "jsr305",
+        "Current": "3.0.0"
+      },
+      {
+        "Name": "jta",
+        "Current": "1.1"
+      },
+      {
+        "Name": "jul-to-slf4j",
+        "Current": "1.7.32"
+      },
+      {
+        "Name": "junit-jupiter",
+        "Current": "5.5.2"
+      },
+      {
+        "Name": "junit-jupiter-api",
+        "Current": "5.5.2"
+      },
+      {
+        "Name": "junit-jupiter-engine",
+        "Current": "5.5.2"
+      },
+      {
+        "Name": "junit-jupiter-params",
+        "Current": "5.5.2"
+      },
+      {
+        "Name": "junit-platform-commons",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "junit-platform-engine",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "kafka-clients",
+        "Current": "2.8.1"
+      },
+      {
+        "Name": "kryo-shaded",
+        "Current": "4.0.2"
+      },
+      {
+        "Name": "kusto-data",
+        "Current": "3.2.1-SynapseFabric"
+      },
+      {
+        "Name": "kusto-ingest",
+        "Current": "3.2.1-SynapseFabric"
+      },
+      {
+        "Name": "kusto-spark",
+        "Current": "3.0_2.12-3.1.16"
+      },
+      {
+        "Name": "lapack",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "leveldbjni-all",
+        "Current": "1.8"
+      },
+      {
+        "Name": "libfb303",
+        "Current": "0.9.3"
+      },
+      {
+        "Name": "libthrift",
+        "Current": "0.12.0"
+      },
+      {
+        "Name": "lightgbmlib",
+        "Current": "3.3.510"
+      },
+      {
+        "Name": "log4j",
+        "Current": "1.2-api-2.17.2"
+      },
+      {
+        "Name": "log4j-api",
+        "Current": "2.17.2"
+      },
+      {
+        "Name": "log4j-core",
+        "Current": "2.17.2"
+      },
+      {
+        "Name": "log4j-slf4j-impl",
+        "Current": "2.17.2"
+      },
+      {
+        "Name": "lz4-java",
+        "Current": "1.8.0"
+      },
+      {
+        "Name": "mdsdclientdynamic",
+        "Current": "2.0"
+      },
+      {
+        "Name": "metrics-core",
+        "Current": "4.2.7"
+      },
+      {
+        "Name": "metrics-graphite",
+        "Current": "4.2.7"
+      },
+      {
+        "Name": "metrics-jmx",
+        "Current": "4.2.7"
+      },
+      {
+        "Name": "metrics-json",
+        "Current": "4.2.7"
+      },
+      {
+        "Name": "metrics-jvm",
+        "Current": "4.2.7"
+      },
+      {
+        "Name": "microsoft-catalog-metastore-client",
+        "Current": "1.1.17"
+      },
+      {
+        "Name": "microsoft-log4j-etwappender",
+        "Current": "1.0"
+      },
+      {
+        "Name": "minlog",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "mlflow-spark",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "mssql-jdbc",
+        "Current": "8.4.1.jre8"
+      },
+      {
+        "Name": "mysql-connector-java",
+        "Current": "8.0.18"
+      },
+      {
+        "Name": "netty-all",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-buffer",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-codec",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-common",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-handler",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-resolver",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-tcnative-classes",
+        "Current": "2.0.48.Final"
+      },
+      {
+        "Name": "netty-transport",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-transport-classes-epoll",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-transport-classes-kqueue",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "netty-transport-native-epoll",
+        "Current": "4.1.74.Final-linux-aarch_64"
+      },
+      {
+        "Name": "netty-transport-native-epoll",
+        "Current": "4.1.74.Final-linux-x86_64"
+      },
+      {
+        "Name": "netty-transport-native-kqueue",
+        "Current": "4.1.74.Final-osx-aarch_64"
+      },
+      {
+        "Name": "netty-transport-native-kqueue",
+        "Current": "4.1.74.Final-osx-x86_64"
+      },
+      {
+        "Name": "netty-transport-native-unix-common",
+        "Current": "4.1.74.Final"
+      },
+      {
+        "Name": "notebook-utils",
+        "Current": "3.3.0-20240130.4"
+      },
+      {
+        "Name": "objenesis",
+        "Current": "3.2"
+      },
+      {
+        "Name": "onnx-protobuf",
+        "Current": "2.12-0.9.3"
+      },
+      {
+        "Name": "onnxruntime_gpu",
+        "Current": "1.8.1"
+      },
+      {
+        "Name": "opencsv",
+        "Current": "2.3"
+      },
+      {
+        "Name": "opencv",
+        "Current": "3.2.0-1"
+      },
+      {
+        "Name": "opentest4j",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "opentracing-api",
+        "Current": "0.33.0"
+      },
+      {
+        "Name": "opentracing-noop",
+        "Current": "0.33.0"
+      },
+      {
+        "Name": "opentracing-util",
+        "Current": "0.33.0"
+      },
+      {
+        "Name": "orc-core",
+        "Current": "1.7.6"
+      },
+      {
+        "Name": "orc-mapreduce",
+        "Current": "1.7.6"
+      },
+      {
+        "Name": "orc-shims",
+        "Current": "1.7.6"
+      },
+      {
+        "Name": "oro",
+        "Current": "2.0.8"
+      },
+      {
+        "Name": "osgi-resource-locator",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "paranamer",
+        "Current": "2.8"
+      },
+      {
+        "Name": "parquet-column",
+        "Current": "1.12.3"
+      },
+      {
+        "Name": "parquet-common",
+        "Current": "1.12.3"
+      },
+      {
+        "Name": "parquet-encoding",
+        "Current": "1.12.3"
+      },
+      {
+        "Name": "parquet-format-structures",
+        "Current": "1.12.3"
+      },
+      {
+        "Name": "parquet-hadoop",
+        "Current": "1.12.3"
+      },
+      {
+        "Name": "parquet-jackson",
+        "Current": "1.12.3"
+      },
+      {
+        "Name": "peregrine-spark",
+        "Current": "3.3.0-0.10.3"
+      },
+      {
+        "Name": "pickle",
+        "Current": "1.2"
+      },
+      {
+        "Name": "postgresql",
+        "Current": "2.2.9"
+      },
+      {
+        "Name": "protobuf-java",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "proton-j",
+        "Current": "0.33.8"
+      },
+      {
+        "Name": "py4j",
+        "Current": "0.10.9.5"
+      },
+      {
+        "Name": "qpid-proton-j-extensions",
+        "Current": "1.2.4"
+      },
+      {
+        "Name": "resilience4j-core",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "resilience4j-retry",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "rocksdbjni",
+        "Current": "6.20.3"
+      },
+      {
+        "Name": "scala-collection-compat",
+        "Current": "2.12-2.1.1"
+      },
+      {
+        "Name": "scala-compiler",
+        "Current": "2.12.15"
+      },
+      {
+        "Name": "scala-java8-compat",
+        "Current": "2.12-0.9.0"
+      },
+      {
+        "Name": "scala-library",
+        "Current": "2.12.15"
+      },
+      {
+        "Name": "scala-parser-combinators",
+        "Current": "2.12-1.1.2"
+      },
+      {
+        "Name": "scala-reflect",
+        "Current": "2.12.15"
+      },
+      {
+        "Name": "scala-xml",
+        "Current": "2.12-1.2.0"
+      },
+      {
+        "Name": "scalactic",
+        "Current": "2.12-3.2.14"
+      },
+      {
+        "Name": "shapeless",
+        "Current": "2.12-2.3.7"
+      },
+      {
+        "Name": "shims",
+        "Current": "0.9.25"
+      },
+      {
+        "Name": "slf4j-api",
+        "Current": "1.7.32"
+      },
+      {
+        "Name": "snappy-java",
+        "Current": "1.1.8.4"
+      },
+      {
+        "Name": "spark",
+        "Current": "3.3-rpc-history-server-app-listener_2.12-1.0.0"
+      },
+      {
+        "Name": "spark",
+        "Current": "3.3-rpc-history-server-app-listener_2.12-1.0.0"
+      },
+      {
+        "Name": "spark",
+        "Current": "3.3-rpc-history-server-core_2.12-1.0.0"
+      },
+      {
+        "Name": "spark",
+        "Current": "3.3-advisor-core_2.12-1.0.18"
+      },
+      {
+        "Name": "spark-avro",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-catalyst",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-cdm-connector-assembly-spark",
+        "Current": "3.3-1.19.7"
+      },
+      {
+        "Name": "spark-core",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-enhancement",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-enhancementui",
+        "Current": "2.12-3.0.0"
+      },
+      {
+        "Name": "spark-graphx",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-hadoop-cloud",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-hive",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-hive-thriftserver",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-kusto-synapse-connector",
+        "Current": "3.1_2.12-1.3.4"
+      },
+      {
+        "Name": "spark-kvstore",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-launcher",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-lighter-contract",
+        "Current": "2.12-2.0.7_spark-3.3.0"
+      },
+      {
+        "Name": "spark-lighter-core",
+        "Current": "2.12-2.0.7_spark-3.3.0"
+      },
+      {
+        "Name": "spark-microsoft-tools",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-mllib",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-mllib-local",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-network-common",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-network-shuffle",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-repl",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-sketch",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-sql",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-sql-kafka",
+        "Current": "0_2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-streaming",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-streaming-kafka",
+        "Current": "0_2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-streaming-kafka",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-tags",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-token-provider-kafka",
+        "Current": "0_2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-unsafe",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark-yarn",
+        "Current": "2.12-3.3.1.5.2-117504963"
+      },
+      {
+        "Name": "spark_diagnostic_cli",
+        "Current": "2.0.7_spark-3.3.0"
+      },
+      {
+        "Name": "sparklyr-connector",
+        "Current": "1.0.0_spark-3.3.1"
+      },
+      {
+        "Name": "sparknativeparquetwriter",
+        "Current": "2.12-0.8.1-spark-3.3"
+      },
+      {
+        "Name": "spire",
+        "Current": "2.12-0.17.0"
+      },
+      {
+        "Name": "spire-macros",
+        "Current": "2.12-0.17.0"
+      },
+      {
+        "Name": "spire-platform",
+        "Current": "2.12-0.17.0"
+      },
+      {
+        "Name": "spire-util",
+        "Current": "2.12-0.17.0"
+      },
+      {
+        "Name": "spray-json",
+        "Current": "2.12-1.3.5"
+      },
+      {
+        "Name": "sqlanalyticsconnector",
+        "Current": "3.3.0-2.1.2"
+      },
+      {
+        "Name": "stax-api",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "stream",
+        "Current": "2.9.6"
+      },
+      {
+        "Name": "structuredstreamforspark",
+        "Current": "2.12-3.2.0-2.3.0"
+      },
+      {
+        "Name": "super-csv",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "synapseml",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synapseml-cognitive",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synapseml-core",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synapseml-deep-learning",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synapseml-internal",
+        "Current": "2.12-1.0.2.1-spark3.3"
+      },
+      {
+        "Name": "synapseml-lightgbm",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synapseml-opencv",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synapseml-vw",
+        "Current": "2.12-1.0.2-spark3.3"
+      },
+      {
+        "Name": "synfs",
+        "Current": "3.3.0-20240130.4"
+      },
+      {
+        "Name": "threeten-extra",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "tink",
+        "Current": "1.6.1"
+      },
+      {
+        "Name": "transaction-api",
+        "Current": "1.1"
+      },
+      {
+        "Name": "trident-core",
+        "Current": "1.1.41"
+      },
+      {
+        "Name": "tridentsystemtokenlibrary-assembly",
+        "Current": "1.6.2"
+      },
+      {
+        "Name": "tridenttokenlibrary-assembly",
+        "Current": "1.6.2"
+      },
+      {
+        "Name": "univocity-parsers",
+        "Current": "2.9.1"
+      },
+      {
+        "Name": "vavr",
+        "Current": "0.10.4"
+      },
+      {
+        "Name": "vavr-match",
+        "Current": "0.10.4"
+      },
+      {
+        "Name": "velocity",
+        "Current": "1.5"
+      },
+      {
+        "Name": "vw-jni",
+        "Current": "9.3.0"
+      },
+      {
+        "Name": "wildfly-openssl",
+        "Current": "1.0.7.Final"
+      },
+      {
+        "Name": "xbean-asm9-shaded",
+        "Current": "4.20"
+      },
+      {
+        "Name": "xz",
+        "Current": "1.8"
+      },
+      {
+        "Name": "zookeeper",
+        "Current": "3.6.2.5.2-117504963"
+      },
+      {
+        "Name": "zookeeper-jute",
+        "Current": "3.6.2.5.2-117504963"
+      },
+      {
+        "Name": "zstd-jni",
+        "Current": "1.5.2-1"
+      }
+    ],
+    "synapsePython": [
+      {
+        "Name": "_libgcc_mutex",
+        "Current": "0.1"
+      },
+      {
+        "Name": "_libgcc_mutex",
+        "Current": "0.1"
+      },
+      {
+        "Name": "_openmp_mutex",
+        "Current": "4.5"
+      },
+      {
+        "Name": "_openmp_mutex",
+        "Current": "4.5"
+      },
+      {
+        "Name": "_py-xgboost-mutex",
+        "Current": "2.0"
+      },
+      {
+        "Name": "_tflow_select",
+        "Current": "2.3.0"
+      },
+      {
+        "Name": "absl-py",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "adal",
+        "Current": "1.2.7"
+      },
+      {
+        "Name": "adlfs",
+        "Current": "0.7.7"
+      },
+      {
+        "Name": "aiohttp",
+        "Current": "3.8.3"
+      },
+      {
+        "Name": "aiosignal",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "anyio",
+        "Current": "3.6.2"
+      },
+      {
+        "Name": "aom",
+        "Current": "3.5.0"
+      },
+      {
+        "Name": "applicationinsights",
+        "Current": "0.11.10"
+      },
+      {
+        "Name": "argcomplete",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "argon2-cffi",
+        "Current": "21.3.0"
+      },
+      {
+        "Name": "argon2-cffi-bindings",
+        "Current": "21.2.0"
+      },
+      {
+        "Name": "arrow-cpp",
+        "Current": "9.0.0"
+      },
+      {
+        "Name": "asttokens",
+        "Current": "2.1.0"
+      },
+      {
+        "Name": "asttokens",
+        "Current": "2.4.1"
+      },
+      {
+        "Name": "astunparse",
+        "Current": "1.6.3"
+      },
+      {
+        "Name": "async-timeout",
+        "Current": "4.0.2"
+      },
+      {
+        "Name": "attrs",
+        "Current": "22.1.0"
+      },
+      {
+        "Name": "aws-c-cal",
+        "Current": "0.5.11"
+      },
+      {
+        "Name": "aws-c-common",
+        "Current": "0.6.2"
+      },
+      {
+        "Name": "aws-c-event-stream",
+        "Current": "0.2.7"
+      },
+      {
+        "Name": "aws-c-io",
+        "Current": "0.10.5"
+      },
+      {
+        "Name": "aws-checksums",
+        "Current": "0.1.11"
+      },
+      {
+        "Name": "aws-sdk-cpp",
+        "Current": "1.8.186"
+      },
+      {
+        "Name": "azure-common",
+        "Current": "1.1.28"
+      },
+      {
+        "Name": "azure-core",
+        "Current": "1.26.1"
+      },
+      {
+        "Name": "azure-datalake-store",
+        "Current": "0.0.51"
+      },
+      {
+        "Name": "azure-graphrbac",
+        "Current": "0.61.1"
+      },
+      {
+        "Name": "azure-identity",
+        "Current": "1.7.0"
+      },
+      {
+        "Name": "azure-mgmt-authorization",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "azure-mgmt-containerregistry",
+        "Current": "10.0.0"
+      },
+      {
+        "Name": "azure-mgmt-core",
+        "Current": "1.3.2"
+      },
+      {
+        "Name": "azure-mgmt-keyvault",
+        "Current": "10.1.0"
+      },
+      {
+        "Name": "azure-mgmt-resource",
+        "Current": "21.2.1"
+      },
+      {
+        "Name": "azure-mgmt-storage",
+        "Current": "20.1.0"
+      },
+      {
+        "Name": "azure-storage-blob",
+        "Current": "12.13.0"
+      },
+      {
+        "Name": "azure-synapse-ml-predict",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "azure-synapse-ml-predict",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "azureml-core",
+        "Current": "1.47.0"
+      },
+      {
+        "Name": "azureml-dataprep",
+        "Current": "4.5.7"
+      },
+      {
+        "Name": "azureml-dataprep-native",
+        "Current": "38.0.0"
+      },
+      {
+        "Name": "azureml-dataprep-rslex",
+        "Current": "2.11.4"
+      },
+      {
+        "Name": "azureml-dataset-runtime",
+        "Current": "1.47.0"
+      },
+      {
+        "Name": "azureml-mlflow",
+        "Current": "1.47.0"
+      },
+      {
+        "Name": "azureml-opendatasets",
+        "Current": "1.47.0"
+      },
+      {
+        "Name": "azureml-synapse",
+        "Current": "0.0.1"
+      },
+      {
+        "Name": "azureml-telemetry",
+        "Current": "1.47.0"
+      },
+      {
+        "Name": "backcall",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "backports",
+        "Current": "1.0"
+      },
+      {
+        "Name": "backports-tempfile",
+        "Current": "1.0"
+      },
+      {
+        "Name": "backports-weakref",
+        "Current": "1.0.post1"
+      },
+      {
+        "Name": "backports.functools_lru_cache",
+        "Current": "1.6.4"
+      },
+      {
+        "Name": "bcrypt",
+        "Current": "4.0.1"
+      },
+      {
+        "Name": "beautifulsoup4",
+        "Current": "4.9.3"
+      },
+      {
+        "Name": "blas",
+        "Current": "2.116"
+      },
+      {
+        "Name": "blas-devel",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "bleach",
+        "Current": "5.0.1"
+      },
+      {
+        "Name": "blinker",
+        "Current": "1.5"
+      },
+      {
+        "Name": "blosc",
+        "Current": "1.21.1"
+      },
+      {
+        "Name": "bokeh",
+        "Current": "3.0.1"
+      },
+      {
+        "Name": "brotli",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "brotli-bin",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "brotli-python",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "brotlipy",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "brunsli",
+        "Current": "0.1"
+      },
+      {
+        "Name": "bzip2",
+        "Current": "1.0.8"
+      },
+      {
+        "Name": "bzip2",
+        "Current": "1.0.8"
+      },
+      {
+        "Name": "c-ares",
+        "Current": "1.18.1"
+      },
+      {
+        "Name": "c-blosc2",
+        "Current": "2.4.3"
+      },
+      {
+        "Name": "ca-certificates",
+        "Current": "2022.9.24"
+      },
+      {
+        "Name": "ca-certificates",
+        "Current": "2024.2.2"
+      },
+      {
+        "Name": "cached-property",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "cached_property",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "cachetools",
+        "Current": "5.2.0"
+      },
+      {
+        "Name": "certifi",
+        "Current": "2022.9.24"
+      },
+      {
+        "Name": "cffi",
+        "Current": "1.15.1"
+      },
+      {
+        "Name": "cfitsio",
+        "Current": "4.1.0"
+      },
+      {
+        "Name": "charls",
+        "Current": "2.3.4"
+      },
+      {
+        "Name": "charset-normalizer",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "click",
+        "Current": "8.1.3"
+      },
+      {
+        "Name": "cloudpickle",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "colorama",
+        "Current": "0.4.6"
+      },
+      {
+        "Name": "coloredlogs",
+        "Current": "15.0.1"
+      },
+      {
+        "Name": "comm",
+        "Current": "0.2.1"
+      },
+      {
+        "Name": "conda-package-handling",
+        "Current": "1.9.0"
+      },
+      {
+        "Name": "configparser",
+        "Current": "5.3.0"
+      },
+      {
+        "Name": "contextlib2",
+        "Current": "21.6.0"
+      },
+      {
+        "Name": "contourpy",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "contourpy",
+        "Current": "1.0.6"
+      },
+      {
+        "Name": "control-script",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "control-script",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "cryptography",
+        "Current": "38.0.3"
+      },
+      {
+        "Name": "cycler",
+        "Current": "0.11.0"
+      },
+      {
+        "Name": "cycler",
+        "Current": "0.12.1"
+      },
+      {
+        "Name": "cython",
+        "Current": "0.29.32"
+      },
+      {
+        "Name": "cytoolz",
+        "Current": "0.12.0"
+      },
+      {
+        "Name": "dash",
+        "Current": "1.21.0"
+      },
+      {
+        "Name": "dash-core-components",
+        "Current": "1.17.1"
+      },
+      {
+        "Name": "dash-html-components",
+        "Current": "1.1.4"
+      },
+      {
+        "Name": "dash-renderer",
+        "Current": "1.9.1"
+      },
+      {
+        "Name": "dash-table",
+        "Current": "4.12.0"
+      },
+      {
+        "Name": "dash_cytoscape",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "dask-core",
+        "Current": "2022.10.2"
+      },
+      {
+        "Name": "databricks-cli",
+        "Current": "0.17.3"
+      },
+      {
+        "Name": "dav1d",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "dbus",
+        "Current": "1.13.6"
+      },
+      {
+        "Name": "debugpy",
+        "Current": "1.8.1"
+      },
+      {
+        "Name": "debugpy",
+        "Current": "1.6.3"
+      },
+      {
+        "Name": "decorator",
+        "Current": "5.1.1"
+      },
+      {
+        "Name": "decorator",
+        "Current": "5.1.1"
+      },
+      {
+        "Name": "defusedxml",
+        "Current": "0.7.1"
+      },
+      {
+        "Name": "dill",
+        "Current": "0.3.6"
+      },
+      {
+        "Name": "distlib",
+        "Current": "0.3.6"
+      },
+      {
+        "Name": "distro",
+        "Current": "1.8.0"
+      },
+      {
+        "Name": "docker",
+        "Current": "6.0.1"
+      },
+      {
+        "Name": "dotnetcore2",
+        "Current": "3.1.23"
+      },
+      {
+        "Name": "entrypoints",
+        "Current": "0.4"
+      },
+      {
+        "Name": "et_xmlfile",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "exceptiongroup",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "executing",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "executing",
+        "Current": "2.0.1"
+      },
+      {
+        "Name": "expat",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "fastjsonschema",
+        "Current": "2.16.2"
+      },
+      {
+        "Name": "filelock",
+        "Current": "3.8.0"
+      },
+      {
+        "Name": "fire",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "flask",
+        "Current": "2.2.2"
+      },
+      {
+        "Name": "flask-compress",
+        "Current": "1.13"
+      },
+      {
+        "Name": "flatbuffers",
+        "Current": "2.0.7"
+      },
+      {
+        "Name": "fluent-logger",
+        "Current": "0.10.0"
+      },
+      {
+        "Name": "fontconfig",
+        "Current": "2.14.1"
+      },
+      {
+        "Name": "fonttools",
+        "Current": "4.49.0"
+      },
+      {
+        "Name": "fonttools",
+        "Current": "4.38.0"
+      },
+      {
+        "Name": "freetype",
+        "Current": "2.12.1"
+      },
+      {
+        "Name": "frozenlist",
+        "Current": "1.3.3"
+      },
+      {
+        "Name": "fsspec",
+        "Current": "2022.10.0"
+      },
+      {
+        "Name": "fsspec_wrapper",
+        "Current": "0.1.7"
+      },
+      {
+        "Name": "fsspec_wrapper",
+        "Current": "0.1.7"
+      },
+      {
+        "Name": "fusepy",
+        "Current": "3.0.1"
+      },
+      {
+        "Name": "future",
+        "Current": "0.18.2"
+      },
+      {
+        "Name": "gast",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "gensim",
+        "Current": "4.2.0"
+      },
+      {
+        "Name": "geographiclib",
+        "Current": "1.52"
+      },
+      {
+        "Name": "geopy",
+        "Current": "2.1.0"
+      },
+      {
+        "Name": "gettext",
+        "Current": "0.21.1"
+      },
+      {
+        "Name": "gevent",
+        "Current": "22.10.1"
+      },
+      {
+        "Name": "gflags",
+        "Current": "2.2.2"
+      },
+      {
+        "Name": "giflib",
+        "Current": "5.2.1"
+      },
+      {
+        "Name": "gitdb",
+        "Current": "4.0.9"
+      },
+      {
+        "Name": "gitpython",
+        "Current": "3.1.29"
+      },
+      {
+        "Name": "glib",
+        "Current": "2.74.1"
+      },
+      {
+        "Name": "glib-tools",
+        "Current": "2.74.1"
+      },
+      {
+        "Name": "glog",
+        "Current": "0.6.0"
+      },
+      {
+        "Name": "gmp",
+        "Current": "6.2.1"
+      },
+      {
+        "Name": "gmpy2",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "google-auth",
+        "Current": "2.14.0"
+      },
+      {
+        "Name": "google-auth-oauthlib",
+        "Current": "0.4.6"
+      },
+      {
+        "Name": "google-pasta",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "greenlet",
+        "Current": "1.1.3.post0"
+      },
+      {
+        "Name": "grpc-cpp",
+        "Current": "1.46.4"
+      },
+      {
+        "Name": "grpcio",
+        "Current": "1.46.4"
+      },
+      {
+        "Name": "gst-plugins-base",
+        "Current": "1.14.0"
+      },
+      {
+        "Name": "gstreamer",
+        "Current": "1.14.0"
+      },
+      {
+        "Name": "h5py",
+        "Current": "3.7.0"
+      },
+      {
+        "Name": "hdf5",
+        "Current": "1.12.2"
+      },
+      {
+        "Name": "html5lib",
+        "Current": "1.1"
+      },
+      {
+        "Name": "humanfriendly",
+        "Current": "10.0"
+      },
+      {
+        "Name": "hummingbird-ml",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "icu",
+        "Current": "58.2"
+      },
+      {
+        "Name": "idna",
+        "Current": "3.4"
+      },
+      {
+        "Name": "imagecodecs",
+        "Current": "2022.9.26"
+      },
+      {
+        "Name": "imageio",
+        "Current": "2.9.0"
+      },
+      {
+        "Name": "importlib-metadata",
+        "Current": "5.0.0"
+      },
+      {
+        "Name": "impulse-python-handler",
+        "Current": "1.0.19.1.0.0"
+      },
+      {
+        "Name": "interpret",
+        "Current": "0.2.4"
+      },
+      {
+        "Name": "interpret-core",
+        "Current": "0.2.4"
+      },
+      {
+        "Name": "ipykernel",
+        "Current": "6.17.0"
+      },
+      {
+        "Name": "ipykernel",
+        "Current": "6.29.2"
+      },
+      {
+        "Name": "ipython",
+        "Current": "8.6.0"
+      },
+      {
+        "Name": "ipython",
+        "Current": "8.22.1"
+      },
+      {
+        "Name": "ipython-genutils",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "ipywidgets",
+        "Current": "8.1.2"
+      },
+      {
+        "Name": "ipywidgets",
+        "Current": "7.7.0"
+      },
+      {
+        "Name": "isodate",
+        "Current": "0.6.0"
+      },
+      {
+        "Name": "itsdangerous",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "jdcal",
+        "Current": "1.4.1"
+      },
+      {
+        "Name": "jedi",
+        "Current": "0.18.1"
+      },
+      {
+        "Name": "jedi",
+        "Current": "0.19.1"
+      },
+      {
+        "Name": "jeepney",
+        "Current": "0.8.0"
+      },
+      {
+        "Name": "jinja2",
+        "Current": "3.1.2"
+      },
+      {
+        "Name": "jmespath",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "joblib",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "jpeg",
+        "Current": "9e"
+      },
+      {
+        "Name": "jsonpickle",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "jsonschema",
+        "Current": "4.17.0"
+      },
+      {
+        "Name": "jupyter-client",
+        "Current": "8.6.0"
+      },
+      {
+        "Name": "jupyter-core",
+        "Current": "5.7.1"
+      },
+      {
+        "Name": "jupyter-server",
+        "Current": "1.23.0"
+      },
+      {
+        "Name": "jupyter_client",
+        "Current": "7.4.4"
+      },
+      {
+        "Name": "jupyter_core",
+        "Current": "4.11.2"
+      },
+      {
+        "Name": "jupyterlab-pygments",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "jupyterlab-widgets",
+        "Current": "3.0.3"
+      },
+      {
+        "Name": "jupyterlab-widgets",
+        "Current": "3.0.10"
+      },
+      {
+        "Name": "jxrlib",
+        "Current": "1.1"
+      },
+      {
+        "Name": "keras",
+        "Current": "2.8.0"
+      },
+      {
+        "Name": "keras-applications",
+        "Current": "1.0.8"
+      },
+      {
+        "Name": "keras-preprocessing",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "keras2onnx",
+        "Current": "1.6.5"
+      },
+      {
+        "Name": "keyutils",
+        "Current": "1.6.1"
+      },
+      {
+        "Name": "kiwisolver",
+        "Current": "1.4.4"
+      },
+      {
+        "Name": "kiwisolver",
+        "Current": "1.4.5"
+      },
+      {
+        "Name": "knack",
+        "Current": "0.10.0"
+      },
+      {
+        "Name": "kqlmagiccustom",
+        "Current": "0.1.114.post16"
+      },
+      {
+        "Name": "krb5",
+        "Current": "1.19.3"
+      },
+      {
+        "Name": "lcms2",
+        "Current": "2.14"
+      },
+      {
+        "Name": "ld_impl_linux-64",
+        "Current": "2.39"
+      },
+      {
+        "Name": "ld_impl_linux-64",
+        "Current": "2.40"
+      },
+      {
+        "Name": "lerc",
+        "Current": "4.0.0"
+      },
+      {
+        "Name": "liac-arff",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "libabseil",
+        "Current": "20220623.0"
+      },
+      {
+        "Name": "libaec",
+        "Current": "1.0.6"
+      },
+      {
+        "Name": "libavif",
+        "Current": "0.11.1"
+      },
+      {
+        "Name": "libblas",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "libbrotlicommon",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "libbrotlidec",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "libbrotlienc",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "libcblas",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "libclang",
+        "Current": "14.0.6"
+      },
+      {
+        "Name": "libcrc32c",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "libcurl",
+        "Current": "7.86.0"
+      },
+      {
+        "Name": "libdeflate",
+        "Current": "1.14"
+      },
+      {
+        "Name": "libedit",
+        "Current": "3.1.20191231"
+      },
+      {
+        "Name": "libev",
+        "Current": "4.33"
+      },
+      {
+        "Name": "libevent",
+        "Current": "2.1.10"
+      },
+      {
+        "Name": "libffi",
+        "Current": "3.4.2"
+      },
+      {
+        "Name": "libffi",
+        "Current": "3.4.2"
+      },
+      {
+        "Name": "libgcc-ng",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libgcc-ng",
+        "Current": "13.2.0"
+      },
+      {
+        "Name": "libgfortran-ng",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libgfortran5",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libglib",
+        "Current": "2.74.1"
+      },
+      {
+        "Name": "libgomp",
+        "Current": "13.2.0"
+      },
+      {
+        "Name": "libgoogle-cloud",
+        "Current": "2.1.0"
+      },
+      {
+        "Name": "libiconv",
+        "Current": "1.17"
+      },
+      {
+        "Name": "liblapack",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "liblapacke",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "libllvm11",
+        "Current": "11.1.0"
+      },
+      {
+        "Name": "libnghttp2",
+        "Current": "1.47.0"
+      },
+      {
+        "Name": "libnsl",
+        "Current": "2.0.1"
+      },
+      {
+        "Name": "libnsl",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "libpng",
+        "Current": "1.6.38"
+      },
+      {
+        "Name": "libprotobuf",
+        "Current": "3.20.1"
+      },
+      {
+        "Name": "library-metadata-cooker",
+        "Current": "0.0.7"
+      },
+      {
+        "Name": "library-metadata-cooker",
+        "Current": "0.0.7"
+      },
+      {
+        "Name": "libsodium",
+        "Current": "1.0.18"
+      },
+      {
+        "Name": "libsqlite",
+        "Current": "3.39.4"
+      },
+      {
+        "Name": "libsqlite",
+        "Current": "3.45.1"
+      },
+      {
+        "Name": "libssh2",
+        "Current": "1.10.0"
+      },
+      {
+        "Name": "libstdcxx-ng",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libthrift",
+        "Current": "0.16.0"
+      },
+      {
+        "Name": "libtiff",
+        "Current": "4.4.0"
+      },
+      {
+        "Name": "libutf8proc",
+        "Current": "2.8.0"
+      },
+      {
+        "Name": "libuuid",
+        "Current": "2.32.1"
+      },
+      {
+        "Name": "libuuid",
+        "Current": "2.38.1"
+      },
+      {
+        "Name": "libuv",
+        "Current": "1.44.2"
+      },
+      {
+        "Name": "libwebp-base",
+        "Current": "1.2.4"
+      },
+      {
+        "Name": "libxcb",
+        "Current": "1.13"
+      },
+      {
+        "Name": "libxcrypt",
+        "Current": "4.4.36"
+      },
+      {
+        "Name": "libxgboost",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "libxml2",
+        "Current": "2.9.9"
+      },
+      {
+        "Name": "libzlib",
+        "Current": "1.2.13"
+      },
+      {
+        "Name": "libzlib",
+        "Current": "1.2.13"
+      },
+      {
+        "Name": "libzopfli",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "lightgbm",
+        "Current": "3.2.1"
+      },
+      {
+        "Name": "lime",
+        "Current": "0.2.0.1"
+      },
+      {
+        "Name": "llvm-openmp",
+        "Current": "15.0.4"
+      },
+      {
+        "Name": "llvmlite",
+        "Current": "0.39.1"
+      },
+      {
+        "Name": "locket",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "lxml",
+        "Current": "4.8.0"
+      },
+      {
+        "Name": "lz4-c",
+        "Current": "1.9.3"
+      },
+      {
+        "Name": "markdown",
+        "Current": "3.3.4"
+      },
+      {
+        "Name": "markupsafe",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "matplotlib",
+        "Current": "3.8.3"
+      },
+      {
+        "Name": "matplotlib",
+        "Current": "3.6.2"
+      },
+      {
+        "Name": "matplotlib-base",
+        "Current": "3.6.2"
+      },
+      {
+        "Name": "matplotlib-inline",
+        "Current": "0.1.6"
+      },
+      {
+        "Name": "matplotlib-inline",
+        "Current": "0.1.6"
+      },
+      {
+        "Name": "mistune",
+        "Current": "2.0.4"
+      },
+      {
+        "Name": "mkl",
+        "Current": "2022.1.0"
+      },
+      {
+        "Name": "mkl-devel",
+        "Current": "2022.1.0"
+      },
+      {
+        "Name": "mkl-include",
+        "Current": "2022.1.0"
+      },
+      {
+        "Name": "mleap",
+        "Current": "0.17.0"
+      },
+      {
+        "Name": "mlflow-skinny",
+        "Current": "1.30.0"
+      },
+      {
+        "Name": "mpc",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "mpfr",
+        "Current": "4.1.0"
+      },
+      {
+        "Name": "mpmath",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "msal",
+        "Current": "2022.09.01"
+      },
+      {
+        "Name": "msal-extensions",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "msgpack",
+        "Current": "1.0.7"
+      },
+      {
+        "Name": "msrest",
+        "Current": "0.7.1"
+      },
+      {
+        "Name": "msrestazure",
+        "Current": "0.6.4"
+      },
+      {
+        "Name": "multidict",
+        "Current": "6.0.2"
+      },
+      {
+        "Name": "multiprocess",
+        "Current": "0.70.14"
+      },
+      {
+        "Name": "munkres",
+        "Current": "1.1.4"
+      },
+      {
+        "Name": "mypy",
+        "Current": "0.780"
+      },
+      {
+        "Name": "mypy",
+        "Current": "0.780"
+      },
+      {
+        "Name": "mypy-extensions",
+        "Current": "0.4.4"
+      },
+      {
+        "Name": "mypy-extensions",
+        "Current": "0.4.3"
+      },
+      {
+        "Name": "nbclassic",
+        "Current": "0.4.8"
+      },
+      {
+        "Name": "nbclient",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "nbconvert",
+        "Current": "7.2.3"
+      },
+      {
+        "Name": "nbformat",
+        "Current": "5.7.0"
+      },
+      {
+        "Name": "ncurses",
+        "Current": "6.3"
+      },
+      {
+        "Name": "ncurses",
+        "Current": "6.4"
+      },
+      {
+        "Name": "ndg-httpsclient",
+        "Current": "0.5.1"
+      },
+      {
+        "Name": "nest-asyncio",
+        "Current": "1.5.6"
+      },
+      {
+        "Name": "nest-asyncio",
+        "Current": "1.6.0"
+      },
+      {
+        "Name": "networkx",
+        "Current": "2.8.8"
+      },
+      {
+        "Name": "nltk",
+        "Current": "3.6.2"
+      },
+      {
+        "Name": "notebook",
+        "Current": "6.5.2"
+      },
+      {
+        "Name": "notebook-shim",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "notebookutils",
+        "Current": "3.3.0-20240130.4"
+      },
+      {
+        "Name": "notebookutils",
+        "Current": "3.3.0-20240130.4"
+      },
+      {
+        "Name": "numba",
+        "Current": "0.56.3"
+      },
+      {
+        "Name": "numpy",
+        "Current": "1.23.4"
+      },
+      {
+        "Name": "numpy",
+        "Current": "1.26.4"
+      },
+      {
+        "Name": "oauthlib",
+        "Current": "3.2.2"
+      },
+      {
+        "Name": "onnx",
+        "Current": "1.12.0"
+      },
+      {
+        "Name": "onnxconverter-common",
+        "Current": "1.7.0"
+      },
+      {
+        "Name": "onnxmltools",
+        "Current": "1.7.0"
+      },
+      {
+        "Name": "onnxruntime",
+        "Current": "1.13.1"
+      },
+      {
+        "Name": "openjpeg",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "openpyxl",
+        "Current": "3.0.7"
+      },
+      {
+        "Name": "openssl",
+        "Current": "1.1.1s"
+      },
+      {
+        "Name": "openssl",
+        "Current": "3.2.1"
+      },
+      {
+        "Name": "opt_einsum",
+        "Current": "3.3.0"
+      },
+      {
+        "Name": "orc",
+        "Current": "1.7.6"
+      },
+      {
+        "Name": "packaging",
+        "Current": "21.3"
+      },
+      {
+        "Name": "packaging",
+        "Current": "23.2"
+      },
+      {
+        "Name": "pandas",
+        "Current": "1.5.1"
+      },
+      {
+        "Name": "pandas",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "pandasql",
+        "Current": "0.7.3"
+      },
+      {
+        "Name": "pandocfilters",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "paramiko",
+        "Current": "2.12.0"
+      },
+      {
+        "Name": "parquet-cpp",
+        "Current": "1.5.1"
+      },
+      {
+        "Name": "parso",
+        "Current": "0.8.3"
+      },
+      {
+        "Name": "parso",
+        "Current": "0.8.3"
+      },
+      {
+        "Name": "partd",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "pathos",
+        "Current": "0.3.0"
+      },
+      {
+        "Name": "pathspec",
+        "Current": "0.10.1"
+      },
+      {
+        "Name": "patsy",
+        "Current": "0.5.3"
+      },
+      {
+        "Name": "pcre2",
+        "Current": "10.40"
+      },
+      {
+        "Name": "pexpect",
+        "Current": "4.8.0"
+      },
+      {
+        "Name": "pexpect",
+        "Current": "4.9.0"
+      },
+      {
+        "Name": "pickleshare",
+        "Current": "0.7.5"
+      },
+      {
+        "Name": "pillow",
+        "Current": "9.2.0"
+      },
+      {
+        "Name": "pillow",
+        "Current": "10.2.0"
+      },
+      {
+        "Name": "pip",
+        "Current": "22.3.1"
+      },
+      {
+        "Name": "pip",
+        "Current": "22.3.1"
+      },
+      {
+        "Name": "pkginfo",
+        "Current": "1.8.3"
+      },
+      {
+        "Name": "platformdirs",
+        "Current": "2.5.3"
+      },
+      {
+        "Name": "platformdirs",
+        "Current": "4.2.0"
+      },
+      {
+        "Name": "plotly",
+        "Current": "4.14.3"
+      },
+      {
+        "Name": "pmdarima",
+        "Current": "2.0.1"
+      },
+      {
+        "Name": "portalocker",
+        "Current": "2.6.0"
+      },
+      {
+        "Name": "pox",
+        "Current": "0.3.2"
+      },
+      {
+        "Name": "ppft",
+        "Current": "1.7.6.6"
+      },
+      {
+        "Name": "prettytable",
+        "Current": "3.2.0"
+      },
+      {
+        "Name": "prometheus-client",
+        "Current": "0.15.0"
+      },
+      {
+        "Name": "prompt-toolkit",
+        "Current": "3.0.32"
+      },
+      {
+        "Name": "prompt-toolkit",
+        "Current": "3.0.43"
+      },
+      {
+        "Name": "protobuf",
+        "Current": "3.20.1"
+      },
+      {
+        "Name": "psutil",
+        "Current": "5.9.4"
+      },
+      {
+        "Name": "psutil",
+        "Current": "5.9.8"
+      },
+      {
+        "Name": "pthread-stubs",
+        "Current": "0.4"
+      },
+      {
+        "Name": "ptyprocess",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "ptyprocess",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "pure-eval",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "pure_eval",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "py-xgboost",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "py4j",
+        "Current": "0.10.9.5"
+      },
+      {
+        "Name": "py4j",
+        "Current": "0.10.9.7"
+      },
+      {
+        "Name": "pyarrow",
+        "Current": "9.0.0"
+      },
+      {
+        "Name": "pyasn1",
+        "Current": "0.4.8"
+      },
+      {
+        "Name": "pyasn1-modules",
+        "Current": "0.2.7"
+      },
+      {
+        "Name": "pycosat",
+        "Current": "0.6.4"
+      },
+      {
+        "Name": "pycparser",
+        "Current": "2.21"
+      },
+      {
+        "Name": "pygments",
+        "Current": "2.17.2"
+      },
+      {
+        "Name": "pygments",
+        "Current": "2.13.0"
+      },
+      {
+        "Name": "pyjwt",
+        "Current": "2.6.0"
+      },
+      {
+        "Name": "pynacl",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "pyodbc",
+        "Current": "4.0.34"
+      },
+      {
+        "Name": "pyopenssl",
+        "Current": "22.1.0"
+      },
+      {
+        "Name": "pyparsing",
+        "Current": "3.0.9"
+      },
+      {
+        "Name": "pyparsing",
+        "Current": "3.1.1"
+      },
+      {
+        "Name": "pyperclip",
+        "Current": "1.8.2"
+      },
+      {
+        "Name": "pyqt",
+        "Current": "5.9.2"
+      },
+      {
+        "Name": "pyrsistent",
+        "Current": "0.19.2"
+      },
+      {
+        "Name": "pysocks",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "pyspark",
+        "Current": "3.5.0"
+      },
+      {
+        "Name": "pyspark",
+        "Current": "3.3.1"
+      },
+      {
+        "Name": "python",
+        "Current": "3.10.13"
+      },
+      {
+        "Name": "python",
+        "Current": "3.10.6"
+      },
+      {
+        "Name": "python-dateutil",
+        "Current": "2.8.2"
+      },
+      {
+        "Name": "python-dateutil",
+        "Current": "2.8.2"
+      },
+      {
+        "Name": "python-flatbuffers",
+        "Current": "2.0"
+      },
+      {
+        "Name": "python_abi",
+        "Current": "3.10"
+      },
+      {
+        "Name": "pytorch",
+        "Current": "1.13.0"
+      },
+      {
+        "Name": "pytorch-mutex",
+        "Current": "1.0"
+      },
+      {
+        "Name": "pytz",
+        "Current": "2022.6"
+      },
+      {
+        "Name": "pytz",
+        "Current": "2024.1"
+      },
+      {
+        "Name": "pyu2f",
+        "Current": "0.1.5"
+      },
+      {
+        "Name": "pywavelets",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "pyyaml",
+        "Current": "6.0"
+      },
+      {
+        "Name": "pyzmq",
+        "Current": "24.0.1"
+      },
+      {
+        "Name": "pyzmq",
+        "Current": "25.1.2"
+      },
+      {
+        "Name": "qt",
+        "Current": "5.9.7"
+      },
+      {
+        "Name": "re2",
+        "Current": "2022.06.01"
+      },
+      {
+        "Name": "readline",
+        "Current": "8.1.2"
+      },
+      {
+        "Name": "readline",
+        "Current": "8.2"
+      },
+      {
+        "Name": "regex",
+        "Current": "2022.10.31"
+      },
+      {
+        "Name": "requests",
+        "Current": "2.28.1"
+      },
+      {
+        "Name": "requests-oauthlib",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "retrying",
+        "Current": "1.3.3"
+      },
+      {
+        "Name": "rsa",
+        "Current": "4.9"
+      },
+      {
+        "Name": "ruamel-yaml",
+        "Current": "0.17.4"
+      },
+      {
+        "Name": "ruamel-yaml-clib",
+        "Current": "0.2.6"
+      },
+      {
+        "Name": "ruamel_yaml",
+        "Current": "0.15.80"
+      },
+      {
+        "Name": "s2n",
+        "Current": "1.0.10"
+      },
+      {
+        "Name": "salib",
+        "Current": "1.4.6.1"
+      },
+      {
+        "Name": "scikit-image",
+        "Current": "0.19.3"
+      },
+      {
+        "Name": "scikit-learn",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "scipy",
+        "Current": "1.9.3"
+      },
+      {
+        "Name": "seaborn",
+        "Current": "0.11.1"
+      },
+      {
+        "Name": "seaborn-base",
+        "Current": "0.11.1"
+      },
+      {
+        "Name": "secretstorage",
+        "Current": "3.3.3"
+      },
+      {
+        "Name": "send2trash",
+        "Current": "1.8.0"
+      },
+      {
+        "Name": "setuptools",
+        "Current": "65.5.1"
+      },
+      {
+        "Name": "setuptools",
+        "Current": "69.1.0"
+      },
+      {
+        "Name": "shap",
+        "Current": "0.39.0"
+      },
+      {
+        "Name": "sip",
+        "Current": "4.19.13"
+      },
+      {
+        "Name": "six",
+        "Current": "1.16.0"
+      },
+      {
+        "Name": "six",
+        "Current": "1.16.0"
+      },
+      {
+        "Name": "skl2onnx",
+        "Current": "1.8.0.1"
+      },
+      {
+        "Name": "sklearn-pandas",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "slicer",
+        "Current": "0.0.7"
+      },
+      {
+        "Name": "smart_open",
+        "Current": "6.2.0"
+      },
+      {
+        "Name": "smmap",
+        "Current": "3.0.5"
+      },
+      {
+        "Name": "snappy",
+        "Current": "1.1.9"
+      },
+      {
+        "Name": "sniffio",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "soupsieve",
+        "Current": "2.3.2.post1"
+      },
+      {
+        "Name": "sqlalchemy",
+        "Current": "1.4.43"
+      },
+      {
+        "Name": "sqlanalyticsconnectorpy",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "sqlanalyticsconnectorpy",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "sqlite",
+        "Current": "3.39.4"
+      },
+      {
+        "Name": "sqlparse",
+        "Current": "0.4.3"
+      },
+      {
+        "Name": "stack-data",
+        "Current": "0.6.3"
+      },
+      {
+        "Name": "stack_data",
+        "Current": "0.6.0"
+      },
+      {
+        "Name": "statsmodels",
+        "Current": "0.13.5"
+      },
+      {
+        "Name": "sympy",
+        "Current": "1.11.1"
+      },
+      {
+        "Name": "synapseml-cognitive",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-core",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-deep-learning",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-internal",
+        "Current": "1.0.2.1.dev1"
+      },
+      {
+        "Name": "synapseml-lightgbm",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-opencv",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-vw",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "tabulate",
+        "Current": "0.9.0"
+      },
+      {
+        "Name": "tbb",
+        "Current": "2021.6.0"
+      },
+      {
+        "Name": "tensorboard",
+        "Current": "2.8.0"
+      },
+      {
+        "Name": "tensorboard-data-server",
+        "Current": "0.6.0"
+      },
+      {
+        "Name": "tensorboard-plugin-wit",
+        "Current": "1.8.1"
+      },
+      {
+        "Name": "tensorflow",
+        "Current": "2.8.0"
+      },
+      {
+        "Name": "tensorflow-base",
+        "Current": "2.10.0"
+      },
+      {
+        "Name": "tensorflow-estimator",
+        "Current": "2.8.0"
+      },
+      {
+        "Name": "tensorflow-io-gcs-filesystem",
+        "Current": "0.27.0"
+      },
+      {
+        "Name": "termcolor",
+        "Current": "2.1.0"
+      },
+      {
+        "Name": "terminado",
+        "Current": "0.17.0"
+      },
+      {
+        "Name": "textblob",
+        "Current": "0.15.3"
+      },
+      {
+        "Name": "tf-estimator-nightly",
+        "Current": "2.8.0.dev2021122109"
+      },
+      {
+        "Name": "threadpoolctl",
+        "Current": "3.1.0"
+      },
+      {
+        "Name": "tifffile",
+        "Current": "2022.10.10"
+      },
+      {
+        "Name": "tinycss2",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "tk",
+        "Current": "8.6.12"
+      },
+      {
+        "Name": "tk",
+        "Current": "8.6.13"
+      },
+      {
+        "Name": "toolz",
+        "Current": "0.12.0"
+      },
+      {
+        "Name": "torchvision",
+        "Current": "0.14.0"
+      },
+      {
+        "Name": "tornado",
+        "Current": "6.2"
+      },
+      {
+        "Name": "tornado",
+        "Current": "6.4"
+      },
+      {
+        "Name": "tqdm",
+        "Current": "4.64.1"
+      },
+      {
+        "Name": "traitlets",
+        "Current": "5.5.0"
+      },
+      {
+        "Name": "traitlets",
+        "Current": "5.14.1"
+      },
+      {
+        "Name": "typed-ast",
+        "Current": "1.4.3"
+      },
+      {
+        "Name": "typed-ast",
+        "Current": "1.4.3"
+      },
+      {
+        "Name": "typing-extensions",
+        "Current": "4.9.0"
+      },
+      {
+        "Name": "typing-extensions",
+        "Current": "4.4.0"
+      },
+      {
+        "Name": "typing_extensions",
+        "Current": "4.4.0"
+      },
+      {
+        "Name": "tzdata",
+        "Current": "2022f"
+      },
+      {
+        "Name": "tzdata",
+        "Current": "2024.1"
+      },
+      {
+        "Name": "unicodedata2",
+        "Current": "15.0.0"
+      },
+      {
+        "Name": "unixodbc",
+        "Current": "2.3.10"
+      },
+      {
+        "Name": "urllib3",
+        "Current": "1.26.4"
+      },
+      {
+        "Name": "virtualenv",
+        "Current": "20.14.0"
+      },
+      {
+        "Name": "wcwidth",
+        "Current": "0.2.13"
+      },
+      {
+        "Name": "wcwidth",
+        "Current": "0.2.5"
+      },
+      {
+        "Name": "webencodings",
+        "Current": "0.5.1"
+      },
+      {
+        "Name": "websocket-client",
+        "Current": "1.4.2"
+      },
+      {
+        "Name": "werkzeug",
+        "Current": "2.2.2"
+      },
+      {
+        "Name": "wheel",
+        "Current": "0.42.0"
+      },
+      {
+        "Name": "wheel",
+        "Current": "0.38.3"
+      },
+      {
+        "Name": "widgetsnbextension",
+        "Current": "4.0.10"
+      },
+      {
+        "Name": "widgetsnbextension",
+        "Current": "3.6.1"
+      },
+      {
+        "Name": "wrapt",
+        "Current": "1.14.1"
+      },
+      {
+        "Name": "xgboost",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "xorg-libxau",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "xorg-libxdmcp",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "xyzservices",
+        "Current": "2022.9.0"
+      },
+      {
+        "Name": "xz",
+        "Current": "5.2.6"
+      },
+      {
+        "Name": "xz",
+        "Current": "5.2.6"
+      },
+      {
+        "Name": "yaml",
+        "Current": "0.2.5"
+      },
+      {
+        "Name": "yarl",
+        "Current": "1.8.1"
+      },
+      {
+        "Name": "zeromq",
+        "Current": "4.3.4"
+      },
+      {
+        "Name": "zfp",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "zipp",
+        "Current": "3.10.0"
+      },
+      {
+        "Name": "zlib",
+        "Current": "1.2.13"
+      },
+      {
+        "Name": "zlib-ng",
+        "Current": "2.0.6"
+      },
+      {
+        "Name": "zope.event",
+        "Current": "4.5.0"
+      },
+      {
+        "Name": "zope.interface",
+        "Current": "5.5.1"
+      },
+      {
+        "Name": "zstd",
+        "Current": "1.5.2"
+      }
+    ],
+    "fabricPython": [
+      {
+        "Name": "_openmp_mutex",
+        "Current": "4.5"
+      },
+      {
+        "Name": "_py-xgboost-mutex",
+        "Current": "2.0"
+      },
+      {
+        "Name": "absl-py",
+        "Current": "1.4.0"
+      },
+      {
+        "Name": "adal",
+        "Current": "1.2.7"
+      },
+      {
+        "Name": "adlfs",
+        "Current": "2023.1.0"
+      },
+      {
+        "Name": "aiohttp",
+        "Current": "3.8.4"
+      },
+      {
+        "Name": "aiosignal",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "alsa-lib",
+        "Current": "1.2.8"
+      },
+      {
+        "Name": "anyio",
+        "Current": "3.6.2"
+      },
+      {
+        "Name": "argcomplete",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "argon2-cffi",
+        "Current": "21.3.0"
+      },
+      {
+        "Name": "argon2-cffi-bindings",
+        "Current": "21.2.0"
+      },
+      {
+        "Name": "arrow-cpp",
+        "Current": "11.0.0"
+      },
+      {
+        "Name": "asttokens",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "astunparse",
+        "Current": "1.6.3"
+      },
+      {
+        "Name": "async-timeout",
+        "Current": "4.0.2"
+      },
+      {
+        "Name": "atk-1.0",
+        "Current": "2.38.0"
+      },
+      {
+        "Name": "attr",
+        "Current": "2.5.1"
+      },
+      {
+        "Name": "attrs",
+        "Current": "22.2.0"
+      },
+      {
+        "Name": "aws-c-auth",
+        "Current": "0.6.24"
+      },
+      {
+        "Name": "aws-c-cal",
+        "Current": "0.5.20"
+      },
+      {
+        "Name": "aws-c-common",
+        "Current": "0.8.11"
+      },
+      {
+        "Name": "aws-c-compression",
+        "Current": "0.2.16"
+      },
+      {
+        "Name": "aws-c-event-stream",
+        "Current": "0.2.18"
+      },
+      {
+        "Name": "aws-c-http",
+        "Current": "0.7.4"
+      },
+      {
+        "Name": "aws-c-io",
+        "Current": "0.13.17"
+      },
+      {
+        "Name": "aws-c-mqtt",
+        "Current": "0.8.6"
+      },
+      {
+        "Name": "aws-c-s3",
+        "Current": "0.2.4"
+      },
+      {
+        "Name": "aws-c-sdkutils",
+        "Current": "0.1.7"
+      },
+      {
+        "Name": "aws-checksums",
+        "Current": "0.1.14"
+      },
+      {
+        "Name": "aws-crt-cpp",
+        "Current": "0.19.7"
+      },
+      {
+        "Name": "aws-sdk-cpp",
+        "Current": "1.10.57"
+      },
+      {
+        "Name": "azure-common",
+        "Current": "1.1.28"
+      },
+      {
+        "Name": "azure-core",
+        "Current": "1.26.4"
+      },
+      {
+        "Name": "azure-datalake-store",
+        "Current": "0.0.51"
+      },
+      {
+        "Name": "azure-graphrbac",
+        "Current": "0.61.1"
+      },
+      {
+        "Name": "azure-identity",
+        "Current": "1.12.0"
+      },
+      {
+        "Name": "azure-mgmt-authorization",
+        "Current": "3.0.0"
+      },
+      {
+        "Name": "azure-mgmt-containerregistry",
+        "Current": "10.1.0"
+      },
+      {
+        "Name": "azure-mgmt-core",
+        "Current": "1.4.0"
+      },
+      {
+        "Name": "azure-mgmt-keyvault",
+        "Current": "10.2.1"
+      },
+      {
+        "Name": "azure-mgmt-resource",
+        "Current": "21.2.1"
+      },
+      {
+        "Name": "azure-mgmt-storage",
+        "Current": "20.1.0"
+      },
+      {
+        "Name": "azure-storage-blob",
+        "Current": "12.15.0"
+      },
+      {
+        "Name": "azure-storage-file-datalake",
+        "Current": "12.9.1"
+      },
+      {
+        "Name": "azure-synapse-ml-predict",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "azureml-core",
+        "Current": "1.49.0"
+      },
+      {
+        "Name": "azureml-synapse",
+        "Current": "0.0.1"
+      },
+      {
+        "Name": "backcall",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "backports",
+        "Current": "1.0"
+      },
+      {
+        "Name": "backports-tempfile",
+        "Current": "1.0"
+      },
+      {
+        "Name": "backports-weakref",
+        "Current": "1.0.post1"
+      },
+      {
+        "Name": "backports.functools_lru_cache",
+        "Current": "1.6.4"
+      },
+      {
+        "Name": "bcrypt",
+        "Current": "3.2.2"
+      },
+      {
+        "Name": "beautifulsoup4",
+        "Current": "4.11.2"
+      },
+      {
+        "Name": "bleach",
+        "Current": "6.0.0"
+      },
+      {
+        "Name": "blinker",
+        "Current": "1.6.1"
+      },
+      {
+        "Name": "brotli",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "brotli-bin",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "brotli-python",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "brotlipy",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "bzip2",
+        "Current": "1.0.8"
+      },
+      {
+        "Name": "c-ares",
+        "Current": "1.18.1"
+      },
+      {
+        "Name": "ca-certificates",
+        "Current": "2022.12.7"
+      },
+      {
+        "Name": "cached-property",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "cached_property",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "cachetools",
+        "Current": "5.3.0"
+      },
+      {
+        "Name": "cairo",
+        "Current": "1.16.0"
+      },
+      {
+        "Name": "certifi",
+        "Current": "2022.12.7"
+      },
+      {
+        "Name": "cffi",
+        "Current": "1.15.1"
+      },
+      {
+        "Name": "charset-normalizer",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "click",
+        "Current": "8.1.3"
+      },
+      {
+        "Name": "cloudpickle",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "colorama",
+        "Current": "0.4.6"
+      },
+      {
+        "Name": "comm",
+        "Current": "0.1.3"
+      },
+      {
+        "Name": "conda-package-handling",
+        "Current": "2.0.2"
+      },
+      {
+        "Name": "conda-package-streaming",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "configparser",
+        "Current": "5.3.0"
+      },
+      {
+        "Name": "contextlib2",
+        "Current": "21.6.0"
+      },
+      {
+        "Name": "contourpy",
+        "Current": "1.0.7"
+      },
+      {
+        "Name": "cryptography",
+        "Current": "40.0.1"
+      },
+      {
+        "Name": "cycler",
+        "Current": "0.11.0"
+      },
+      {
+        "Name": "dash",
+        "Current": "2.9.2"
+      },
+      {
+        "Name": "dash-core-components",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "dash-html-components",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "dash-table",
+        "Current": "5.0.0"
+      },
+      {
+        "Name": "dash_cytoscape",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "databricks-cli",
+        "Current": "0.17.6"
+      },
+      {
+        "Name": "dbus",
+        "Current": "1.13.6"
+      },
+      {
+        "Name": "debugpy",
+        "Current": "1.6.7"
+      },
+      {
+        "Name": "decorator",
+        "Current": "5.1.1"
+      },
+      {
+        "Name": "defusedxml",
+        "Current": "0.7.1"
+      },
+      {
+        "Name": "dill",
+        "Current": "0.3.6"
+      },
+      {
+        "Name": "distlib",
+        "Current": "0.3.6"
+      },
+      {
+        "Name": "docker-py",
+        "Current": "6.0.0"
+      },
+      {
+        "Name": "entrypoints",
+        "Current": "0.4"
+      },
+      {
+        "Name": "et_xmlfile",
+        "Current": "1.1.0"
+      },
+      {
+        "Name": "executing",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "expat",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "fftw",
+        "Current": "3.3.10"
+      },
+      {
+        "Name": "filelock",
+        "Current": "3.11.0"
+      },
+      {
+        "Name": "flask",
+        "Current": "2.2.3"
+      },
+      {
+        "Name": "flask-compress",
+        "Current": "1.13"
+      },
+      {
+        "Name": "flatbuffers",
+        "Current": "22.12.06"
+      },
+      {
+        "Name": "flit-core",
+        "Current": "3.8.0"
+      },
+      {
+        "Name": "fluent-logger",
+        "Current": "0.10.0"
+      },
+      {
+        "Name": "font-ttf-dejavu-sans-mono",
+        "Current": "2.37"
+      },
+      {
+        "Name": "font-ttf-inconsolata",
+        "Current": "3.000"
+      },
+      {
+        "Name": "font-ttf-source-code-pro",
+        "Current": "2.038"
+      },
+      {
+        "Name": "font-ttf-ubuntu",
+        "Current": "0.83"
+      },
+      {
+        "Name": "fontconfig",
+        "Current": "2.14.2"
+      },
+      {
+        "Name": "fonts-conda-ecosystem",
+        "Current": "1"
+      },
+      {
+        "Name": "fonts-conda-forge",
+        "Current": "1"
+      },
+      {
+        "Name": "fonttools",
+        "Current": "4.39.3"
+      },
+      {
+        "Name": "freetype",
+        "Current": "2.12.1"
+      },
+      {
+        "Name": "fribidi",
+        "Current": "1.0.10"
+      },
+      {
+        "Name": "frozenlist",
+        "Current": "1.3.3"
+      },
+      {
+        "Name": "fsspec",
+        "Current": "2023.4.0"
+      },
+      {
+        "Name": "fsspec_wrapper",
+        "Current": "0.1.9"
+      },
+      {
+        "Name": "gast",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "gdk-pixbuf",
+        "Current": "2.42.10"
+      },
+      {
+        "Name": "geographiclib",
+        "Current": "1.52"
+      },
+      {
+        "Name": "geopy",
+        "Current": "2.3.0"
+      },
+      {
+        "Name": "gettext",
+        "Current": "0.21.1"
+      },
+      {
+        "Name": "gevent",
+        "Current": "22.10.2"
+      },
+      {
+        "Name": "gflags",
+        "Current": "2.2.2"
+      },
+      {
+        "Name": "giflib",
+        "Current": "5.2.1"
+      },
+      {
+        "Name": "gitdb",
+        "Current": "4.0.10"
+      },
+      {
+        "Name": "gitpython",
+        "Current": "3.1.31"
+      },
+      {
+        "Name": "glib",
+        "Current": "2.74.1"
+      },
+      {
+        "Name": "glib-tools",
+        "Current": "2.74.1"
+      },
+      {
+        "Name": "glog",
+        "Current": "0.6.0"
+      },
+      {
+        "Name": "google-auth",
+        "Current": "2.17.2"
+      },
+      {
+        "Name": "google-auth-oauthlib",
+        "Current": "0.4.6"
+      },
+      {
+        "Name": "google-pasta",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "graphite2",
+        "Current": "1.3.13"
+      },
+      {
+        "Name": "graphviz",
+        "Current": "2.50.0"
+      },
+      {
+        "Name": "greenlet",
+        "Current": "2.0.2"
+      },
+      {
+        "Name": "grpcio",
+        "Current": "1.51.1"
+      },
+      {
+        "Name": "gson",
+        "Current": "0.0.3"
+      },
+      {
+        "Name": "gst-plugins-base",
+        "Current": "1.22.0"
+      },
+      {
+        "Name": "gstreamer",
+        "Current": "1.22.0"
+      },
+      {
+        "Name": "gstreamer-orc",
+        "Current": "0.4.33"
+      },
+      {
+        "Name": "gtk2",
+        "Current": "2.24.33"
+      },
+      {
+        "Name": "gts",
+        "Current": "0.7.6"
+      },
+      {
+        "Name": "h5py",
+        "Current": "3.8.0"
+      },
+      {
+        "Name": "harfbuzz",
+        "Current": "6.0.0"
+      },
+      {
+        "Name": "hdf5",
+        "Current": "1.14.0"
+      },
+      {
+        "Name": "html5lib",
+        "Current": "1.1"
+      },
+      {
+        "Name": "humanfriendly",
+        "Current": "10.0"
+      },
+      {
+        "Name": "icu",
+        "Current": "70.1"
+      },
+      {
+        "Name": "idna",
+        "Current": "3.4"
+      },
+      {
+        "Name": "imageio",
+        "Current": "2.25.0"
+      },
+      {
+        "Name": "importlib-metadata",
+        "Current": "5.2.0"
+      },
+      {
+        "Name": "importlib_metadata",
+        "Current": "5.2.0"
+      },
+      {
+        "Name": "importlib_resources",
+        "Current": "5.12.0"
+      },
+      {
+        "Name": "impulse-python-handler",
+        "Current": "1.0.19.1.0.0"
+      },
+      {
+        "Name": "interpret",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "interpret-core",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "ipykernel",
+        "Current": "6.22.0"
+      },
+      {
+        "Name": "ipython",
+        "Current": "8.9.0"
+      },
+      {
+        "Name": "ipywidgets",
+        "Current": "8.0.4"
+      },
+      {
+        "Name": "isodate",
+        "Current": "0.6.1"
+      },
+      {
+        "Name": "itsdangerous",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "jack",
+        "Current": "1.9.22"
+      },
+      {
+        "Name": "jedi",
+        "Current": "0.18.2"
+      },
+      {
+        "Name": "jeepney",
+        "Current": "0.8.0"
+      },
+      {
+        "Name": "jinja2",
+        "Current": "3.1.2"
+      },
+      {
+        "Name": "jmespath",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "joblib",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "jpeg",
+        "Current": "9e"
+      },
+      {
+        "Name": "jsonpickle",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "jsonschema",
+        "Current": "4.17.3"
+      },
+      {
+        "Name": "jupyter_client",
+        "Current": "8.1.0"
+      },
+      {
+        "Name": "jupyter_core",
+        "Current": "5.3.0"
+      },
+      {
+        "Name": "jupyter_events",
+        "Current": "0.6.3"
+      },
+      {
+        "Name": "jupyter_server",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "jupyter_server_terminals",
+        "Current": "0.4.4"
+      },
+      {
+        "Name": "jupyterlab_pygments",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "jupyterlab_widgets",
+        "Current": "3.0.7"
+      },
+      {
+        "Name": "keras",
+        "Current": "2.11.0"
+      },
+      {
+        "Name": "keras-preprocessing",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "keyutils",
+        "Current": "1.6.1"
+      },
+      {
+        "Name": "kiwisolver",
+        "Current": "1.4.4"
+      },
+      {
+        "Name": "knack",
+        "Current": "0.10.1"
+      },
+      {
+        "Name": "krb5",
+        "Current": "1.20.1"
+      },
+      {
+        "Name": "lame",
+        "Current": "3.100"
+      },
+      {
+        "Name": "lcms2",
+        "Current": "2.15"
+      },
+      {
+        "Name": "ld_impl_linux-64",
+        "Current": "2.40"
+      },
+      {
+        "Name": "lerc",
+        "Current": "4.0.0"
+      },
+      {
+        "Name": "liac-arff",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "libabseil",
+        "Current": "20220623.0"
+      },
+      {
+        "Name": "libaec",
+        "Current": "1.0.6"
+      },
+      {
+        "Name": "libarrow",
+        "Current": "11.0.0"
+      },
+      {
+        "Name": "libblas",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "libbrotlicommon",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "libbrotlidec",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "libbrotlienc",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "libcap",
+        "Current": "2.67"
+      },
+      {
+        "Name": "libcblas",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "libclang",
+        "Current": "15.0.7"
+      },
+      {
+        "Name": "libclang13",
+        "Current": "15.0.7"
+      },
+      {
+        "Name": "libcrc32c",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "libcups",
+        "Current": "2.3.3"
+      },
+      {
+        "Name": "libcurl",
+        "Current": "7.88.1"
+      },
+      {
+        "Name": "libdb",
+        "Current": "6.2.32"
+      },
+      {
+        "Name": "libdeflate",
+        "Current": "1.17"
+      },
+      {
+        "Name": "libebm",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "libedit",
+        "Current": "3.1.20191231"
+      },
+      {
+        "Name": "libev",
+        "Current": "4.33"
+      },
+      {
+        "Name": "libevent",
+        "Current": "2.1.10"
+      },
+      {
+        "Name": "libexpat",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "libffi",
+        "Current": "3.4.2"
+      },
+      {
+        "Name": "libflac",
+        "Current": "1.4.2"
+      },
+      {
+        "Name": "libgcc-ng",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libgcrypt",
+        "Current": "1.10.1"
+      },
+      {
+        "Name": "libgd",
+        "Current": "2.3.3"
+      },
+      {
+        "Name": "libgfortran-ng",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libgfortran5",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libglib",
+        "Current": "2.74.1"
+      },
+      {
+        "Name": "libgoogle-cloud",
+        "Current": "2.7.0"
+      },
+      {
+        "Name": "libgpg-error",
+        "Current": "1.46"
+      },
+      {
+        "Name": "libgrpc",
+        "Current": "1.51.1"
+      },
+      {
+        "Name": "libhwloc",
+        "Current": "2.9.0"
+      },
+      {
+        "Name": "libiconv",
+        "Current": "1.17"
+      },
+      {
+        "Name": "liblapack",
+        "Current": "3.9.0"
+      },
+      {
+        "Name": "libllvm11",
+        "Current": "11.1.0"
+      },
+      {
+        "Name": "libllvm15",
+        "Current": "15.0.7"
+      },
+      {
+        "Name": "libnghttp2",
+        "Current": "1.52.0"
+      },
+      {
+        "Name": "libnsl",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "libogg",
+        "Current": "1.3.4"
+      },
+      {
+        "Name": "libopenblas",
+        "Current": "0.3.21"
+      },
+      {
+        "Name": "libopus",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "libpng",
+        "Current": "1.6.39"
+      },
+      {
+        "Name": "libpq",
+        "Current": "15.2"
+      },
+      {
+        "Name": "libprotobuf",
+        "Current": "3.21.12"
+      },
+      {
+        "Name": "library-metadata-cooker",
+        "Current": "0.0.7"
+      },
+      {
+        "Name": "librsvg",
+        "Current": "2.54.4"
+      },
+      {
+        "Name": "libsndfile",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "libsodium",
+        "Current": "1.0.18"
+      },
+      {
+        "Name": "libsqlite",
+        "Current": "3.40.0"
+      },
+      {
+        "Name": "libssh2",
+        "Current": "1.10.0"
+      },
+      {
+        "Name": "libstdcxx-ng",
+        "Current": "12.2.0"
+      },
+      {
+        "Name": "libsystemd0",
+        "Current": "253"
+      },
+      {
+        "Name": "libthrift",
+        "Current": "0.18.0"
+      },
+      {
+        "Name": "libtiff",
+        "Current": "4.5.0"
+      },
+      {
+        "Name": "libtool",
+        "Current": "2.4.7"
+      },
+      {
+        "Name": "libudev1",
+        "Current": "253"
+      },
+      {
+        "Name": "libutf8proc",
+        "Current": "2.8.0"
+      },
+      {
+        "Name": "libuuid",
+        "Current": "2.38.1"
+      },
+      {
+        "Name": "libuv",
+        "Current": "1.44.2"
+      },
+      {
+        "Name": "libvorbis",
+        "Current": "1.3.7"
+      },
+      {
+        "Name": "libwebp",
+        "Current": "1.2.4"
+      },
+      {
+        "Name": "libwebp-base",
+        "Current": "1.2.4"
+      },
+      {
+        "Name": "libxcb",
+        "Current": "1.13"
+      },
+      {
+        "Name": "libxgboost",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "libxkbcommon",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "libxml2",
+        "Current": "2.10.3"
+      },
+      {
+        "Name": "libxslt",
+        "Current": "1.1.37"
+      },
+      {
+        "Name": "libzlib",
+        "Current": "1.2.13"
+      },
+      {
+        "Name": "lightgbm",
+        "Current": "3.3.3"
+      },
+      {
+        "Name": "lime",
+        "Current": "0.2.0.1"
+      },
+      {
+        "Name": "llvm-openmp",
+        "Current": "16.0.1"
+      },
+      {
+        "Name": "llvmlite",
+        "Current": "0.39.1"
+      },
+      {
+        "Name": "lxml",
+        "Current": "4.9.2"
+      },
+      {
+        "Name": "lz4-c",
+        "Current": "1.9.4"
+      },
+      {
+        "Name": "markdown",
+        "Current": "3.4.1"
+      },
+      {
+        "Name": "markupsafe",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "matplotlib",
+        "Current": "3.6.3"
+      },
+      {
+        "Name": "matplotlib-base",
+        "Current": "3.6.3"
+      },
+      {
+        "Name": "matplotlib-inline",
+        "Current": "0.1.6"
+      },
+      {
+        "Name": "mistune",
+        "Current": "2.0.5"
+      },
+      {
+        "Name": "mkl",
+        "Current": "2022.2.1"
+      },
+      {
+        "Name": "mlflow-skinny",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "mpg123",
+        "Current": "1.31.3"
+      },
+      {
+        "Name": "msal",
+        "Current": "1.21.0"
+      },
+      {
+        "Name": "msal_extensions",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "msgpack",
+        "Current": "1.0.5"
+      },
+      {
+        "Name": "msrest",
+        "Current": "0.7.1"
+      },
+      {
+        "Name": "msrestazure",
+        "Current": "0.6.4"
+      },
+      {
+        "Name": "multidict",
+        "Current": "6.0.4"
+      },
+      {
+        "Name": "multiprocess",
+        "Current": "0.70.14"
+      },
+      {
+        "Name": "munkres",
+        "Current": "1.1.4"
+      },
+      {
+        "Name": "mypy",
+        "Current": "0.780"
+      },
+      {
+        "Name": "mypy-extensions",
+        "Current": "0.4.4"
+      },
+      {
+        "Name": "mysql-common",
+        "Current": "8.0.32"
+      },
+      {
+        "Name": "mysql-libs",
+        "Current": "8.0.32"
+      },
+      {
+        "Name": "nbclient",
+        "Current": "0.7.3"
+      },
+      {
+        "Name": "nbconvert-core",
+        "Current": "7.3.0"
+      },
+      {
+        "Name": "nbformat",
+        "Current": "5.8.0"
+      },
+      {
+        "Name": "ncurses",
+        "Current": "6.3"
+      },
+      {
+        "Name": "ndg-httpsclient",
+        "Current": "0.5.1"
+      },
+      {
+        "Name": "nest-asyncio",
+        "Current": "1.5.6"
+      },
+      {
+        "Name": "notebookutils",
+        "Current": "3.3.0-20240130.4"
+      },
+      {
+        "Name": "nspr",
+        "Current": "4.35"
+      },
+      {
+        "Name": "nss",
+        "Current": "3.89"
+      },
+      {
+        "Name": "numba",
+        "Current": "0.56.4"
+      },
+      {
+        "Name": "numpy",
+        "Current": "1.23.5"
+      },
+      {
+        "Name": "oauthlib",
+        "Current": "3.2.2"
+      },
+      {
+        "Name": "openjpeg",
+        "Current": "2.5.0"
+      },
+      {
+        "Name": "openpyxl",
+        "Current": "3.1.0"
+      },
+      {
+        "Name": "openssl",
+        "Current": "3.1.0"
+      },
+      {
+        "Name": "opt_einsum",
+        "Current": "3.3.0"
+      },
+      {
+        "Name": "orc",
+        "Current": "1.8.2"
+      },
+      {
+        "Name": "packaging",
+        "Current": "21.3"
+      },
+      {
+        "Name": "pandas",
+        "Current": "1.5.3"
+      },
+      {
+        "Name": "pandasql",
+        "Current": "0.7.3"
+      },
+      {
+        "Name": "pandocfilters",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "pango",
+        "Current": "1.50.14"
+      },
+      {
+        "Name": "paramiko",
+        "Current": "2.12.0"
+      },
+      {
+        "Name": "parquet-cpp",
+        "Current": "1.5.1"
+      },
+      {
+        "Name": "parso",
+        "Current": "0.8.3"
+      },
+      {
+        "Name": "pathos",
+        "Current": "0.3.0"
+      },
+      {
+        "Name": "pathspec",
+        "Current": "0.11.1"
+      },
+      {
+        "Name": "patsy",
+        "Current": "0.5.3"
+      },
+      {
+        "Name": "pcre2",
+        "Current": "10.40"
+      },
+      {
+        "Name": "pexpect",
+        "Current": "4.8.0"
+      },
+      {
+        "Name": "pickleshare",
+        "Current": "0.7.5"
+      },
+      {
+        "Name": "pillow",
+        "Current": "9.4.0"
+      },
+      {
+        "Name": "pip",
+        "Current": "23.0.1"
+      },
+      {
+        "Name": "pixman",
+        "Current": "0.40.0"
+      },
+      {
+        "Name": "pkginfo",
+        "Current": "1.9.6"
+      },
+      {
+        "Name": "pkgutil-resolve-name",
+        "Current": "1.3.10"
+      },
+      {
+        "Name": "platformdirs",
+        "Current": "3.2.0"
+      },
+      {
+        "Name": "plotly",
+        "Current": "5.13.0"
+      },
+      {
+        "Name": "ply",
+        "Current": "3.11"
+      },
+      {
+        "Name": "pooch",
+        "Current": "1.7.0"
+      },
+      {
+        "Name": "portalocker",
+        "Current": "2.7.0"
+      },
+      {
+        "Name": "pox",
+        "Current": "0.3.2"
+      },
+      {
+        "Name": "ppft",
+        "Current": "1.7.6.6"
+      },
+      {
+        "Name": "prettytable",
+        "Current": "3.6.0"
+      },
+      {
+        "Name": "prometheus_client",
+        "Current": "0.16.0"
+      },
+      {
+        "Name": "prompt-toolkit",
+        "Current": "3.0.38"
+      },
+      {
+        "Name": "protobuf",
+        "Current": "4.21.12"
+      },
+      {
+        "Name": "psutil",
+        "Current": "5.9.4"
+      },
+      {
+        "Name": "pthread-stubs",
+        "Current": "0.4"
+      },
+      {
+        "Name": "ptyprocess",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "pulseaudio",
+        "Current": "16.1"
+      },
+      {
+        "Name": "pulseaudio-client",
+        "Current": "16.1"
+      },
+      {
+        "Name": "pulseaudio-daemon",
+        "Current": "16.1"
+      },
+      {
+        "Name": "pure_eval",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "py-xgboost",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "py4j",
+        "Current": "0.10.9.5"
+      },
+      {
+        "Name": "pyarrow",
+        "Current": "11.0.0"
+      },
+      {
+        "Name": "pyasn1",
+        "Current": "0.4.8"
+      },
+      {
+        "Name": "pyasn1-modules",
+        "Current": "0.2.7"
+      },
+      {
+        "Name": "pycosat",
+        "Current": "0.6.4"
+      },
+      {
+        "Name": "pycparser",
+        "Current": "2.21"
+      },
+      {
+        "Name": "pygments",
+        "Current": "2.14.0"
+      },
+      {
+        "Name": "pyjwt",
+        "Current": "2.6.0"
+      },
+      {
+        "Name": "pynacl",
+        "Current": "1.5.0"
+      },
+      {
+        "Name": "pyodbc",
+        "Current": "4.0.35"
+      },
+      {
+        "Name": "pyopenssl",
+        "Current": "23.1.1"
+      },
+      {
+        "Name": "pyparsing",
+        "Current": "3.0.9"
+      },
+      {
+        "Name": "pyperclip",
+        "Current": "1.8.2"
+      },
+      {
+        "Name": "pyqt",
+        "Current": "5.15.7"
+      },
+      {
+        "Name": "pyqt5-sip",
+        "Current": "12.11.0"
+      },
+      {
+        "Name": "pyrsistent",
+        "Current": "0.19.3"
+      },
+      {
+        "Name": "pysocks",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "pyspark",
+        "Current": "3.3.1"
+      },
+      {
+        "Name": "python",
+        "Current": "3.10.10"
+      },
+      {
+        "Name": "python-dateutil",
+        "Current": "2.8.2"
+      },
+      {
+        "Name": "python-fastjsonschema",
+        "Current": "2.16.3"
+      },
+      {
+        "Name": "python-flatbuffers",
+        "Current": "23.1.21"
+      },
+      {
+        "Name": "python-graphviz",
+        "Current": "0.20.1"
+      },
+      {
+        "Name": "python-json-logger",
+        "Current": "2.0.7"
+      },
+      {
+        "Name": "python_abi",
+        "Current": "3.10"
+      },
+      {
+        "Name": "pytorch",
+        "Current": "1.13.1"
+      },
+      {
+        "Name": "pytz",
+        "Current": "2022.7.1"
+      },
+      {
+        "Name": "pyu2f",
+        "Current": "0.1.5"
+      },
+      {
+        "Name": "pywin32-on-windows",
+        "Current": "0.1.0"
+      },
+      {
+        "Name": "pyyaml",
+        "Current": "6.0"
+      },
+      {
+        "Name": "pyzmq",
+        "Current": "25.0.2"
+      },
+      {
+        "Name": "qt-main",
+        "Current": "5.15.8"
+      },
+      {
+        "Name": "re2",
+        "Current": "2023.02.01"
+      },
+      {
+        "Name": "readline",
+        "Current": "8.2"
+      },
+      {
+        "Name": "regex",
+        "Current": "2022.10.31"
+      },
+      {
+        "Name": "requests",
+        "Current": "2.28.2"
+      },
+      {
+        "Name": "requests-oauthlib",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "rfc3339-validator",
+        "Current": "0.1.4"
+      },
+      {
+        "Name": "rfc3986-validator",
+        "Current": "0.1.1"
+      },
+      {
+        "Name": "rsa",
+        "Current": "4.9"
+      },
+      {
+        "Name": "ruamel.yaml",
+        "Current": "0.17.21"
+      },
+      {
+        "Name": "ruamel.yaml.clib",
+        "Current": "0.2.7"
+      },
+      {
+        "Name": "ruamel_yaml",
+        "Current": "0.15.80"
+      },
+      {
+        "Name": "s2n",
+        "Current": "1.3.37"
+      },
+      {
+        "Name": "salib",
+        "Current": "1.4.7"
+      },
+      {
+        "Name": "scikit-learn",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "scipy",
+        "Current": "1.10.1"
+      },
+      {
+        "Name": "seaborn",
+        "Current": "0.12.2"
+      },
+      {
+        "Name": "seaborn-base",
+        "Current": "0.12.2"
+      },
+      {
+        "Name": "secretstorage",
+        "Current": "3.3.3"
+      },
+      {
+        "Name": "send2trash",
+        "Current": "1.8.0"
+      },
+      {
+        "Name": "setuptools",
+        "Current": "67.6.1"
+      },
+      {
+        "Name": "shap",
+        "Current": "0.41.0"
+      },
+      {
+        "Name": "sip",
+        "Current": "6.7.7"
+      },
+      {
+        "Name": "six",
+        "Current": "1.16.0"
+      },
+      {
+        "Name": "sleef",
+        "Current": "3.5.1"
+      },
+      {
+        "Name": "slicer",
+        "Current": "0.0.7"
+      },
+      {
+        "Name": "smmap",
+        "Current": "3.0.5"
+      },
+      {
+        "Name": "snappy",
+        "Current": "1.1.10"
+      },
+      {
+        "Name": "sniffio",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "soupsieve",
+        "Current": "2.3.2.post1"
+      },
+      {
+        "Name": "sqlalchemy",
+        "Current": "2.0.9"
+      },
+      {
+        "Name": "sqlanalyticsconnectorpy",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "sqlparse",
+        "Current": "0.4.3"
+      },
+      {
+        "Name": "stack_data",
+        "Current": "0.6.2"
+      },
+      {
+        "Name": "statsmodels",
+        "Current": "0.13.5"
+      },
+      {
+        "Name": "synapseml-cognitive",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-core",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-deep-learning",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-internal",
+        "Current": "1.0.2.1.dev1"
+      },
+      {
+        "Name": "synapseml-lightgbm",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-mlflow",
+        "Current": "1.0.23"
+      },
+      {
+        "Name": "synapseml-opencv",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "synapseml-utils",
+        "Current": "1.0.19.post1"
+      },
+      {
+        "Name": "synapseml-vw",
+        "Current": "1.0.2.dev1"
+      },
+      {
+        "Name": "tabulate",
+        "Current": "0.9.0"
+      },
+      {
+        "Name": "tbb",
+        "Current": "2021.8.0"
+      },
+      {
+        "Name": "tenacity",
+        "Current": "8.2.2"
+      },
+      {
+        "Name": "tensorboard",
+        "Current": "2.11.2"
+      },
+      {
+        "Name": "tensorboard-data-server",
+        "Current": "0.6.1"
+      },
+      {
+        "Name": "tensorboard-plugin-wit",
+        "Current": "1.8.1"
+      },
+      {
+        "Name": "tensorflow",
+        "Current": "2.11.0"
+      },
+      {
+        "Name": "tensorflow-base",
+        "Current": "2.11.0"
+      },
+      {
+        "Name": "tensorflow-estimator",
+        "Current": "2.11.0"
+      },
+      {
+        "Name": "termcolor",
+        "Current": "2.2.0"
+      },
+      {
+        "Name": "terminado",
+        "Current": "0.17.1"
+      },
+      {
+        "Name": "threadpoolctl",
+        "Current": "3.1.0"
+      },
+      {
+        "Name": "tinycss2",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "tk",
+        "Current": "8.6.12"
+      },
+      {
+        "Name": "toml",
+        "Current": "0.10.2"
+      },
+      {
+        "Name": "toolz",
+        "Current": "0.12.0"
+      },
+      {
+        "Name": "tornado",
+        "Current": "6.2"
+      },
+      {
+        "Name": "tqdm",
+        "Current": "4.65.0"
+      },
+      {
+        "Name": "traitlets",
+        "Current": "5.9.0"
+      },
+      {
+        "Name": "treeinterpreter",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "typed-ast",
+        "Current": "1.4.3"
+      },
+      {
+        "Name": "typing-extensions",
+        "Current": "4.5.0"
+      },
+      {
+        "Name": "typing_extensions",
+        "Current": "4.5.0"
+      },
+      {
+        "Name": "tzdata",
+        "Current": "2023c"
+      },
+      {
+        "Name": "unicodedata2",
+        "Current": "15.0.0"
+      },
+      {
+        "Name": "unixodbc",
+        "Current": "2.3.10"
+      },
+      {
+        "Name": "urllib3",
+        "Current": "1.26.14"
+      },
+      {
+        "Name": "virtualenv",
+        "Current": "20.19.0"
+      },
+      {
+        "Name": "wcwidth",
+        "Current": "0.2.6"
+      },
+      {
+        "Name": "webencodings",
+        "Current": "0.5.1"
+      },
+      {
+        "Name": "websocket-client",
+        "Current": "1.5.1"
+      },
+      {
+        "Name": "werkzeug",
+        "Current": "2.2.3"
+      },
+      {
+        "Name": "wheel",
+        "Current": "0.40.0"
+      },
+      {
+        "Name": "widgetsnbextension",
+        "Current": "4.0.7"
+      },
+      {
+        "Name": "wrapt",
+        "Current": "1.15.0"
+      },
+      {
+        "Name": "xcb-util",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "xcb-util-image",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "xcb-util-keysyms",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "xcb-util-renderutil",
+        "Current": "0.3.9"
+      },
+      {
+        "Name": "xcb-util-wm",
+        "Current": "0.4.1"
+      },
+      {
+        "Name": "xgboost",
+        "Current": "1.7.1"
+      },
+      {
+        "Name": "xkeyboard-config",
+        "Current": "2.38"
+      },
+      {
+        "Name": "xorg-kbproto",
+        "Current": "1.0.7"
+      },
+      {
+        "Name": "xorg-libice",
+        "Current": "1.0.10"
+      },
+      {
+        "Name": "xorg-libsm",
+        "Current": "1.2.3"
+      },
+      {
+        "Name": "xorg-libx11",
+        "Current": "1.8.4"
+      },
+      {
+        "Name": "xorg-libxau",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "xorg-libxdmcp",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "xorg-libxext",
+        "Current": "1.3.4"
+      },
+      {
+        "Name": "xorg-libxrender",
+        "Current": "0.9.10"
+      },
+      {
+        "Name": "xorg-renderproto",
+        "Current": "0.11.1"
+      },
+      {
+        "Name": "xorg-xextproto",
+        "Current": "7.3.0"
+      },
+      {
+        "Name": "xorg-xproto",
+        "Current": "7.0.31"
+      },
+      {
+        "Name": "xz",
+        "Current": "5.2.6"
+      },
+      {
+        "Name": "yaml",
+        "Current": "0.2.5"
+      },
+      {
+        "Name": "yarl",
+        "Current": "1.8.2"
+      },
+      {
+        "Name": "zeromq",
+        "Current": "4.3.4"
+      },
+      {
+        "Name": "zipp",
+        "Current": "3.15.0"
+      },
+      {
+        "Name": "zlib",
+        "Current": "1.2.13"
+      },
+      {
+        "Name": "zope.event",
+        "Current": "4.6"
+      },
+      {
+        "Name": "zope.interface",
+        "Current": "6.0"
+      },
+      {
+        "Name": "zstandard",
+        "Current": "0.19.0"
+      },
+      {
+        "Name": "zstd",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "_libgcc_mutex",
+        "Current": "0.1"
+      }
+    ],
+    "Rlibraries": [
+      {
+        "Name": "DBI",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "DiceDesign",
+        "Current": "1.10"
+      },
+      {
+        "Name": "FabricTelemetry",
+        "Current": "1.0.2"
+      },
+      {
+        "Name": "GPfit",
+        "Current": "1.0-8"
+      },
+      {
+        "Name": "KernSmooth",
+        "Current": "2.23-22"
+      },
+      {
+        "Name": "MASS",
+        "Current": "7.3-60.0.1"
+      },
+      {
+        "Name": "Matrix",
+        "Current": "1.6-5"
+      },
+      {
+        "Name": "ModelMetrics",
+        "Current": "1.2.2.2"
+      },
+      {
+        "Name": "R.methodsS3",
+        "Current": "1.8.2"
+      },
+      {
+        "Name": "R.oo",
+        "Current": "1.26.0"
+      },
+      {
+        "Name": "R.utils",
+        "Current": "2.12.3"
+      },
+      {
+        "Name": "R6",
+        "Current": "2.5.1"
+      },
+      {
+        "Name": "R6P",
+        "Current": "0.3.0"
+      },
+      {
+        "Name": "RColorBrewer",
+        "Current": "1.1-3"
+      },
+      {
+        "Name": "RODBC",
+        "Current": "1.3-20"
+      },
+      {
+        "Name": "Rcpp",
+        "Current": "1.0.12"
+      },
+      {
+        "Name": "SQUAREM",
+        "Current": "2021.1"
+      },
+      {
+        "Name": "TTR",
+        "Current": "0.24.4"
+      },
+      {
+        "Name": "V8",
+        "Current": "4.4.1"
+      },
+      {
+        "Name": "XML",
+        "Current": "3.99-0.16.1"
+      },
+      {
+        "Name": "arrow",
+        "Current": "10.0.1"
+      },
+      {
+        "Name": "askpass",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "assertthat",
+        "Current": "0.2.1"
+      },
+      {
+        "Name": "backports",
+        "Current": "1.4.1"
+      },
+      {
+        "Name": "base",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "base64enc",
+        "Current": "0.1-3"
+      },
+      {
+        "Name": "bigD",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "bit",
+        "Current": "4.0.5"
+      },
+      {
+        "Name": "bit64",
+        "Current": "4.0.5"
+      },
+      {
+        "Name": "bitops",
+        "Current": "1.0-7"
+      },
+      {
+        "Name": "blob",
+        "Current": "1.2.4"
+      },
+      {
+        "Name": "brew",
+        "Current": "1.0-10"
+      },
+      {
+        "Name": "brio",
+        "Current": "1.1.4"
+      },
+      {
+        "Name": "broom",
+        "Current": "1.0.5"
+      },
+      {
+        "Name": "bslib",
+        "Current": "0.6.1"
+      },
+      {
+        "Name": "cachem",
+        "Current": "1.0.8"
+      },
+      {
+        "Name": "callr",
+        "Current": "3.7.3"
+      },
+      {
+        "Name": "caret",
+        "Current": "6.0-93"
+      },
+      {
+        "Name": "cellranger",
+        "Current": "1.1.0"
+      },
+      {
+        "Name": "class",
+        "Current": "7.3-22"
+      },
+      {
+        "Name": "cli",
+        "Current": "3.6.2"
+      },
+      {
+        "Name": "clipr",
+        "Current": "0.8.0"
+      },
+      {
+        "Name": "clock",
+        "Current": "0.7.0"
+      },
+      {
+        "Name": "codetools",
+        "Current": "0.2-19"
+      },
+      {
+        "Name": "collections",
+        "Current": "0.3.7"
+      },
+      {
+        "Name": "colorspace",
+        "Current": "2.1-0"
+      },
+      {
+        "Name": "commonmark",
+        "Current": "1.9.1"
+      },
+      {
+        "Name": "compiler",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "config",
+        "Current": "0.3.2"
+      },
+      {
+        "Name": "conflicted",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "coro",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "cpp11",
+        "Current": "0.4.7"
+      },
+      {
+        "Name": "crayon",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "credentials",
+        "Current": "2.0.1"
+      },
+      {
+        "Name": "crosstalk",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "crul",
+        "Current": "1.4.0"
+      },
+      {
+        "Name": "curl",
+        "Current": "5.1.0"
+      },
+      {
+        "Name": "data.table",
+        "Current": "1.14.10"
+      },
+      {
+        "Name": "datasets",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "dbplyr",
+        "Current": "2.3.4"
+      },
+      {
+        "Name": "desc",
+        "Current": "1.4.3"
+      },
+      {
+        "Name": "devtools",
+        "Current": "2.4.5"
+      },
+      {
+        "Name": "diagram",
+        "Current": "1.6.5"
+      },
+      {
+        "Name": "dials",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "diffobj",
+        "Current": "0.3.5"
+      },
+      {
+        "Name": "digest",
+        "Current": "0.6.34"
+      },
+      {
+        "Name": "downlit",
+        "Current": "0.4.3"
+      },
+      {
+        "Name": "dplyr",
+        "Current": "1.1.4"
+      },
+      {
+        "Name": "dtplyr",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "e1071",
+        "Current": "1.7-14"
+      },
+      {
+        "Name": "ellipsis",
+        "Current": "0.3.2"
+      },
+      {
+        "Name": "evaluate",
+        "Current": "0.23"
+      },
+      {
+        "Name": "fansi",
+        "Current": "1.0.6"
+      },
+      {
+        "Name": "farver",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "fastmap",
+        "Current": "1.1.1"
+      },
+      {
+        "Name": "fontawesome",
+        "Current": "0.5.2"
+      },
+      {
+        "Name": "forcats",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "foreach",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "forge",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "fs",
+        "Current": "1.6.3"
+      },
+      {
+        "Name": "furrr",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "future",
+        "Current": "1.33.1"
+      },
+      {
+        "Name": "future.apply",
+        "Current": "1.11.1"
+      },
+      {
+        "Name": "gargle",
+        "Current": "1.5.2"
+      },
+      {
+        "Name": "generics",
+        "Current": "0.1.3"
+      },
+      {
+        "Name": "gert",
+        "Current": "2.0.1"
+      },
+      {
+        "Name": "ggplot2",
+        "Current": "3.4.0"
+      },
+      {
+        "Name": "gh",
+        "Current": "1.4.0"
+      },
+      {
+        "Name": "gistr",
+        "Current": "0.9.0"
+      },
+      {
+        "Name": "gitcreds",
+        "Current": "0.1.2"
+      },
+      {
+        "Name": "globals",
+        "Current": "0.16.2"
+      },
+      {
+        "Name": "glue",
+        "Current": "1.7.0"
+      },
+      {
+        "Name": "googledrive",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "googlesheets4",
+        "Current": "1.1.1"
+      },
+      {
+        "Name": "gower",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "grDevices",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "graphics",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "grid",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "gt",
+        "Current": "0.9.0"
+      },
+      {
+        "Name": "gtable",
+        "Current": "0.3.4"
+      },
+      {
+        "Name": "hardhat",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "haven",
+        "Current": "2.5.4"
+      },
+      {
+        "Name": "hexbin",
+        "Current": "1.28.3"
+      },
+      {
+        "Name": "highcharter",
+        "Current": "0.9.4"
+      },
+      {
+        "Name": "highr",
+        "Current": "0.10"
+      },
+      {
+        "Name": "hms",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "htmltools",
+        "Current": "0.5.7"
+      },
+      {
+        "Name": "htmlwidgets",
+        "Current": "1.6.4"
+      },
+      {
+        "Name": "httpcode",
+        "Current": "0.3.0"
+      },
+      {
+        "Name": "httpuv",
+        "Current": "1.6.14"
+      },
+      {
+        "Name": "httr",
+        "Current": "1.4.7"
+      },
+      {
+        "Name": "httr2",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "ids",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "igraph",
+        "Current": "1.5.1"
+      },
+      {
+        "Name": "infer",
+        "Current": "1.0.6"
+      },
+      {
+        "Name": "ini",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "ipred",
+        "Current": "0.9-14"
+      },
+      {
+        "Name": "isoband",
+        "Current": "0.2.7"
+      },
+      {
+        "Name": "iterators",
+        "Current": "1.0.14"
+      },
+      {
+        "Name": "jose",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "jquerylib",
+        "Current": "0.1.4"
+      },
+      {
+        "Name": "jsonlite",
+        "Current": "1.8.8"
+      },
+      {
+        "Name": "juicyjuice",
+        "Current": "0.1.0"
+      },
+      {
+        "Name": "knitr",
+        "Current": "1.45"
+      },
+      {
+        "Name": "labeling",
+        "Current": "0.4.3"
+      },
+      {
+        "Name": "later",
+        "Current": "1.3.2"
+      },
+      {
+        "Name": "lattice",
+        "Current": "0.22-5"
+      },
+      {
+        "Name": "lava",
+        "Current": "1.7.3"
+      },
+      {
+        "Name": "lazyeval",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "lhs",
+        "Current": "1.1.6"
+      },
+      {
+        "Name": "lifecycle",
+        "Current": "1.0.4"
+      },
+      {
+        "Name": "lightgbm",
+        "Current": "3.3.4"
+      },
+      {
+        "Name": "listenv",
+        "Current": "0.9.1"
+      },
+      {
+        "Name": "lobstr",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "lubridate",
+        "Current": "1.9.3"
+      },
+      {
+        "Name": "magrittr",
+        "Current": "2.0.3"
+      },
+      {
+        "Name": "maps",
+        "Current": "3.4.2"
+      },
+      {
+        "Name": "markdown",
+        "Current": "1.12"
+      },
+      {
+        "Name": "memoise",
+        "Current": "2.0.1"
+      },
+      {
+        "Name": "methods",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "mgcv",
+        "Current": "1.9-1"
+      },
+      {
+        "Name": "mime",
+        "Current": "0.12"
+      },
+      {
+        "Name": "miniUI",
+        "Current": "0.1.1.1"
+      },
+      {
+        "Name": "modeldata",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "modelenv",
+        "Current": "0.1.1"
+      },
+      {
+        "Name": "modelr",
+        "Current": "0.1.11"
+      },
+      {
+        "Name": "munsell",
+        "Current": "0.5.0"
+      },
+      {
+        "Name": "nlme",
+        "Current": "3.1-164"
+      },
+      {
+        "Name": "nnet",
+        "Current": "7.3-19"
+      },
+      {
+        "Name": "notebookutils",
+        "Current": "3.3.0-20240130.4"
+      },
+      {
+        "Name": "numDeriv",
+        "Current": "2016.8-1.1"
+      },
+      {
+        "Name": "openssl",
+        "Current": "2.1.1"
+      },
+      {
+        "Name": "pROC",
+        "Current": "1.18.5"
+      },
+      {
+        "Name": "parallel",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "parallelly",
+        "Current": "1.36.0"
+      },
+      {
+        "Name": "parsnip",
+        "Current": "1.1.1"
+      },
+      {
+        "Name": "patchwork",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "pillar",
+        "Current": "1.9.0"
+      },
+      {
+        "Name": "pkgbuild",
+        "Current": "1.4.2"
+      },
+      {
+        "Name": "pkgconfig",
+        "Current": "2.0.3"
+      },
+      {
+        "Name": "pkgdown",
+        "Current": "2.0.7"
+      },
+      {
+        "Name": "pkgload",
+        "Current": "1.3.4"
+      },
+      {
+        "Name": "plotly",
+        "Current": "4.10.1"
+      },
+      {
+        "Name": "plyr",
+        "Current": "1.8.9"
+      },
+      {
+        "Name": "praise",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "prettyunits",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "processx",
+        "Current": "3.8.3"
+      },
+      {
+        "Name": "prodlim",
+        "Current": "2023.08.28"
+      },
+      {
+        "Name": "profvis",
+        "Current": "0.3.8"
+      },
+      {
+        "Name": "progress",
+        "Current": "1.2.3"
+      },
+      {
+        "Name": "progressr",
+        "Current": "0.14.0"
+      },
+      {
+        "Name": "promises",
+        "Current": "1.2.1"
+      },
+      {
+        "Name": "proxy",
+        "Current": "0.4-27"
+      },
+      {
+        "Name": "pryr",
+        "Current": "0.1.6"
+      },
+      {
+        "Name": "ps",
+        "Current": "1.7.6"
+      },
+      {
+        "Name": "purrr",
+        "Current": "1.0.2"
+      },
+      {
+        "Name": "quantmod",
+        "Current": "0.4.25"
+      },
+      {
+        "Name": "r2d3",
+        "Current": "0.2.6"
+      },
+      {
+        "Name": "ragg",
+        "Current": "1.2.7"
+      },
+      {
+        "Name": "rappdirs",
+        "Current": "0.3.3"
+      },
+      {
+        "Name": "rbokeh",
+        "Current": "0.5.2"
+      },
+      {
+        "Name": "rcmdcheck",
+        "Current": "1.4.0"
+      },
+      {
+        "Name": "reactR",
+        "Current": "0.5.0"
+      },
+      {
+        "Name": "reactable",
+        "Current": "0.4.4"
+      },
+      {
+        "Name": "readr",
+        "Current": "2.1.5"
+      },
+      {
+        "Name": "readxl",
+        "Current": "1.4.3"
+      },
+      {
+        "Name": "recipes",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "rematch",
+        "Current": "2.0.0"
+      },
+      {
+        "Name": "rematch2",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "remotes",
+        "Current": "2.4.2.1"
+      },
+      {
+        "Name": "reprex",
+        "Current": "2.1.0"
+      },
+      {
+        "Name": "reshape2",
+        "Current": "1.4.4"
+      },
+      {
+        "Name": "rjson",
+        "Current": "0.2.21"
+      },
+      {
+        "Name": "rlang",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "rlist",
+        "Current": "0.4.6.2"
+      },
+      {
+        "Name": "rmarkdown",
+        "Current": "2.19"
+      },
+      {
+        "Name": "roxygen2",
+        "Current": "7.3.1"
+      },
+      {
+        "Name": "rpart",
+        "Current": "4.1.23"
+      },
+      {
+        "Name": "rprojroot",
+        "Current": "2.0.4"
+      },
+      {
+        "Name": "rsample",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "rstudioapi",
+        "Current": "0.15.0"
+      },
+      {
+        "Name": "rversions",
+        "Current": "2.1.2"
+      },
+      {
+        "Name": "rvest",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "sass",
+        "Current": "0.4.8"
+      },
+      {
+        "Name": "scales",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "selectr",
+        "Current": "0.4-2"
+      },
+      {
+        "Name": "sessioninfo",
+        "Current": "1.2.2"
+      },
+      {
+        "Name": "shape",
+        "Current": "1.4.6"
+      },
+      {
+        "Name": "shiny",
+        "Current": "1.8.0"
+      },
+      {
+        "Name": "slider",
+        "Current": "0.3.1"
+      },
+      {
+        "Name": "sourcetools",
+        "Current": "0.1.7-1"
+      },
+      {
+        "Name": "sparklyr",
+        "Current": "1.8.2"
+      },
+      {
+        "Name": "splines",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "stats",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "stats4",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "stringi",
+        "Current": "1.8.3"
+      },
+      {
+        "Name": "stringr",
+        "Current": "1.5.1"
+      },
+      {
+        "Name": "survival",
+        "Current": "3.5-7"
+      },
+      {
+        "Name": "sys",
+        "Current": "3.4.2"
+      },
+      {
+        "Name": "systemfonts",
+        "Current": "1.0.5"
+      },
+      {
+        "Name": "tcltk",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "testthat",
+        "Current": "3.2.1"
+      },
+      {
+        "Name": "textshaping",
+        "Current": "0.3.7"
+      },
+      {
+        "Name": "tibble",
+        "Current": "3.2.1"
+      },
+      {
+        "Name": "tidymodels",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "tidyr",
+        "Current": "1.3.1"
+      },
+      {
+        "Name": "tidyselect",
+        "Current": "1.2.0"
+      },
+      {
+        "Name": "tidyverse",
+        "Current": "1.3.2"
+      },
+      {
+        "Name": "timeDate",
+        "Current": "4032.109"
+      },
+      {
+        "Name": "timechange",
+        "Current": "0.3.0"
+      },
+      {
+        "Name": "tinytex",
+        "Current": "0.49"
+      },
+      {
+        "Name": "tools",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "torch",
+        "Current": "0.9.0"
+      },
+      {
+        "Name": "triebeard",
+        "Current": "0.4.1"
+      },
+      {
+        "Name": "tune",
+        "Current": "1.1.2"
+      },
+      {
+        "Name": "tzdb",
+        "Current": "0.4.0"
+      },
+      {
+        "Name": "urlchecker",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "urltools",
+        "Current": "1.7.3"
+      },
+      {
+        "Name": "usethis",
+        "Current": "2.2.2"
+      },
+      {
+        "Name": "utf8",
+        "Current": "1.2.4"
+      },
+      {
+        "Name": "utils",
+        "Current": "4.2.3"
+      },
+      {
+        "Name": "uuid",
+        "Current": "1.2-0"
+      },
+      {
+        "Name": "vctrs",
+        "Current": "0.6.5"
+      },
+      {
+        "Name": "viridisLite",
+        "Current": "0.4.2"
+      },
+      {
+        "Name": "vroom",
+        "Current": "1.6.5"
+      },
+      {
+        "Name": "waldo",
+        "Current": "0.5.2"
+      },
+      {
+        "Name": "warp",
+        "Current": "0.2.1"
+      },
+      {
+        "Name": "whisker",
+        "Current": "0.4.1"
+      },
+      {
+        "Name": "withr",
+        "Current": "3.0.0"
+      },
+      {
+        "Name": "workflows",
+        "Current": "1.1.3"
+      },
+      {
+        "Name": "workflowsets",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "xfun",
+        "Current": "0.41"
+      },
+      {
+        "Name": "xgboost",
+        "Current": "1.7.1.1"
+      },
+      {
+        "Name": "xml2",
+        "Current": "1.3.6"
+      },
+      {
+        "Name": "xopen",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "xtable",
+        "Current": "1.8-4"
+      },
+      {
+        "Name": "xts",
+        "Current": "0.13.2"
+      },
+      {
+        "Name": "yaml",
+        "Current": "2.3.8"
+      },
+      {
+        "Name": "yardstick",
+        "Current": "1.3.0"
+      },
+      {
+        "Name": "zip",
+        "Current": "2.3.1"
+      },
+      {
+        "Name": "zoo",
+        "Current": "1.8-12"
+      }
+    ]
+  }
+}
