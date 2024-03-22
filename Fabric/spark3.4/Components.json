@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2024-02-07.1-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2024-02-21.0-rc.1",
   "sparkVersion": "spark3.4",
   "operatingSystem": "CBL-Mariner 2.0.20240123",
   "java": "11.0.22",
@@ -14,7 +14,7 @@
       },
       {
         "Name": "Autotune",
-        "Current": "1.9.0.0"
+        "Current": "1.10.0.0"
       },
       {
         "Name": "AzureMLExtensions",
@@ -26,7 +26,7 @@
       },
       {
         "Name": "Conda",
-        "Current": "8.0.6"
+        "Current": "8.0.9"
       },
       {
         "Name": "CosmosDBConnector",
@@ -57,8 +57,8 @@
         "Current": "0.28.0"
       },
       {
-        "Name": "GenevaAgents",
-        "Current": "1.1.2"
+        "Name": "Gluten",
+        "Current": "0.5.4"
       },
       {
         "Name": "HiveMetaStoreClient",
@@ -78,7 +78,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.5"
+        "Current": "1.0.6"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -86,7 +86,7 @@
       },
       {
         "Name": "MMLSpark",
-        "Current": "1.4.13"
+        "Current": "1.4.14"
       },
       {
         "Name": "MachineLearningPredict",
@@ -101,20 +101,12 @@
         "Current": "1.0.2"
       },
       {
-        "Name": "NodeServices",
-        "Current": "1.3.3"
-      },
-      {
         "Name": "NotebookUtils",
-        "Current": "1.1.45"
-      },
-      {
-        "Name": "OSPackages",
-        "Current": "spark34"
+        "Current": "1.1.46"
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.19"
+        "Current": "1.0.19.1"
       },
       {
         "Name": "Peregrine",
@@ -130,7 +122,7 @@
       },
       {
         "Name": "R",
-        "Current": "1.0.2"
+        "Current": "1.0.3"
       },
       {
         "Name": "SQLServerODBCDriver",
@@ -147,10 +139,6 @@
       {
         "Name": "SparkDiagnosticsLibrary",
         "Current": "1.0.19"
-      },
-      {
-        "Name": "SparkFinalize",
-        "Current": "1.0.9"
       },
       {
         "Name": "SparkLighter",
@@ -182,7 +170,7 @@
       },
       {
         "Name": "Vegas",
-        "Current": "3.4.08.4"
+        "Current": "3.4.08.6"
       },
       {
         "Name": "Wildfire",
@@ -300,11 +288,11 @@
       },
       {
         "Name": "autotune-client",
-        "Current": "2.12-1.9.0-3.4-111948737"
+        "Current": "2.12-1.10.0-3.4-117562362"
       },
       {
         "Name": "autotune-common",
-        "Current": "2.12-1.9.0-3.4-111948737"
+        "Current": "2.12-1.10.0-3.4-117562362"
       },
       {
         "Name": "avro",
@@ -519,6 +507,10 @@
         "Current": "2.12-0.28.0-jar-with-dependencies"
       },
       {
+        "Name": "gluten-velox-bundle-spark",
+        "Current": "3.4_2.12-mariner_2.0-1.2.0-SNAPSHOT"
+      },
+      {
         "Name": "gson",
         "Current": "2.8.9"
       },
@@ -644,11 +636,11 @@
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.14"
+        "Current": "4.5.13"
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.13"
+        "Current": "4.5.14"
       },
       {
         "Name": "impulse-core_spark",
@@ -1436,35 +1428,35 @@
       },
       {
         "Name": "synapseml",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synapseml-core",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "2.12-1.0.1.0-spark3.4"
+        "Current": "2.12-1.0.2.1-spark3.4"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "2.12-1.0.1"
+        "Current": "2.12-1.0.2"
       },
       {
         "Name": "synfs",
@@ -1962,7 +1954,7 @@
       },
       {
         "Name": "cryptography",
-        "Current": "42.0.2"
+        "Current": "42.0.4"
       },
       {
         "Name": "cryptography",
@@ -2122,7 +2114,7 @@
       },
       {
         "Name": "fonttools",
-        "Current": "4.48.1"
+        "Current": "4.49.0"
       },
       {
         "Name": "fqdn",
@@ -2822,7 +2814,7 @@
       },
       {
         "Name": "matplotlib",
-        "Current": "3.8.2"
+        "Current": "3.8.3"
       },
       {
         "Name": "matplotlib-base",
@@ -3534,7 +3526,7 @@
       },
       {
         "Name": "setuptools",
-        "Current": "69.0.3"
+        "Current": "69.1.0"
       },
       {
         "Name": "shap",
@@ -3610,31 +3602,31 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-core",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "1.0.1.0.dev1"
+        "Current": "1.0.2.1.dev1"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "tabulate",
@@ -3782,7 +3774,7 @@
       },
       {
         "Name": "urllib3",
-        "Current": "2.2.0"
+        "Current": "2.2.1"
       },
       {
         "Name": "virtualenv",
@@ -4396,7 +4388,7 @@
       },
       {
         "Name": "flaml",
-        "Current": "2.1.1post1"
+        "Current": "2.1.1post3"
       },
       {
         "Name": "flask",
@@ -5820,23 +5812,23 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-core",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "1.0.1.0.dev1"
+        "Current": "1.0.2.1.dev1"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-mlflow",
@@ -5844,15 +5836,15 @@
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "synapseml-utils",
-        "Current": "1.0.18.post1"
+        "Current": "1.0.19.post1"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "tabulate",
