@@ -1,8 +1,8 @@
 {
-  "VhdRelease": "Spark3.2-Rel-2024-02-14.0-rc.1",
+  "VhdRelease": "Spark3.2-Rel-2024-03-13.2-rc.1",
   "sparkVersion": "spark3.2",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
-  "java": "1.8.0_392",
+  "java": "1.8.0_402",
   "scala": "2.12.15",
   "python": "3.8/1.0.28",
   "deltaLake": "1.2.1.12",
@@ -12,7 +12,7 @@
     "Spark": [
       {
         "Name": "AutoscaleProbe",
-        "Current": "3.5.8"
+        "Current": "3.6.0"
       },
       {
         "Name": "AzureMLExtensions",
@@ -24,7 +24,7 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.8"
+        "Current": "1.0.9"
       },
       {
         "Name": "ClusterGateway",
@@ -61,10 +61,6 @@
       {
         "Name": "Genesis",
         "Current": "0.27.0"
-      },
-      {
-        "Name": "GenevaAgents",
-        "Current": "spark/2.4.4"
       },
       {
         "Name": "HiveMetaStoreClient",
@@ -111,10 +107,6 @@
         "Current": "1.0.2"
       },
       {
-        "Name": "NodeServices",
-        "Current": "2.3.1"
-      },
-      {
         "Name": "NotebookUtils",
         "Current": "1.1.29"
       },
@@ -155,10 +147,6 @@
         "Current": "2.1.1"
       },
       {
-        "Name": "SparkFinalize",
-        "Current": "1.0.3"
-      },
-      {
         "Name": "SparkLighter",
         "Current": "1.0.3"
       },
@@ -168,7 +156,7 @@
       },
       {
         "Name": "SparkRPCHistoryServer",
-        "Current": "1.0.27"
+        "Current": "1.0.28"
       },
       {
         "Name": "SparkRapids",
@@ -230,7 +218,7 @@
       },
       {
         "Name": "SparkCustomEvents",
-        "Current": "3.2.0-1.0.8"
+        "Current": "3.2.0-1.0.9"
       },
       {
         "Name": "TokenLibrary-assembly",
@@ -614,7 +602,7 @@
       },
       {
         "Name": "hdinsight-spark-metrics",
-        "Current": "3.2.0-1.0.8"
+        "Current": "3.2.0-1.0.9"
       },
       {
         "Name": "hive-beeline",
@@ -3920,7 +3908,7 @@
       },
       {
         "Name": "msgpack",
-        "Current": "1.0.7"
+        "Current": "1.0.8"
       },
       {
         "Name": "msgpack-python",
@@ -7792,7 +7780,7 @@
       },
       {
         "Name": "base",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "base64enc",
@@ -7880,7 +7868,7 @@
       },
       {
         "Name": "compiler",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "config",
@@ -7924,7 +7912,7 @@
       },
       {
         "Name": "datasets",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "dbplyr",
@@ -8072,15 +8060,15 @@
       },
       {
         "Name": "grDevices",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "graphics",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "grid",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "gtable",
@@ -8228,7 +8216,7 @@
       },
       {
         "Name": "methods",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "mgcv",
@@ -8284,7 +8272,7 @@
       },
       {
         "Name": "parallel",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "parallelly",
@@ -8512,15 +8500,15 @@
       },
       {
         "Name": "splines",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "stats",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "stats4",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "stringi",
@@ -8544,7 +8532,7 @@
       },
       {
         "Name": "tcltk",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "testthat",
@@ -8588,7 +8576,7 @@
       },
       {
         "Name": "tools",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "torch",
@@ -8624,7 +8612,7 @@
       },
       {
         "Name": "utils",
-        "Current": "4.3.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "uuid",
