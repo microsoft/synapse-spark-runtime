@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2024-03-20.3-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2024-04-03.2-rc.1",
   "sparkVersion": "spark3.4",
   "operatingSystem": "CBL-Mariner 2.0.20240301",
   "java": "11.0.22",
@@ -74,7 +74,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.8"
+        "Current": "1.0.10"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -102,7 +102,7 @@
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.19.2"
+        "Current": "1.0.19.3"
       },
       {
         "Name": "OnelakeSparkCatalog",
@@ -134,7 +134,7 @@
       },
       {
         "Name": "SparkAdvisor",
-        "Current": "0.0.15"
+        "Current": "0.0.16"
       },
       {
         "Name": "SparkDiagnosticsLibrary",
@@ -1930,7 +1930,7 @@
       },
       {
         "Name": "contourpy",
-        "Current": "1.2.0"
+        "Current": "1.2.1"
       },
       {
         "Name": "control-script",
@@ -2282,7 +2282,7 @@
       },
       {
         "Name": "ipykernel",
-        "Current": "6.29.3"
+        "Current": "6.29.4"
       },
       {
         "Name": "ipykernel",
@@ -2290,7 +2290,7 @@
       },
       {
         "Name": "ipython",
-        "Current": "8.22.2"
+        "Current": "8.23.0"
       },
       {
         "Name": "ipython",
@@ -3126,7 +3126,7 @@
       },
       {
         "Name": "pillow",
-        "Current": "10.2.0"
+        "Current": "10.3.0"
       },
       {
         "Name": "pip",
@@ -3278,7 +3278,7 @@
       },
       {
         "Name": "pycparser",
-        "Current": "2.21"
+        "Current": "2.22"
       },
       {
         "Name": "pydash",
@@ -3814,7 +3814,7 @@
       },
       {
         "Name": "wheel",
-        "Current": "0.42.0"
+        "Current": "0.43.0"
       },
       {
         "Name": "widgetsnbextension",
