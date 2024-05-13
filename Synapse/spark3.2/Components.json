@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.2-Rel-2024-03-13.2-rc.1",
+  "VhdRelease": "Spark3.2-Rel-2024-05-10.0-rc.1",
   "sparkVersion": "spark3.2",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_402",
@@ -12,7 +12,7 @@
     "Spark": [
       {
         "Name": "AutoscaleProbe",
-        "Current": "3.6.0"
+        "Current": "3.7.0"
       },
       {
         "Name": "AzureMLExtensions",
@@ -84,7 +84,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "2.2.28"
+        "Current": "2.2.28-hotfix"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -168,7 +168,7 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "3.5.3-3"
+        "Current": "3.5.3-5"
       },
       {
         "Name": "TridentCore",
@@ -222,7 +222,7 @@
       },
       {
         "Name": "TokenLibrary-assembly",
-        "Current": "3.5.3-3"
+        "Current": "3.5.3-5"
       },
       {
         "Name": "VegasConnector",
@@ -4164,11 +4164,11 @@
       },
       {
         "Name": "openjpeg",
-        "Current": "2.4.0"
+        "Current": "2.5.0"
       },
       {
         "Name": "openjpeg",
-        "Current": "2.5.0"
+        "Current": "2.4.0"
       },
       {
         "Name": "openmpi",
@@ -4184,11 +4184,11 @@
       },
       {
         "Name": "openssl",
-        "Current": "1.1.1k"
+        "Current": "1.1.1s"
       },
       {
         "Name": "openssl",
-        "Current": "1.1.1s"
+        "Current": "1.1.1k"
       },
       {
         "Name": "opt-einsum",
@@ -4208,11 +4208,11 @@
       },
       {
         "Name": "packaging",
-        "Current": "21.0"
+        "Current": "21.3"
       },
       {
         "Name": "packaging",
-        "Current": "21.3"
+        "Current": "21.0"
       },
       {
         "Name": "pandas",
@@ -4252,19 +4252,19 @@
       },
       {
         "Name": "parso",
-        "Current": "0.8.3"
-      },
-      {
-        "Name": "parso",
         "Current": "0.8.2"
       },
       {
-        "Name": "partd",
-        "Current": "1.3.0"
+        "Name": "parso",
+        "Current": "0.8.3"
       },
       {
         "Name": "partd",
         "Current": "1.2.0"
+      },
+      {
+        "Name": "partd",
+        "Current": "1.3.0"
       },
       {
         "Name": "pathos",
@@ -4316,11 +4316,11 @@
       },
       {
         "Name": "pillow",
-        "Current": "8.2.0"
+        "Current": "9.4.0"
       },
       {
         "Name": "pillow",
-        "Current": "9.4.0"
+        "Current": "8.2.0"
       },
       {
         "Name": "pip",
@@ -4368,19 +4368,19 @@
       },
       {
         "Name": "pmdarima",
-        "Current": "1.8.5"
-      },
-      {
-        "Name": "pmdarima",
         "Current": "1.8.2"
       },
       {
-        "Name": "pooch",
-        "Current": "1.6.0"
+        "Name": "pmdarima",
+        "Current": "1.8.5"
       },
       {
         "Name": "pooch",
         "Current": "1.4.0"
+      },
+      {
+        "Name": "pooch",
+        "Current": "1.6.0"
       },
       {
         "Name": "portalocker",
@@ -4416,19 +4416,19 @@
       },
       {
         "Name": "prompt-toolkit",
-        "Current": "3.0.36"
-      },
-      {
-        "Name": "prompt-toolkit",
         "Current": "3.0.19"
       },
       {
-        "Name": "protobuf",
-        "Current": "3.15.8"
+        "Name": "prompt-toolkit",
+        "Current": "3.0.36"
       },
       {
         "Name": "protobuf",
         "Current": "3.16.0"
+      },
+      {
+        "Name": "protobuf",
+        "Current": "3.15.8"
       },
       {
         "Name": "psutil",
@@ -4596,11 +4596,11 @@
       },
       {
         "Name": "pyqt5-sip",
-        "Current": "12.11.0"
+        "Current": "4.19.18"
       },
       {
         "Name": "pyqt5-sip",
-        "Current": "4.19.18"
+        "Current": "12.11.0"
       },
       {
         "Name": "pyqtchart",
@@ -4668,11 +4668,11 @@
       },
       {
         "Name": "pytorch",
-        "Current": "1.8.1"
+        "Current": "1.11.0"
       },
       {
         "Name": "pytorch",
-        "Current": "1.11.0"
+        "Current": "1.8.1"
       },
       {
         "Name": "pytorch-lightning",
@@ -4708,19 +4708,19 @@
       },
       {
         "Name": "pyyaml",
-        "Current": "6.0"
-      },
-      {
-        "Name": "pyyaml",
         "Current": "5.4.1"
       },
       {
-        "Name": "pyzmq",
-        "Current": "24.0.1"
+        "Name": "pyyaml",
+        "Current": "6.0"
       },
       {
         "Name": "pyzmq",
         "Current": "22.1.0"
+      },
+      {
+        "Name": "pyzmq",
+        "Current": "24.0.1"
       },
       {
         "Name": "qt",
@@ -4867,10 +4867,6 @@
         "Current": "0.11.1"
       },
       {
-        "Name": "seaborn",
-        "Current": "0.11.1"
-      },
-      {
         "Name": "seaborn-base",
         "Current": "0.11.1"
       },
@@ -4948,27 +4944,27 @@
       },
       {
         "Name": "smart_open",
-        "Current": "5.1.0"
-      },
-      {
-        "Name": "smart_open",
         "Current": "6.3.0"
       },
       {
-        "Name": "smmap",
-        "Current": "3.0.5"
+        "Name": "smart_open",
+        "Current": "5.1.0"
       },
       {
         "Name": "smmap",
         "Current": "3.0.5"
       },
       {
-        "Name": "snappy",
-        "Current": "1.1.8"
+        "Name": "smmap",
+        "Current": "3.0.5"
       },
       {
         "Name": "snappy",
         "Current": "1.1.9"
+      },
+      {
+        "Name": "snappy",
+        "Current": "1.1.8"
       },
       {
         "Name": "sniffio",
@@ -5104,11 +5100,11 @@
       },
       {
         "Name": "tensorboard",
-        "Current": "2.8.0"
+        "Current": "2.4.1"
       },
       {
         "Name": "tensorboard",
-        "Current": "2.4.1"
+        "Current": "2.8.0"
       },
       {
         "Name": "tensorboard-data-server",
@@ -5148,11 +5144,11 @@
       },
       {
         "Name": "termcolor",
-        "Current": "1.1.0"
+        "Current": "2.2.0"
       },
       {
         "Name": "termcolor",
-        "Current": "2.2.0"
+        "Current": "1.1.0"
       },
       {
         "Name": "terminado",
@@ -5176,11 +5172,11 @@
       },
       {
         "Name": "threadpoolctl",
-        "Current": "3.1.0"
+        "Current": "2.1.0"
       },
       {
         "Name": "threadpoolctl",
-        "Current": "2.1.0"
+        "Current": "3.1.0"
       },
       {
         "Name": "tifffile",
@@ -5192,11 +5188,11 @@
       },
       {
         "Name": "tinycss2",
-        "Current": "1.2.1"
+        "Current": "1.1.1"
       },
       {
         "Name": "tinycss2",
-        "Current": "1.1.1"
+        "Current": "1.2.1"
       },
       {
         "Name": "tk",
@@ -5216,11 +5212,11 @@
       },
       {
         "Name": "toolz",
-        "Current": "0.11.1"
+        "Current": "0.12.0"
       },
       {
         "Name": "toolz",
-        "Current": "0.12.0"
+        "Current": "0.11.1"
       },
       {
         "Name": "torchaudio",
@@ -5340,11 +5336,11 @@
       },
       {
         "Name": "websocket-client",
-        "Current": "1.1.0"
+        "Current": "1.4.2"
       },
       {
         "Name": "websocket-client",
-        "Current": "1.4.2"
+        "Current": "1.1.0"
       },
       {
         "Name": "werkzeug",
@@ -5372,11 +5368,11 @@
       },
       {
         "Name": "wrapt",
-        "Current": "1.14.1"
+        "Current": "1.12.1"
       },
       {
         "Name": "wrapt",
-        "Current": "1.12.1"
+        "Current": "1.14.1"
       },
       {
         "Name": "xcb-util",
@@ -5452,11 +5448,11 @@
       },
       {
         "Name": "xz",
-        "Current": "5.2.5"
+        "Current": "5.2.6"
       },
       {
         "Name": "xz",
-        "Current": "5.2.6"
+        "Current": "5.2.5"
       },
       {
         "Name": "yaml",
@@ -7716,7 +7712,7 @@
       },
       {
         "Name": "Matrix",
-        "Current": "1.6-3"
+        "Current": "1.6-5"
       },
       {
         "Name": "ModelMetrics",
@@ -7780,7 +7776,7 @@
       },
       {
         "Name": "base",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "base64enc",
@@ -7800,7 +7796,7 @@
       },
       {
         "Name": "boot",
-        "Current": "1.3-28"
+        "Current": "1.3-30"
       },
       {
         "Name": "brew",
@@ -7868,7 +7864,7 @@
       },
       {
         "Name": "compiler",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "config",
@@ -7912,7 +7908,7 @@
       },
       {
         "Name": "datasets",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "dbplyr",
@@ -8060,15 +8056,15 @@
       },
       {
         "Name": "grDevices",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "graphics",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "grid",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "gtable",
@@ -8216,7 +8212,7 @@
       },
       {
         "Name": "methods",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "mgcv",
@@ -8272,7 +8268,7 @@
       },
       {
         "Name": "parallel",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "parallelly",
@@ -8500,15 +8496,15 @@
       },
       {
         "Name": "splines",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "stats",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "stats4",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "stringi",
@@ -8520,7 +8516,7 @@
       },
       {
         "Name": "survival",
-        "Current": "3.5-7"
+        "Current": "3.5-8"
       },
       {
         "Name": "sys",
@@ -8532,7 +8528,7 @@
       },
       {
         "Name": "tcltk",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "testthat",
@@ -8576,7 +8572,7 @@
       },
       {
         "Name": "tools",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "torch",
@@ -8612,7 +8608,7 @@
       },
       {
         "Name": "utils",
-        "Current": "4.3.3"
+        "Current": "4.4.0"
       },
       {
         "Name": "uuid",
