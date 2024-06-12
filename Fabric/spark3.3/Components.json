@@ -1,16 +1,16 @@
 {
-  "VhdRelease": "Spark3.3-Rel-2024-05-01.4-rc.1",
+  "VhdRelease": "Spark3.3-Rel-2024-05-08.2-rc.1",
   "sparkVersion": "spark3.3",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_402",
   "scala": "2.12.15",
   "python": "3.10/1.0.5",
-  "deltaLake": "2.2.0.11",
+  "deltaLake": "2.2.0.12",
   "components": {
     "Spark": [
       {
         "Name": "AutoscaleProbe",
-        "Current": "3.9.0"
+        "Current": "3.9.1"
       },
       {
         "Name": "Autotune",
@@ -42,11 +42,11 @@
       },
       {
         "Name": "DWConnector",
-        "Current": "2.1.3"
+        "Current": "2.1.4"
       },
       {
         "Name": "Delta",
-        "Current": "2.2.0.11"
+        "Current": "2.2.0.12"
       },
       {
         "Name": "Dotnet",
@@ -62,7 +62,7 @@
       },
       {
         "Name": "FabricDWConnector",
-        "Current": "1.0.0"
+        "Current": "1.0.4"
       },
       {
         "Name": "FsspecWrapper",
@@ -178,7 +178,7 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "3.6.4"
+        "Current": "3.6.5"
       },
       {
         "Name": "TridentCore",
@@ -198,7 +198,7 @@
       },
       {
         "Name": "VertiParquet",
-        "Current": "0.8.4"
+        "Current": "0.8.6"
       },
       {
         "Name": "Wildfire",
@@ -508,15 +508,15 @@
       },
       {
         "Name": "delta-core",
-        "Current": "2.12-2.2.0.11"
+        "Current": "2.12-2.2.0.12"
       },
       {
         "Name": "delta-iceberg",
-        "Current": "2.12-2.2.0.11"
+        "Current": "2.12-2.2.0.12"
       },
       {
         "Name": "delta-storage",
-        "Current": "2.2.0.11"
+        "Current": "2.2.0.12"
       },
       {
         "Name": "derby",
@@ -1468,7 +1468,7 @@
       },
       {
         "Name": "sqlanalyticsconnector-fabric",
-        "Current": "3.3.0-1.0.0"
+        "Current": "3.3.0-1.0.4"
       },
       {
         "Name": "stax-api",
@@ -2862,7 +2862,7 @@
       },
       {
         "Name": "ncurses",
-        "Current": "6.4.20240210"
+        "Current": "6.5"
       },
       {
         "Name": "ndg-httpsclient",
@@ -3054,7 +3054,7 @@
       },
       {
         "Name": "platformdirs",
-        "Current": "4.2.1"
+        "Current": "4.2.2"
       },
       {
         "Name": "plotly",
@@ -3158,7 +3158,7 @@
       },
       {
         "Name": "pygments",
-        "Current": "2.17.2"
+        "Current": "2.18.0"
       },
       {
         "Name": "pygments",
