@@ -1,8 +1,8 @@
 {
-  "VhdRelease": "Spark3.2-Rel-2024-05-10.0-rc.1",
+  "VhdRelease": "Spark3.2-Rel-2024-06-20.0-rc.1",
   "sparkVersion": "spark3.2",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
-  "java": "1.8.0_402",
+  "java": "1.8.0_412",
   "scala": "2.12.15",
   "python": "3.8/1.0.28",
   "deltaLake": "1.2.1.12",
@@ -84,7 +84,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "2.2.28-hotfix"
+        "Current": "2.2.28-hotfix2"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.29"
+        "Current": "1.1.30"
       },
       {
         "Name": "Peregrine",
@@ -184,7 +184,7 @@
       },
       {
         "Name": "Vegas",
-        "Current": "3.2.07.04"
+        "Current": "3.2.07.05"
       },
       {
         "Name": "VertiParquet",
@@ -7704,7 +7704,7 @@
       },
       {
         "Name": "KernSmooth",
-        "Current": "2.23-22"
+        "Current": "2.23-24"
       },
       {
         "Name": "MASS",
@@ -7776,7 +7776,7 @@
       },
       {
         "Name": "base",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "base64enc",
@@ -7864,7 +7864,7 @@
       },
       {
         "Name": "compiler",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "config",
@@ -7908,7 +7908,7 @@
       },
       {
         "Name": "datasets",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "dbplyr",
@@ -8056,15 +8056,15 @@
       },
       {
         "Name": "grDevices",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "graphics",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "grid",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "gtable",
@@ -8212,7 +8212,7 @@
       },
       {
         "Name": "methods",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "mgcv",
@@ -8244,7 +8244,7 @@
       },
       {
         "Name": "nlme",
-        "Current": "3.1-163"
+        "Current": "3.1-165"
       },
       {
         "Name": "nnet",
@@ -8268,7 +8268,7 @@
       },
       {
         "Name": "parallel",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "parallelly",
@@ -8496,15 +8496,15 @@
       },
       {
         "Name": "splines",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "stats",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "stats4",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "stringi",
@@ -8516,7 +8516,7 @@
       },
       {
         "Name": "survival",
-        "Current": "3.5-8"
+        "Current": "3.7-0"
       },
       {
         "Name": "sys",
@@ -8528,7 +8528,7 @@
       },
       {
         "Name": "tcltk",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "testthat",
@@ -8572,7 +8572,7 @@
       },
       {
         "Name": "tools",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "torch",
@@ -8608,7 +8608,7 @@
       },
       {
         "Name": "utils",
-        "Current": "4.4.0"
+        "Current": "4.4.1"
       },
       {
         "Name": "uuid",
