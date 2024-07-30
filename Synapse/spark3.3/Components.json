@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.3-Rel-2024-06-14.3-rc.1",
+  "VhdRelease": "Spark3.3-Rel-2024-07-11.0-rc.1",
   "sparkVersion": "spark3.3",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_412",
@@ -10,7 +10,7 @@
     "Spark": [
       {
         "Name": "AutoscaleProbe",
-        "Current": "3.9.1"
+        "Current": "3.9.2"
       },
       {
         "Name": "Autotune",
@@ -22,11 +22,11 @@
       },
       {
         "Name": "CDM",
-        "Current": "1.19.7"
+        "Current": "1.19.8"
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.4"
+        "Current": "1.0.5"
       },
       {
         "Name": "ClusterGateway",
@@ -34,7 +34,7 @@
       },
       {
         "Name": "Conda",
-        "Current": "1.0.20"
+        "Current": "1.0.21"
       },
       {
         "Name": "CosmosDBConnector",
@@ -54,7 +54,7 @@
       },
       {
         "Name": "EventHubConnector",
-        "Current": "2.3.24"
+        "Current": "2.3.26"
       },
       {
         "Name": "ExternalHiveMetastoreLibraries",
@@ -66,23 +66,19 @@
       },
       {
         "Name": "FsspecWrapper",
-        "Current": "1.0.12"
+        "Current": "1.0.13"
       },
       {
         "Name": "Genesis",
-        "Current": "0.28.0"
+        "Current": "0.29.0"
       },
       {
         "Name": "HiveMetaStoreClient",
-        "Current": "1.1.19"
+        "Current": "1.1.21"
       },
       {
         "Name": "Impulse",
         "Current": "1.2.2"
-      },
-      {
-        "Name": "JupyterServices",
-        "Current": "0.0.2"
       },
       {
         "Name": "KustoConnector",
@@ -90,7 +86,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.26"
+        "Current": "1.0.27"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -114,19 +110,19 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.42"
+        "Current": "1.1.43"
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.19.2"
+        "Current": "1.0.20"
       },
       {
         "Name": "OnelakeSparkCatalog",
-        "Current": "0.1.8"
+        "Current": "0.1.10"
       },
       {
         "Name": "Peregrine",
-        "Current": "0.10.3"
+        "Current": "0.10.4"
       },
       {
         "Name": "PostgreSQLJDBCDriver",
@@ -138,7 +134,7 @@
       },
       {
         "Name": "R",
-        "Current": "1.0.5"
+        "Current": "1.0.6"
       },
       {
         "Name": "SQLServerODBCDriver",
@@ -154,7 +150,7 @@
       },
       {
         "Name": "SparkDiagnosticsLibrary",
-        "Current": "1.0.20"
+        "Current": "1.0.21"
       },
       {
         "Name": "SparkInitialize",
@@ -162,7 +158,7 @@
       },
       {
         "Name": "SparkLighter",
-        "Current": "2.0.7"
+        "Current": "2.0.8"
       },
       {
         "Name": "SparkNativeParquetWriter",
@@ -170,11 +166,11 @@
       },
       {
         "Name": "SparkRPCHistoryServer",
-        "Current": "1.0.28"
+        "Current": "1.0.29"
       },
       {
         "Name": "SparklyrConnector",
-        "Current": "1.0.0"
+        "Current": "1.0.1"
       },
       {
         "Name": "TokenLibrary",
@@ -190,11 +186,11 @@
       },
       {
         "Name": "VSANodeScanAgent",
-        "Current": "1.0.0"
+        "Current": "1.0.1"
       },
       {
         "Name": "Vegas",
-        "Current": "3.3.09"
+        "Current": "3.3.09.01"
       },
       {
         "Name": "VertiParquet",
@@ -532,7 +528,7 @@
       },
       {
         "Name": "genesis-client",
-        "Current": "2.12-0.27.0-jar-with-dependencies"
+        "Current": "2.12-0.28.0-jar-with-dependencies"
       },
       {
         "Name": "gluten-velox-bundle-spark",
@@ -1024,7 +1020,7 @@
       },
       {
         "Name": "microsoft-catalog-metastore-client",
-        "Current": "1.1.19"
+        "Current": "1.1.21"
       },
       {
         "Name": "microsoft-log4j-etwappender",
@@ -1104,7 +1100,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.0.34-spark33-20240604.14"
+        "Current": "1.0.34-spark33-20240612.3"
       },
       {
         "Name": "objenesis",
@@ -1348,11 +1344,11 @@
       },
       {
         "Name": "spark-lighter-contract",
-        "Current": "2.12-2.0.7_spark-3.3.0"
+        "Current": "2.12-2.0.8_spark-3.3.0_20240704.2"
       },
       {
         "Name": "spark-lighter-core",
-        "Current": "2.12-2.0.7_spark-3.3.0"
+        "Current": "2.12-2.0.11_spark-3.3.0_20240704.2"
       },
       {
         "Name": "spark-microsoft-tools",
@@ -1420,11 +1416,11 @@
       },
       {
         "Name": "spark_diagnostic_cli",
-        "Current": "2.1.0_spark-3.3.0"
+        "Current": "2.1.0_spark-3.3.0_20240705.2"
       },
       {
         "Name": "sparklyr-connector",
-        "Current": "1.0.0_spark-3.3.1"
+        "Current": "3.3.1-1.0.0274143"
       },
       {
         "Name": "sparknativeparquetwriter",
@@ -1500,7 +1496,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "1.0.34-spark33-20240604.14"
+        "Current": "1.0.34-spark33-20240612.3"
       },
       {
         "Name": "threeten-extra",
@@ -1870,7 +1866,7 @@
       },
       {
         "Name": "ca-certificates",
-        "Current": "2024.6.2"
+        "Current": "2024.7.4"
       },
       {
         "Name": "cached-property",
@@ -2014,7 +2010,7 @@
       },
       {
         "Name": "debugpy",
-        "Current": "1.8.1"
+        "Current": "1.8.2"
       },
       {
         "Name": "debugpy",
@@ -2110,7 +2106,7 @@
       },
       {
         "Name": "fonttools",
-        "Current": "4.53.0"
+        "Current": "4.53.1"
       },
       {
         "Name": "fonttools",
@@ -2294,7 +2290,7 @@
       },
       {
         "Name": "ipykernel",
-        "Current": "6.29.4"
+        "Current": "6.29.5"
       },
       {
         "Name": "ipython",
@@ -2302,7 +2298,7 @@
       },
       {
         "Name": "ipython",
-        "Current": "8.25.0"
+        "Current": "8.26.0"
       },
       {
         "Name": "ipython-genutils",
@@ -2534,7 +2530,7 @@
       },
       {
         "Name": "libgcc-ng",
-        "Current": "13.2.0"
+        "Current": "14.1.0"
       },
       {
         "Name": "libgfortran-ng",
@@ -2550,7 +2546,7 @@
       },
       {
         "Name": "libgomp",
-        "Current": "13.2.0"
+        "Current": "14.1.0"
       },
       {
         "Name": "libgoogle-cloud",
@@ -2714,7 +2710,7 @@
       },
       {
         "Name": "matplotlib",
-        "Current": "3.9.0"
+        "Current": "3.9.1"
       },
       {
         "Name": "matplotlib",
@@ -2870,11 +2866,11 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.0.34.33.20240604.14"
+        "Current": "1.0.34.33.20240612.3"
       },
       {
         "Name": "notebookutils",
-        "Current": "1.0.34.33.20240604.14"
+        "Current": "1.0.34.33.20240612.3"
       },
       {
         "Name": "numba",
@@ -2886,7 +2882,7 @@
       },
       {
         "Name": "numpy",
-        "Current": "1.26.4"
+        "Current": "2.0.0"
       },
       {
         "Name": "oauthlib",
@@ -3010,7 +3006,7 @@
       },
       {
         "Name": "pillow",
-        "Current": "10.3.0"
+        "Current": "10.4.0"
       },
       {
         "Name": "pip",
@@ -3078,7 +3074,7 @@
       },
       {
         "Name": "psutil",
-        "Current": "5.9.8"
+        "Current": "6.0.0"
       },
       {
         "Name": "pthread-stubs",
@@ -3338,7 +3334,7 @@
       },
       {
         "Name": "setuptools",
-        "Current": "70.0.0"
+        "Current": "70.2.0"
       },
       {
         "Name": "shap",
@@ -4876,7 +4872,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.0.34.33.20240604.14"
+        "Current": "1.0.34.33.20240612.3"
       },
       {
         "Name": "nspr",
@@ -6226,7 +6222,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.0.34.33.20240604.14"
+        "Current": "1.0.34.33.20240612.3"
       },
       {
         "Name": "numDeriv",
