@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2024-06-12.0-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2024-07-03.0-rc.1",
   "sparkVersion": "spark3.4",
   "operatingSystem": "CBL-Mariner 2.0.20240609",
   "java": "11.0.23",
@@ -22,11 +22,11 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.4"
+        "Current": "1.0.5"
       },
       {
         "Name": "Conda",
-        "Current": "8.0.16"
+        "Current": "8.0.17"
       },
       {
         "Name": "CosmosDBConnector",
@@ -50,7 +50,7 @@
       },
       {
         "Name": "FsspecWrapper",
-        "Current": "1.0.14"
+        "Current": "1.0.15"
       },
       {
         "Name": "Genesis",
@@ -65,12 +65,8 @@
         "Current": "1.2.3"
       },
       {
-        "Name": "JupyterServices",
-        "Current": "0.0.4"
-      },
-      {
         "Name": "KustoConnector",
-        "Current": "1.3.4"
+        "Current": "1.3.6"
       },
       {
         "Name": "LibraryManager",
@@ -98,11 +94,11 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.49"
+        "Current": "1.1.50"
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.19.4"
+        "Current": "1.0.20"
       },
       {
         "Name": "OnelakeSparkCatalog",
@@ -122,7 +118,7 @@
       },
       {
         "Name": "R",
-        "Current": "1.0.4"
+        "Current": "1.0.5"
       },
       {
         "Name": "SQLServerODBCDriver",
@@ -162,7 +158,7 @@
       },
       {
         "Name": "TridentCore",
-        "Current": "1.2.8"
+        "Current": "1.2.9"
       },
       {
         "Name": "TridentTokenLibrary",
@@ -170,7 +166,7 @@
       },
       {
         "Name": "Vegas",
-        "Current": "3.4.09"
+        "Current": "3.4.09.01"
       },
       {
         "Name": "Wildfire",
@@ -200,11 +196,7 @@
       },
       {
         "Name": "SparkCustomEvents",
-        "Current": "3.4.0-1.0.0"
-      },
-      {
-        "Name": "SparkCustomEvents",
-        "Current": "3.4.0-1.0.4"
+        "Current": "3.4.0-1.0.6"
       },
       {
         "Name": "TokenLibrary-assembly",
@@ -572,7 +564,7 @@
       },
       {
         "Name": "hdinsight-spark-metrics",
-        "Current": "3.4.0-1.0.4"
+        "Current": "3.4.0-1.0.6"
       },
       {
         "Name": "hive-common",
@@ -903,18 +895,6 @@
         "Current": "4.0.2"
       },
       {
-        "Name": "kusto-data",
-        "Current": "3.2.1-SynapseFabric"
-      },
-      {
-        "Name": "kusto-ingest",
-        "Current": "3.2.1-SynapseFabric"
-      },
-      {
-        "Name": "kusto-spark",
-        "Current": "3.0_2.12-3.1.16"
-      },
-      {
         "Name": "lapack",
         "Current": "3.0.3"
       },
@@ -1072,7 +1052,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "3.4.1-20240507.9"
+        "Current": "1.1.1-spark34-20240605.8"
       },
       {
         "Name": "objenesis",
@@ -1187,14 +1167,6 @@
         "Current": "1.2.4"
       },
       {
-        "Name": "resilience4j-core",
-        "Current": "1.7.1"
-      },
-      {
-        "Name": "resilience4j-retry",
-        "Current": "1.7.1"
-      },
-      {
         "Name": "rocksdbjni",
         "Current": "7.9.2"
       },
@@ -1248,11 +1220,11 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
+        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark",
@@ -1296,7 +1268,7 @@
       },
       {
         "Name": "spark-kusto-synapse-connector",
-        "Current": "3.1_2.12-1.3.4"
+        "Current": "3.4_2.12-1.3.6-uber"
       },
       {
         "Name": "spark-kvstore",
@@ -1456,7 +1428,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "3.4.1-20240507.9"
+        "Current": "1.1.1-spark34-20240605.8"
       },
       {
         "Name": "threeten-extra",
@@ -1472,7 +1444,7 @@
       },
       {
         "Name": "trident-core",
-        "Current": "1.2.8"
+        "Current": "1.2.9"
       },
       {
         "Name": "tridenttokenlibrary-assembly",
@@ -1481,14 +1453,6 @@
       {
         "Name": "univocity-parsers",
         "Current": "2.9.1"
-      },
-      {
-        "Name": "vavr",
-        "Current": "0.10.4"
-      },
-      {
-        "Name": "vavr-match",
-        "Current": "0.10.4"
       },
       {
         "Name": "vw-jni",
@@ -1974,7 +1938,7 @@
       },
       {
         "Name": "debugpy",
-        "Current": "1.8.1"
+        "Current": "1.8.2"
       },
       {
         "Name": "debugpy",
@@ -2270,7 +2234,7 @@
       },
       {
         "Name": "ipykernel",
-        "Current": "6.29.4"
+        "Current": "6.29.5"
       },
       {
         "Name": "ipykernel",
@@ -2278,7 +2242,7 @@
       },
       {
         "Name": "ipython",
-        "Current": "8.25.0"
+        "Current": "8.26.0"
       },
       {
         "Name": "ipython",
@@ -2558,7 +2522,7 @@
       },
       {
         "Name": "libgcc-ng",
-        "Current": "13.2.0"
+        "Current": "14.1.0"
       },
       {
         "Name": "libgcrypt",
@@ -2582,7 +2546,7 @@
       },
       {
         "Name": "libgomp",
-        "Current": "13.2.0"
+        "Current": "14.1.0"
       },
       {
         "Name": "libgoogle-cloud",
@@ -2870,7 +2834,7 @@
       },
       {
         "Name": "msal",
-        "Current": "1.28.1"
+        "Current": "1.29.0"
       },
       {
         "Name": "msal",
@@ -2966,11 +2930,11 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "3.4.1-20240507.9"
+        "Current": "1.1.1.34.20240605.8"
       },
       {
         "Name": "notebookutils",
-        "Current": "3.4.1-20240507.9"
+        "Current": "1.1.1.34.20240605.8"
       },
       {
         "Name": "nspr",
@@ -2990,7 +2954,7 @@
       },
       {
         "Name": "numpy",
-        "Current": "1.26.4"
+        "Current": "2.0.0"
       },
       {
         "Name": "numpy-base",
@@ -3114,7 +3078,7 @@
       },
       {
         "Name": "pillow",
-        "Current": "10.3.0"
+        "Current": "10.4.0"
       },
       {
         "Name": "pip",
@@ -3202,7 +3166,7 @@
       },
       {
         "Name": "psutil",
-        "Current": "5.9.8"
+        "Current": "6.0.0"
       },
       {
         "Name": "pthread-stubs",
@@ -3518,7 +3482,7 @@
       },
       {
         "Name": "setuptools",
-        "Current": "70.0.0"
+        "Current": "70.1.1"
       },
       {
         "Name": "shap",
@@ -3766,7 +3730,7 @@
       },
       {
         "Name": "urllib3",
-        "Current": "2.2.1"
+        "Current": "2.2.2"
       },
       {
         "Name": "virtualenv",
@@ -5224,7 +5188,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "3.4.1-20240507.9"
+        "Current": "1.1.1.34.20240605.8"
       },
       {
         "Name": "nspr",
@@ -6790,7 +6754,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "3.4.1-20240507.9"
+        "Current": "1.1.1.34.20240605.8"
       },
       {
         "Name": "numDeriv",
