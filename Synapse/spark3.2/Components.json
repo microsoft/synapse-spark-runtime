@@ -8,185 +8,185 @@
   "deltaLake": "1.2.1.12.1",
   "hyperSpace": "0.5.3.1",
   "sparkDotNet": "2.1.1",
-  "product": null,
-  "apacheSparkVersion": null,
+  "product": "Synapse Spark 3.2",
+  "apacheSparkVersion": "3.2.2",
   "components": {
     "Spark": [
       {
         "Name": "AutoscaleProbe",
-        "Current": "spark32"
+        "Current": "3.7.1"
       },
       {
         "Name": "AzureMLExtensions",
-        "Current": "spark3"
+        "Current": "1.0.3"
       },
       {
         "Name": "CDM",
-        "Current": "spark32"
+        "Current": "1.19.5"
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "spark32"
+        "Current": "1.0.10"
       },
       {
         "Name": "ClusterGateway",
-        "Current": "spark"
+        "Current": "spark/2.4.4"
       },
       {
         "Name": "CosmosDBConnector",
-        "Current": "spark32"
+        "Current": "2.1.1"
       },
       {
         "Name": "DWConnector",
-        "Current": "spark32"
+        "Current": "2.1.2"
       },
       {
         "Name": "Delta",
-        "Current": "spark32"
+        "Current": "1.2.1.12.1"
       },
       {
         "Name": "EventHubConnector",
-        "Current": "spark"
+        "Current": "2.3.26"
       },
       {
         "Name": "ExternalHiveMetastoreLibraries",
-        "Current": "spark32"
+        "Current": "0.0.7"
       },
       {
         "Name": "FsspecWrapper",
-        "Current": "spark32"
+        "Current": "1.0.13"
       },
       {
         "Name": "GPUDrivers",
-        "Current": "spark3"
+        "Current": "460-11.5"
       },
       {
         "Name": "Genesis",
-        "Current": "spark3"
+        "Current": "0.27.0"
       },
       {
         "Name": "HiveMetaStoreClient",
-        "Current": "spark32"
+        "Current": "1.1.9.1"
       },
       {
         "Name": "Horovod",
-        "Current": "spark3"
+        "Current": "0.24.6"
       },
       {
         "Name": "Hyperspace",
-        "Current": "spark32"
+        "Current": "0.5.3.1"
       },
       {
         "Name": "Impulse",
-        "Current": "spark32"
+        "Current": "1.1.9"
       },
       {
         "Name": "KustoConnector",
-        "Current": "spark"
+        "Current": "1.1.2"
       },
       {
         "Name": "LibraryManager",
-        "Current": "spark32"
+        "Current": "2.2.30"
       },
       {
         "Name": "LibraryMetadataCooker",
-        "Current": "spark32"
+        "Current": "2.0.0"
       },
       {
         "Name": "MMLSpark",
-        "Current": "spark32"
+        "Current": "1.4.9"
       },
       {
         "Name": "MachineLearningPredict",
-        "Current": "spark32"
+        "Current": "1.0.2"
       },
       {
         "Name": "MlflowLibrary",
-        "Current": "spark32"
+        "Current": "1.27.0.1"
       },
       {
         "Name": "MySQLJavaConnector",
-        "Current": "spark32"
+        "Current": "1.0.3"
       },
       {
         "Name": "NotebookUtils",
-        "Current": "spark32"
+        "Current": "1.1.30"
       },
       {
         "Name": "Peregrine",
-        "Current": "spark32"
+        "Current": "0.10.4"
       },
       {
         "Name": "PostgreSQLJDBCDriver",
-        "Current": "spark32"
+        "Current": "1.0.3"
       },
       {
         "Name": "Python",
-        "Current": "spark32"
+        "Current": "3.8/1.0.29"
       },
       {
         "Name": "R",
-        "Current": "spark32"
+        "Current": "2.0.5"
       },
       {
         "Name": "SQLServerODBCDriver",
-        "Current": "spark"
+        "Current": "17.0.0"
       },
       {
         "Name": "SStreamOnSparkJar",
-        "Current": "spark32"
+        "Current": "2.3.0.1"
       },
       {
         "Name": "SparkAdvisor",
-        "Current": "spark32"
+        "Current": "1.0.0"
       },
       {
         "Name": "SparkDiagnosticsLibrary",
-        "Current": "spark32"
+        "Current": "1.0.18"
       },
       {
         "Name": "SparkDotnet",
-        "Current": "spark32"
+        "Current": "2.1.1"
       },
       {
         "Name": "SparkLighter",
-        "Current": "spark32"
+        "Current": "1.0.4"
       },
       {
         "Name": "SparkNativeParquetWriter",
-        "Current": "spark32"
+        "Current": "0.8.1.1"
       },
       {
         "Name": "SparkRPCHistoryServer",
-        "Current": "spark32"
+        "Current": "1.0.29"
       },
       {
         "Name": "SparkRapids",
-        "Current": "spark32"
+        "Current": "22.08.0.1"
       },
       {
         "Name": "SparkSqlConnector",
-        "Current": "spark3"
+        "Current": "8.4.1.2"
       },
       {
         "Name": "TokenLibrary",
-        "Current": "spark32"
+        "Current": "3.5.3-5-1"
       },
       {
         "Name": "VSANodeScanAgent",
-        "Current": "spark"
+        "Current": "1.0.1"
       },
       {
         "Name": "Vegas",
-        "Current": "spark32"
+        "Current": "3.2.07.05"
       },
       {
         "Name": "VertiParquet",
-        "Current": "spark3"
+        "Current": "0.8.4.1"
       },
       {
         "Name": "Wildfire",
-        "Current": "spark32"
+        "Current": "1.7.27"
       }
     ],
     "javaAndScala": [
