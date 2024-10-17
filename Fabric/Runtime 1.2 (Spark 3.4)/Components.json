@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2024-09-05.1-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2024-09-18.0-rc.1",
   "sparkVersion": "spark3.4",
   "operatingSystem": "CBL-Mariner 2.0.20240829",
   "java": "11.0.24",
@@ -28,7 +28,7 @@
       },
       {
         "Name": "Conda",
-        "Current": "8.0.21"
+        "Current": "8.0.22"
       },
       {
         "Name": "CosmosDBConnector",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.20"
+        "Current": "1.0.23"
       },
       {
         "Name": "OnelakeSparkCatalog",
@@ -164,7 +164,7 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "4.2.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "TridentCore",
@@ -214,7 +214,7 @@
       },
       {
         "Name": "TokenLibrary-assembly",
-        "Current": "4.2.2"
+        "Current": "4.3.3"
       },
       {
         "Name": "VPaaSConnector",
@@ -598,11 +598,11 @@
       },
       {
         "Name": "hive-shims",
-        "Current": "0.23-2.3.9"
+        "Current": "2.3.9"
       },
       {
         "Name": "hive-shims",
-        "Current": "2.3.9"
+        "Current": "0.23-2.3.9"
       },
       {
         "Name": "hive-shims-common",
@@ -642,11 +642,11 @@
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.13"
+        "Current": "4.5.14"
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.14"
+        "Current": "4.5.13"
       },
       {
         "Name": "impulse-core_spark",
@@ -822,10 +822,6 @@
       },
       {
         "Name": "json",
-        "Current": "3"
-      },
-      {
-        "Name": "json",
         "Current": "1.8"
       },
       {
@@ -834,15 +830,19 @@
       },
       {
         "Name": "json",
+        "Current": "3"
+      },
+      {
+        "Name": "json",
         "Current": "1"
       },
       {
         "Name": "json-simple",
-        "Current": "1.1"
+        "Current": "1.1.1"
       },
       {
         "Name": "json-simple",
-        "Current": "1.1.1"
+        "Current": "1.1"
       },
       {
         "Name": "json4s-ast",
@@ -1230,11 +1230,11 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
+        "Current": "3.4-advisor-core_2.12-1.0.18"
       },
       {
         "Name": "spark",
-        "Current": "3.4-advisor-core_2.12-1.0.18"
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark",
@@ -1940,7 +1940,7 @@
       },
       {
         "Name": "flaml",
-        "Current": "2.3.0.post1"
+        "Current": "2.3.0.post2"
       },
       {
         "Name": "flask",
