@@ -533,7 +533,7 @@ dependencies:
     - joblibspark==0.5.2
     - json-tricks==3.17.3
     - jupyter-ui-poll==0.2.2
-    - library-metadata-cooker==3.4.1.1
+    - library-metadata-cooker==3.4.1.2
     - more-itertools==10.1.0
     - msgpack==1.0.7
     - mypy==1.4.1
@@ -546,7 +546,7 @@ dependencies:
     - responses==0.23.3
     - rouge-score==0.1.2
     - schema==0.7.5
-    - semantic-link-sempy==0.7.7
+    - semantic-link-sempy==0.8.0
     - simplejson==3.19.2
     - sqlanalyticsconnectorpy==1.0.1
     - sqlanalyticsfabricconnectorpy==1.0.0
