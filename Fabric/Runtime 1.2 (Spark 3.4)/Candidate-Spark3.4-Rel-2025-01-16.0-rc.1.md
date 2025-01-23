@@ -13,7 +13,6 @@
 |-----|-----|-----|
 |1544262|HiveMetaStoreClient:1.1.24, OnelakeSparkCatalog:0.1.21|Metastore Client: Adds support for metrics on metastore operations and external hivemetastore to use SQL link service with AAD credential.  Also adds more metrics gathering and debugging in onelakesparkcatalog|
 |1541029|NotebookUtils:1.1.59|Add udf module for R runtime, support display api for pyarrow and geopandas and improve some help message.|
-|1488938|N/A|Adds HttpClient Events Kusto Table for Spark 3.4, enabling NodeServices to stream HTTP Client Events to the new table, improving monitoring capabilities.|
 
 
 # Improvements
