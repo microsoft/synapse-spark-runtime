@@ -1,11 +1,11 @@
 {
-  "VhdRelease": "Spark3.3-Rel-2024-10-02.1-rc.1",
+  "VhdRelease": "Spark3.3-Rel-2025-01-16.1-rc.1",
   "sparkVersion": "spark3.3",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
-  "java": "1.8.0_422",
+  "java": "1.8.0_432",
   "scala": "2.12.15",
   "python": "3.10/1.0.6",
-  "deltaLake": "2.2.0.17",
+  "deltaLake": "2.2.0.19",
   "product": "Fabric Runtime 1.1 (Spark 3.3)",
   "apacheSparkVersion": "3.3.4",
   "components": {
@@ -28,7 +28,7 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.5"
+        "Current": "1.0.8"
       },
       {
         "Name": "ClusterGateway",
@@ -36,7 +36,7 @@
       },
       {
         "Name": "Conda",
-        "Current": "1.0.21"
+        "Current": "1.0.25"
       },
       {
         "Name": "CosmosDBConnector",
@@ -52,7 +52,7 @@
       },
       {
         "Name": "Delta",
-        "Current": "2.2.0.17"
+        "Current": "2.2.0.19"
       },
       {
         "Name": "Dotnet",
@@ -64,7 +64,7 @@
       },
       {
         "Name": "ExternalHiveMetastoreLibraries",
-        "Current": "0.0.7"
+        "Current": "0.0.8"
       },
       {
         "Name": "FabricDWConnector",
@@ -80,7 +80,7 @@
       },
       {
         "Name": "HiveMetaStoreClient",
-        "Current": "1.1.21"
+        "Current": "1.1.21.1"
       },
       {
         "Name": "Impulse",
@@ -92,7 +92,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.33"
+        "Current": "1.0.37"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -100,11 +100,11 @@
       },
       {
         "Name": "MMLSpark",
-        "Current": "1.4.17"
+        "Current": "1.4.19"
       },
       {
         "Name": "MachineLearningPredict",
-        "Current": "1.0.2"
+        "Current": "1.0.3"
       },
       {
         "Name": "MlflowLibrary",
@@ -116,7 +116,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.45"
+        "Current": "1.1.46"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -180,7 +180,7 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "3.6.7"
+        "Current": "3.6.8"
       },
       {
         "Name": "TridentCore",
@@ -188,7 +188,7 @@
       },
       {
         "Name": "TridentTokenLibrary",
-        "Current": "1.9.4"
+        "Current": "1.9.6"
       },
       {
         "Name": "VSANodeScanAgent",
@@ -204,7 +204,7 @@
       },
       {
         "Name": "Wildfire",
-        "Current": "1.7.61"
+        "Current": "1.7.62"
       }
     ],
     "javaAndScala": [
@@ -230,11 +230,11 @@
       },
       {
         "Name": "SparkCustomEvents",
-        "Current": "3.3.0-1.0.4"
+        "Current": "3.3.0-1.0.6"
       },
       {
         "Name": "TokenLibrary-assembly",
-        "Current": "3.6.7"
+        "Current": "3.6.8"
       },
       {
         "Name": "VegasConnector",
@@ -502,15 +502,15 @@
       },
       {
         "Name": "delta-core",
-        "Current": "2.12-2.2.0.17"
+        "Current": "2.12-2.2.0.19"
       },
       {
         "Name": "delta-iceberg",
-        "Current": "2.12-2.2.0.17"
+        "Current": "2.12-2.2.0.19"
       },
       {
         "Name": "delta-storage",
-        "Current": "2.2.0.17"
+        "Current": "2.2.0.19"
       },
       {
         "Name": "derby",
@@ -594,7 +594,7 @@
       },
       {
         "Name": "hdinsight-spark-metrics",
-        "Current": "3.3.0-1.0.4"
+        "Current": "3.3.0-1.0.6"
       },
       {
         "Name": "hive-beeline",
@@ -858,14 +858,6 @@
       },
       {
         "Name": "json",
-        "Current": "1"
-      },
-      {
-        "Name": "json",
-        "Current": "1"
-      },
-      {
-        "Name": "json",
         "Current": "3"
       },
       {
@@ -1078,11 +1070,11 @@
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.74.Final-osx-x86_64"
+        "Current": "4.1.74.Final-osx-aarch_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.74.Final-osx-aarch_64"
+        "Current": "4.1.74.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1090,7 +1082,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.0.34-spark33-20240905.1"
+        "Current": "1.0.34-spark33-20241121.2"
       },
       {
         "Name": "objenesis",
@@ -1262,11 +1254,11 @@
       },
       {
         "Name": "spark",
-        "Current": "3.3-rpc-history-server-app-listener_2.12-1.0.0"
+        "Current": "3.3-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark",
-        "Current": "3.3-rpc-history-server-core_2.12-1.0.0"
+        "Current": "3.3-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
         "Name": "spark",
@@ -1446,35 +1438,35 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "2.12-1.0.4-spark3.3"
+        "Current": "2.12-1.0.8-spark3.3"
       },
       {
         "Name": "synapseml-core",
-        "Current": "2.12-1.0.4-spark3.3"
+        "Current": "2.12-1.0.8-spark3.3"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "2.12-1.0.4-spark3.3"
+        "Current": "2.12-1.0.8-spark3.3"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "2.12-1.0.4.0-spark3.3"
+        "Current": "2.12-1.0.8.0-spark3.3"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "2.12-1.0.4-spark3.3"
+        "Current": "2.12-1.0.8-spark3.3"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "2.12-1.0.4-spark3.3"
+        "Current": "2.12-1.0.8-spark3.3"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "2.12-1.0.4-spark3.3"
+        "Current": "2.12-1.0.8-spark3.3"
       },
       {
         "Name": "synfs",
-        "Current": "1.0.34-spark33-20240905.1"
+        "Current": "1.0.34-spark33-20241121.2"
       },
       {
         "Name": "threeten-extra",
@@ -1494,7 +1486,7 @@
       },
       {
         "Name": "tridenttokenlibrary-assembly",
-        "Current": "1.9.4"
+        "Current": "1.9.6"
       },
       {
         "Name": "univocity-parsers",
@@ -2712,7 +2704,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.0.34.33.20240905.1"
+        "Current": "1.0.34.33.20241121.2"
       },
       {
         "Name": "nspr",
@@ -3172,39 +3164,39 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "1.0.4.dev1"
+        "Current": "1.0.8.dev1"
       },
       {
         "Name": "synapseml-core",
-        "Current": "1.0.4.dev1"
+        "Current": "1.0.8.dev1"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "1.0.4.dev1"
+        "Current": "1.0.8.dev1"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "1.0.4.0.dev1"
+        "Current": "1.0.8.0.dev1"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "1.0.4.dev1"
+        "Current": "1.0.8.dev1"
       },
       {
         "Name": "synapseml-mlflow",
-        "Current": "1.0.23"
+        "Current": "1.0.30.post1"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "1.0.4.dev1"
+        "Current": "1.0.8.dev1"
       },
       {
         "Name": "synapseml-utils",
-        "Current": "1.0.19.post1"
+        "Current": "1.0.26"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "1.0.4.dev1"
+        "Current": "1.0.8.dev1"
       },
       {
         "Name": "tabulate",
@@ -3502,7 +3494,7 @@
       },
       {
         "Name": "R.oo",
-        "Current": "1.26.0"
+        "Current": "1.27.0"
       },
       {
         "Name": "R.utils",
@@ -4062,7 +4054,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.0.34.33.20240905.1"
+        "Current": "1.0.34.33.20241121.2"
       },
       {
         "Name": "numDeriv",
