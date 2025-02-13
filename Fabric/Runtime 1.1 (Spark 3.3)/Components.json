@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.3-Rel-2025-01-16.1-rc.1",
+  "VhdRelease": "Spark3.3-Rel-2025-01-22.0-rc.1",
   "sparkVersion": "spark3.3",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_432",
@@ -100,7 +100,7 @@
       },
       {
         "Name": "MMLSpark",
-        "Current": "1.4.19"
+        "Current": "1.4.20"
       },
       {
         "Name": "MachineLearningPredict",
@@ -1438,31 +1438,31 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "2.12-1.0.8-spark3.3"
+        "Current": "2.12-1.0.9-spark3.3"
       },
       {
         "Name": "synapseml-core",
-        "Current": "2.12-1.0.8-spark3.3"
+        "Current": "2.12-1.0.9-spark3.3"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "2.12-1.0.8-spark3.3"
+        "Current": "2.12-1.0.9-spark3.3"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "2.12-1.0.8.0-spark3.3"
+        "Current": "2.12-1.0.9.0-spark3.3"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "2.12-1.0.8-spark3.3"
+        "Current": "2.12-1.0.9-spark3.3"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "2.12-1.0.8-spark3.3"
+        "Current": "2.12-1.0.9-spark3.3"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "2.12-1.0.8-spark3.3"
+        "Current": "2.12-1.0.9-spark3.3"
       },
       {
         "Name": "synfs",
@@ -3164,23 +3164,23 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "1.0.8.dev1"
+        "Current": "1.0.9.dev1"
       },
       {
         "Name": "synapseml-core",
-        "Current": "1.0.8.dev1"
+        "Current": "1.0.9.dev1"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "1.0.8.dev1"
+        "Current": "1.0.9.dev1"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "1.0.8.0.dev1"
+        "Current": "1.0.9.0.dev1"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "1.0.8.dev1"
+        "Current": "1.0.9.dev1"
       },
       {
         "Name": "synapseml-mlflow",
@@ -3188,7 +3188,7 @@
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "1.0.8.dev1"
+        "Current": "1.0.9.dev1"
       },
       {
         "Name": "synapseml-utils",
@@ -3196,7 +3196,7 @@
       },
       {
         "Name": "synapseml-vw",
-        "Current": "1.0.8.dev1"
+        "Current": "1.0.9.dev1"
       },
       {
         "Name": "tabulate",
