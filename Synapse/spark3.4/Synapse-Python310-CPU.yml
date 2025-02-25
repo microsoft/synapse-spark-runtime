@@ -462,7 +462,6 @@ dependencies:
     - azure-mgmt-storage==21.1.0
     - azure-storage-blob==12.19.0
     - azure-storage-file-share==12.15.0
-    - azure-synapse-ml-predict==1.0.0
     - azureml-core==1.55.0
     - azureml-dataprep==5.1.6
     - azureml-dataprep-native==41.0.0
@@ -497,7 +496,7 @@ dependencies:
     - mypy==1.4.1
     - mypy-extensions==1.0.0
     - ndg-httpsclient==0.5.1
-    - notebookutils==1.1.5.34.20240930.7
+    - notebookutils==1.1.8.34.20241224.2
     - numpy==1.23.5
     - onnx==1.15.0
     - opencensus==0.11.4
@@ -513,10 +512,10 @@ dependencies:
     - secretstorage==3.3.3
     - sqlanalyticsconnectorpy==1.0.1
     - strictyaml==1.7.3
-    - synapseml-cognitive==1.0.7
-    - synapseml-core==1.0.7
-    - synapseml-deep-learning==1.0.7
-    - synapseml-internal==1.0.7.0.dev1
-    - synapseml-lightgbm==1.0.7
-    - synapseml-opencv==1.0.7
-    - synapseml-vw==1.0.7
+    - synapseml-cognitive==1.0.9
+    - synapseml-core==1.0.9
+    - synapseml-deep-learning==1.0.9
+    - synapseml-internal==1.0.9.0.dev1
+    - synapseml-lightgbm==1.0.9
+    - synapseml-opencv==1.0.9
+    - synapseml-vw==1.0.9
