@@ -1,5 +1,6 @@
 # System Environment
 *   **Product**: Fabric Runtime 1.2 (Spark 3.4)
+*   **VHD Name**: 7d519644da98f0.vhd
 *   **Vhd Release**: Spark3.4-Rel-2025-02-19.0-rc.1
 *   **Operating System**: CBL-Mariner 2.0.20250207
 *   **Apache Spark**: 3.4.3
@@ -32,13 +33,13 @@
 |Name|Version|Name|Version|
 |-----|-----|-----|-----|
 |AutoscaleProbe|3.9.4|NotebookUtils|1.1.59|
-|Autotune|1.11.1.1|**OneLakeClientStarter**|**1.0.24.1 ⬆️ 1.0.24.2**|
+|Autotune|1.11.1.1|**OneLakeClientStarter**|**1.0.24 ⬆️ 1.0.24.2**|
 |AzureMLExtensions|1.0.4|OnelakeSparkCatalog|0.1.21|
 |CSparkMetricUpdate|1.0.9|Peregrine|0.10.4|
-|Conda|8.0.30|PostgreSQLJDBCDriver|1.0.3|
+|**Conda**|**8.0.29 ⬆️ 8.0.30**|PostgreSQLJDBCDriver|1.0.3|
 |CosmosDBConnector|2.2.0|Python|3.10/2.0.0|
 |**DSCopilot**|**1.0.0**|R|1.0.7|
-|DSCopilotInstaller|1.0.1|SQLServerODBCDriver|18.1.0|
+|**DSCopilotInstaller**|**1.0.0 ⬆️ 1.0.1**|SQLServerODBCDriver|18.1.0|
 |DWConnector|1.0.3|SStreamOnSparkJar|2.3.5.1|
 |Delta|2.4.0.22|SparkAdvisor|1.0.4|
 |EventHubConnector|2.3.26|SparkDiagnosticsLibrary|1.0.29|
@@ -51,7 +52,7 @@
 |Impulse|1.2.5|TridentTokenLibrary|1.9.7|
 |KustoConnector|1.5.1|VPaaSClient|3.4.01|
 |LibraryManager|1.0.24|Vegas|3.4.09.02|
-|LibraryMetadataCooker|2.0.3|Wildfire|1.9.25|
+|LibraryMetadataCooker|2.0.3|**Wildfire**|**1.9.24 ⬆️ 1.9.25**|
 |MMLSpark|1.4.20|
 |MachineLearningPredict|1.0.2|
 |MlflowLibrary|2.6.0.1|
@@ -166,7 +167,7 @@
 |docker-py|6.1.3|pyasn1-modules|0.3.0|
 |docker-pycreds|0.4.0|pycosat|0.6.6|
 |**ds-copilot**|**0.1.25.2.11**|pycparser|2.21|
-|dscopilot-installer|0.0.9|pydantic|1.10.9|
+|**dscopilot-installer**|**0.0.7 ⬆️ 0.0.9**|pydantic|1.10.9|
 |entrypoints|0.4|pygments|2.16.1|
 |et_xmlfile|1.1.0|pyjwt|2.8.0|
 |exceptiongroup|1.1.3|pynacl|1.5.0|
@@ -224,7 +225,7 @@
 |h5py|3.10.0|scipy|1.10.1|
 |harfbuzz|8.2.1|seaborn|0.12.2|
 |hdf5|1.14.2|seaborn-base|0.12.2|
-|holidays|0.35|semantic-link-sempy|0.9.0|
+|holidays|0.35|**semantic-link-sempy**|**0.8.4 ⬆️ 0.9.0**|
 |html5lib|1.1|send2trash|1.8.2|
 |huggingface_hub|0.18.0|sentence-transformers|2.0.0|
 |humanfriendly|10.0|sentry-sdk|1.32.0|
@@ -423,60 +424,60 @@
 |delta-core|2.12-2.4.0.22|parquet-common|1.12.3|
 |delta-iceberg|2.12-2.4.0.22|parquet-encoding|1.12.3|
 |delta-storage|2.4.0.22|parquet-format-structures|1.12.3|
-|derby|0.14.2.0|parquet-hadoop-ms|3.4.3.5.3.20250203.5|
+|derby|0.14.2.0|**parquet-hadoop-ms**|**3.4.3.5.3.20241209.1 ⬆️ 3.4.3.5.3.20250203.5**|
 |dropwizard-metrics-hadoop-metrics2-reporter|0.1.2|parquet-jackson|1.12.3|
 |flatbuffers-java|1.12.0|peregrine-spark|3.4.0-0.10.4|
 |fluent-logger|0.3.4-jar-with-dependencies-provided|pickle|1.3|
 |gcs-connector-hadoop3|2.2.11-shaded|postgresql|2.2.9|
 |genesis-client|2.12-0.33.1-jar-with-dependencies|protobuf-java|2.5.0|
-|gluten-delta|1.2.0-20241114.4-3.4|proton-j|0.33.8|
-|gluten-velox-bundle-spark|3.4_2.12-mariner_2.0_x86_64-1.2.0-20241114.4|py4j|0.10.9.7|
+|**gluten-delta**|**1.2.0-20241114.4-3.4**|proton-j|0.33.8|
+|**gluten-velox-bundle-spark**|**3.4_2.12-mariner_2.0_x86_64-1.2.0-20241114.4**|py4j|0.10.9.7|
 |gson|2.8.9|qpid-proton-j-extensions|1.2.4|
 |guava|4.0.1|rocksdbjni|7.9.2|
-|hadoop-aliyun|3.3.4.5.3.20250203.5|scala-collection-compat|2.12-2.7.0|
-|hadoop-annotations|3.3.4.5.3.20250203.5|scala-compiler|2.12.17|
-|hadoop-aws|3.3.4.5.3.20250203.5|scala-java8-compat|2.12-0.9.0|
-|hadoop-azure|3.3.4.5.3.20250203.5|scala-library|2.12.17|
-|hadoop-azure-datalake|3.3.4.5.3.20250203.5|scala-parser-combinators|2.12-2.1.1|
+|**hadoop-aliyun**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scala-collection-compat|2.12-2.7.0|
+|**hadoop-annotations**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scala-compiler|2.12.17|
+|**hadoop-aws**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scala-java8-compat|2.12-0.9.0|
+|**hadoop-azure**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scala-library|2.12.17|
+|**hadoop-azure-datalake**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scala-parser-combinators|2.12-2.1.1|
 |hadoop-azureml|1.0-fs|scala-reflect|2.12.17|
-|hadoop-client-api|3.3.4.5.3.20250203.5|scala-xml|2.12-2.1.0|
-|hadoop-client-runtime|3.3.4.5.3.20250203.5|scalactic|2.12-3.2.14|
-|hadoop-cloud-storage|3.3.4.5.3.20250203.5|shims|0.9.38|
-|hadoop-openstack|3.3.4.5.3.20250203.5|slf4j-api|2.0.6|
+|**hadoop-client-api**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scala-xml|2.12-2.1.0|
+|**hadoop-client-runtime**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|scalactic|2.12-3.2.14|
+|**hadoop-cloud-storage**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|shims|0.9.38|
+|**hadoop-openstack**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|slf4j-api|2.0.6|
 |hadoop-shaded-guava|1.1.1|snappy-java|1.1.10.5|
-|hadoop-yarn-server-web-proxy|3.3.4.5.3.20250203.5|spark|3.4-rpc-history-server-app-listener_2.12-1.0.0|
+|**hadoop-yarn-server-web-proxy**|**3.3.4.5.3.20241209.1 ⬆️ 3.3.4.5.3.20250203.5**|spark|3.4-rpc-history-server-app-listener_2.12-1.0.0|
 |hdinsight-spark-metrics|3.4.0-1.0.8|spark|3.4-rpc-history-server-core_2.12-1.0.0|
 |hive-common|2.3.9|spark|3.4-advisor-core_2.12-1.0.18|
 |hive-exec|2.3.9-core|spark-avro|2.12-3.4.1|
-|hive-llap-common|2.3.9|spark-avro|2.12-3.4.3.5.3.20250203.5|
-|hive-metastore|2.3.9|spark-catalyst|2.12-3.4.3.5.3.20250203.5|
-|hive-serde|2.3.9|spark-core|2.12-3.4.3.5.3.20250203.5|
-|hive-shims|2.3.9|spark-enhancement|2.12-3.4.3.5.3.20250203.5|
+|hive-llap-common|2.3.9|**spark-avro**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|hive-metastore|2.3.9|**spark-catalyst**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|hive-serde|2.3.9|**spark-core**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|hive-shims|2.3.9|**spark-enhancement**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
 |hive-shims|0.23-2.3.9|spark-enhancementui|2.12-3.3.0|
-|hive-shims-common|2.3.9|spark-graphx|2.12-3.4.3.5.3.20250203.5|
-|hive-shims-scheduler|2.3.9|spark-hadoop-cloud|2.12-3.4.3.5.3.20250203.5|
-|hive-storage-api|2.8.1|spark-hive|2.12-3.4.3.5.3.20250203.5|
+|hive-shims-common|2.3.9|**spark-graphx**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|hive-shims-scheduler|2.3.9|**spark-hadoop-cloud**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|hive-storage-api|2.8.1|**spark-hive**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
 |hk2-api|2.6.1|spark-kusto-synapse-connector|3.4_2.12-1.5.1|
-|hk2-locator|2.6.1|spark-kvstore|2.12-3.4.3.5.3.20250203.5|
-|hk2-utils|2.6.1|spark-launcher|2.12-3.4.3.5.3.20250203.5|
+|hk2-locator|2.6.1|**spark-kvstore**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|hk2-utils|2.6.1|**spark-launcher**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
 |httpclient|4.5.14|spark-lighter-contract|2.12-2.0.9_spark-3.4.0_20240703.5|
 |httpclient5|5.1.3|spark-lighter-core|2.12-2.0.11_spark-3.4.0_20241101.1|
-|httpcore|4.4.16|spark-microsoft-tools|2.12-3.4.3.5.3.20250203.5|
-|httpmime|4.5.14|spark-mllib|2.12-3.4.3.5.3.20250203.5|
-|httpmime|4.5.13|spark-mllib-local|2.12-3.4.3.5.3.20250203.5|
-|impulse-core_spark|3.4_2.12-1.0.22|spark-network-common|2.12-3.4.3.5.3.20250203.5|
-|impulse-telemetry-mds_spark|3.4_2.12-1.0.22|spark-network-shuffle|2.12-3.4.3.5.3.20250203.5|
-|ini4j|0.5.4|spark-repl|2.12-3.4.3.5.3.20250203.5|
-|isolation-forest|3.4.2_2.12-3.0.4|spark-sketch|2.12-3.4.3.5.3.20250203.5|
-|istack-commons-runtime|3.0.8|spark-sql|2.12-3.4.3.5.3.20250203.5|
-|ivy|2.5.1|spark-sql-kafka|0_2.12-3.4.3.5.3.20250203.5|
-|jackson-annotations|2.14.2|spark-streaming|2.12-3.4.3.5.3.20250203.5|
-|jackson-core|2.14.2|spark-streaming-kafka|0_2.12-3.4.3.5.3.20250203.5|
-|jackson-core-asl|1.9.13|spark-streaming-kafka|2.12-3.4.3.5.3.20250203.5|
-|jackson-databind|2.14.2|spark-tags|2.12-3.4.3.5.3.20250203.5|
-|jackson-dataformat-cbor|2.14.2|spark-token-provider-kafka|0_2.12-3.4.3.5.3.20250203.5|
-|jackson-datatype-jsr310|2.14.2|spark-unsafe|2.12-3.4.3.5.3.20250203.5|
-|jackson-mapper-asl|1.9.13|spark-yarn|2.12-3.4.3.5.3.20250203.5|
+|httpcore|4.4.16|**spark-microsoft-tools**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|httpmime|4.5.14|**spark-mllib**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|httpmime|4.5.13|**spark-mllib-local**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|impulse-core_spark|3.4_2.12-1.0.22|**spark-network-common**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|impulse-telemetry-mds_spark|3.4_2.12-1.0.22|**spark-network-shuffle**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|ini4j|0.5.4|**spark-repl**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|isolation-forest|3.4.2_2.12-3.0.4|**spark-sketch**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|istack-commons-runtime|3.0.8|**spark-sql**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|ivy|2.5.1|**spark-sql-kafka**|**0_2.12-3.4.3.5.3.20241209.1 ⬆️ 0_2.12-3.4.3.5.3.20250203.5**|
+|jackson-annotations|2.14.2|**spark-streaming**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|jackson-core|2.14.2|**spark-streaming-kafka**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 0_2.12-3.4.3.5.3.20250203.5**|
+|jackson-core-asl|1.9.13|**spark-streaming-kafka**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|jackson-databind|2.14.2|**spark-tags**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|jackson-dataformat-cbor|2.14.2|**spark-token-provider-kafka**|**0_2.12-3.4.3.5.3.20241209.1 ⬆️ 0_2.12-3.4.3.5.3.20250203.5**|
+|jackson-datatype-jsr310|2.14.2|**spark-unsafe**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
+|jackson-mapper-asl|1.9.13|**spark-yarn**|**2.12-3.4.3.5.3.20241209.1 ⬆️ 2.12-3.4.3.5.3.20250203.5**|
 |jackson-module-scala|2.12-2.14.2|spark_diagnostic_cli|2.1.7_spark-3.4.1_20250107.2-shaded|
 |jakarta.annotation-api|1.3.5|sparklyr-connector|3.4.1-1.0.0273341|
 |jakarta.inject|2.6.1|sparknativeparquetwriter|2.12-0.15.4|
@@ -506,8 +507,8 @@
 |jline|2.14.6|wildfly-openssl|1.0.7.Final|
 |joda-time|2.12.2|xbean-asm9-shaded|4.22|
 |jodd-core|3.5.2|xz|1.9|
-|jsch|0.1.54|zookeeper|3.6.3.5.3.20250203.5|
-|json|3|zookeeper-jute|3.6.3.5.3.20250203.5|
+|jsch|0.1.54|**zookeeper**|**3.6.3.5.3.20241209.1 ⬆️ 3.6.3.5.3.20250203.5**|
+|json|3|**zookeeper-jute**|**3.6.3.5.3.20241209.1 ⬆️ 3.6.3.5.3.20250203.5**|
 |json|1.8|zstd-jni|1.5.2-5|
 |json-simple|1.1.1|
 
