@@ -450,7 +450,7 @@ dependencies:
     - backports-tempfile==1.0
     - backports-weakref==1.0.post1
     - contextlib2==21.6.0
-    - dscopilot-installer==0.0.7
+    - dscopilot-installer==0.0.9
     - fluent-logger==0.10.0
     - gson==0.0.3
     - humanfriendly==10.0
