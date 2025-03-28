@@ -1,5 +1,6 @@
 # System Environment
 *   **Product**: Fabric Runtime 1.1 (Spark 3.3)
+*   **VHD Name**: c7b588567a041a.vhd
 *   **Vhd Release**: Spark3.3-Rel-2025-03-05.0-rc.1
 *   **Operating System**: Ubuntu 18.04.6 LTS
 *   **Apache Spark**: 3.3.4
