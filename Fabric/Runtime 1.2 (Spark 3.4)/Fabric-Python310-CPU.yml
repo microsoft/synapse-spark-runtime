@@ -125,7 +125,7 @@ dependencies:
   - fribidi=1.0.10=h36c2ea0_0
   - frozenlist=1.4.0=py310h2372a71_1
   - fsspec=2023.10.0=pyhca7485f_0
-  - fsspec_wrapper=0.1.12=py_3
+  - fsspec_wrapper=0.1.15=py_3
   - gast=0.4.0=pyh9f0ad1d_0
   - gdk-pixbuf=2.42.10=h6c15284_3
   - geographiclib=1.52=pyhd8ed1ab_0
@@ -523,8 +523,12 @@ dependencies:
     - astor==0.8.1
     - azure-synapse-ml-predict==1.0.0
     - azureml-synapse==0.0.1
+    - chat-magics==0.1.25.2.11
+    - chat-magics-fabric==0.2.0.25.2.11
     - contextlib2==21.6.0
+    - ds-copilot==0.1.25.2.11
     - dscopilot-installer==0.0.9
+    - fabric-connection==0.1.0
     - filelock==3.11.0
     - fluent-logger==0.10.0
     - gson==0.0.3
