@@ -1,7 +1,7 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2025-02-12.0-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2025-03-05.1-rc.1",
   "sparkVersion": "spark3.4",
-  "operatingSystem": "CBL-Mariner 2.0.20250207",
+  "operatingSystem": "CBL-Mariner 2.0.20250304",
   "java": "11.0.26",
   "scala": "2.12.17",
   "python": "3.10/2.0.0",
@@ -24,7 +24,7 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.9"
+        "Current": "1.0.10"
       },
       {
         "Name": "Conda",
@@ -33,6 +33,10 @@
       {
         "Name": "CosmosDBConnector",
         "Current": "2.2.0"
+      },
+      {
+        "Name": "DSCopilot",
+        "Current": "1.1.0"
       },
       {
         "Name": "DSCopilotInstaller",
@@ -60,7 +64,7 @@
       },
       {
         "Name": "FsspecWrapper",
-        "Current": "1.0.16"
+        "Current": "1.0.17"
       },
       {
         "Name": "Genesis",
@@ -84,7 +88,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.24"
+        "Current": "1.0.27"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -108,11 +112,11 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.59"
+        "Current": "1.1.60"
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.24.1"
+        "Current": "1.0.24.3"
       },
       {
         "Name": "OnelakeSparkCatalog",
@@ -188,7 +192,7 @@
       },
       {
         "Name": "Wildfire",
-        "Current": "1.9.25"
+        "Current": "1.9.26"
       }
     ],
     "javaAndScala": [
@@ -1763,6 +1767,14 @@
         "Current": "3.3.1"
       },
       {
+        "Name": "chat-magics",
+        "Current": "0.1.25.2.11"
+      },
+      {
+        "Name": "chat-magics-fabric",
+        "Current": "0.2.0.25.2.11"
+      },
+      {
         "Name": "chroma-hnswlib",
         "Current": "0.7.3"
       },
@@ -1911,6 +1923,10 @@
         "Current": "0.4.0"
       },
       {
+        "Name": "ds-copilot",
+        "Current": "0.1.25.2.11"
+      },
+      {
         "Name": "dscopilot-installer",
         "Current": "0.0.9"
       },
@@ -1933,6 +1949,10 @@
       {
         "Name": "expat",
         "Current": "2.5.0"
+      },
+      {
+        "Name": "fabric-connection",
+        "Current": "0.1.0"
       },
       {
         "Name": "fastapi",
@@ -2012,7 +2032,7 @@
       },
       {
         "Name": "fsspec_wrapper",
-        "Current": "0.1.12"
+        "Current": "0.1.15"
       },
       {
         "Name": "gast",
@@ -3786,7 +3806,7 @@
       },
       {
         "Name": "R.utils",
-        "Current": "2.12.3"
+        "Current": "2.13.0"
       },
       {
         "Name": "R6",
