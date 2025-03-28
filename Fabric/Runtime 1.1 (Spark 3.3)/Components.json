@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.3-Rel-2025-02-05.0-rc.1",
+  "VhdRelease": "Spark3.3-Rel-2025-03-05.0-rc.1",
   "sparkVersion": "spark3.3",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_442",
@@ -634,11 +634,11 @@
       },
       {
         "Name": "hive-shims",
-        "Current": "2.3.9"
+        "Current": "0.23-2.3.9"
       },
       {
         "Name": "hive-shims",
-        "Current": "0.23-2.3.9"
+        "Current": "2.3.9"
       },
       {
         "Name": "hive-shims-common",
@@ -858,19 +858,19 @@
       },
       {
         "Name": "json",
-        "Current": "1.8"
-      },
-      {
-        "Name": "json",
         "Current": "3"
       },
       {
-        "Name": "json-simple",
-        "Current": "1.1"
+        "Name": "json",
+        "Current": "1.8"
       },
       {
         "Name": "json-simple",
         "Current": "1.1.1"
+      },
+      {
+        "Name": "json-simple",
+        "Current": "1.1"
       },
       {
         "Name": "json4s-ast",
@@ -1062,19 +1062,19 @@
       },
       {
         "Name": "netty-transport-native-epoll",
-        "Current": "4.1.74.Final-linux-aarch_64"
-      },
-      {
-        "Name": "netty-transport-native-epoll",
         "Current": "4.1.74.Final-linux-x86_64"
       },
       {
-        "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.74.Final-osx-x86_64"
+        "Name": "netty-transport-native-epoll",
+        "Current": "4.1.74.Final-linux-aarch_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
         "Current": "4.1.74.Final-osx-aarch_64"
+      },
+      {
+        "Name": "netty-transport-native-kqueue",
+        "Current": "4.1.74.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1250,6 +1250,10 @@
       },
       {
         "Name": "spark",
+        "Current": "3.3-rpc-history-server-app-listener_2.12-1.0.0"
+      },
+      {
+        "Name": "spark",
         "Current": "3.3-rpc-history-server-core_2.12-1.0.0"
       },
       {
@@ -1259,10 +1263,6 @@
       {
         "Name": "spark",
         "Current": "3.3-advisor-core_2.12-1.0.18"
-      },
-      {
-        "Name": "spark",
-        "Current": "3.3-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
@@ -1366,11 +1366,11 @@
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "0_2.12-3.3.4.5.2.20240924.1"
+        "Current": "2.12-3.3.4.5.2.20240924.1"
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "2.12-3.3.4.5.2.20240924.1"
+        "Current": "0_2.12-3.3.4.5.2.20240924.1"
       },
       {
         "Name": "spark-tags",
@@ -3498,7 +3498,7 @@
       },
       {
         "Name": "R.utils",
-        "Current": "2.12.3"
+        "Current": "2.13.0"
       },
       {
         "Name": "R6",
