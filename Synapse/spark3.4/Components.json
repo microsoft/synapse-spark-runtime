@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2025-02-26.4-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2025-03-19.1-rc.1",
   "sparkVersion": "spark3.4",
   "operatingSystem": "CBL-Mariner 2.0.20250304",
   "java": "11.0.26",
@@ -36,7 +36,7 @@
       },
       {
         "Name": "DSCopilot",
-        "Current": "1.0.0"
+        "Current": "1.1.0"
       },
       {
         "Name": "DSCopilotInstaller",
@@ -88,7 +88,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.24"
+        "Current": "1.0.27"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -112,11 +112,11 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.60"
+        "Current": "1.1.61"
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.24.2"
+        "Current": "1.0.24.3"
       },
       {
         "Name": "OnelakeSparkCatalog",
@@ -172,7 +172,7 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "4.3.6"
+        "Current": "4.3.7"
       },
       {
         "Name": "TridentCore",
@@ -192,7 +192,7 @@
       },
       {
         "Name": "Wildfire",
-        "Current": "1.9.26"
+        "Current": "1.9.27"
       }
     ],
     "javaAndScala": [
@@ -222,7 +222,7 @@
       },
       {
         "Name": "TokenLibrary-assembly",
-        "Current": "4.3.6"
+        "Current": "4.3.7"
       },
       {
         "Name": "VPaaSConnector",
@@ -614,11 +614,11 @@
       },
       {
         "Name": "hive-shims",
-        "Current": "0.23-2.3.9"
+        "Current": "2.3.9"
       },
       {
         "Name": "hive-shims",
-        "Current": "2.3.9"
+        "Current": "0.23-2.3.9"
       },
       {
         "Name": "hive-shims-common",
@@ -838,11 +838,11 @@
       },
       {
         "Name": "json",
-        "Current": "1.8"
+        "Current": "3"
       },
       {
         "Name": "json",
-        "Current": "3"
+        "Current": "1.8"
       },
       {
         "Name": "json-simple",
@@ -1054,11 +1054,11 @@
       },
       {
         "Name": "netty-transport-native-epoll",
-        "Current": "4.1.87.Final-linux-aarch_64"
+        "Current": "4.1.87.Final-linux-x86_64"
       },
       {
         "Name": "netty-transport-native-epoll",
-        "Current": "4.1.87.Final-linux-x86_64"
+        "Current": "4.1.87.Final-linux-aarch_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
@@ -1074,7 +1074,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.9-spark34-20250224.5"
+        "Current": "1.1.10-spark34-20250317.2"
       },
       {
         "Name": "objenesis",
@@ -1238,7 +1238,11 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
+        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
+      },
+      {
+        "Name": "spark",
+        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
         "Name": "spark",
@@ -1246,19 +1250,15 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
-      },
-      {
-        "Name": "spark",
-        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
-      },
-      {
-        "Name": "spark-avro",
-        "Current": "2.12-3.4.3.5.3.20250203.5"
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
         "Current": "2.12-3.4.1"
+      },
+      {
+        "Name": "spark-avro",
+        "Current": "2.12-3.4.3.5.3.20250203.5"
       },
       {
         "Name": "spark-catalyst",
@@ -1350,11 +1350,11 @@
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "2.12-3.4.3.5.3.20250203.5"
+        "Current": "0_2.12-3.4.3.5.3.20250203.5"
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "0_2.12-3.4.3.5.3.20250203.5"
+        "Current": "2.12-3.4.3.5.3.20250203.5"
       },
       {
         "Name": "spark-tags",
@@ -1446,7 +1446,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "1.1.9-spark34-20250224.5"
+        "Current": "1.1.10-spark34-20250317.2"
       },
       {
         "Name": "threeten-extra",
@@ -2860,7 +2860,7 @@
       },
       {
         "Name": "msal",
-        "Current": "1.31.1"
+        "Current": "1.32.0"
       },
       {
         "Name": "msal_extensions",
@@ -2952,11 +2952,11 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.9.34.20250224.5"
+        "Current": "1.1.10.34.20250317.2"
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.9.34.20250224.5"
+        "Current": "1.1.10.34.20250317.2"
       },
       {
         "Name": "nspr",
@@ -2976,7 +2976,7 @@
       },
       {
         "Name": "numpy",
-        "Current": "2.2.3"
+        "Current": "2.2.4"
       },
       {
         "Name": "numpy-base",
@@ -3128,7 +3128,7 @@
       },
       {
         "Name": "platformdirs",
-        "Current": "4.3.6"
+        "Current": "4.3.7"
       },
       {
         "Name": "plotly",
@@ -4530,7 +4530,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.9.34.20250224.5"
+        "Current": "1.1.10.34.20250317.2"
       },
       {
         "Name": "numDeriv",
