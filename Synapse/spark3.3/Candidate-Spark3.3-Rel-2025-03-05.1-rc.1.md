@@ -1,0 +1,679 @@
+# System Environment
+*   **Product**: Synapse Spark 3.3
+*   **VHD Name**: fc2555460399ba.vhd
+*   **Vhd Release**: Spark3.3-Rel-2025-03-05.1-rc.1
+*   **Operating System**: Ubuntu 18.04.6 LTS
+*   **Apache Spark**: 3.3.4
+*   **Java**: 1.8.0_442
+*   **Scala**: 2.12.15
+*   **Python**: 3.10/1.0.6
+*   **Delta Lake**: 2.2.0.21
+
+*On July 12th, 2024, end of support was announced for Azure Synapse Runtime for Apache Spark 3.3. Effective March 31, 2025, Azure Synapse will discontinue official support for Spark 3.3 Runtimes. **We strongly recommend you upgrade your Apache Spark 3.3 based workloads to [Azure Synapse Runtime for Apache Spark 3.4 (GA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime).** For up-to-date information, a detailed list of changes, and specific release notes for Spark runtimes, check and subscribe to [**Spark Runtimes Releases and Updates**](https://github.com/microsoft/synapse-spark-runtime).*
+# New Features
+|Id|Component|Description|
+|-----|-----|-----|
+|1444776|TokenLibrary:3.6.7|Introduced new features for Spark 3.3 including TokenLibrary SasRefresh APIs and support for Service Principal (SP) authentication with certificates. This enables more secure and efficient access to system storage accounts with shorter-lived tokens and certificate-based SP authentication.|
+|1451954|ServiceConfigurationTemplates/spark/3.3.0:various|Enables support for special characters in table names by default for Hive and Spark, improving Spark in Fabric's flexibility. Special characters are now allowed, except for '/' and '\\', due to OneLake storage limitations.|
+|1360734|ServiceConfigurationTemplates/spark/3.3.0:various|Enables support for spaces in table names by default for Hive in Spark 3.3, requiring users to set a specific Spark configuration.|
+|1419006|ServiceConfigurationTemplates/spark/3.3.0:various|Set the Spark property to allow spaces in table names for Spark in Fabric.|
+|1396780|TridentTokenLibrary:1.9.4|Introduced encryption for tokens at rest, SPN certificate-based authentication, and shifted packaging from VHD to Universal package. Also includes NFS cache reorganization, token refresh optimizations, and HTTP request retries.|
+
+
+# Improvements
+|Id|Component|Description|
+|-----|-----|-----|
+|1567958|DSCopilotInstaller:1.0.1|Updated the DS Copilot Installer for Spark 3.3 to use V1, maintaining the Copilot version irrespective of feature flights.|
+|1549333|MachineLearningPredict:spark33/1.0.3|Deprecate synapseml-predict in Synapse Spark33 cluster|
+|1549606|Conda:1.0.25|Update Mlflow API Contract to Follow Public API Conventions, Provide multiple bug fixes|
+|1551634|MMLSpark:1.4.20|Updated the SynapseML distributed machine learning framework libraries shipped as part of Fabric VHD component https://github.com/microsoft/SynapseML/releases/tag/v1.0.9 .|
+|1552600|TridentTokenLibrary:1.9.7|Improvements in Trident Token Library to use GUID set by TJS as Moniker ID in HTTP headers when  making calls to spark core workload|
+|1489170|ServiceConfigurationTemplates:spark33|Updated Livy state store from Zookeeper to HOBO storage for one-node cluster Livy bad gateway errors, addressing multiple incidents related to Zookeeper startup delays.|
+|1490495|TridentTokenLibrary:1.9.6, Conda:1.0.22|Upgrades SynapseML-Utils, Mlflow-Plugin, and TridentTokenLibrary to enhance support for ML 1P AAD Token, MWC Token for OpenAI billing, and switches to Fabric Public API in Mlflow plugin. It also fixes an issue with pandas after pip installs.|
+|1519459|NotebookUtils:1.1.46|Enhanced support in Spark3.3 for dfs endpoint of system hobo storage in Synapse by replacing it with blob endpoint for read/write operations. This update ensures mounting features work efficiently with the new system storage setup.|
+|1420143|TokenLibrary:3.6.5|Bug fixes and logging improvements to track request processing|
+|1450275|NotebookUtils:1.1.45|Enhanced NotebookUtils to support refresh of SAS tokens for system storage in Spark 3.3, improving security by using UDK-based 1 hr SAS tokens.|
+|1450665|MMLSpark:1.4.19|Updated SynapseML to v1.0.8, enhancing distributed machine learning framework libraries in the Fabric VHD component.|
+|1464217|ComponentName:ComponentVersion|Enhanced security for Fabric Library Management by encrypting and decrypting library snapshot SAS tokens. This improvement prevents credentials from being exposed in logs, addressing a credential leak issue.|
+|1466644|Wildfire/spark33:1.7.61|Release of the Wildfire stack for Spark 3.3, featuring bug fixes and improvements in Livy and Hadoop.|
+|1467934|AutoscaleProbe:3.9.3|Released Autoscale probe 3.9.3 for Spark 3.3, including reliability fixes for TJS and token library errors. Improvements include backoff on TokenLibrary authentication failures and delayed TJS update cores request status checks for better server load management.|
+|1384083|Impulse:1.2.3|Updated Impulse component library in Spark 3.3 to use SynapseMaven feed, enhancing the component's source management.|
+|1396780|TridentTokenLibrary:1.9.4|Introduced encryption for tokens at rest, SPN certificate-based authentication, and shifted packaging from VHD to Universal package. Also includes NFS cache reorganization, token refresh optimizations, and HTTP request retries.|
+|1397963|CosmosDBConnector:2.1.1|Updated CosmosDB to utilize Spark connector versions 2.1.1 for OLAP and 4.33.0 for OLTP, improving performance and reliability.|
+|1400653|FabricDWConnector:1.0.5|Released Fabric Spark DW Connector Version 1.0.5 for Spark 3.3.0, introducing support for JDBC data source configuration options to improve read requests and enhancing supportability items. This version also removes outdated Synapse code paths and ensures consistent telemetry logging.|
+|1401486|Impulse:1.2.4|Upgrades Impulse to version 1.0.22, including improvements like delta error classification, infrastructure enhancements, updates to dependencies, and fixes for Python and fluent logger issues.|
+|1403289|LibraryMetadataCooker:2.0.1|Enabled stubgen in Library Metadata Cooker for Spark 3.3 to support the migration to Pylance, requiring stub files for customized library preprocessing. Updated Library Metadata Cooker version to facilitate this change.|
+|1406338|DSCopilotInstaller:1.0.0|Adds DSCopilotInstaller to the VHD in Spark3.3 for pre-installing DS Copilot in Fabric environments, enhancing security by avoiding public URL access.|
+|1408438|Wildfire/spark33:1.7.58|New Wildfire release upgrades Spark to 3.3.4, including fixes and improvements across Spark, Livy, and Hadoop. Enhancements include support for low-shuffle merge on Delta tables with spaces and server-side session timeouts in Livy.|
+|1410763|Python/spark33:3.10/1.0.6|Installs OS libraries for Playwright on Spark3.3 to support asyncio dependencies, addressing customer issues with missing libraries.|
+|1411748|FabricDWConnector:1.0.9|Released Fabric DW Connector v1.0.9, introducing support for user-provided passthrough SQL queries, handling special characters in table columns, and improving telemetry. Additionally, it enhances the reliability of Power BI API interactions.|
+|1417152|Autotune:1.11.1.2|Remove Autotune-admin jars from Spark 3.3 image|
+|1417858|FabricDWConnector:1.0.10|Released Fabric DW Connector v1.0.10 for Spark 3.3, introducing auto-discovery of SQL endpoints for Lakehouse/Warehouse artifacts by using user-provided Artifact Id, enhancing support for least privilege access.|
+|1418085|NotebookUtils:1.1.44|Upgraded Blobfuse to version 1.6.2 to support refreshing SAS tokens for system (HOBO) storage.|
+
+
+# Bug Fixes
+|Id|Component|Description|
+|-----|-----|-----|
+|1612385|KustoConnector:1.5.2|Fixes NoClassDefFoundError for the Kusto component in Spark 3.3 by updating dependencies to address issues after a recent rollout.|
+|1606273|LibraryManager:1.0.38|Security fix ACE Vulnerability (Text4Shell) (CVE-2022-42889) from pyspark environment for commons-text-1.9.jar|
+|1559297|Delta:2.2.0.21|Fixes a bug in the Delta Lake optimize write feature where a differently cased partition column name in the query can lead to an error|
+|1486499|CSparkMetricUpdate:1.0.8|Updated the org.json library in Spark 3.3 runtime telemetry to version 20231013 for security compliance.|
+|1490495|TridentTokenLibrary:1.9.6, Conda:1.0.22|Upgrades SynapseML-Utils, Mlflow-Plugin, and TridentTokenLibrary to enhance support for ML 1P AAD Token, MWC Token for OpenAI billing, and switches to Fabric Public API in Mlflow plugin. It also fixes an issue with pandas after pip installs.|
+|1497370|Conda:1.0.23|Upgrades Mlflow-Plugin to include a compatibility fix for the `log_params` function, addressing crashes in lower versions of MLflow.|
+|1503225|Conda:1.0.24|Enhanced Spark3.3 by hosting the SynapseML MLflow model allowlist file locally, improving reliability and avoiding issues with remote blob access in environments with restricted public internet access.|
+|1515171|LibraryManager:1.0.36|Improved reliability of library deployment stage in Spark 3.3 by ensuring node configurations and certificates are ready before executing LDS, with retries implemented for up to 120 seconds if necessary.|
+|1531201|LibraryManager:1.0.37|Internal enhancement to support LDS logging scenario requirements|
+|1533076|Delta:2.2.0.19|Improvements for Delta Lake Continuous Integration and logging.|
+|1537672|Wildfire:1.7.62|Change Yarn RM file system state store from Zk to Hobo storage in Fabric 1 node and 2 node clusters and Create a new NM secondary service in Fabric one node clusters to prevent job failures when RM restart.|
+|1420143|TokenLibrary:3.6.5|Bug fixes and logging improvements to track request processing|
+|1421649|Delta:2.2.0.17|Delta version update contains a bug fix when OptimizeWrite enabled and coalesce is used at the end of write job.|
+|1439924|DWConnector:2.1.5|Upgraded Synapse DW Connector to 2.1.5, addressing issues with temporary file cleanup after reads and enhancing filter pushdown by removing the unsupported Escape keyword from SQL clauses.|
+|1445535|LibraryManager:1.0.30|Library Management bug fixes for Synapse DEP customers using custom conda channel setup on Azure Storage account|
+|1448531|OneLakeClientStarter:spark3/1.0.23|Released OLC version 2024.176.20.0 with bug fixes, addressing issues with special characters in friendly names causing "File not found" errors in Spark paths.|
+|1455145|LibraryManager:1.0.32|Fixed a bug in the library manager for Spark 3.3, addressing an issue where the library metadata cooker's timeout could cause failures. Timeout reduced to 60 seconds for more efficient processing.|
+|1455901|Wildfire/spark33:1.7.60|New Wildfire release for Spark 3.3 includes fixes in Hadoop, Spark, and Livy, along with a security fix. Improvements include namespace resolution, CVE fixes in Livy, and making REPL count user configurable.|
+|1466644|Wildfire/spark33:1.7.61|Release of the Wildfire stack for Spark 3.3, featuring bug fixes and improvements in Livy and Hadoop.|
+|1470973|CSparkMetricUpdate:1.0.5|Implemented security fixes including code signing jars and redacting sensitive information to address a credential leak issue.|
+|1480503|CSparkMetricUpdate:1.0.7|Reverted changes to jar signing in Spark 3.3 due to security certificate issues causing spark jobs to fail. This was a response to incidents caused by the original change.|
+|1381643|TridentCore1.2.9|Fixes a bug in trident-core related to config values with whitespaces not being correctly written and propagated, affecting onelake catalog functionality with workspaces containing whitespaces. Also includes migration of trident-core to artifact feeds.|
+|1382189|SparkRPCHistoryServer|Migrated RPCHS artifact to ADO feed and addressed security concerns, including the redaction of sensitive information in logs and during event replay failures in Spark 3.3.|
+|1396780|TridentTokenLibrary:1.9.4|Introduced encryption for tokens at rest, SPN certificate-based authentication, and shifted packaging from VHD to Universal package. Also includes NFS cache reorganization, token refresh optimizations, and HTTP request retries.|
+
+
+# Components
+|Name|Version|Name|Version|
+|-----|-----|-----|-----|
+|**AutoscaleProbe**|**3.9.2 ⬆️ 3.9.3**|**MySQLJavaConnector**|**1.0.2 ⬆️ 1.0.3**|
+|**Autotune**|**1.11.1.0 ⬆️ 1.11.1.2**|**NotebookUtils**|**1.1.43 ⬆️ 1.1.46**|
+|**AzureMLExtensions**|**1.0.3 ⬆️ 1.0.4**|**OneLakeClientStarter**|**1.0.20 ⬆️ 1.0.23**|
+|CDM|1.19.8|OnelakeSparkCatalog|0.1.10|
+|**CSparkMetricUpdate**|**1.0.5 ⬆️ 1.0.8**|Peregrine|0.10.4|
+|ClusterGateway|spark/2.4.4|**PostgreSQLJDBCDriver**|**1.0.2 ⬆️ 1.0.3**|
+|**Conda**|**1.0.21 ⬆️ 1.0.25**|**Python**|**3.10/1.0.5 ⬆️ 3.10/1.0.6**|
+|**CosmosDBConnector**|**1.8.10 ⬆️ 2.1.1**|**R**|**1.0.6 ⬆️ 1.0.7**|
+|**DSCopilotInstaller**|**1.0.1**|SQLServerODBCDriver|18.1.0|
+|**DWConnector**|**2.1.4.1 ⬆️ 2.1.5**|**SStreamOnSparkJar**|**2.3.0 ⬆️ 2.3.0.1**|
+|**Delta**|**2.2.0.12 ⬆️ 2.2.0.21**|**SparkAdvisor**|**0.0.14 ⬆️ 1.0.0**|
+|Dotnet|6.0.0|SparkDiagnosticsLibrary|1.0.21|
+|EventHubConnector|2.3.26|SparkInitialize|1.0.0|
+|**ExternalHiveMetastoreLibraries**|**0.0.6 ⬆️ 0.0.8**|SparkLighter|2.0.8|
+|**FabricDWConnector**|**1.0.4.1 ⬆️ 1.0.10**|**SparkNativeParquetWriter**|**0.8.1 ⬆️ 0.8.1.1**|
+|FsspecWrapper|1.0.13|SparkRPCHistoryServer|1.0.29|
+|**Genesis**|**0.29.0 ⬆️ 0.32.1**|SparklyrConnector|1.0.1|
+|**HiveMetaStoreClient**|**1.1.21 ⬆️ 1.1.21.1**|**TokenLibrary**|**3.6.5 ⬆️ 3.6.8**|
+|**Impulse**|**1.2.2 ⬆️ 1.2.4**|**TridentCore**|**1.2.8 ⬆️ 1.2.9**|
+|**KustoConnector**|**1.3.4 ⬆️ 1.5.2**|**TridentTokenLibrary**|**1.8.0 ⬆️ 1.9.7**|
+|**LibraryManager**|**1.0.27 ⬆️ 1.0.38**|VSANodeScanAgent|1.0.1|
+|**LibraryMetadataCooker**|**1.0.0 ⬆️ 2.0.1**|Vegas|3.3.09.01|
+|**MMLSpark**|**1.4.15 ⬆️ 1.4.20**|**VertiParquet**|**0.8.6 ⬆️ 0.8.6.1**|
+|**MachineLearningPredict**|**1.0.1 ⬆️ 1.0.3**|**Wildfire**|**1.7.57 ⬆️ 1.7.62**|
+|**MlflowLibrary**|**2.1.1 ⬆️ 2.1.1.1**|
+
+# Python Modules
+|Name|Version|Name|Version|
+|-----|-----|-----|-----|
+|_libgcc_mutex|0.1|libuuid|2.32.1|
+|_openmp_mutex|4.5|libuuid|2.38.1|
+|_py-xgboost-mutex|2.0|libuv|1.44.2|
+|_tflow_select|2.3.0|libwebp-base|1.2.4|
+|absl-py|1.3.0|libxcb|1.13|
+|adal|1.2.7|libxcrypt|4.4.36|
+|adlfs|0.7.7|libxgboost|1.7.1|
+|aiohttp|3.8.3|libxml2|2.9.9|
+|aiosignal|1.3.1|libzlib|1.3.1|
+|anyio|3.6.2|libzlib|1.2.13|
+|aom|3.5.0|libzopfli|1.0.3|
+|applicationinsights|0.11.10|lightgbm|3.2.1|
+|argcomplete|2.0.0|lime|0.2.0.1|
+|argon2-cffi|21.3.0|llvm-openmp|15.0.4|
+|argon2-cffi-bindings|21.2.0|llvmlite|0.39.1|
+|arrow-cpp|9.0.0|locket|1.0.0|
+|asttokens|2.1.0|lxml|4.8.0|
+|**asttokens**|**2.1.0 ⬆️ 3.0.0**|lz4-c|1.9.3|
+|astunparse|1.6.3|markdown|3.3.4|
+|async-timeout|4.0.2|markupsafe|2.1.1|
+|attrs|22.1.0|**matplotlib**|**3.9.1 ⬆️ 3.10.1**|
+|aws-c-cal|0.5.11|matplotlib|3.6.2|
+|aws-c-common|0.6.2|matplotlib-base|3.6.2|
+|aws-c-event-stream|0.2.7|matplotlib-inline|0.1.7|
+|aws-c-io|0.10.5|matplotlib-inline|0.1.6|
+|aws-checksums|0.1.11|mistune|2.0.4|
+|aws-sdk-cpp|1.8.186|mkl|2022.1.0|
+|azure-common|1.1.28|mkl-devel|2022.1.0|
+|azure-core|1.26.1|mkl-include|2022.1.0|
+|azure-datalake-store|0.0.51|mleap|0.17.0|
+|azure-graphrbac|0.61.1|mlflow-skinny|1.30.0|
+|azure-identity|1.7.0|mpc|1.2.1|
+|azure-mgmt-authorization|2.0.0|mpfr|4.1.0|
+|azure-mgmt-containerregistry|10.0.0|mpmath|1.2.1|
+|azure-mgmt-core|1.3.2|msal|2022.09.01|
+|azure-mgmt-keyvault|10.1.0|msal-extensions|0.3.1|
+|azure-mgmt-resource|21.2.1|**msgpack**|**1.0.8 ⬆️ 1.1.0**|
+|azure-mgmt-storage|20.1.0|msrest|0.7.1|
+|azure-storage-blob|12.13.0|msrestazure|0.6.4|
+|azureml-core|1.47.0|multidict|6.0.2|
+|azureml-dataprep|4.5.7|multiprocess|0.70.14|
+|azureml-dataprep-native|38.0.0|munkres|1.1.4|
+|azureml-dataprep-rslex|2.11.4|mypy|0.780|
+|azureml-dataset-runtime|1.47.0|mypy-extensions|0.4.3|
+|azureml-mlflow|1.47.0|mypy-extensions|0.4.4|
+|azureml-opendatasets|1.47.0|nbclassic|0.4.8|
+|azureml-synapse|0.0.1|nbclient|0.7.0|
+|azureml-telemetry|1.47.0|nbconvert|7.2.3|
+|backcall|0.2.0|nbformat|5.7.0|
+|backports|1.0|ncurses|6.3|
+|backports-tempfile|1.0|ncurses|6.5|
+|backports-weakref|1.0.post1|ndg-httpsclient|0.5.1|
+|backports.functools_lru_cache|1.6.4|nest-asyncio|1.5.6|
+|bcrypt|4.0.1|nest-asyncio|1.6.0|
+|beautifulsoup4|4.9.3|networkx|2.8.8|
+|blas|2.116|nltk|3.6.2|
+|blas-devel|3.9.0|notebook|6.5.2|
+|bleach|5.0.1|notebook-shim|0.2.2|
+|blinker|1.5|**notebookutils**|**1.0.34.33.20240612.3 ⬆️ 1.0.34.33.20241121.2**|
+|blosc|1.21.1|numba|0.56.3|
+|bokeh|3.0.1|numpy|1.23.4|
+|brotli|1.0.9|**numpy**|**1.23.4 ⬆️ 2.2.4**|
+|brotli-bin|1.0.9|oauthlib|3.2.2|
+|brotli-python|1.0.9|onnx|1.12.0|
+|brotlipy|0.7.0|onnxconverter-common|1.7.0|
+|brunsli|0.1|onnxmltools|1.7.0|
+|bzip2|1.0.8|onnxruntime|1.13.1|
+|c-ares|1.18.1|openjpeg|2.5.0|
+|c-blosc2|2.4.3|openpyxl|3.0.7|
+|**ca-certificates**|**2022.9.24 ⬆️ 2025.1.31**|openssl|1.1.1s|
+|ca-certificates|2022.9.24|**openssl**|**1.1.1s ⬆️ 3.4.1**|
+|cached-property|1.5.2|opt_einsum|3.3.0|
+|cached_property|1.5.2|orc|1.7.6|
+|cachetools|5.2.0|packaging|21.3|
+|certifi|2022.9.24|**packaging**|**21.3 ⬆️ 24.2**|
+|cffi|1.15.1|pandas|1.5.1|
+|cfitsio|4.1.0|**pandas**|**1.5.1 ⬆️ 2.2.3**|
+|charls|2.3.4|pandasql|0.7.3|
+|charset-normalizer|2.1.1|pandocfilters|1.5.0|
+|click|8.1.3|paramiko|2.12.0|
+|cloudpickle|2.2.0|parquet-cpp|1.5.1|
+|colorama|0.4.6|parso|0.8.4|
+|coloredlogs|15.0.1|parso|0.8.3|
+|comm|0.2.2|partd|1.3.0|
+|conda-package-handling|1.9.0|pathos|0.3.0|
+|configparser|5.3.0|pathspec|0.10.1|
+|contextlib2|21.6.0|patsy|0.5.3|
+|**contourpy**|**1.2.1 ⬆️ 1.3.1**|pcre2|10.40|
+|contourpy|1.0.6|pexpect|4.8.0|
+|control-script|1.0.3|pexpect|4.9.0|
+|cryptography|38.0.3|pickleshare|0.7.5|
+|cycler|0.12.1|pillow|9.2.0|
+|cycler|0.11.0|**pillow**|**9.2.0 ⬆️ 11.1.0**|
+|cython|0.29.32|pip|22.3.1|
+|cytoolz|0.12.0|pkginfo|1.8.3|
+|dash|1.21.0|platformdirs|2.5.3|
+|dash-core-components|1.17.1|**platformdirs**|**2.5.3 ⬆️ 4.3.7**|
+|dash-html-components|1.1.4|plotly|4.14.3|
+|dash-renderer|1.9.1|pmdarima|2.0.1|
+|dash-table|4.12.0|portalocker|2.6.0|
+|dash_cytoscape|0.2.0|pox|0.3.2|
+|dask-core|2022.10.2|ppft|1.7.6.6|
+|databricks-cli|0.17.3|prettytable|3.2.0|
+|dav1d|1.0.0|prometheus-client|0.15.0|
+|dbus|1.13.6|prompt-toolkit|3.0.32|
+|debugpy|1.6.3|**prompt-toolkit**|**3.0.32 ⬆️ 3.0.50**|
+|**debugpy**|**1.8.2 ⬆️ 1.8.13**|protobuf|3.20.1|
+|decorator|5.1.1|psutil|5.9.4|
+|**decorator**|**5.1.1 ⬆️ 5.2.1**|**psutil**|**5.9.4 ⬆️ 7.0.0**|
+|defusedxml|0.7.1|pthread-stubs|0.4|
+|dill|0.3.6|ptyprocess|0.7.0|
+|distlib|0.3.6|**pure-eval**|**0.2.2 ⬆️ 0.2.3**|
+|distro|1.8.0|pure_eval|0.2.2|
+|docker|6.0.1|py-xgboost|1.7.1|
+|dotnetcore2|3.1.23|py4j|0.10.9.5|
+|entrypoints|0.4|py4j|0.10.9.7|
+|et_xmlfile|1.0.1|pyarrow|9.0.0|
+|**exceptiongroup**|**1.2.1 ⬆️ 1.2.2**|pyasn1|0.4.8|
+|executing|1.2.0|pyasn1-modules|0.2.7|
+|**executing**|**1.2.0 ⬆️ 2.2.0**|pycosat|0.6.4|
+|expat|2.5.0|pycparser|2.21|
+|fastjsonschema|2.16.2|**pygments**|**2.18.0 ⬆️ 2.19.1**|
+|filelock|3.8.0|pygments|2.13.0|
+|fire|0.4.0|pyjwt|2.6.0|
+|flask|2.2.2|pynacl|1.5.0|
+|flask-compress|1.13|pyodbc|4.0.34|
+|flatbuffers|2.0.7|pyopenssl|22.1.0|
+|fluent-logger|0.10.0|**pyparsing**|**3.0.9 ⬆️ 3.2.3**|
+|fontconfig|2.14.1|pyparsing|3.0.9|
+|fonttools|4.38.0|pyperclip|1.8.2|
+|**fonttools**|**4.53.1 ⬆️ 4.56.0**|pyqt|5.9.2|
+|freetype|2.12.1|pyrsistent|0.19.2|
+|frozenlist|1.3.3|pysocks|1.7.1|
+|fsspec|2022.10.0|pyspark|3.3.1|
+|fsspec_wrapper|0.1.7|**pyspark**|**3.5.1 ⬆️ 20240404**|
+|fusepy|3.0.1|python|3.10.6|
+|future|0.18.2|**python**|**3.10.14 ⬆️ 3.10.16**|
+|gast|0.4.0|python-dateutil|2.8.2|
+|gensim|4.2.0|python-dateutil|2.9.0.post0|
+|geographiclib|1.52|python-flatbuffers|2.0|
+|geopy|2.1.0|python_abi|3.10|
+|gettext|0.21.1|pytorch|1.13.0|
+|gevent|22.10.1|pytorch-mutex|1.0|
+|gflags|2.2.2|pytz|2022.6|
+|giflib|5.2.1|**pytz**|**2022.6 ⬆️ 2025.2**|
+|gitdb|4.0.9|pyu2f|0.1.5|
+|gitpython|3.1.29|pywavelets|1.3.0|
+|glib|2.74.1|pyyaml|6.0|
+|glib-tools|2.74.1|pyzmq|24.0.1|
+|glog|0.6.0|**pyzmq**|**24.0.1 ⬆️ 26.3.0**|
+|gmp|6.2.1|qt|5.9.7|
+|gmpy2|2.1.2|re2|2022.06.01|
+|google-auth|2.14.0|readline|8.2|
+|google-auth-oauthlib|0.4.6|readline|8.1.2|
+|google-pasta|0.2.0|regex|2022.10.31|
+|greenlet|1.1.3.post0|requests|2.28.1|
+|grpc-cpp|1.46.4|requests-oauthlib|1.3.1|
+|grpcio|1.46.4|retrying|1.3.3|
+|gst-plugins-base|1.14.0|rsa|4.9|
+|gstreamer|1.14.0|ruamel-yaml|0.17.4|
+|h5py|3.7.0|ruamel-yaml-clib|0.2.6|
+|hdf5|1.12.2|ruamel_yaml|0.15.80|
+|html5lib|1.1|s2n|1.0.10|
+|humanfriendly|10.0|salib|1.4.6.1|
+|hummingbird-ml|0.4.0|scikit-image|0.19.3|
+|icu|58.2|scikit-learn|1.1.3|
+|idna|3.4|scipy|1.9.3|
+|imagecodecs|2022.9.26|seaborn|0.11.1|
+|imageio|2.9.0|seaborn-base|0.11.1|
+|importlib-metadata|5.0.0|secretstorage|3.3.3|
+|**impulse-python-handler**|**1.0.19.1.0.0 ⬆️ 1.0.22.1.0.0**|send2trash|1.8.0|
+|interpret|0.2.4|setuptools|65.5.1|
+|interpret-core|0.2.4|**setuptools**|**65.5.1 ⬆️ 75.8.2**|
+|ipykernel|6.17.0|shap|0.39.0|
+|ipykernel|6.29.5|sip|4.19.13|
+|ipython|8.6.0|six|1.16.0|
+|**ipython**|**8.6.0 ⬆️ 8.34.0**|**six**|**1.16.0 ⬆️ 1.17.0**|
+|ipython-genutils|0.2.0|skl2onnx|1.8.0.1|
+|ipywidgets|7.7.0|sklearn-pandas|2.2.0|
+|**ipywidgets**|**8.1.3 ⬆️ 8.1.5**|slicer|0.0.7|
+|isodate|0.6.0|smart_open|6.2.0|
+|itsdangerous|2.1.2|smmap|3.0.5|
+|jdcal|1.4.1|snappy|1.1.9|
+|**jedi**|**0.18.1 ⬆️ 0.19.2**|sniffio|1.3.0|
+|jedi|0.18.1|soupsieve|2.3.2.post1|
+|jeepney|0.8.0|sqlalchemy|1.4.43|
+|jinja2|3.1.2|sqlanalyticsconnectorpy|1.0.1|
+|jmespath|1.0.1|sqlite|3.39.4|
+|joblib|1.2.0|sqlparse|0.4.3|
+|jpeg|9e|stack-data|0.6.3|
+|jsonpickle|2.2.0|stack_data|0.6.0|
+|jsonschema|4.17.0|statsmodels|0.13.5|
+|**jupyter-client**|**8.6.2 ⬆️ 8.6.3**|sympy|1.11.1|
+|jupyter-core|5.7.2|**synapseml-cognitive**|**1.0.4.dev1 ⬆️ 1.0.9.dev1**|
+|jupyter-server|1.23.0|**synapseml-core**|**1.0.4.dev1 ⬆️ 1.0.9.dev1**|
+|jupyter_client|7.4.4|**synapseml-deep-learning**|**1.0.4.dev1 ⬆️ 1.0.9.dev1**|
+|jupyter_core|4.11.2|**synapseml-internal**|**1.0.4.0.dev1 ⬆️ 1.0.9.0.dev1**|
+|jupyterlab-pygments|0.2.2|**synapseml-lightgbm**|**1.0.4.dev1 ⬆️ 1.0.9.dev1**|
+|jupyterlab-widgets|3.0.3|**synapseml-opencv**|**1.0.4.dev1 ⬆️ 1.0.9.dev1**|
+|**jupyterlab-widgets**|**3.0.3 ⬆️ 3.0.13**|**synapseml-vw**|**1.0.4.dev1 ⬆️ 1.0.9.dev1**|
+|jxrlib|1.1|tabulate|0.9.0|
+|keras|2.8.0|tbb|2021.6.0|
+|keras-applications|1.0.8|tensorboard|2.8.0|
+|keras-preprocessing|1.1.2|tensorboard-data-server|0.6.0|
+|keras2onnx|1.6.5|tensorboard-plugin-wit|1.8.1|
+|keyutils|1.6.1|tensorflow|2.8.0|
+|kiwisolver|1.4.4|tensorflow-base|2.10.0|
+|**kiwisolver**|**1.4.4 ⬆️ 1.4.8**|tensorflow-estimator|2.8.0|
+|knack|0.10.0|tensorflow-io-gcs-filesystem|0.27.0|
+|kqlmagiccustom|0.1.114.post16|termcolor|2.1.0|
+|krb5|1.19.3|terminado|0.17.0|
+|lcms2|2.14|textblob|0.15.3|
+|ld_impl_linux-64|2.39|tf-estimator-nightly|2.8.0.dev2021122109|
+|**ld_impl_linux-64**|**2.39 ⬆️ 2.43**|threadpoolctl|3.1.0|
+|lerc|4.0.0|tifffile|2022.10.10|
+|liac-arff|2.5.0|tinycss2|1.2.1|
+|libabseil|20220623.0|tk|8.6.12|
+|libaec|1.0.6|tk|8.6.13|
+|libavif|0.11.1|toolz|0.12.0|
+|libblas|3.9.0|torchvision|0.14.0|
+|libbrotlicommon|1.0.9|tornado|6.2|
+|libbrotlidec|1.0.9|**tornado**|**6.2 ⬆️ 6.4.2**|
+|libbrotlienc|1.0.9|tqdm|4.64.1|
+|libcblas|3.9.0|traitlets|5.5.0|
+|libclang|14.0.6|traitlets|5.14.3|
+|libcrc32c|1.1.2|typed-ast|1.4.3|
+|libcurl|7.86.0|typing-extensions|4.4.0|
+|libdeflate|1.14|typing-extensions|4.12.2|
+|libedit|3.1.20191231|typing_extensions|4.4.0|
+|libev|4.33|tzdata|2022f|
+|libevent|2.1.10|**tzdata**|**2022f ⬆️ 2025.2**|
+|**libffi**|**3.4.2 ⬆️ 3.4.6**|unicodedata2|15.0.0|
+|libffi|3.4.2|unixodbc|2.3.10|
+|**libgcc**|**14.2.0**|urllib3|1.26.4|
+|**libgcc-ng**|**12.2.0 ⬆️ 14.2.0**|virtualenv|20.14.0|
+|libgcc-ng|12.2.0|wcwidth|0.2.5|
+|libgfortran-ng|12.2.0|wcwidth|0.2.13|
+|libgfortran5|12.2.0|webencodings|0.5.1|
+|libglib|2.74.1|websocket-client|1.4.2|
+|**libgomp**|**14.1.0 ⬆️ 14.2.0**|werkzeug|2.2.2|
+|libgoogle-cloud|2.1.0|wheel|0.38.3|
+|libiconv|1.17|**wheel**|**0.43.0 ⬆️ 0.45.1**|
+|liblapack|3.9.0|**widgetsnbextension**|**4.0.11 ⬆️ 4.0.13**|
+|liblapacke|3.9.0|widgetsnbextension|3.6.1|
+|libllvm11|11.1.0|wrapt|1.14.1|
+|**liblzma**|**5.6.4**|xgboost|1.7.1|
+|libnghttp2|1.47.0|xorg-libxau|1.0.9|
+|libnsl|2.0.0|xorg-libxdmcp|1.1.3|
+|libnsl|2.0.1|xyzservices|2022.9.0|
+|libpng|1.6.38|xz|5.2.6|
+|libprotobuf|3.20.1|yaml|0.2.5|
+|**library-metadata-cooker**|**0.0.7 ⬆️ 3.3.1.3**|yarl|1.8.1|
+|libsodium|1.0.18|zeromq|4.3.4|
+|libsqlite|3.39.4|zfp|1.0.0|
+|**libsqlite**|**3.39.4 ⬆️ 3.49.1**|zipp|3.10.0|
+|libssh2|1.10.0|zlib|1.2.13|
+|libstdcxx-ng|12.2.0|zlib-ng|2.0.6|
+|libthrift|0.16.0|zope.event|4.5.0|
+|libtiff|4.4.0|zope.interface|5.5.1|
+|libutf8proc|2.8.0|zstd|1.5.2|
+
+# Java and Scala Libraries
+|Name|Version|Name|Version|
+|-----|-----|-----|-----|
+|HikariCP|2.5.1|json-simple|1.1|
+|JLargeArrays|1.5|json-simple|1.1.1|
+|JTransforms|3.1|json4s-ast|2.12-3.7.0-M11|
+|RoaringBitmap|0.9.25|json4s-core|2.12-3.7.0-M11|
+|ST4|4.0.4|json4s-jackson|2.12-3.7.0-M11|
+|**SparkCustomEvents**|**3.3.0-1.0.4 ⬆️ 3.3.0-1.0.6**|json4s-scalap|2.12-3.7.0-M11|
+|**TokenLibrary-assembly**|**3.6.4 ⬆️ 3.6.8**|jsr305|3.0.0|
+|VegasConnector|3.3.09|jta|1.1|
+|activation|1.1.1|jul-to-slf4j|1.7.32|
+|aircompressor|0.21|junit-jupiter|5.5.2|
+|algebra|2.12-2.0.1|junit-jupiter-api|5.5.2|
+|aliyun-java-sdk-core|4.5.10|junit-jupiter-engine|5.5.2|
+|aliyun-java-sdk-kms|2.11.0|junit-jupiter-params|5.5.2|
+|aliyun-java-sdk-ram|3.1.0|junit-platform-commons|1.5.2|
+|aliyun-sdk-oss|3.13.0|junit-platform-engine|1.5.2|
+|annotations|7.0.0|kafka-clients|2.8.1|
+|antlr-runtime|3.5.2|kryo-shaded|4.0.2|
+|antlr4-runtime|4.8|**kusto-spark**|**3.0_2.12-3.1.16 ⬆️ 3.0_2.12-5.2.2-SNAPSHOT**|
+|aopalliance-repackaged|2.6.1|lapack|2.2.1|
+|apiguardian-api|1.1.0|leveldbjni-all|1.8|
+|arpack|2.2.1|libfb303|0.9.3|
+|arpack_combined_all|0.1|libthrift|0.12.0|
+|arrow-format|7.0.0|lightgbmlib|3.3.510|
+|arrow-memory-core|7.0.0|log4j|1.2-api-2.17.2|
+|arrow-memory-netty|7.0.0|log4j-api|2.17.2|
+|arrow-vector|7.0.0|log4j-core|2.17.2|
+|audience-annotations|0.5.0|log4j-slf4j-impl|2.17.2|
+|autotune-client|2.12-1.11.1-3.3-125200601|lz4-java|1.8.0|
+|autotune-common|2.12-1.11.1-3.3-125200601|mdsdclientdynamic|2.0|
+|avro|1.11.0|metrics-core|4.2.7|
+|avro-ipc|1.11.0|metrics-graphite|4.2.7|
+|avro-mapred|1.11.0|metrics-jmx|4.2.7|
+|**aws-java-sdk-bundle**|**1.11.1026 ⬆️ 1.12.262**|metrics-json|4.2.7|
+|**azure-cosmos-analytics-spark**|**3_2-12_synapse-2.1.1**|metrics-jvm|4.2.7|
+|azure-data-lake-store-sdk|2.3.9|microsoft-catalog-metastore-client|1.1.21|
+|azure-eventhubs|3.3.0|microsoft-log4j-etwappender|1.0|
+|azure-eventhubs-spark|2.12-2.3.22|minlog|1.3.0|
+|azure-keyvault-core|1.0.0|mlflow-spark|2.1.1|
+|azure-storage|7.0.1|mysql-connector-java|8.0.18|
+|azure-synapse-ml-pandas|2.12-0.1.1|netty-all|4.1.74.Final|
+|azure-synapse-ml-predict|2.12-1.0|netty-buffer|4.1.74.Final|
+|blas|2.2.1|netty-codec|4.1.74.Final|
+|bonecp|0.8.0.RELEASE|netty-common|4.1.74.Final|
+|breeze|2.12-1.2|netty-handler|4.1.74.Final|
+|breeze-macros|2.12-1.2|netty-resolver|4.1.74.Final|
+|cats-kernel|2.12-2.1.1|netty-tcnative-classes|2.0.48.Final|
+|chill|2.12-0.10.0|netty-transport|4.1.74.Final|
+|chill-java|0.10.0|netty-transport-classes-epoll|4.1.74.Final|
+|client-sdk|1.24.1|netty-transport-classes-kqueue|4.1.74.Final|
+|commons-cli|1.5.0|netty-transport-native-epoll|4.1.74.Final-linux-aarch_64|
+|commons-codec|1.15|netty-transport-native-epoll|4.1.74.Final-linux-x86_64|
+|commons-collections|3.2.2|netty-transport-native-kqueue|4.1.74.Final-osx-x86_64|
+|commons-collections4|4.4|netty-transport-native-kqueue|4.1.74.Final-osx-aarch_64|
+|commons-compiler|3.0.16|netty-transport-native-unix-common|4.1.74.Final|
+|commons-compress|1.21|**notebook-utils**|**1.0.34-spark33-20240612.3 ⬆️ 1.0.34-spark33-20241121.2**|
+|commons-crypto|1.1.0|objenesis|3.2|
+|commons-dbcp|1.4|onnx-protobuf|2.12-0.9.3|
+|commons-io|2.11.0|onnxruntime_gpu|1.8.1|
+|commons-lang|2.6|opencsv|2.3|
+|commons-lang3|3.12.0|opencv|3.2.0-1|
+|commons-logging|1.1.3|opentest4j|1.2.0|
+|commons-math3|3.6.1|opentracing-api|0.33.0|
+|commons-pool|1.5.4|opentracing-noop|0.33.0|
+|commons-pool2|2.11.1|opentracing-util|0.33.0|
+|commons-text|1.10.0|**orc-core**|**1.7.6 ⬆️ 1.7.10**|
+|compress-lzf|1.1|**orc-mapreduce**|**1.7.6 ⬆️ 1.7.10**|
+|core|1.1.2|**orc-shims**|**1.7.6 ⬆️ 1.7.10**|
+|curator-client|2.13.0|oro|2.0.8|
+|curator-framework|2.13.0|osgi-resource-locator|1.0.3|
+|curator-recipes|2.13.0|paranamer|2.8|
+|datanucleus-api-jdo|4.2.4|parquet-column|1.12.3|
+|datanucleus-core|4.1.17|parquet-common|1.12.3|
+|datanucleus-rdbms|4.1.19|parquet-encoding|1.12.3|
+|**delta-core**|**2.12-2.2.0.12 ⬆️ 2.12-2.2.0.21**|parquet-format-structures|1.12.3|
+|**delta-iceberg**|**2.12-2.2.0.12 ⬆️ 2.12-2.2.0.21**|parquet-hadoop|1.12.3|
+|**delta-storage**|**2.2.0.12 ⬆️ 2.2.0.21**|parquet-jackson|1.12.3|
+|derby|0.14.2.0|peregrine-spark|3.3.0-0.10.3|
+|dropwizard-metrics-hadoop-metrics2-reporter|0.1.2|pickle|1.2|
+|flatbuffers-java|1.12.0|postgresql|2.2.9|
+|fluent-logger-jar-with-dependencies-jdk8|8|protobuf-java|2.5.0|
+|**genesis-client**|**2.12-0.28.0-jar-with-dependencies ⬆️ 2.12-0.32.1-jar-with-dependencies**|proton-j|0.33.8|
+|gluten-velox-bundle-spark|3.3_2.12-ubuntu_18.04-0.5.0-SNAPSHOT|py4j|0.10.9.5|
+|gson|2.8.9|qpid-proton-j-extensions|1.2.4|
+|guava|4.0.1|rocksdbjni|6.20.3|
+|**hadoop-aliyun**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scala-collection-compat|2.12-2.1.1|
+|**hadoop-annotations**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scala-compiler|2.12.15|
+|**hadoop-aws**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scala-java8-compat|2.12-0.9.0|
+|**hadoop-azure**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scala-library|2.12.15|
+|**hadoop-azure-datalake**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scala-parser-combinators|2.12-1.1.2|
+|hadoop-azureml|1.0-fs|scala-reflect|2.12.15|
+|**hadoop-client-api**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scala-xml|2.12-1.2.0|
+|**hadoop-client-runtime**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|scalactic|2.12-3.2.14|
+|**hadoop-cloud-storage**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|shapeless|2.12-2.3.7|
+|**hadoop-openstack**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|shims|0.9.25|
+|hadoop-shaded-guava|1.1.1|slf4j-api|1.7.32|
+|**hadoop-yarn-server-web-proxy**|**3.3.4.5.2.20240522.3 ⬆️ 3.3.4.5.2.20240924.1**|snappy-java|1.1.10.5|
+|**hdinsight-spark-metrics**|**3.3.0-1.0.4 ⬆️ 3.3.0-1.0.6**|spark|3.3-rpc-history-server-core_2.12-1.0.0|
+|hive-beeline|2.3.9|spark|3.3-rpc-history-server-app-listener_2.12-1.0.0|
+|hive-cli|2.3.9|spark|3.3-advisor-core_2.12-1.0.18|
+|hive-common|2.3.9|**spark-avro**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-exec|2.3.9-core|**spark-catalyst**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-jdbc|2.3.9|spark-cdm-connector-assembly-spark|3.3-1.19.7|
+|hive-llap-common|2.3.9|**spark-core**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-metastore|2.3.9|**spark-enhancement**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-serde|2.3.9|spark-enhancementui|2.12-3.0.0|
+|hive-service-rpc|3.1.2|**spark-graphx**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-shims|2.3.9|**spark-hadoop-cloud**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-shims|0.23-2.3.9|**spark-hive**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-shims-common|2.3.9|**spark-hive-thriftserver**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-shims-scheduler|2.3.9|**spark-kusto-synapse-connector**|**3.1_2.12-1.3.4 ⬆️ 3.0_2.12-1.5.2**|
+|hive-storage-api|2.7.2|**spark-kvstore**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hive-vector-code-gen|2.3.9|**spark-launcher**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|hk2-api|2.6.1|spark-lighter-contract|2.12-2.0.8_spark-3.3.0_20240704.2|
+|hk2-locator|2.6.1|spark-lighter-core|2.12-2.0.11_spark-3.3.0_20240704.2|
+|hk2-utils|2.6.1|**spark-microsoft-tools**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|httpclient|4.5.13|**spark-mllib**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|httpclient5|5.1.3|**spark-mllib-local**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|httpcore|4.4.14|**spark-network-common**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|httpmime|4.5.13|**spark-network-shuffle**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|**impulse-core_spark**|**3.3_2.12-1.0.19 ⬆️ 3.3_2.12-1.0.22**|**spark-repl**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|**impulse-telemetry-mds_spark**|**3.3_2.12-1.0.19 ⬆️ 3.3_2.12-1.0.22**|**spark-sketch**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|ini4j|0.5.4|**spark-sql**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|isolation-forest|3.3.3_2.12-3.0.4|**spark-sql-kafka**|**0_2.12-3.3.1.5.2.20240522.3 ⬆️ 0_2.12-3.3.4.5.2.20240924.1**|
+|istack-commons-runtime|3.0.8|**spark-streaming**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|ivy|2.5.1|**spark-streaming-kafka**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 0_2.12-3.3.4.5.2.20240924.1**|
+|jackson-annotations|2.13.4|**spark-streaming-kafka**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|jackson-core|2.13.4|**spark-tags**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|jackson-core-asl|1.9.13|**spark-token-provider-kafka**|**0_2.12-3.3.1.5.2.20240522.3 ⬆️ 0_2.12-3.3.4.5.2.20240924.1**|
+|jackson-databind|2.13.4.2|**spark-unsafe**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|jackson-dataformat-cbor|2.13.4|**spark-yarn**|**2.12-3.3.1.5.2.20240522.3 ⬆️ 2.12-3.3.4.5.2.20240924.1**|
+|jackson-mapper-asl|1.9.13|spark_diagnostic_cli|2.1.0_spark-3.3.0_20240705.2|
+|jackson-module-scala|2.12-2.13.4|sparklyr-connector|3.3.1-1.0.0274143|
+|jakarta.annotation-api|1.3.5|sparknativeparquetwriter|2.12-0.8.1-spark-3.3|
+|jakarta.inject|2.6.1|spire|2.12-0.17.0|
+|jakarta.servlet-api|4.0.3|spire-macros|2.12-0.17.0|
+|jakarta.validation-api|2.0.2|spire-platform|2.12-0.17.0|
+|jakarta.ws.rs-api|2.1.6|spire-util|2.12-0.17.0|
+|jakarta.xml.bind-api|2.3.2|spray-json|2.12-1.3.5|
+|janino|3.0.16|stax-api|1.0.1|
+|javassist|3.25.0-GA|stream|2.9.6|
+|javatuples|1.2|structuredstreamforspark|2.12-3.2.0-2.3.0|
+|javax.jdo|3.2.0-m3|super-csv|2.2.0|
+|javolution|5.5.1|**synapseml-cognitive**|**2.12-1.0.4-spark3.3 ⬆️ 2.12-1.0.9-spark3.3**|
+|jaxb-api|2.2.11|**synapseml-core**|**2.12-1.0.4-spark3.3 ⬆️ 2.12-1.0.9-spark3.3**|
+|jaxb-runtime|2.3.2|**synapseml-deep-learning**|**2.12-1.0.4-spark3.3 ⬆️ 2.12-1.0.9-spark3.3**|
+|jcl-over-slf4j|1.7.32|**synapseml-internal**|**2.12-1.0.4.0-spark3.3 ⬆️ 2.12-1.0.9.0-spark3.3**|
+|jdo-api|3.0.1|**synapseml-lightgbm**|**2.12-1.0.4-spark3.3 ⬆️ 2.12-1.0.9-spark3.3**|
+|jdom2|2.0.6|**synapseml-opencv**|**2.12-1.0.4-spark3.3 ⬆️ 2.12-1.0.9-spark3.3**|
+|jersey-client|2.36|**synapseml-vw**|**2.12-1.0.4-spark3.3 ⬆️ 2.12-1.0.9-spark3.3**|
+|jersey-common|2.36|**synfs**|**1.0.34-spark33-20240612.3 ⬆️ 1.0.34-spark33-20241121.2**|
+|jersey-container-servlet|2.36|threeten-extra|1.5.0|
+|jersey-container-servlet-core|2.36|tink|1.6.1|
+|jersey-hk2|2.36|transaction-api|1.1|
+|jersey-server|2.36|**trident-core**|**1.2.8 ⬆️ 1.2.9**|
+|jettison|1.1|**tridenttokenlibrary-assembly**|**1.8.0 ⬆️ 1.9.7**|
+|jetty-util|9.4.53.v20231009|univocity-parsers|2.9.1|
+|jetty-util-ajax|9.4.53.v20231009|velocity|1.5|
+|jline|2.14.6|vw-jni|9.3.0|
+|joda-time|2.10.13|wildfly-openssl|1.0.7.Final|
+|jodd-core|3.5.2|xbean-asm9-shaded|4.20|
+|jpam|1.1|**xz**|**1.8 ⬆️ 1.9**|
+|jsch|0.1.54|**zookeeper**|**3.6.3.5.2.20240522.3 ⬆️ 3.6.3.5.2.20240924.1**|
+|json|1.8|**zookeeper-jute**|**3.6.3.5.2.20240522.3 ⬆️ 3.6.3.5.2.20240924.1**|
+|json|3|zstd-jni|1.5.2-1|
+
+# R Libraries
+|Name|Version|Name|Version|
+|-----|-----|-----|-----|
+|DBI|1.2.1|lightgbm|3.3.4|
+|DiceDesign|1.10|listenv|0.9.1|
+|FabricTelemetry|1.0.2|lobstr|1.1.2|
+|GPfit|1.0-8|lubridate|1.9.3|
+|KernSmooth|2.23-22|magrittr|2.0.3|
+|MASS|7.3-60.0.1|maps|3.4.2|
+|Matrix|1.6-5|markdown|1.12|
+|ModelMetrics|1.2.2.2|memoise|2.0.1|
+|R.methodsS3|1.8.2|methods|4.2.3|
+|**R.oo**|**1.26.0 ⬆️ 1.27.0**|mgcv|1.9-1|
+|**R.utils**|**2.12.3 ⬆️ 2.13.0**|mime|0.12|
+|R6|2.5.1|miniUI|0.1.1.1|
+|R6P|0.3.0|modeldata|1.3.0|
+|RColorBrewer|1.1-3|modelenv|0.1.1|
+|RODBC|1.3-20|modelr|0.1.11|
+|Rcpp|1.0.12|munsell|0.5.0|
+|SQUAREM|2021.1|nlme|3.1-164|
+|TTR|0.24.4|nnet|7.3-19|
+|V8|4.4.1|**notebookutils**|**1.0.34.33.20240612.3 ⬆️ 1.0.34.33.20241121.2**|
+|XML|3.99-0.16.1|numDeriv|2016.8-1.1|
+|arrow|10.0.1|openssl|2.1.1|
+|askpass|1.2.0|pROC|1.18.5|
+|assertthat|0.2.1|parallel|4.2.3|
+|backports|1.4.1|parallelly|1.36.0|
+|base|4.2.3|parsnip|1.1.1|
+|base64enc|0.1-3|patchwork|1.2.0|
+|bigD|0.2.0|pillar|1.9.0|
+|bit|4.0.5|pkgbuild|1.4.2|
+|bit64|4.0.5|pkgconfig|2.0.3|
+|bitops|1.0-7|pkgdown|2.0.7|
+|blob|1.2.4|pkgload|1.3.4|
+|brew|1.0-10|plotly|4.10.1|
+|brio|1.1.4|plyr|1.8.9|
+|broom|1.0.5|praise|1.0.0|
+|bslib|0.6.1|prettyunits|1.2.0|
+|cachem|1.0.8|processx|3.8.3|
+|callr|3.7.3|prodlim|2023.08.28|
+|caret|6.0-93|profvis|0.3.8|
+|cellranger|1.1.0|progress|1.2.3|
+|class|7.3-22|progressr|0.14.0|
+|cli|3.6.2|promises|1.2.1|
+|clipr|0.8.0|proxy|0.4-27|
+|clock|0.7.0|pryr|0.1.6|
+|codetools|0.2-19|ps|1.7.6|
+|collections|0.3.7|purrr|1.0.2|
+|colorspace|2.1-0|quantmod|0.4.25|
+|commonmark|1.9.1|r2d3|0.2.6|
+|compiler|4.2.3|ragg|1.2.7|
+|config|0.3.2|rappdirs|0.3.3|
+|conflicted|1.2.0|rbokeh|0.5.2|
+|coro|1.0.3|rcmdcheck|1.4.0|
+|cpp11|0.4.7|reactR|0.5.0|
+|crayon|1.5.2|reactable|0.4.4|
+|credentials|2.0.1|readr|2.1.5|
+|crosstalk|1.2.1|readxl|1.4.3|
+|crul|1.4.0|recipes|1.0.9|
+|curl|5.1.0|rematch|2.0.0|
+|data.table|1.14.10|rematch2|2.1.2|
+|datasets|4.2.3|remotes|2.4.2.1|
+|dbplyr|2.3.4|reprex|2.1.0|
+|desc|1.4.3|reshape2|1.4.4|
+|devtools|2.4.5|rjson|0.2.21|
+|diagram|1.6.5|rlang|1.1.3|
+|dials|1.2.0|rlist|0.4.6.2|
+|diffobj|0.3.5|rmarkdown|2.19|
+|digest|0.6.34|roxygen2|7.3.1|
+|downlit|0.4.3|rpart|4.1.23|
+|dplyr|1.1.4|rprojroot|2.0.4|
+|dtplyr|1.3.1|rsample|1.2.0|
+|e1071|1.7-14|rstudioapi|0.15.0|
+|ellipsis|0.3.2|rversions|2.1.2|
+|evaluate|0.23|rvest|1.0.3|
+|fansi|1.0.6|sass|0.4.8|
+|farver|2.1.1|scales|1.3.0|
+|fastmap|1.1.1|selectr|0.4-2|
+|fontawesome|0.5.2|sessioninfo|1.2.2|
+|forcats|1.0.0|shape|1.4.6|
+|foreach|1.5.2|shiny|1.8.0|
+|forge|0.2.0|slider|0.3.1|
+|fs|1.6.3|sourcetools|0.1.7-1|
+|furrr|0.3.1|sparklyr|1.8.2|
+|future|1.33.1|splines|4.2.3|
+|future.apply|1.11.1|stats|4.2.3|
+|gargle|1.5.2|stats4|4.2.3|
+|generics|0.1.3|stringi|1.8.3|
+|gert|2.0.1|stringr|1.5.1|
+|ggplot2|3.4.0|survival|3.5-7|
+|gh|1.4.0|sys|3.4.2|
+|gistr|0.9.0|systemfonts|1.0.5|
+|gitcreds|0.1.2|tcltk|4.2.3|
+|globals|0.16.2|testthat|3.2.1|
+|glue|1.7.0|textshaping|0.3.7|
+|googledrive|2.1.1|tibble|3.2.1|
+|googlesheets4|1.1.1|tidymodels|1.0.0|
+|gower|1.0.1|tidyr|1.3.1|
+|grDevices|4.2.3|tidyselect|1.2.0|
+|graphics|4.2.3|tidyverse|1.3.2|
+|grid|4.2.3|timeDate|4032.109|
+|gt|0.9.0|timechange|0.3.0|
+|gtable|0.3.4|tinytex|0.49|
+|hardhat|1.3.0|tools|4.2.3|
+|haven|2.5.4|torch|0.9.0|
+|hexbin|1.28.3|triebeard|0.4.1|
+|highcharter|0.9.4|tune|1.1.2|
+|highr|0.10|tzdb|0.4.0|
+|hms|1.1.3|urlchecker|1.0.1|
+|htmltools|0.5.7|urltools|1.7.3|
+|htmlwidgets|1.6.4|usethis|2.2.2|
+|httpcode|0.3.0|utf8|1.2.4|
+|httpuv|1.6.14|utils|4.2.3|
+|httr|1.4.7|uuid|1.2-0|
+|httr2|1.0.0|vctrs|0.6.5|
+|ids|1.0.1|viridisLite|0.4.2|
+|igraph|1.5.1|vroom|1.6.5|
+|infer|1.0.6|waldo|0.5.2|
+|ini|0.3.1|warp|0.2.1|
+|ipred|0.9-14|whisker|0.4.1|
+|isoband|0.2.7|withr|3.0.0|
+|iterators|1.0.14|workflows|1.1.3|
+|jose|1.2.0|workflowsets|1.0.1|
+|jquerylib|0.1.4|xfun|0.41|
+|jsonlite|1.8.8|xgboost|1.7.1.1|
+|juicyjuice|0.1.0|xml2|1.3.6|
+|knitr|1.45|xopen|1.0.0|
+|labeling|0.4.3|xtable|1.8-4|
+|later|1.3.2|xts|0.13.2|
+|lattice|0.22-5|yaml|2.3.8|
+|lava|1.7.3|yardstick|1.3.0|
+|lazyeval|0.2.2|zip|2.3.1|
+|lhs|1.1.6|zoo|1.8-12|
+|lifecycle|1.0.4|
+
