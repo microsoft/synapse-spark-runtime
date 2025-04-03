@@ -496,7 +496,7 @@ dependencies:
     - mypy==1.4.1
     - mypy-extensions==1.0.0
     - ndg-httpsclient==0.5.1
-    - notebookutils==1.1.9.34.20250224.5
+    - notebookutils==1.1.10.34.20250317.2
     - numpy==1.23.5
     - onnx==1.15.0
     - opencensus==0.11.4
