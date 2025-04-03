@@ -27,7 +27,7 @@
 |1603479|TokenLibarary:4.3.7|Updated TokenLibrary to fix a rare race condition in Spark 3.4, occurring when "fs.azure.createRemoteFileSystemDuringInitialization" is true, by reading clusterType config from a file instead of spark conf.|
 |1609630|NotebookUtils:1.1.61|Add VariableLibrary related API support, add UDF getFunctions API and some other improvements.|
 |1591752|Wildfire:1.9.27|Added locale support, specifically for Spanish and French, in Spark 3.4, addressing the missing functionality post-migration to Mariner.|
-|1605901|ComponentName:ComponentVersion|Fixes symlink issues for the fsspec wrapper in Spark 3.4, addressing import problems with dependent Python libraries.|
+|1605901|LibraryManager:1.0.27|Fixes symlink issues for the fsspec wrapper in Spark 3.4, addressing import problems with dependent Python libraries.|
 
 
 # Components
