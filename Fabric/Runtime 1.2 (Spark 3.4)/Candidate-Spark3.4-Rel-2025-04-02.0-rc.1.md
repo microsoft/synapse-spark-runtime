@@ -20,7 +20,7 @@
 |Id|Component|Description|
 |-----|-----|-----|
 |1611986|Vegas:Spark34/3.4.09.03|Introduced support for Parquet Footer thread name in VFS and logging improvements for custom tables via Vegas emitter in Spark 3.4.|
-|1618374|ServiceConfigurationTemplates:spark/3.4.0|N/A|
+|1618374|ServiceConfigurationTemplates:spark/3.4.0|Enable Sink Config to send Executor metrics to kusto|
 |1618907|Wildfire/spark34:1.9.28|New Spark 3.4 Release which includes changes in wildfire-spark, wildfire-livy|
 |1609630|NotebookUtils:1.1.61|Add VariableLibrary related API support, add UDF getFunctions API and some other improvements.|
 |1614608|OneLakeClientStarter:1.0.25|Upgrades the OneLakeClientStarter to use the latest OLC client version 176.96.0, enhancing compatibility with PL workspaces and CPP SDK in Spark.|
