@@ -10,12 +10,6 @@
 *   **Delta Lake**: 2.2.0.21
 
 *On July 12th, 2024, end of support was announced for Azure Synapse Runtime for Apache Spark 3.3. Effective March 31, 2025, Azure Synapse will discontinue official support for Spark 3.3 Runtimes. **We strongly recommend you upgrade your Apache Spark 3.3 based workloads to [Azure Synapse Runtime for Apache Spark 3.4 (GA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime).** For up-to-date information, a detailed list of changes, and specific release notes for Spark runtimes, check and subscribe to [**Spark Runtimes Releases and Updates**](https://github.com/microsoft/synapse-spark-runtime).*
-# Bug Fixes
-|Id|Component|Description|
-|-----|-----|-----|
-|1637952|DWConnector:2.1.6|Upgraded Synapse DW connector to version 2.1.6 to fix reading issues by adding a new Parquet config.|
-
-
 # Components
 |Name|Version|Name|Version|
 |-----|-----|-----|-----|
