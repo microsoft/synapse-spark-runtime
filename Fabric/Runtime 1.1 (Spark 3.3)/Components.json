@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.3-Rel-2025-03-05.0-rc.1",
+  "VhdRelease": "Spark3.3-Rel-2025-04-02.0-rc.1",
   "sparkVersion": "spark3.3",
   "operatingSystem": "Ubuntu 18.04.6 LTS",
   "java": "1.8.0_442",
@@ -28,7 +28,7 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.8"
+        "Current": "1.0.9"
       },
       {
         "Name": "ClusterGateway",
@@ -88,11 +88,11 @@
       },
       {
         "Name": "KustoConnector",
-        "Current": "1.5.1"
+        "Current": "1.5.2"
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.37"
+        "Current": "1.0.39"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -230,7 +230,7 @@
       },
       {
         "Name": "SparkCustomEvents",
-        "Current": "3.3.0-1.0.6"
+        "Current": "3.3.0-1.0.8"
       },
       {
         "Name": "TokenLibrary-assembly",
@@ -594,7 +594,7 @@
       },
       {
         "Name": "hdinsight-spark-metrics",
-        "Current": "3.3.0-1.0.6"
+        "Current": "3.3.0-1.0.8"
       },
       {
         "Name": "hive-beeline",
@@ -1306,7 +1306,7 @@
       },
       {
         "Name": "spark-kusto-synapse-connector",
-        "Current": "3.0_2.12-1.5.1"
+        "Current": "3.0_2.12-1.5.2"
       },
       {
         "Name": "spark-kvstore",
