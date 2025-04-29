@@ -9,25 +9,6 @@
 *   **Python**: 3.11/1.0.1
 *   **Delta Lake**: 3.2.0.19
 
-# New Features
-|Id|Component|Description|
-|-----|-----|-----|
-|1644601|Wildfire/spark35:1.10.25|New Spark 3.5 release includes updates in wildfire-spark, wildfire-livy, and wildfire-hadoop components.|
-
-
-# Improvements
-|Id|Component|Description|
-|-----|-----|-----|
-|1648707|FLTSparkExtensions:0.4.0|Enhancements and critical fixes improve stability and support for different data types in Fabric Materialized Lake Views, including renaming for consistency, improved error reporting, integrated logging, and updated commands.|
-|1644601|Wildfire/spark35:1.10.25|New Spark 3.5 release includes updates in wildfire-spark, wildfire-livy, and wildfire-hadoop components.|
-
-
-# Bug Fixes
-|Id|Component|Description|
-|-----|-----|-----|
-|1652439|FLTSparkExtensions:0.4.3|Fixes backwards compatibility and metric publication issues for fabric materialized views in Spark 3.x. Ensures stable core operations without metric failures.|
-
-
 # Components
 |Name|Version|Name|Version|
 |-----|-----|-----|-----|
