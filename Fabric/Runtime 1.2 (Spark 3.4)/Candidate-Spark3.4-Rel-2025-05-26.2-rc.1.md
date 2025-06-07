@@ -13,35 +13,47 @@
 |Id|Component|Description|
 |-----|-----|-----|
 |1678395|NotebookUtils:1.1.62|Updates NotebookUtils to version 1.1.11, introducing variable library and UDF module improvements, workspace-level private link support, and various bug fixes and enhancements.|
-|1670391|Wildfire/spark34:1.9.32|Introduces Spark 3.4 release with updates to Wildfire Spark, including a backport from Spark 3.5 to address an issue impacting ADF during migration.|
 |1671744|CosmosDBConnector:2.2.5|Updates Cosmos DB OLAP Connector to version 2.2.4 and adds support for reading arrays of structs and structs as strings in CDC mode.|
+|1670391|Wildfire/spark34:1.9.32|Introduces Spark 3.4 release with updates to Wildfire Spark, including a backport from Spark 3.5 to address an issue impacting ADF during migration.|
 |1666850|Conda:8.0.39|Updates multiple data science Python packages in the default Conda environment, adds workspace private link support, tracks Python package usage, reduces workload call overhead, and includes bug fixes for FLAML and Sempy.|
+|1655888|TridentCore:1.2.23, ServiceConfigurationTemplates:spark/3.4.0|Introduces a flag in cluster-info.json to indicate workspace private endpoint availability for Spark clusters and updates methods in trident-core to construct workspace-specific MWC host names.|
+|1650138|TridentCore:1.2.22, Wildfire/spark34:1.9.30, OnelakeSparkCatalog:0.2.7|Bug fixes to support: Compatibility with other spark catalogs, Showing human readable schema names instead of encoded values in user facing errors, and Case insensitive resolution for workspace, artifact, schema and table name in Spark SQL|
+|1634633|Wildfire/spark34:1.9.29|Release of Spark 3.4 includes improvements in wildfire-hadoop, addressing issues encountered by customers migrating to Spark 3.4, particularly with CreatePath and RenamePath APIs.|
 
 
 # Improvements
 |Id|Component|Description|
 |-----|-----|-----|
-|1698008|NotebookUtils:1.1.62.2|Release NotebookUtils to support WS PL FQDN for notebook resource|
-|1526036|Delta:2.4.0.24, SparkNativeParquetWriter: 1.2.0-20250515.2|Deprecates NEE support on Spark 3.x by removing NEE components from the VHD.|
 |1678395|NotebookUtils:1.1.62|Updates NotebookUtils to version 1.1.11, introducing variable library and UDF module improvements, workspace-level private link support, and various bug fixes and enhancements.|
+|1671744|CosmosDBConnector:2.2.5|Updates Cosmos DB OLAP Connector to version 2.2.4 and adds support for reading arrays of structs and structs as strings in CDC mode.|
 |1665094|OneLakeClientStarter:1.0.26|Upgrades OneLakeClientStarter to address security redirects, performance improvements, Dataverse support, OOM fixes, and high-priority issues. Adds "UseGPIv2" feature flag for enhanced functionality.|
 |1667357|AutoscaleProbe:3.9.6|Improves autoscale reliability by fixing job failures caused by Spark drivers launching on terminating nodes, refining TJS error classification, and preventing unnecessary scale-ups during state transitions.|
 |1670391|Wildfire/spark34:1.9.32|Introduces Spark 3.4 release with updates to Wildfire Spark, including a backport from Spark 3.5 to address an issue impacting ADF during migration.|
-|1671744|CosmosDBConnector:2.2.5|Updates Cosmos DB OLAP Connector to version 2.2.4 and adds support for reading arrays of structs and structs as strings in CDC mode.|
 |1658091|SparkDiagnosticsLibrary:1.0.29|Improve the initialization logic for the Library, add support for direct KeyVault URL certificate configuration in EventHub, and introduces new SDK support for Storage with certificate and service principal-based access configuration.|
+|1661686|OneLakeClientStarter:1.0.25|Reverts OneLakeClientStarter to address intermittent pipeline authentication issues in Spark 3.x clusters.|
+|1627309|ServiceConfigurationTemplates:spark/3.5.0, Wildfire:1.9.31|Push additional system logs and telemetry to support engineering investigation for incidents and support requests|
+|1619847|SparkAdvisor:1.0.5|Update advisor to 1.0.5: Fix the unit of shuffle read time|
+|1640811|TridentTokenLibrary:1.9.10|Updated Trident Token Library to enhance reliable operation by increasing HTTP socket timeout, addressing delays in response from Spark Core workload via Token service proxy.|
+|1634633|Wildfire/spark34:1.9.29|Release of Spark 3.4 includes improvements in wildfire-hadoop, addressing issues encountered by customers migrating to Spark 3.4, particularly with CreatePath and RenamePath APIs.|
+|1623221|Delta:2.4.0.23|Delta Lake improvements introduced, enhancing log retention and optimizing write performance in Spark 3.4.|
+|1698008|NotebookUtils:1.1.62.2|Release NotebookUtils to support WS PL FQDN for notebook resource|
 
 
 # Bug Fixes
 |Id|Component|Description|
 |-----|-----|-----|
-|1698139|OneLakeClientStarter:1.0.26.2|OneLakeClient service retries infinitely to start during Spark VM startup|
-|1693313|SparkDiagnosticLibrary:1.0.31|Update the diagnostic library to version 1.0.30 to resolve the buffer overflow issue.|
 |1675246|OnelakeClientStarter:1.0.26.1, NotebookUtils:1.1.62.1, Wildfire:1.9.32.1|Fix session startup failures on on-demand and live clusters|
 |1678395|NotebookUtils:1.1.62|Updates NotebookUtils to version 1.1.11, introducing variable library and UDF module improvements, workspace-level private link support, and various bug fixes and enhancements.|
+|1678194|Conda:8.0.40|Fixes WSPL MWC Workload FQDN issues in the Data Science Library for Spark 3.x.|
 |1666204|FabricDWConnector:1.0.11|Upgrades Fabric DW Connector to version 1.0.19, addressing compatibility with Spark 3.x and improving SQL Endpoint connections.|
 |1667357|AutoscaleProbe:3.9.6|Improves autoscale reliability by fixing job failures caused by Spark drivers launching on terminating nodes, refining TJS error classification, and preventing unnecessary scale-ups during state transitions.|
-|1678194|Conda:8.0.40|Fixes WSPL MWC Workload FQDN issues in the Data Science Library for Spark 3.x.|
 |1658091|SparkDiagnosticsLibrary:1.0.29|Improve the initialization logic for the Library, add support for direct KeyVault URL certificate configuration in EventHub, and introduces new SDK support for Storage with certificate and service principal-based access configuration.|
+|1650138|TridentCore:1.2.22, Wildfire/spark34:1.9.30, OnelakeSparkCatalog:0.2.7|Bug fixes to support: Compatibility with other spark catalogs, Showing human readable schema names instead of encoded values in user facing errors, and Case insensitive resolution for workspace, artifact, schema and table name in Spark SQL|
+|1641098|DWConnector:2.1.6|Upgraded Synapse DW Connector to version 2.1.6, addressing issues with clearing ACLs on staging folders and fixing tests.|
+|1640148|SparkRPCHistoryServer:1.6.0|Updated SparkRPCHistoryServer to fix a bug where jobs/stages API metrics would incorrectly report as 0 when the stage number exceeds 500.|
+|1625995|TokenLibrary:4.3.8|Updated TokenLibrary to 4.3.8 to fix a bug encountered when invoking notebooks using mssparkutilsnotebook.run(), ensuring smoother operation and compatibility.|
+|1693313|SparkDiagnosticLibrary:1.0.31|Update the diagnostic library to version 1.0.30 to resolve the buffer overflow issue.|
+|1698139|OneLakeClientStarter:1.0.26.2|OneLakeClient service retries infinitely to start during Spark VM startup|
 
 
 # Components
