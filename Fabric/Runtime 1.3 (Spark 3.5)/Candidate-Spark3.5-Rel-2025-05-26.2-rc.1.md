@@ -12,6 +12,12 @@
 # New Features
 |Id|Component|Description|
 |-----|-----|-----|
+|1649570|ServiceConfigurationTemplates:spark/3.5.0, TridentCore:1.2.23|Adds a flag in cluster-info.json to capture workspace private endpoint availability and updates methods for constructing workspace-specific MWC host names for Spark clusters.|
+|1648811|Conda:5.2.15|Data science python packages will choose workspace privatelink fqdn when workspace OAP is enabled. And we start tracking python package econml usage|
+|1662753|Wildfire/spark35:1.10.26|Introduces Spark 3.5 release with enhancements and updates to wildfire-spark and wildfire-livy components.|
+|1664964|Wildfire/spark35:1.10.27|Introduces Spark 3.5 release with updates to wildfire-spark and wildfire-hadoop, enhancing features and performance.|
+|1666709|LibraryManager:1.0.17|Introduces support for specifying custom AzureArtifactFeed repositories for library packages in Fabric, along with improvements like refactoring and symlink changes.|
+|1672079|Wildfire/spark35:1.10.28|Introduces Spark 3.5 Release with updates to wildfire-spark and wildfire-livy components.|
 |1678407|NotebookUtils:1.1.60|Introduces NotebookUtils 1.1.11, enhancing variable library and UDF support, adding workspace-level private link support, and addressing multiple bugs.|
 |1679057|Wildfire/spark35:1.10.29|Introduces Spark 3.5 release with updates to wildfire-spark and wildfire-livy.|
 
@@ -19,26 +25,42 @@
 # Improvements
 |Id|Component|Description|
 |-----|-----|-----|
-|1697962|NotebookUtils:1.1.60.2|Release NotebookUtils to support WS PL FQDN for notebook resource|
-|1693302|Impulse:1.0.31.1|This PR releases Impulse library version 1.0.31.1. There are updates to ImpulseException library and updates to Delta and Python error classifiers.|
+|1593720|ServiceConfigurationTemplates:spark/3.5.0, Wildfire:1.10.23|Added Genesis Logger and Appender to emit Genesis Logs in Kusto for Spark 3.5, enhancing DRI supportability and incident investigation by pushing library management and Genesis logs to the GenesisLogs table in Kusto.|
+|1619841|SparkAdvisor:1.0.5|Updated advisor to version 1.0.5, addressing the incorrect unit of shuffle read time and refining the logic for deriving per-task CPU numbers with enhanced tracking and diagnostics.|
+|1626772|Impulse:1.0.30|This PR releases Impulse library version 1.0.30. Add ImpulseException library and remove support for Spark 3.3.|
+|1645325|Delta:3.2.0.20|Optimizes read path for tables with deletion vectors and MERGE command in Spark 3.5, improving performance.|
+|1658093|SparkDiagnosticsLibrary:1.0.29|Enhances library initialization logic, adds support for EventHub certificate configuration via KeyVault URLs, and integrates new SDK for storage with certificate and service principal-based authentication.|
+|1661679|OneLakeClientStarter:1.0.24.3|Reverts OLC Client to version 176.68.0 due to intermittent pipeline authentication issues in version 176.96.0.|
+|1662753|Wildfire/spark35:1.10.26|Introduces Spark 3.5 release with enhancements and updates to wildfire-spark and wildfire-livy components.|
+|1663567|Delta:3.2.0.21|Updates Delta to version 3.2.0.21, improving Auto Compaction reliability and enabling optimized write support in scenarios where standard columnar write is not applicable. Addresses out-of-memory issues and fixes compaction-related bugs.|
+|1664964|Wildfire/spark35:1.10.27|Introduces Spark 3.5 release with updates to wildfire-spark and wildfire-hadoop, enhancing features and performance.|
+|1665093|OneLakeClientStarter:1.0.26|Upgrades OneLakeClientStarter to version 2025.154.0.0, addressing shortcut-related errors, enhancing security redirect support, improving CPP extensions, and resolving high-priority issues, including OOM fixes and Dataverse redirect support.|
+|1666019|SparkNativeParquetWriter:0.42.0|Enhances columnar write support by adding EXCEPTION rebase mode for Parquet writing and ensures compatibility by forcing AVX-2 instructions to address AVX-512 related issues in certain environments.|
+|1666709|LibraryManager:1.0.17|Introduces support for specifying custom AzureArtifactFeed repositories for library packages in Fabric, along with improvements like refactoring and symlink changes.|
+|1668254|Conda/spark35:5.2.17|Upgrades KQLMagicCustom in Fabric 1.3 Python runtime to enhance the experience with KQLMagics.|
+|1672067|FLTSparkExtensions:0.5.0|Enhancements and critical fixes for Materialized Lake Views, including improved stability, support for various data types, bug fixes for subquery expressions, and better exception handling in Spark SQL extensions.|
+|1672074|OneLakeSparkCatalog:0.2.8|Updates naming from Materialized View to Materialized Lake View in Spark 3.5 VHD, including tableType refactoring changes.|
+|1672079|Wildfire/spark35:1.10.28|Introduces Spark 3.5 Release with updates to wildfire-spark and wildfire-livy components.|
 |1678407|NotebookUtils:1.1.60|Introduces NotebookUtils 1.1.11, enhancing variable library and UDF support, adding workspace-level private link support, and addressing multiple bugs.|
 |1679057|Wildfire/spark35:1.10.29|Introduces Spark 3.5 release with updates to wildfire-spark and wildfire-livy.|
-|1677267|SparkNativeParquetWriter:1.3.0-20250516.3|Fixes a bug where strings with specific ASCII control characters could cause write failures. Updates SparkNativeParquetWriter to ensure proper escaping of control characters, aligning with JSON standards.|
-|1678824|OneLakeClientStarter:1.0.26|Upgrades OneLakeClient version to 2025.154.0.0, adding security redirect support, fixing known issues, improving performance, and introducing a feature flag for GPIv2 support.|
+|1697962|NotebookUtils:1.1.60.2|Release NotebookUtils to support WS PL FQDN for notebook resource|
 
 
 # Bug Fixes
 |Id|Component|Description|
 |-----|-----|-----|
-|1697956|OneLakeClientStarter:1.0.26.2|OneLakeClient service retries infinitely to start during Spark VM startup|
-|1693293|SparkDiagnosticLibrary:1.0.30|Update the diagnostic library to version 1.0.30 to resolve the buffer overflow issue.|
-|1693299|AutoscaleProbe:3.9.7|Autoscale Probe Release Trident Billing Bugfix where datetime format mismatch between livy api and probe was causing exception.|
-|1682693|LibraryManager:1.0.18|Enhances security by redacting user PAT tokens from LPS Spark application logs when libraries are specified via custom repositories like Azure Artifact Feed.|
+|1658093|SparkDiagnosticsLibrary:1.0.29|Enhances library initialization logic, adds support for EventHub certificate configuration via KeyVault URLs, and integrates new SDK for storage with certificate and service principal-based authentication.|
+|1665672|Conda:5.2.16|Fixes Workspace OAP support in the DS library by correctly reading the workspace PE flag in cluster-info.json. Updates data science Python package support for Workspace OAP scenarios.|
+|1667337|AutoscaleProbe:3.9.6|Fixes bug preventing job failures by ensuring Spark drivers are not launched on Terminating nodes. Autoscale probe now keeps Terminating nodes in Yarn's exclude list until they fully transition to Terminated state.|
 |1671320|OnelakeClientStarter:1.0.26.1, NotebookUtils:1.1.60.1, Wildfire:1.10.28.1|Fixes session startup failures on on-demand and live clusters by enforcing service dependencies to prevent corrupted certificates during keystore updates.|
+|1678199|Conda:5.2.18|Fixes WSPL MWC Workload FQDN in the Data Science Library when WSPL is enabled.|
 |1678407|NotebookUtils:1.1.60|Introduces NotebookUtils 1.1.11, enhancing variable library and UDF support, adding workspace-level private link support, and addressing multiple bugs.|
 |1679313|FLTSparkExtensions:0.5.1|Fixes performance issues in FMLV by optimizing redundant recomputations during materialized view creation.|
 |1680404|Vegas:3.5.09.05|Fixes EOF error caused by cache misses when Intelligent Cache is enabled by properly updating file length variables and adding logging.|
-|1678199|Conda:5.2.18|Fixes WSPL MWC Workload FQDN in the Data Science Library when WSPL is enabled.|
+|1682693|LibraryManager:1.0.18|Enhances security by redacting user PAT tokens from LPS Spark application logs when libraries are specified via custom repositories like Azure Artifact Feed.|
+|1693293|SparkDiagnosticLibrary:1.0.30|Update the diagnostic library to version 1.0.30 to resolve the buffer overflow issue.|
+|1693299|AutoscaleProbe:3.9.7|Autoscale Probe Release Trident Billing Bugfix where datetime format mismatch between livy api and probe was causing exception.|
+|1697956|OneLakeClientStarter:1.0.26.2|OneLakeClient service retries infinitely to start during Spark VM startup|
 
 
 # Components
