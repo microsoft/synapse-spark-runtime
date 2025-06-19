@@ -19,7 +19,6 @@
 |Id|Component|Description|
 |-----|-----|-----|
 |1708611|Conda:8.0.42|SynapseML-Utils has chance to try get token from cache in token library first in live pool. Cache miss is possible and acceptable and shouldn't producing any confusing error.|
-|1698139|OneLakeClientStarter:1.0.26.2|OneLakeClient service retries infinitely to start during Spark VM startup|
 |1708607|Conda:8.0.41|When workspace private link enabled, should use wspl fqdn when calling ml workload to generate mwc token. And also we are deprecation resolving regional shared platform fqdn and instead using Fabric public api fqdn directly.|
 
 
