@@ -12,6 +12,7 @@
 # New Features
 |Id|Component|Description|
 |-----|-----|-----|
+|1716609|Wildfire/spark35:1.10.32|Introduces a new Spark 3.5 release with updates to wildfire-spark and wildfire-livy components.|
 |1720666|Wildfire/spark35:1.10.33, OnelakeSparkCatalog:0.2.13|Introduces support for legacy query patterns like `<lakehouse>.<table>` and `<workspace>.<artifact>.<table>` on schemaless artifacts in Spark 3.5 and Onelake Spark Catalog.|
 |1724240|Wildfire/spark35:1.10.34.1|Introduces Spark 3.5 with updates and improvements to wildfire-spark.|
 |1734020|Wildfire/spark35:1.10.35|Introduces Spark 3.5 release with updates to wildfire-spark, wildfire-livy, and wildfire-hadoop.|
@@ -20,28 +21,34 @@
 # Improvements
 |Id|Component|Description|
 |-----|-----|-----|
-|1761062|Conda:5.2.21|Regular DS feature update.|
-|1744576|N/A|Improves Livy by increasing `repl.rpc-max-error-chars`, allowing larger error messages and stack traces to be passed to Impulse for enhanced classification.|
-|1747637|FabricDWConnector:1.0.14|Downgrades Fabric DW Connector to version 1.0.19 due to issues with the API for obtaining TDS SQL Endpoint in scenarios with workspace private link enabled.|
-|1736844|ServiceConfigurationTemplates:Spark35|Enables abfs client transaction ID by default to prevent rename failures in Spark 3.x clusters, ensuring idempotency for CreatePath and RenamePath APIs during retries after connection issues.|
-|1747952|Delta:3.2.0.20250724.1|Delta 3.2.0.20250724.1 introduces improvements to Snapshot loading and CDF NEE support.|
+|1682006|NotebookUtils:1.1.60.3|Introduces the NFS_ROOT environment variable to eliminate hardcoded NFS paths.|
+|1702881|CSparkMetricsUpdate:1.0.11|Enhances security by sanitizing sensitive credentials, including client certificates, from Spark execution logs. Introduces improved regex patterns to prevent exposure of API keys, SAS tokens, and cloud provider tokens.|
+|1693104|Auditd:0.0.1|Introduces the auditd component to monitor and log package usage. This helps analyze usage patterns and facilitates tracking via queries in Kusto.|
+|1698176|Esri:1.0.1|Updates Esri geoanalytics library to provide users access to enhanced functionality.|
+|1712191|Vegas:3.5.09.06|Adds bytes read from Vegas cache to thread statistics for improved performance analysis.|
+|1716609|Wildfire/spark35:1.10.32|Introduces a new Spark 3.5 release with updates to wildfire-spark and wildfire-livy components.|
 |1715415|Impulse:1.1.0|Updates Impulse to version 1.1.0, introducing improvements including error classification enhancements, telemetry scrubber rewrites, metadata column updates, and migration of classifications from Kusto.|
 |1720666|Wildfire/spark35:1.10.33, OnelakeSparkCatalog:0.2.13|Introduces support for legacy query patterns like `<lakehouse>.<table>` and `<workspace>.<artifact>.<table>` on schemaless artifacts in Spark 3.5 and Onelake Spark Catalog.|
 |1724240|Wildfire/spark35:1.10.34.1|Introduces Spark 3.5 with updates and improvements to wildfire-spark.|
-|1724816|Delta:3.2.0.20250624.2, SparkNativeParquetWriter:1.3.0-20250624.2|Introduces updates to NEE, Delta, and SparkNativeParquetWriter, enhancing functionality and performance for Spark 3.x clusters.|
 |1728620|MMLSpark:1.4.23|Updates SynapseML framework libraries to version 1.0.12 for improved distributed machine learning functionality.|
+|1724816|Delta:3.2.0.20250624.2, SparkNativeParquetWriter:1.3.0-20250624.2|Introduces updates to NEE, Delta, and SparkNativeParquetWriter, enhancing functionality and performance for Spark 3.x clusters.|
+|1736844|ServiceConfigurationTemplates:Spark35|Enables abfs client transaction ID by default to prevent rename failures in Spark 3.x clusters, ensuring idempotency for CreatePath and RenamePath APIs during retries after connection issues.|
 |1734020|Wildfire/spark35:1.10.35|Introduces Spark 3.5 release with updates to wildfire-spark, wildfire-livy, and wildfire-hadoop.|
+|1747952|Delta:3.2.0.20250724.1|Delta 3.2.0.20250724.1 introduces improvements to Snapshot loading and CDF NEE support.|
 
 
 # Bug Fixes
 |Id|Component|Description|
 |-----|-----|-----|
-|1761071|Delta:3.2.0.20250731.1|Delta 3.2.0.20250731.1 fixes an incompatibility issue between Delta and Spark native API|
-|1598623|ServiceConfigurationTemplates:spark35|Driver memory overhead is recommended to be 6-10% of the memory of container size. Currently this value is fix to 384 MB irrespective of cluster size. Also, setting Executor memory overhead to be 6% of container size conservatively. Driver memory overhead to 10% which is default.|
+|1682031|OnelakeSparkCatalog:0.2.12, TridentCore:1.2.24, Delta:3.2.0.22|Fixes support for multipart names in Delta APIs, enabling operations like merge, vacuum, and optimize using `Delta.forName("workspace.artifact.schema.tableName")`. Resolves issues with Onelake Spark Catalog and Spark compatibility.|
+|1696687|ServiceConfigurationTemplates:spark/3.5.0|Removes obsolete extensions to reduce excess logging in driver logs, improving clarity and preventing customer confusion regarding warnings about non-existent classes.|
 |1744023|ServiceConfigurationTemplates:spark/3.5.0|Updates Spark driver memory overhead defaults to 6% of container size, ensuring better alignment with container memory requirements and addressing customer-reported issues.|
-|1749881|No Component Versions updated. Spark:3.5|Reverts driver and executor memory overhead defaults in Spark 3.5 to 384MB.|
+|1699571|Delta:3.2.0.23|Updates Delta to version 3.2.0.23, addressing bug fixes and performance improvements in low shuffle merge and native DV read path.|
 |1711151|AutoscaleProbe:3.9.8|Introduces Autoscale Probe 3.9.8 with a fix for scaledown issues when shuffle data is present, increasing the graceful decommission timeout to 20 hours to address `ShuffleFetchFailureException` in customer jobs.|
 |1719339|Auditd:0.0.2|Fixes issue with incorrect auditd configuration retrieval during session creation.|
+|1598623|ServiceConfigurationTemplates:spark35|Driver memory overhead is recommended to be 6-10% of the memory of container size. Currently this value is fix to 384 MB irrespective of cluster size. Also, setting Executor memory overhead to be 6% of container size conservatively. Driver memory overhead to 10% which is default.|
+|1749881|No Component Versions updated. Spark:3.5|Reverts driver and executor memory overhead defaults in Spark 3.5 to 384MB.|
+|1761071|Delta:3.2.0.20250731.1|Delta 3.2.0.20250731.1 fixes an incompatibility issue between Delta and Spark native API|
 
 
 # Components
