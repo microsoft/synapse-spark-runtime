@@ -9,19 +9,31 @@
 *   **Python**: 3.10/2.0.0
 *   **Delta Lake**: 2.4.0.25
 
+# New Features
+|Id|Component|Description|
+|-----|-----|-----|
+|1683712|Wildfire/spark34:1.9.33|Introduces Spark 3.4 release with updates to wildfire-spark.|
+|1693565|Wildfire/spark34:1.9.34.1|Introduces Spark 3.4 release with updates to Wildfire Spark, including enhanced logging for spark-submit processes to improve debugging and error identification.|
+
+
 # Improvements
 |Id|Component|Description|
 |-----|-----|-----|
-|1767000|Genesis:0.34.0|Increase timeout for library deployment stage from 10 mins to 30 mins. This is a short-term mitigation for the session acquisition failures due to slow untar performance in LDS|
-|1761055|Conda:8.0.43|Regular DS feature update.|
-|1747640|FabricDWConnector:1.0.11|Downgrade Fabric DW Connector to 1.0.19|
+|1683712|Wildfire/spark34:1.9.33|Introduces Spark 3.4 release with updates to wildfire-spark.|
+|1700969|KustoConnector:1.5.3|Upgraded connector version with updated CustomSparkMetric and TokenLib|
+|1693565|Wildfire/spark34:1.9.34.1|Introduces Spark 3.4 release with updates to Wildfire Spark, including enhanced logging for spark-submit processes to improve debugging and error identification.|
+|1702900|CSparkMetricsUpdate:1.0.12|Enhances security by sanitizing sensitive credentials from Spark execution logs, reducing exposure risks for credentials in CSparkSqlExecution events.|
+|1703358|FabricDWConnector:1.0.12|Updates Fabric DW Connector with changes to support workspace private link and improved endpoint handling using the new DW API and methods from Trident Core.|
+|1765765|Genesis:0.34.0|Increase timeout for library deployment stage from 10 mins to 30 mins. This is a short-term mitigation for the session acquisition failures due to slow untar performance in LDS|
 
 
 # Bug Fixes
 |Id|Component|Description|
 |-----|-----|-----|
-|1779852|N/A|In regions where GPT-4.1 is deployed in Fabric it will be the new default model.|
+|1682041|OnelakeSparkCatalog:0.2.12, TridentCore:1.2.24, Delta:2.4.0.25|Fixes Delta.forName to support multipart names, enabling the use of Delta-specific syntaxes like merge, vacuum, and optimize with namespaces in Spark. Addresses an issue with Onelake Spark Catalog integration.|
+|1696013|Conda:8.0.42|Removes redundant error messages during token retrieval in the SynapseML-Utils library to reduce confusion and improve token cache handling.|
 |1711356|AutoscaleProbe:3.9.7|Introduces Autoscale probe version 3.9.7 with a bug fix for scaledown nodes having shuffle data, increasing the graceful decommission timeout to 20 hours to address `ShuffleFetchFailureException`.|
+|1778557|DSCopilot:1.2.1|Enables GPT-4.1 in DS Copilot as the new default model in regions where it is deployed.|
 
 
 # Components
