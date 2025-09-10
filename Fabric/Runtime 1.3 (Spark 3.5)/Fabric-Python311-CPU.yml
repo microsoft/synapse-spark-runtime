@@ -576,7 +576,7 @@ dependencies:
       - azure-storage-file-datalake==12.16.0
       - azureml-synapse==0.0.1
       - chat-magics==0.1.25.2.28
-      - chat-magics-fabric==0.2.0.25.2.28
+      - chat-magics-fabric==0.2.0.25.8.21
       - colorlog==6.8.2
       - convertdate==2.4.0
       - dash==2.17.1
@@ -592,10 +592,10 @@ dependencies:
       - flaml==2.3.4.post2
       - fluent-logger==0.10.0
       - fsspec==2024.6.1
-      - geoanalytics-fabric==1.0.0.1b0
+      - geoanalytics-fabric==1.0.0b1
       - gson==0.0.4
       - hcrystalball==0.1.10
-      - impulse-python-handler==1.0.30.1.0.0
+      - impulse-python-handler==1.1.0
       - interpret==0.6.0
       - interpret-core==0.6.0
       - joblibspark==0.5.2
@@ -630,15 +630,15 @@ dependencies:
       - seqeval==1.2.2
       - simplejson==3.19.3
       - sqlanalyticsfabricconnectorpy==1.0.1
-      - synapseml-cognitive==1.0.11.dev1
-      - synapseml-core==1.0.11.dev1
-      - synapseml-deep-learning==1.0.11.dev1
-      - synapseml-internal==1.0.11.1.dev1
-      - synapseml-lightgbm==1.0.11.dev1
+      - synapseml-cognitive==1.0.12.dev1
+      - synapseml-core==1.0.12.dev1
+      - synapseml-deep-learning==1.0.12.dev1
+      - synapseml-internal==1.0.12.1.dev1
+      - synapseml-lightgbm==1.0.12.dev1
       - synapseml-mlflow==1.0.31
-      - synapseml-opencv==1.0.11.dev1
-      - synapseml-utils==1.1.3
-      - synapseml-vw==1.0.11.dev1
+      - synapseml-opencv==1.0.12.dev1
+      - synapseml-utils==1.1.6.post2
+      - synapseml-vw==1.0.12.dev1
       - tensorboardx==2.6.2.2
       - thop==0.1.1-2209072238
       - typeguard==4.1.2
