@@ -34,7 +34,6 @@
 |1762990|MMLSpark:1.4.24|Updates SynapseML libraries as part of the Fabric VHD component for distributed machine learning.|
 |1765750|Genesis:0.34.0|Increase timeout for library deployment stage from 10 mins to 30 mins. This is a short-term mitigation for the session acquisition failures due to slow untar performance in LDS|
 |1761171|LibraryManager/spark35:1.0.20|Adds support for changing file name case in internal Python libraries during version upgrades in Spark 3.5.|
-|1712905|N/A|Introduces a new YAML pipeline for Edog tests, compatible with Spark 3.x versions, initially enabled for Spark 3.5. Scheduled to run every six hours.|
 
 
 # Bug Fixes
