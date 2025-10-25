@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2025-08-13.1-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2025-10-02.0-rc.1",
   "sparkVersion": "spark3.4",
   "operatingSystem": "CBL-Mariner 2.0.20250729",
   "java": "11.0.27",
@@ -24,7 +24,7 @@
       },
       {
         "Name": "Conda",
-        "Current": "8.0.42"
+        "Current": "8.0.43"
       },
       {
         "Name": "CosmosDBConnector",
@@ -40,7 +40,7 @@
       },
       {
         "Name": "DSCopilot",
-        "Current": "1.2.1"
+        "Current": "1.2.2"
       },
       {
         "Name": "DSCopilotInstaller",
@@ -60,7 +60,7 @@
       },
       {
         "Name": "FabricDWConnector",
-        "Current": "1.0.11"
+        "Current": "1.0.21"
       },
       {
         "Name": "FsspecWrapper",
@@ -116,7 +116,7 @@
       },
       {
         "Name": "OnelakeSparkCatalog",
-        "Current": "0.2.13"
+        "Current": "0.2.17"
       },
       {
         "Name": "Peregrine",
@@ -156,7 +156,7 @@
       },
       {
         "Name": "SparkRPCHistoryServer",
-        "Current": "1.6.0"
+        "Current": "1.8.0"
       },
       {
         "Name": "SQLServerODBCDriver",
@@ -172,7 +172,7 @@
       },
       {
         "Name": "TridentCore",
-        "Current": "1.2.25"
+        "Current": "1.2.26"
       },
       {
         "Name": "TridentTokenLibrary",
@@ -188,7 +188,7 @@
       },
       {
         "Name": "Wildfire",
-        "Current": "1.9.35.1"
+        "Current": "1.9.36.1"
       }
     ],
     "javaAndScala": [
@@ -530,23 +530,23 @@
       },
       {
         "Name": "hadoop-aliyun",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-annotations",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-aws",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-azure",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-azure-datalake",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-azureml",
@@ -554,19 +554,19 @@
       },
       {
         "Name": "hadoop-client-api",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-client-runtime",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-cloud-storage",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-openstack",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hadoop-shaded-guava",
@@ -574,7 +574,7 @@
       },
       {
         "Name": "hadoop-yarn-server-web-proxy",
-        "Current": "3.3.4.5.3.20250628.1"
+        "Current": "3.3.4.5.3.20250819.1"
       },
       {
         "Name": "hdinsight-spark-metrics",
@@ -1142,7 +1142,7 @@
       },
       {
         "Name": "parquet-hadoop-ms",
-        "Current": "3.4.3.5.3.20250628.1"
+        "Current": "3.4.3.5.3.20250819.1"
       },
       {
         "Name": "parquet-jackson",
@@ -1246,19 +1246,19 @@
       },
       {
         "Name": "spark-avro",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-catalyst",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-core",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-enhancement",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-enhancementui",
@@ -1266,15 +1266,15 @@
       },
       {
         "Name": "spark-graphx",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-hadoop-cloud",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-hive",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-kusto-synapse-connector",
@@ -1282,11 +1282,11 @@
       },
       {
         "Name": "spark-kvstore",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-launcher",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-lighter-contract",
@@ -1298,67 +1298,67 @@
       },
       {
         "Name": "spark-microsoft-tools",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-mllib",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-mllib-local",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-network-common",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-network-shuffle",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-repl",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-sketch",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-sql",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-sql-kafka",
-        "Current": "0_2.12-3.4.3.5.3.20250628.1"
+        "Current": "0_2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-streaming",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "0_2.12-3.4.3.5.3.20250628.1"
+        "Current": "0_2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-tags",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-token-provider-kafka",
-        "Current": "0_2.12-3.4.3.5.3.20250628.1"
+        "Current": "0_2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-unsafe",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark-yarn",
-        "Current": "2.12-3.4.3.5.3.20250628.1"
+        "Current": "2.12-3.4.3.5.3.20250819.1"
       },
       {
         "Name": "spark_diagnostic_cli",
@@ -1450,7 +1450,7 @@
       },
       {
         "Name": "trident-core",
-        "Current": "1.2.25"
+        "Current": "1.2.26"
       },
       {
         "Name": "tridenttokenlibrary-assembly",
@@ -1478,11 +1478,11 @@
       },
       {
         "Name": "zookeeper",
-        "Current": "3.6.3.5.3.20250628.1"
+        "Current": "3.6.3.5.3.20250819.1"
       },
       {
         "Name": "zookeeper-jute",
-        "Current": "3.6.3.5.3.20250628.1"
+        "Current": "3.6.3.5.3.20250819.1"
       },
       {
         "Name": "zstd-jni",
@@ -1760,7 +1760,7 @@
       },
       {
         "Name": "chat-magics-fabric",
-        "Current": "0.2.0.25.8.21"
+        "Current": "0.2.0.25.8.13"
       },
       {
         "Name": "chroma-hnswlib",
@@ -1952,7 +1952,7 @@
       },
       {
         "Name": "flaml",
-        "Current": "2.3.4.post2"
+        "Current": "2.3.6.post1"
       },
       {
         "Name": "flask",
@@ -3280,7 +3280,7 @@
       },
       {
         "Name": "semantic-link-sempy",
-        "Current": "0.10.2"
+        "Current": "0.11.0"
       },
       {
         "Name": "send2trash",
