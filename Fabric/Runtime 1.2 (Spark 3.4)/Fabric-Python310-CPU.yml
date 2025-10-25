@@ -109,7 +109,7 @@ dependencies:
   - executing=1.2.0=pyhd8ed1ab_0
   - expat=2.5.0=hcb278e6_1
   - fastapi=0.103.2=pyhd8ed1ab_0
-  - flaml=2.3.4.post2=py310h3fd9d12_0
+  - flaml=2.3.6.post1=py310h3fd9d12_0
   - flask=3.0.0=pyhd8ed1ab_0
   - flatbuffers=23.5.26=h59595ed_1
   - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
@@ -524,7 +524,7 @@ dependencies:
     - azure-synapse-ml-predict==1.0.0
     - azureml-synapse==0.0.1
     - chat-magics==0.1.25.2.28
-    - chat-magics-fabric==0.2.0.25.8.21
+    - chat-magics-fabric==0.2.0.25.8.13
     - contextlib2==21.6.0
     - ds-copilot==0.1.25.2.28
     - dscopilot-installer==0.0.9
@@ -550,7 +550,7 @@ dependencies:
     - responses==0.23.3
     - rouge-score==0.1.2
     - schema==0.7.5
-    - semantic-link-sempy==0.10.2
+    - semantic-link-sempy==0.11.0
     - simplejson==3.19.2
     - sqlanalyticsconnectorpy==1.0.1
     - sqlanalyticsfabricconnectorpy==1.0.0
