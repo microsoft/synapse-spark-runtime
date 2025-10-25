@@ -590,10 +590,10 @@ dependencies:
       - fabric-connection==0.2.0
       - filelock==3.11.0
       - flaml==2.3.6.post1
-      - flt-python==0.7.4
+      - flt-python==0.8.2
       - fluent-logger==0.10.0
       - fsspec==2024.6.1
-      - geoanalytics-fabric==1.0.0b1
+      - geoanalytics-fabric==1.0.0
       - gson==0.0.4
       - hcrystalball==0.1.10
       - impulse-python-handler==1.1.0
@@ -632,15 +632,15 @@ dependencies:
       - simplejson==3.19.3
       - spark-mssql-connector-fabric35==1.0.0
       - sqlanalyticsfabricconnectorpy==1.0.1
-      - synapseml-cognitive==1.0.13.dev1
-      - synapseml-core==1.0.13.dev1
-      - synapseml-deep-learning==1.0.13.dev1
-      - synapseml-internal==1.0.13.1.dev1
-      - synapseml-lightgbm==1.0.13.dev1
+      - synapseml-cognitive==1.0.14.dev1
+      - synapseml-core==1.0.14.dev1
+      - synapseml-deep-learning==1.0.14.dev1
+      - synapseml-internal==1.0.14.0.dev1
+      - synapseml-lightgbm==1.0.14.dev1
       - synapseml-mlflow==1.0.31
-      - synapseml-opencv==1.0.13.dev1
+      - synapseml-opencv==1.0.14.dev1
       - synapseml-utils==1.1.6.post2
-      - synapseml-vw==1.0.13.dev1
+      - synapseml-vw==1.0.14.dev1
       - tensorboardx==2.6.2.2
       - thop==0.1.1-2209072238
       - typeguard==4.1.2
