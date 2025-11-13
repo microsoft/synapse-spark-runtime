@@ -1,8 +1,8 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2025-09-17.0-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2025-10-28.0-rc.1",
   "sparkVersion": "spark3.5",
   "operatingSystem": "Azure Linux 3.0",
-  "java": "11.0.28",
+  "java": "11.0.29",
   "scala": "2.12.18",
   "python": "3.11/1.0.0",
   "deltaLake": "3.2.0.20250917.1",
@@ -88,7 +88,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.2"
+        "Current": "1.0.3"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.60"
+        "Current": "1.1.61"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -2124,15 +2124,15 @@
       },
       {
         "Name": "certifi",
-        "Current": "2025.8.3"
-      },
-      {
-        "Name": "cffi",
-        "Current": "2.0.0"
+        "Current": "2025.10.5"
       },
       {
         "Name": "cffi",
         "Current": "1.17.1"
+      },
+      {
+        "Name": "cffi",
+        "Current": "2.0.0"
       },
       {
         "Name": "cfitsio",
@@ -2152,7 +2152,7 @@
       },
       {
         "Name": "charset-normalizer",
-        "Current": "3.4.3"
+        "Current": "3.4.4"
       },
       {
         "Name": "click",
@@ -2176,11 +2176,11 @@
       },
       {
         "Name": "comm",
-        "Current": "0.2.3"
+        "Current": "0.2.1"
       },
       {
         "Name": "comm",
-        "Current": "0.2.1"
+        "Current": "0.2.3"
       },
       {
         "Name": "conda-package-handling",
@@ -2224,11 +2224,11 @@
       },
       {
         "Name": "cryptography",
-        "Current": "46.0.1"
+        "Current": "44.0.1"
       },
       {
         "Name": "cryptography",
-        "Current": "44.0.1"
+        "Current": "46.0.3"
       },
       {
         "Name": "cuda-cudart",
@@ -2468,7 +2468,7 @@
       },
       {
         "Name": "fonttools",
-        "Current": "4.60.0"
+        "Current": "4.60.1"
       },
       {
         "Name": "fonttools",
@@ -2604,11 +2604,11 @@
       },
       {
         "Name": "idna",
-        "Current": "3.7"
+        "Current": "3.11"
       },
       {
         "Name": "idna",
-        "Current": "3.10"
+        "Current": "3.7"
       },
       {
         "Name": "imagecodecs",
@@ -2660,15 +2660,15 @@
       },
       {
         "Name": "ipykernel",
-        "Current": "6.30.1"
-      },
-      {
-        "Name": "ipykernel",
         "Current": "6.29.5"
       },
       {
+        "Name": "ipykernel",
+        "Current": "7.1.0"
+      },
+      {
         "Name": "ipython",
-        "Current": "9.5.0"
+        "Current": "9.6.0"
       },
       {
         "Name": "ipython",
@@ -2760,7 +2760,7 @@
       },
       {
         "Name": "jupyter-core",
-        "Current": "5.8.1"
+        "Current": "5.9.1"
       },
       {
         "Name": "jupyter-lsp",
@@ -2828,11 +2828,11 @@
       },
       {
         "Name": "kiwisolver",
-        "Current": "1.4.8"
+        "Current": "1.4.9"
       },
       {
         "Name": "kiwisolver",
-        "Current": "1.4.9"
+        "Current": "1.4.8"
       },
       {
         "Name": "knack",
@@ -2856,7 +2856,7 @@
       },
       {
         "Name": "ld_impl_linux-64",
-        "Current": "2.40"
+        "Current": "2.44"
       },
       {
         "Name": "ld_impl_linux-64",
@@ -3013,6 +3013,10 @@
       {
         "Name": "libnpp",
         "Current": "12.2.5.30"
+      },
+      {
+        "Name": "libnsl",
+        "Current": "2.0.0"
       },
       {
         "Name": "libnvfatbin",
@@ -3180,11 +3184,11 @@
       },
       {
         "Name": "matplotlib",
-        "Current": "3.10.6"
+        "Current": "3.10.0"
       },
       {
         "Name": "matplotlib",
-        "Current": "3.10.0"
+        "Current": "3.10.7"
       },
       {
         "Name": "matplotlib-base",
@@ -3192,11 +3196,11 @@
       },
       {
         "Name": "matplotlib-inline",
-        "Current": "0.1.6"
+        "Current": "0.2.1"
       },
       {
         "Name": "matplotlib-inline",
-        "Current": "0.1.7"
+        "Current": "0.1.6"
       },
       {
         "Name": "mccabe",
@@ -3276,11 +3280,11 @@
       },
       {
         "Name": "msal",
-        "Current": "1.33.0"
+        "Current": "2025.03.01"
       },
       {
         "Name": "msal",
-        "Current": "2025.03.01"
+        "Current": "1.34.0"
       },
       {
         "Name": "msal-extensions",
@@ -3428,11 +3432,11 @@
       },
       {
         "Name": "numpy",
-        "Current": "1.26.4"
+        "Current": "2.3.4"
       },
       {
         "Name": "numpy",
-        "Current": "2.3.3"
+        "Current": "1.26.4"
       },
       {
         "Name": "numpy-base",
@@ -3472,11 +3476,11 @@
       },
       {
         "Name": "openssl",
-        "Current": "3.0.17"
+        "Current": "3.0.16"
       },
       {
         "Name": "openssl",
-        "Current": "3.0.16"
+        "Current": "3.0.18"
       },
       {
         "Name": "opentelemetry-api",
@@ -3560,11 +3564,11 @@
       },
       {
         "Name": "pandas",
-        "Current": "2.2.3"
+        "Current": "2.3.3"
       },
       {
         "Name": "pandas",
-        "Current": "2.3.2"
+        "Current": "2.2.3"
       },
       {
         "Name": "pandasql",
@@ -3632,11 +3636,11 @@
       },
       {
         "Name": "pexpect",
-        "Current": "4.9.0"
+        "Current": "4.8.0"
       },
       {
         "Name": "pexpect",
-        "Current": "4.8.0"
+        "Current": "4.9.0"
       },
       {
         "Name": "pickleshare",
@@ -3644,7 +3648,7 @@
       },
       {
         "Name": "pillow",
-        "Current": "11.3.0"
+        "Current": "12.0.0"
       },
       {
         "Name": "pillow",
@@ -3664,7 +3668,7 @@
       },
       {
         "Name": "platformdirs",
-        "Current": "4.4.0"
+        "Current": "4.5.0"
       },
       {
         "Name": "platformdirs",
@@ -3704,11 +3708,11 @@
       },
       {
         "Name": "prompt-toolkit",
-        "Current": "3.0.43"
+        "Current": "3.0.52"
       },
       {
         "Name": "prompt-toolkit",
-        "Current": "3.0.52"
+        "Current": "3.0.43"
       },
       {
         "Name": "prompt_toolkit",
@@ -3724,11 +3728,11 @@
       },
       {
         "Name": "psutil",
-        "Current": "5.9.0"
+        "Current": "7.1.2"
       },
       {
         "Name": "psutil",
-        "Current": "7.1.0"
+        "Current": "5.9.0"
       },
       {
         "Name": "pthread-stubs",
@@ -3824,11 +3828,11 @@
       },
       {
         "Name": "pygments",
-        "Current": "2.19.2"
+        "Current": "2.15.1"
       },
       {
         "Name": "pygments",
-        "Current": "2.15.1"
+        "Current": "2.19.2"
       },
       {
         "Name": "pyjwt",
@@ -3852,11 +3856,11 @@
       },
       {
         "Name": "pyparsing",
-        "Current": "3.2.4"
+        "Current": "3.2.0"
       },
       {
         "Name": "pyparsing",
-        "Current": "3.2.0"
+        "Current": "3.2.5"
       },
       {
         "Name": "pyperclip",
@@ -3896,11 +3900,11 @@
       },
       {
         "Name": "python",
-        "Current": "3.11.13"
+        "Current": "3.11.11"
       },
       {
         "Name": "python",
-        "Current": "3.11.11"
+        "Current": "3.11.14"
       },
       {
         "Name": "python-dateutil",
@@ -3972,11 +3976,11 @@
       },
       {
         "Name": "pyzmq",
-        "Current": "26.2.0"
+        "Current": "27.1.0"
       },
       {
         "Name": "pyzmq",
-        "Current": "27.1.0"
+        "Current": "26.2.0"
       },
       {
         "Name": "qdarkstyle",
@@ -4188,7 +4192,7 @@
       },
       {
         "Name": "setuptools",
-        "Current": "78.1.1"
+        "Current": "80.9.0"
       },
       {
         "Name": "shap",
@@ -4416,11 +4420,11 @@
       },
       {
         "Name": "tk",
-        "Current": "8.6.15"
+        "Current": "8.6.14"
       },
       {
         "Name": "tk",
-        "Current": "8.6.14"
+        "Current": "8.6.15"
       },
       {
         "Name": "tokenizers",
@@ -4540,11 +4544,11 @@
       },
       {
         "Name": "wcwidth",
-        "Current": "0.2.13"
+        "Current": "0.2.5"
       },
       {
         "Name": "wcwidth",
-        "Current": "0.2.5"
+        "Current": "0.2.14"
       },
       {
         "Name": "webencodings",
@@ -4572,11 +4576,11 @@
       },
       {
         "Name": "widgetsnbextension",
-        "Current": "4.0.13"
+        "Current": "4.0.14"
       },
       {
         "Name": "widgetsnbextension",
-        "Current": "4.0.14"
+        "Current": "4.0.13"
       },
       {
         "Name": "wrapt",
