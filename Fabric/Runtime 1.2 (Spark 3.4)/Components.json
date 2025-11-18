@@ -1,7 +1,7 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2025-10-02.0-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2025-10-02.2-rc.1",
   "sparkVersion": "spark3.4",
-  "operatingSystem": "CBL-Mariner 2.0.20250729",
+  "operatingSystem": "CBL-Mariner 2.0.20251030",
   "java": "11.0.27",
   "scala": "2.12.17",
   "python": "3.10/2.0.0",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.62.2"
+        "Current": "1.1.62.3"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -1050,11 +1050,11 @@
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-aarch_64"
+        "Current": "4.1.87.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-x86_64"
+        "Current": "4.1.87.Final-osx-aarch_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1062,7 +1062,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.11-spark34-20250605.2"
+        "Current": "1.1.11-spark34-20251021.12"
       },
       {
         "Name": "objenesis",
@@ -1234,19 +1234,19 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
-      },
-      {
-        "Name": "spark",
         "Current": "3.4-advisor-core_2.12-1.0.18"
       },
       {
-        "Name": "spark-avro",
-        "Current": "2.12-3.4.1"
+        "Name": "spark",
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
         "Current": "2.12-3.4.3.5.3.20250819.1"
+      },
+      {
+        "Name": "spark-avro",
+        "Current": "2.12-3.4.1"
       },
       {
         "Name": "spark-catalyst",
@@ -1434,7 +1434,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "1.1.11-spark34-20250605.2"
+        "Current": "1.1.11-spark34-20251021.12"
       },
       {
         "Name": "threeten-extra",
@@ -2796,7 +2796,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.11.34.20250605.2"
+        "Current": "1.1.11.34.20251021.12"
       },
       {
         "Name": "nspr",
@@ -4362,7 +4362,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.11.34.20250605.2"
+        "Current": "1.1.11.34.20251021.12"
       },
       {
         "Name": "numDeriv",
