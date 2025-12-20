@@ -543,7 +543,7 @@ dependencies:
     - mypy==1.4.1
     - mypy-extensions==1.0.0
     - nni==2.10.1
-    - notebookutils==1.1.11.34.20251021.12
+    - notebookutils==1.1.12.34
     - powerbiclient==3.1.1
     - pyspark==3.4.1.5.3.20230713
     - pythonwebhdfs==0.2.3
