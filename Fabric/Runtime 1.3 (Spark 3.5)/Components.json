@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2025-12-03.5-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2025-12-03.6-rc.1",
   "sparkVersion": "spark3.5",
   "operatingSystem": "CBL-Mariner 2.0.20251106",
   "java": "11.0.27",
@@ -28,7 +28,7 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.14"
+        "Current": "1.0.16"
       },
       {
         "Name": "Delta",
@@ -226,7 +226,7 @@
       },
       {
         "Name": "SparkCustomEvents",
-        "Current": "3.5.0-1.0.14"
+        "Current": "3.5.0-1.0.16"
       },
       {
         "Name": "TokenLibrary-assembly",
@@ -446,11 +446,11 @@
       },
       {
         "Name": "commons-io",
-        "Current": "2.18.0"
+        "Current": "2.11.0"
       },
       {
         "Name": "commons-io",
-        "Current": "2.11.0"
+        "Current": "2.18.0"
       },
       {
         "Name": "commons-lang",
@@ -634,7 +634,7 @@
       },
       {
         "Name": "hdinsight-spark-metrics",
-        "Current": "3.5.0-1.0.14"
+        "Current": "3.5.0-1.0.16"
       },
       {
         "Name": "hive-common",
@@ -658,11 +658,11 @@
       },
       {
         "Name": "hive-shims",
-        "Current": "2.3.9"
+        "Current": "0.23-2.3.9"
       },
       {
         "Name": "hive-shims",
-        "Current": "0.23-2.3.9"
+        "Current": "2.3.9"
       },
       {
         "Name": "hive-shims-common",
@@ -702,11 +702,11 @@
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.13"
+        "Current": "4.5.14"
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.14"
+        "Current": "4.5.13"
       },
       {
         "Name": "impulse-core_spark",
@@ -902,19 +902,19 @@
       },
       {
         "Name": "json",
-        "Current": "1.8"
-      },
-      {
-        "Name": "json",
         "Current": "3"
       },
       {
-        "Name": "json-simple",
-        "Current": "1.1.1"
+        "Name": "json",
+        "Current": "1.8"
       },
       {
         "Name": "json-simple",
         "Current": "1.1"
+      },
+      {
+        "Name": "json-simple",
+        "Current": "1.1.1"
       },
       {
         "Name": "json4s-ast",
@@ -1142,6 +1142,26 @@
       },
       {
         "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-windows-x86_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-osx-x86_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-osx-aarch_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-linux-x86_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
         "Current": "2.0.62.Final-windows-x86_64"
       },
       {
@@ -1161,26 +1181,6 @@
         "Current": "2.0.62.Final-linux-aarch_64"
       },
       {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-windows-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-osx-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-osx-aarch_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-linux-x86_64"
-      },
-      {
         "Name": "netty-tcnative-classes",
         "Current": "2.0.62.Final"
       },
@@ -1198,19 +1198,19 @@
       },
       {
         "Name": "netty-transport-native-epoll",
-        "Current": "4.1.96.Final-linux-aarch_64"
-      },
-      {
-        "Name": "netty-transport-native-epoll",
         "Current": "4.1.96.Final-linux-x86_64"
       },
       {
-        "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.96.Final-osx-aarch_64"
+        "Name": "netty-transport-native-epoll",
+        "Current": "4.1.96.Final-linux-aarch_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
         "Current": "4.1.96.Final-osx-x86_64"
+      },
+      {
+        "Name": "netty-transport-native-kqueue",
+        "Current": "4.1.96.Final-osx-aarch_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1414,14 +1414,6 @@
       },
       {
         "Name": "spark",
-        "Current": "3.5-advisor-core_2.12-1.0.18"
-      },
-      {
-        "Name": "spark",
-        "Current": "3.5-rpc-history-server-app-listener_2.12-1.0.0"
-      },
-      {
-        "Name": "spark",
         "Current": "3.5-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
@@ -1429,12 +1421,20 @@
         "Current": "3.5-rpc-history-server-core_2.12-1.0.0"
       },
       {
-        "Name": "spark-avro",
-        "Current": "2.12-3.5.0"
+        "Name": "spark",
+        "Current": "3.5-advisor-core_2.12-1.0.18"
+      },
+      {
+        "Name": "spark",
+        "Current": "3.5-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
         "Current": "2.12-3.5.5.5.4.20251218.3"
+      },
+      {
+        "Name": "spark-avro",
+        "Current": "2.12-3.5.0"
       },
       {
         "Name": "spark-catalyst",
@@ -1558,11 +1558,11 @@
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "0_2.12-3.5.5.5.4.20251218.3"
+        "Current": "2.12-3.5.5.5.4.20251218.3"
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "2.12-3.5.5.5.4.20251218.3"
+        "Current": "0_2.12-3.5.5.5.4.20251218.3"
       },
       {
         "Name": "spark-tags",
