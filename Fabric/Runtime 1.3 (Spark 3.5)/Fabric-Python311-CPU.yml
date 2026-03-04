@@ -590,7 +590,7 @@ dependencies:
       - fabric-connection==0.2.0
       - filelock==3.11.0
       - flaml==2.3.6.post1
-      - flt-python==0.12.2
+      - flt-python==0.14.0
       - fluent-logger==0.10.0
       - fsspec==2024.6.1
       - geoanalytics-fabric==1.0.0
