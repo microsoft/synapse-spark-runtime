@@ -1,11 +1,11 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2026-01-28.0-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2026-02-13.0-rc.1",
   "sparkVersion": "spark3.5",
-  "operatingSystem": "CBL-Mariner 2.0.20260102",
+  "operatingSystem": "CBL-Mariner 2.0.20260203",
   "java": "11.0.27",
   "scala": "2.12.18",
-  "python": "3.11/1.0.1",
-  "deltaLake": "3.2.1.20251125.5",
+  "python": "3.11/1.0.2",
+  "deltaLake": "3.2.1.20260209.3",
   "product": "Fabric Runtime 1.3 (Spark 3.5)",
   "apacheSparkVersion": "3.5.5",
   "components": {
@@ -20,11 +20,11 @@
       },
       {
         "Name": "AzureMLExtensions",
-        "Current": "1.0.4"
+        "Current": "1.0.5"
       },
       {
         "Name": "Conda",
-        "Current": "5.2.21"
+        "Current": "5.2.22"
       },
       {
         "Name": "CSparkMetricUpdate",
@@ -32,7 +32,7 @@
       },
       {
         "Name": "Delta",
-        "Current": "3.2.1.20251125.5"
+        "Current": "3.2.1.20260209.3"
       },
       {
         "Name": "DSCopilot",
@@ -60,7 +60,7 @@
       },
       {
         "Name": "FLTSparkExtensions",
-        "Current": "0.14.0"
+        "Current": "0.16.0"
       },
       {
         "Name": "FLTSparkUtils",
@@ -68,15 +68,15 @@
       },
       {
         "Name": "FsspecWrapper",
-        "Current": "1.0.6"
+        "Current": "1.0.7"
       },
       {
         "Name": "Genesis",
-        "Current": "0.36.1"
+        "Current": "0.36.3"
       },
       {
         "Name": "GlutenUI",
-        "Current": "1.3.0-20260122.1"
+        "Current": "1.3.0-20260209.3"
       },
       {
         "Name": "HiveMetaStoreClient",
@@ -84,7 +84,7 @@
       },
       {
         "Name": "Impulse",
-        "Current": "1.3.198470504"
+        "Current": "1.3.198470504.1"
       },
       {
         "Name": "KustoConnector",
@@ -96,7 +96,7 @@
       },
       {
         "Name": "LibraryMetadataCooker",
-        "Current": "2.0.4"
+        "Current": "2.0.5"
       },
       {
         "Name": "MlflowLibrary",
@@ -104,7 +104,7 @@
       },
       {
         "Name": "MMLSpark",
-        "Current": "1.4.27"
+        "Current": "1.4.29"
       },
       {
         "Name": "MySQLJavaConnector",
@@ -112,7 +112,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.61"
+        "Current": "1.1.63"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -120,7 +120,7 @@
       },
       {
         "Name": "OnelakeSparkCatalog",
-        "Current": "0.4.2"
+        "Current": "0.4.4"
       },
       {
         "Name": "PostgreSQLJDBCDriver",
@@ -128,7 +128,7 @@
       },
       {
         "Name": "Python",
-        "Current": "3.11/1.0.1"
+        "Current": "3.11/1.0.2"
       },
       {
         "Name": "R",
@@ -152,7 +152,7 @@
       },
       {
         "Name": "SparkLineage",
-        "Current": "0.0.3"
+        "Current": "0.0.4"
       },
       {
         "Name": "SparklyrConnector",
@@ -180,11 +180,11 @@
       },
       {
         "Name": "TokenLibrary",
-        "Current": "4.3.8"
+        "Current": "4.3.9"
       },
       {
         "Name": "TridentCore",
-        "Current": "1.2.31"
+        "Current": "1.3.2"
       },
       {
         "Name": "TridentTokenLibrary",
@@ -200,7 +200,7 @@
       },
       {
         "Name": "Wildfire",
-        "Current": "1.10.46.1"
+        "Current": "1.10.48.1"
       }
     ],
     "javaAndScala": [
@@ -446,11 +446,11 @@
       },
       {
         "Name": "commons-io",
-        "Current": "2.18.0"
+        "Current": "2.11.0"
       },
       {
         "Name": "commons-io",
-        "Current": "2.11.0"
+        "Current": "2.18.0"
       },
       {
         "Name": "commons-lang",
@@ -518,19 +518,19 @@
       },
       {
         "Name": "delta-kernel-api",
-        "Current": "3.2.1.20251125.5"
+        "Current": "3.2.1.20260209.3"
       },
       {
         "Name": "delta-kernel-defaults",
-        "Current": "3.2.1.20251125.5"
+        "Current": "3.2.1.20260209.3"
       },
       {
         "Name": "delta-spark",
-        "Current": "2.12-3.2.1.20251125.5"
+        "Current": "2.12-3.2.1.20260209.3"
       },
       {
         "Name": "delta-storage",
-        "Current": "3.2.1.20251125.5"
+        "Current": "3.2.1.20260209.3"
       },
       {
         "Name": "derby",
@@ -550,7 +550,7 @@
       },
       {
         "Name": "flt-spark-sql-extensions",
-        "Current": "0.14.0"
+        "Current": "0.16.0"
       },
       {
         "Name": "fluent-logger",
@@ -562,7 +562,7 @@
       },
       {
         "Name": "genesis-client",
-        "Current": "2.12-0.36.1-jar-with-dependencies"
+        "Current": "2.12-0.36.3-jar-with-dependencies"
       },
       {
         "Name": "geoanalytics-fabric",
@@ -570,7 +570,7 @@
       },
       {
         "Name": "gluten-velox-bundle-spark",
-        "Current": "2.12-mariner_2.0_x86_64-1.3.0-20260122.1"
+        "Current": "2.12-mariner_2.0_x86_64-1.3.0-20260209.3"
       },
       {
         "Name": "gson",
@@ -586,23 +586,23 @@
       },
       {
         "Name": "hadoop-aliyun",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-annotations",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-aws",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-azure",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-azure-datalake",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-azureml",
@@ -610,19 +610,19 @@
       },
       {
         "Name": "hadoop-client-api",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-client-runtime",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-cloud-storage",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-openstack",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hadoop-shaded-guava",
@@ -630,7 +630,7 @@
       },
       {
         "Name": "hadoop-yarn-server-web-proxy",
-        "Current": "3.3.4.5.4.20260126.1"
+        "Current": "3.3.4.5.4.20260211.1"
       },
       {
         "Name": "hdinsight-spark-metrics",
@@ -702,11 +702,11 @@
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.14"
+        "Current": "4.5.13"
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.13"
+        "Current": "4.5.14"
       },
       {
         "Name": "impulse-core_spark",
@@ -902,19 +902,19 @@
       },
       {
         "Name": "json",
-        "Current": "20231013"
-      },
-      {
-        "Name": "json",
         "Current": "1.8"
       },
       {
-        "Name": "json-simple",
-        "Current": "1.1"
+        "Name": "json",
+        "Current": "20231013"
       },
       {
         "Name": "json-simple",
         "Current": "1.1.1"
+      },
+      {
+        "Name": "json-simple",
+        "Current": "1.1"
       },
       {
         "Name": "json4s-ast",
@@ -1142,43 +1142,27 @@
       },
       {
         "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-windows-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-osx-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-osx-aarch_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-linux-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-windows-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-osx-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-osx-aarch_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
-        "Current": "2.0.62.Final-linux-x86_64"
-      },
-      {
-        "Name": "netty-tcnative-boringssl-static",
         "Current": "2.0.62.Final-linux-aarch_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-linux-x86_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-osx-aarch_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-osx-x86_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final-windows-x86_64"
+      },
+      {
+        "Name": "netty-tcnative-boringssl-static",
+        "Current": "2.0.62.Final"
       },
       {
         "Name": "netty-tcnative-classes",
@@ -1198,19 +1182,19 @@
       },
       {
         "Name": "netty-transport-native-epoll",
-        "Current": "4.1.96.Final-linux-x86_64"
-      },
-      {
-        "Name": "netty-transport-native-epoll",
         "Current": "4.1.96.Final-linux-aarch_64"
       },
       {
-        "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.96.Final-osx-x86_64"
+        "Name": "netty-transport-native-epoll",
+        "Current": "4.1.96.Final-linux-x86_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
         "Current": "4.1.96.Final-osx-aarch_64"
+      },
+      {
+        "Name": "netty-transport-native-kqueue",
+        "Current": "4.1.96.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1222,7 +1206,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.12-spark35"
+        "Current": "1.1.13-spark35-20260208.7"
       },
       {
         "Name": "objenesis",
@@ -1306,7 +1290,7 @@
       },
       {
         "Name": "parquet-hadoop-ms",
-        "Current": "3.5.5.5.4.20260126.1"
+        "Current": "3.5.5.5.4.20260211.1"
       },
       {
         "Name": "parquet-jackson",
@@ -1414,7 +1398,7 @@
       },
       {
         "Name": "spark",
-        "Current": "3.5-rpc-history-server-app-listener_2.12-1.0.0"
+        "Current": "3.5-advisor-core_2.12-1.0.18"
       },
       {
         "Name": "spark",
@@ -1425,32 +1409,28 @@
         "Current": "3.5-rpc-history-server-core_2.12-1.0.0"
       },
       {
-        "Name": "spark",
-        "Current": "3.5-advisor-core_2.12-1.0.18"
-      },
-      {
-        "Name": "spark-avro",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
-      },
-      {
         "Name": "spark-avro",
         "Current": "2.12-3.5.0"
       },
       {
+        "Name": "spark-avro",
+        "Current": "2.12-3.5.5.5.4.20260211.1"
+      },
+      {
         "Name": "spark-catalyst",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-common-utils",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-core",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-enhancement",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-enhancementui",
@@ -1466,15 +1446,15 @@
       },
       {
         "Name": "spark-graphx",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-hadoop-cloud",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-hive",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-jobinsight",
@@ -1486,11 +1466,11 @@
       },
       {
         "Name": "spark-kvstore",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-launcher",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-lighter-contract",
@@ -1502,15 +1482,15 @@
       },
       {
         "Name": "spark-microsoft-tools",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-mllib",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-mllib-local",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-mssql-connector-fabric35",
@@ -1518,63 +1498,67 @@
       },
       {
         "Name": "spark-network-common",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-network-shuffle",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-onesecurity-client",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-onesecurity-common",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-onesecurity-server",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-repl",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-sketch",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-sql",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-sql-api",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-sql-kafka",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-streaming",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-streaming-kafka",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
+      },
+      {
+        "Name": "spark-streaming-kafka",
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-tags",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-token-provider-kafka",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-unsafe",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark-xml",
@@ -1582,7 +1566,7 @@
       },
       {
         "Name": "spark-yarn",
-        "Current": "2.12-3.5.5.5.4.20260126.1"
+        "Current": "2.12-3.5.5.5.4.20260211.1"
       },
       {
         "Name": "spark_diagnostic_cli",
@@ -1638,35 +1622,35 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "2.12-1.1.0"
+        "Current": "2.12-1.1.1"
       },
       {
         "Name": "synapseml-core",
-        "Current": "2.12-1.1.0"
+        "Current": "2.12-1.1.1"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "2.12-1.1.0"
+        "Current": "2.12-1.1.1"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "2.12-1.1.0.0-spark3.5"
+        "Current": "2.12-1.1.1.0"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "2.12-1.1.0"
+        "Current": "2.12-1.1.1"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "2.12-1.1.0"
+        "Current": "2.12-1.1.1"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "2.12-1.1.0"
+        "Current": "2.12-1.1.1"
       },
       {
         "Name": "synfs",
-        "Current": "1.1.12-spark35"
+        "Current": "1.1.13-spark35-20260208.7"
       },
       {
         "Name": "threeten-extra",
@@ -1686,7 +1670,7 @@
       },
       {
         "Name": "trident-core",
-        "Current": "1.2.31"
+        "Current": "1.3.2"
       },
       {
         "Name": "tridenttokenlibrary-assembly",
@@ -1718,11 +1702,11 @@
       },
       {
         "Name": "zookeeper",
-        "Current": "3.6.3.5.4.20260126.1"
+        "Current": "3.6.3.5.4.20260211.1"
       },
       {
         "Name": "zookeeper-jute",
-        "Current": "3.6.3.5.4.20260126.1"
+        "Current": "3.6.3.5.4.20260211.1"
       },
       {
         "Name": "zstd-jni",
@@ -2147,6 +2131,10 @@
         "Current": "1.2.0"
       },
       {
+        "Name": "control-script",
+        "Current": "1.0.3"
+      },
+      {
         "Name": "convertdate",
         "Current": "2.4.0"
       },
@@ -2312,7 +2300,7 @@
       },
       {
         "Name": "flaml",
-        "Current": "2.3.6.post1"
+        "Current": "2.5.0.post1"
       },
       {
         "Name": "flask",
@@ -2328,7 +2316,7 @@
       },
       {
         "Name": "flt-python",
-        "Current": "0.14.0"
+        "Current": "0.16.0"
       },
       {
         "Name": "fluent-logger",
@@ -3228,7 +3216,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.12.35"
+        "Current": "1.1.13.35.20260208.7"
       },
       {
         "Name": "nspr",
@@ -3967,40 +3955,20 @@
         "Current": "1.12"
       },
       {
-        "Name": "synapseml-cognitive",
-        "Current": "1.1.0"
-      },
-      {
-        "Name": "synapseml-core",
-        "Current": "1.1.0"
-      },
-      {
-        "Name": "synapseml-deep-learning",
-        "Current": "1.1.0"
+        "Name": "synapseml",
+        "Current": "1.1.1"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "1.1.0.0.dev1"
-      },
-      {
-        "Name": "synapseml-lightgbm",
-        "Current": "1.1.0"
+        "Current": "1.1.1.0"
       },
       {
         "Name": "synapseml-mlflow",
         "Current": "1.0.31"
       },
       {
-        "Name": "synapseml-opencv",
-        "Current": "1.1.0"
-      },
-      {
         "Name": "synapseml-utils",
         "Current": "1.1.6.post2"
-      },
-      {
-        "Name": "synapseml-vw",
-        "Current": "1.1.0"
       },
       {
         "Name": "sysroot_linux-64",
@@ -4295,7 +4263,7 @@
         "Current": "1.5.5"
       },
       {
-        "Name": "_libgcc_mutex",
+        "Name": "Unexpected error while decoding json = string indices must be integers\nUnexpected error while decoding json = string indices must be integers\n_libgcc_mutex",
         "Current": "0.1"
       }
     ],
@@ -4914,7 +4882,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.12.35"
+        "Current": "1.1.13.35.20260208.7"
       },
       {
         "Name": "numDeriv",
