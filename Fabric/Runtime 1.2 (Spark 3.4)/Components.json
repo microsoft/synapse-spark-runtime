@@ -1,7 +1,7 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2026-02-04.0-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2026-03-04.2-rc.1",
   "sparkVersion": "spark3.4",
-  "operatingSystem": "CBL-Mariner 2.0.20260102",
+  "operatingSystem": "CBL-Mariner 2.0.20260304",
   "java": "11.0.27",
   "scala": "2.12.17",
   "python": "3.10/2.0.0",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.63"
+        "Current": "1.1.64"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -646,11 +646,11 @@
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.14"
+        "Current": "4.5.13"
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.13"
+        "Current": "4.5.14"
       },
       {
         "Name": "impulse-core_spark",
@@ -826,19 +826,19 @@
       },
       {
         "Name": "json",
-        "Current": "20231013"
-      },
-      {
-        "Name": "json",
         "Current": "1.8"
       },
       {
-        "Name": "json-simple",
-        "Current": "1.1"
+        "Name": "json",
+        "Current": "20231013"
       },
       {
         "Name": "json-simple",
         "Current": "1.1.1"
+      },
+      {
+        "Name": "json-simple",
+        "Current": "1.1"
       },
       {
         "Name": "json4s-ast",
@@ -1050,11 +1050,11 @@
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-x86_64"
+        "Current": "4.1.87.Final-osx-aarch_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-aarch_64"
+        "Current": "4.1.87.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1062,7 +1062,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.12-spark34"
+        "Current": "1.1.13-spark34-20260208.7"
       },
       {
         "Name": "objenesis",
@@ -1226,10 +1226,6 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
-      },
-      {
-        "Name": "spark",
         "Current": "3.4-advisor-core_2.12-1.0.18"
       },
       {
@@ -1238,15 +1234,15 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
-      },
-      {
-        "Name": "spark-avro",
-        "Current": "2.12-3.4.3.5.3.20251229.2"
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
         "Current": "2.12-3.4.1"
+      },
+      {
+        "Name": "spark-avro",
+        "Current": "2.12-3.4.3.5.3.20251229.2"
       },
       {
         "Name": "spark-catalyst",
@@ -1334,6 +1330,10 @@
       },
       {
         "Name": "spark-streaming",
+        "Current": "2.12-3.4.3.5.3.20251229.2"
+      },
+      {
+        "Name": "spark-streaming-kafka",
         "Current": "2.12-3.4.3.5.3.20251229.2"
       },
       {
@@ -1430,7 +1430,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "1.1.12-spark34"
+        "Current": "1.1.13-spark34-20260208.7"
       },
       {
         "Name": "threeten-extra",
@@ -1486,6 +1486,10 @@
       }
     ],
     "fabricPython": [
+      {
+        "Name": "_libgcc_mutex",
+        "Current": "0.1"
+      },
       {
         "Name": "_openmp_mutex",
         "Current": "4.5"
@@ -1545,10 +1549,6 @@
       {
         "Name": "arrow",
         "Current": "1.3.0"
-      },
-      {
-        "Name": "astor",
-        "Current": "0.8.1"
       },
       {
         "Name": "asttokens",
@@ -1651,14 +1651,6 @@
         "Current": "12.12.0"
       },
       {
-        "Name": "azure-synapse-ml-predict",
-        "Current": "1.0.0"
-      },
-      {
-        "Name": "azureml-synapse",
-        "Current": "0.0.1"
-      },
-      {
         "Name": "backcall",
         "Current": "0.2.0"
       },
@@ -1751,14 +1743,6 @@
         "Current": "3.3.1"
       },
       {
-        "Name": "chat-magics",
-        "Current": "0.1.25.2.28"
-      },
-      {
-        "Name": "chat-magics-fabric",
-        "Current": "0.2.0.25.8.13"
-      },
-      {
         "Name": "chroma-hnswlib",
         "Current": "0.7.3"
       },
@@ -1817,10 +1801,6 @@
       {
         "Name": "configparser",
         "Current": "5.3.0"
-      },
-      {
-        "Name": "contextlib2",
-        "Current": "21.6.0"
       },
       {
         "Name": "contourpy",
@@ -1907,14 +1887,6 @@
         "Current": "0.4.0"
       },
       {
-        "Name": "ds-copilot",
-        "Current": "0.1.25.2.28"
-      },
-      {
-        "Name": "dscopilot-installer",
-        "Current": "0.0.9"
-      },
-      {
         "Name": "entrypoints",
         "Current": "0.4"
       },
@@ -1935,16 +1907,8 @@
         "Current": "2.5.0"
       },
       {
-        "Name": "fabric-connection",
-        "Current": "0.2.0"
-      },
-      {
         "Name": "fastapi",
         "Current": "0.103.2"
-      },
-      {
-        "Name": "filelock",
-        "Current": "3.11.0"
       },
       {
         "Name": "flaml",
@@ -1957,10 +1921,6 @@
       {
         "Name": "flatbuffers",
         "Current": "23.5.26"
-      },
-      {
-        "Name": "fluent-logger",
-        "Current": "0.10.0"
       },
       {
         "Name": "font-ttf-dejavu-sans-mono",
@@ -2107,10 +2067,6 @@
         "Current": "1.54.3"
       },
       {
-        "Name": "gson",
-        "Current": "0.0.3"
-      },
-      {
         "Name": "gst-plugins-base",
         "Current": "1.22.6"
       },
@@ -2187,10 +2143,6 @@
         "Current": "6.1.0"
       },
       {
-        "Name": "impulse-python-handler",
-        "Current": "1.0.22.1.0.0"
-      },
-      {
         "Name": "intel-openmp",
         "Current": "2021.4.0"
       },
@@ -2227,10 +2179,6 @@
         "Current": "2.1.2"
       },
       {
-        "Name": "jaraco-context",
-        "Current": "4.3.0"
-      },
-      {
         "Name": "jax",
         "Current": "0.4.17"
       },
@@ -2251,14 +2199,6 @@
         "Current": "1.3.2"
       },
       {
-        "Name": "joblibspark",
-        "Current": "0.5.2"
-      },
-      {
-        "Name": "json-tricks",
-        "Current": "3.17.3"
-      },
-      {
         "Name": "jsonpointer",
         "Current": "2.4"
       },
@@ -2273,10 +2213,6 @@
       {
         "Name": "jsonschema-with-format-nongpl",
         "Current": "4.19.1"
-      },
-      {
-        "Name": "jupyter-ui-poll",
-        "Current": "0.2.2"
       },
       {
         "Name": "jupyter_client",
@@ -2519,10 +2455,6 @@
         "Current": "3.2.0"
       },
       {
-        "Name": "library-metadata-cooker",
-        "Current": "3.4.1.2"
-      },
-      {
         "Name": "librsvg",
         "Current": "2.56.3"
       },
@@ -2699,10 +2631,6 @@
         "Current": "1.5"
       },
       {
-        "Name": "more-itertools",
-        "Current": "10.1.0"
-      },
-      {
         "Name": "mpc",
         "Current": "1.3.1"
       },
@@ -2727,10 +2655,6 @@
         "Current": "1.0.0"
       },
       {
-        "Name": "msgpack",
-        "Current": "1.0.7"
-      },
-      {
         "Name": "multidict",
         "Current": "6.0.4"
       },
@@ -2741,14 +2665,6 @@
       {
         "Name": "munkres",
         "Current": "1.1.4"
-      },
-      {
-        "Name": "mypy",
-        "Current": "1.4.1"
-      },
-      {
-        "Name": "mypy-extensions",
-        "Current": "1.0.0"
       },
       {
         "Name": "mysql-common",
@@ -2785,14 +2701,6 @@
       {
         "Name": "nltk",
         "Current": "3.8.1"
-      },
-      {
-        "Name": "nni",
-        "Current": "2.10.1"
-      },
-      {
-        "Name": "notebookutils",
-        "Current": "1.1.12.34"
       },
       {
         "Name": "nspr",
@@ -2959,10 +2867,6 @@
         "Current": "3.0.2"
       },
       {
-        "Name": "powerbiclient",
-        "Current": "3.1.1"
-      },
-      {
         "Name": "pox",
         "Current": "0.3.3"
       },
@@ -3091,10 +2995,6 @@
         "Current": "1.7.1"
       },
       {
-        "Name": "pyspark",
-        "Current": "3.4.1.5.3.20230713"
-      },
-      {
         "Name": "python",
         "Current": "3.10.12"
       },
@@ -3133,10 +3033,6 @@
       {
         "Name": "pythonnet",
         "Current": "3.0.1"
-      },
-      {
-        "Name": "pythonwebhdfs",
-        "Current": "0.2.3"
       },
       {
         "Name": "pytorch",
@@ -3199,10 +3095,6 @@
         "Current": "1.3.1"
       },
       {
-        "Name": "responses",
-        "Current": "0.23.3"
-      },
-      {
         "Name": "retrying",
         "Current": "1.3.3"
       },
@@ -3217,10 +3109,6 @@
       {
         "Name": "rich",
         "Current": "13.6.0"
-      },
-      {
-        "Name": "rouge-score",
-        "Current": "0.1.2"
       },
       {
         "Name": "rpds-py",
@@ -3255,10 +3143,6 @@
         "Current": "1.4.7"
       },
       {
-        "Name": "schema",
-        "Current": "0.7.5"
-      },
-      {
         "Name": "scikit-learn",
         "Current": "1.3.0"
       },
@@ -3273,10 +3157,6 @@
       {
         "Name": "seaborn-base",
         "Current": "0.12.2"
-      },
-      {
-        "Name": "semantic-link-sempy",
-        "Current": "0.11.0"
       },
       {
         "Name": "send2trash",
@@ -3311,10 +3191,6 @@
         "Current": "1.5.4"
       },
       {
-        "Name": "simplejson",
-        "Current": "3.19.2"
-      },
-      {
         "Name": "sip",
         "Current": "6.7.12"
       },
@@ -3347,14 +3223,6 @@
         "Current": "2.0.22"
       },
       {
-        "Name": "sqlanalyticsconnectorpy",
-        "Current": "1.0.1"
-      },
-      {
-        "Name": "sqlanalyticsfabricconnectorpy",
-        "Current": "1.0.0"
-      },
-      {
         "Name": "sqlparse",
         "Current": "0.4.4"
       },
@@ -3377,42 +3245,6 @@
       {
         "Name": "sympy",
         "Current": "1.12"
-      },
-      {
-        "Name": "synapseml-cognitive",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-core",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-deep-learning",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-internal",
-        "Current": "1.0.9.0.dev1"
-      },
-      {
-        "Name": "synapseml-lightgbm",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-mlflow",
-        "Current": "1.0.31"
-      },
-      {
-        "Name": "synapseml-opencv",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-utils",
-        "Current": "1.1.6.post2"
-      },
-      {
-        "Name": "synapseml-vw",
-        "Current": "1.0.9"
       },
       {
         "Name": "tabulate",
@@ -3511,10 +3343,6 @@
         "Current": "1.5.5"
       },
       {
-        "Name": "typeguard",
-        "Current": "2.13.3"
-      },
-      {
         "Name": "typer",
         "Current": "0.9.0"
       },
@@ -3525,14 +3353,6 @@
       {
         "Name": "types-pytz",
         "Current": "2023.3.1.1"
-      },
-      {
-        "Name": "types-pyyaml",
-        "Current": "6.0.12.12"
-      },
-      {
-        "Name": "typing-extensions",
-        "Current": "4.8.0"
       },
       {
         "Name": "typing_extensions",
@@ -3595,10 +3415,6 @@
         "Current": "1.6.4"
       },
       {
-        "Name": "websockets",
-        "Current": "12.0"
-      },
-      {
         "Name": "werkzeug",
         "Current": "3.0.1"
       },
@@ -3609,10 +3425,6 @@
       {
         "Name": "widgetsnbextension",
         "Current": "4.0.9"
-      },
-      {
-        "Name": "wolframalpha",
-        "Current": "5.0.0"
       },
       {
         "Name": "wrapt",
@@ -3645,10 +3457,6 @@
       {
         "Name": "xkeyboard-config",
         "Current": "2.40"
-      },
-      {
-        "Name": "xmltodict",
-        "Current": "0.13.0"
       },
       {
         "Name": "xorg-kbproto",
@@ -3743,8 +3551,200 @@
         "Current": "1.5.5"
       },
       {
-        "Name": "_libgcc_mutex",
-        "Current": "0.1"
+        "Name": "astor",
+        "Current": "0.8.1"
+      },
+      {
+        "Name": "azure-synapse-ml-predict",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "azureml-synapse",
+        "Current": "0.0.1"
+      },
+      {
+        "Name": "chat-magics",
+        "Current": "0.1.25.2.28"
+      },
+      {
+        "Name": "chat-magics-fabric",
+        "Current": "0.2.0.25.8.13"
+      },
+      {
+        "Name": "contextlib2",
+        "Current": "21.6.0"
+      },
+      {
+        "Name": "ds-copilot",
+        "Current": "0.1.25.2.28"
+      },
+      {
+        "Name": "dscopilot-installer",
+        "Current": "0.0.9"
+      },
+      {
+        "Name": "fabric-connection",
+        "Current": "0.2.0"
+      },
+      {
+        "Name": "filelock",
+        "Current": "3.11.0"
+      },
+      {
+        "Name": "fluent-logger",
+        "Current": "0.10.0"
+      },
+      {
+        "Name": "gson",
+        "Current": "0.0.3"
+      },
+      {
+        "Name": "impulse-python-handler",
+        "Current": "1.0.22.1.0.0"
+      },
+      {
+        "Name": "jaraco-context",
+        "Current": "4.3.0"
+      },
+      {
+        "Name": "joblibspark",
+        "Current": "0.5.2"
+      },
+      {
+        "Name": "json-tricks",
+        "Current": "3.17.3"
+      },
+      {
+        "Name": "jupyter-ui-poll",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "library-metadata-cooker",
+        "Current": "3.4.1.2"
+      },
+      {
+        "Name": "more-itertools",
+        "Current": "10.1.0"
+      },
+      {
+        "Name": "msgpack",
+        "Current": "1.0.7"
+      },
+      {
+        "Name": "mypy",
+        "Current": "1.4.1"
+      },
+      {
+        "Name": "mypy-extensions",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "nni",
+        "Current": "2.10.1"
+      },
+      {
+        "Name": "notebookutils",
+        "Current": "1.1.13.34.20260208.7"
+      },
+      {
+        "Name": "powerbiclient",
+        "Current": "3.1.1"
+      },
+      {
+        "Name": "pyspark",
+        "Current": "3.4.1.5.3.20230713"
+      },
+      {
+        "Name": "pythonwebhdfs",
+        "Current": "0.2.3"
+      },
+      {
+        "Name": "responses",
+        "Current": "0.23.3"
+      },
+      {
+        "Name": "rouge-score",
+        "Current": "0.1.2"
+      },
+      {
+        "Name": "schema",
+        "Current": "0.7.5"
+      },
+      {
+        "Name": "semantic-link-sempy",
+        "Current": "0.11.0"
+      },
+      {
+        "Name": "simplejson",
+        "Current": "3.19.2"
+      },
+      {
+        "Name": "sqlanalyticsconnectorpy",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "sqlanalyticsfabricconnectorpy",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "synapseml-cognitive",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-core",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-deep-learning",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-internal",
+        "Current": "1.0.9.0.dev1"
+      },
+      {
+        "Name": "synapseml-lightgbm",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-mlflow",
+        "Current": "1.0.31"
+      },
+      {
+        "Name": "synapseml-opencv",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-utils",
+        "Current": "1.1.6.post2"
+      },
+      {
+        "Name": "synapseml-vw",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "typeguard",
+        "Current": "2.13.3"
+      },
+      {
+        "Name": "types-pyyaml",
+        "Current": "6.0.12.12"
+      },
+      {
+        "Name": "typing-extensions",
+        "Current": "4.8.0"
+      },
+      {
+        "Name": "websockets",
+        "Current": "12.0"
+      },
+      {
+        "Name": "wolframalpha",
+        "Current": "5.0.0"
+      },
+      {
+        "Name": "xmltodict",
+        "Current": "0.13.0"
       }
     ],
     "Rlibraries": [
@@ -4358,7 +4358,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.12.34"
+        "Current": "1.1.13.34.20260208.7"
       },
       {
         "Name": "numDeriv",
