@@ -1,7 +1,7 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2026-02-04.0-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2026-03-04.3-rc.1",
   "sparkVersion": "spark3.4",
-  "operatingSystem": "CBL-Mariner 2.0.20260102",
+  "operatingSystem": "CBL-Mariner 2.0.20260304",
   "java": "11.0.27",
   "scala": "2.12.17",
   "python": "3.10/2.0.0",
@@ -28,7 +28,7 @@
       },
       {
         "Name": "CosmosDBConnector",
-        "Current": "2.2.9"
+        "Current": "2.2.11"
       },
       {
         "Name": "CSparkMetricUpdate",
@@ -80,7 +80,7 @@
       },
       {
         "Name": "KustoConnector",
-        "Current": "1.5.3"
+        "Current": "1.5.6"
       },
       {
         "Name": "LibraryManager",
@@ -330,7 +330,7 @@
       },
       {
         "Name": "azure-cosmos-analytics-spark",
-        "Current": "2.2.9"
+        "Current": "2.2.11"
       },
       {
         "Name": "azure-data-lake-store-sdk",
@@ -834,11 +834,11 @@
       },
       {
         "Name": "json-simple",
-        "Current": "1.1"
+        "Current": "1.1.1"
       },
       {
         "Name": "json-simple",
-        "Current": "1.1.1"
+        "Current": "1.1"
       },
       {
         "Name": "json4s-ast",
@@ -902,7 +902,7 @@
       },
       {
         "Name": "kusto-spark",
-        "Current": "3.0_2.12-5.3.1"
+        "Current": "3.0_2.12-5.3.3"
       },
       {
         "Name": "lapack",
@@ -1050,11 +1050,11 @@
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-x86_64"
+        "Current": "4.1.87.Final-osx-aarch_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-aarch_64"
+        "Current": "4.1.87.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1226,10 +1226,6 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
-      },
-      {
-        "Name": "spark",
         "Current": "3.4-advisor-core_2.12-1.0.18"
       },
       {
@@ -1238,15 +1234,15 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
-      },
-      {
-        "Name": "spark-avro",
-        "Current": "2.12-3.4.3.5.3.20251228.1"
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
         "Current": "2.12-3.4.1"
+      },
+      {
+        "Name": "spark-avro",
+        "Current": "2.12-3.4.3.5.3.20251228.1"
       },
       {
         "Name": "spark-catalyst",
@@ -1278,7 +1274,7 @@
       },
       {
         "Name": "spark-kusto-synapse-connector",
-        "Current": "3.4_2.12-1.5.3"
+        "Current": "3.4_2.12-1.5.6"
       },
       {
         "Name": "spark-kvstore",
@@ -1334,6 +1330,10 @@
       },
       {
         "Name": "spark-streaming",
+        "Current": "2.12-3.4.3.5.3.20251228.1"
+      },
+      {
+        "Name": "spark-streaming-kafka",
         "Current": "2.12-3.4.3.5.3.20251228.1"
       },
       {
@@ -1491,14 +1491,6 @@
         "Current": "0.1"
       },
       {
-        "Name": "_libgcc_mutex",
-        "Current": "0.1"
-      },
-      {
-        "Name": "_openmp_mutex",
-        "Current": "4.5"
-      },
-      {
         "Name": "_openmp_mutex",
         "Current": "4.5"
       },
@@ -1535,14 +1527,6 @@
         "Current": "3.7.1"
       },
       {
-        "Name": "applicationinsights",
-        "Current": "0.11.10"
-      },
-      {
-        "Name": "argcomplete",
-        "Current": "3.2.3"
-      },
-      {
         "Name": "argon2-cffi",
         "Current": "23.1.0"
       },
@@ -1557,10 +1541,6 @@
       {
         "Name": "asttokens",
         "Current": "2.4.1"
-      },
-      {
-        "Name": "asttokens",
-        "Current": "3.0.1"
       },
       {
         "Name": "astunparse",
@@ -1631,14 +1611,6 @@
         "Current": "1.11.210"
       },
       {
-        "Name": "azure-ai-ml",
-        "Current": "1.12.1"
-      },
-      {
-        "Name": "azure-common",
-        "Current": "1.1.28"
-      },
-      {
         "Name": "azure-core",
         "Current": "1.30.1"
       },
@@ -1647,100 +1619,16 @@
         "Current": "0.0.51"
       },
       {
-        "Name": "azure-graphrbac",
-        "Current": "0.61.1"
-      },
-      {
         "Name": "azure-identity",
         "Current": "1.15.0"
-      },
-      {
-        "Name": "azure-mgmt-authorization",
-        "Current": "4.0.0"
-      },
-      {
-        "Name": "azure-mgmt-containerregistry",
-        "Current": "10.3.0"
-      },
-      {
-        "Name": "azure-mgmt-core",
-        "Current": "1.4.0"
-      },
-      {
-        "Name": "azure-mgmt-keyvault",
-        "Current": "10.3.0"
-      },
-      {
-        "Name": "azure-mgmt-network",
-        "Current": "25.2.0"
-      },
-      {
-        "Name": "azure-mgmt-resource",
-        "Current": "23.0.1"
-      },
-      {
-        "Name": "azure-mgmt-storage",
-        "Current": "21.1.0"
-      },
-      {
-        "Name": "azure-storage-blob",
-        "Current": "12.19.0"
       },
       {
         "Name": "azure-storage-file-datalake",
         "Current": "12.14.0"
       },
       {
-        "Name": "azure-storage-file-share",
-        "Current": "12.15.0"
-      },
-      {
-        "Name": "azureml-core",
-        "Current": "1.55.0"
-      },
-      {
-        "Name": "azureml-dataprep",
-        "Current": "5.1.6"
-      },
-      {
-        "Name": "azureml-dataprep-native",
-        "Current": "41.0.0"
-      },
-      {
-        "Name": "azureml-dataprep-rslex",
-        "Current": "2.22.2"
-      },
-      {
-        "Name": "azureml-dataset-runtime",
-        "Current": "1.55.0"
-      },
-      {
-        "Name": "azureml-mlflow",
-        "Current": "1.55.0"
-      },
-      {
-        "Name": "azureml-opendatasets",
-        "Current": "1.55.0"
-      },
-      {
-        "Name": "azureml-synapse",
-        "Current": "0.0.1"
-      },
-      {
-        "Name": "azureml-telemetry",
-        "Current": "1.55.0"
-      },
-      {
         "Name": "backcall",
         "Current": "0.2.0"
-      },
-      {
-        "Name": "backports-tempfile",
-        "Current": "1.0"
-      },
-      {
-        "Name": "backports-weakref",
-        "Current": "1.0.post1"
       },
       {
         "Name": "bcrypt",
@@ -1779,20 +1667,12 @@
         "Current": "1.0.8"
       },
       {
-        "Name": "bzip2",
-        "Current": "1.0.8"
-      },
-      {
         "Name": "c-ares",
         "Current": "1.27.0"
       },
       {
         "Name": "ca-certificates",
         "Current": "2024.2.2"
-      },
-      {
-        "Name": "ca-certificates",
-        "Current": "2026.1.4"
       },
       {
         "Name": "cached-property",
@@ -1812,10 +1692,6 @@
       },
       {
         "Name": "certifi",
-        "Current": "2026.1.4"
-      },
-      {
-        "Name": "certifi",
         "Current": "2024.2.2"
       },
       {
@@ -1823,24 +1699,12 @@
         "Current": "1.16.0"
       },
       {
-        "Name": "cffi",
-        "Current": "2.0.0"
-      },
-      {
         "Name": "charset-normalizer",
         "Current": "3.3.2"
       },
       {
-        "Name": "charset-normalizer",
-        "Current": "3.4.4"
-      },
-      {
         "Name": "click",
         "Current": "8.1.7"
-      },
-      {
-        "Name": "cloudpickle",
-        "Current": "2.2.1"
       },
       {
         "Name": "clr_loader",
@@ -1855,10 +1719,6 @@
         "Current": "0.2.2"
       },
       {
-        "Name": "comm",
-        "Current": "0.2.3"
-      },
-      {
         "Name": "conda-package-handling",
         "Current": "2.2.0"
       },
@@ -1871,36 +1731,8 @@
         "Current": "6.0.1"
       },
       {
-        "Name": "contextlib2",
-        "Current": "21.6.0"
-      },
-      {
         "Name": "contourpy",
         "Current": "1.2.0"
-      },
-      {
-        "Name": "contourpy",
-        "Current": "1.3.2"
-      },
-      {
-        "Name": "control-script",
-        "Current": "1.0.3"
-      },
-      {
-        "Name": "control-script",
-        "Current": "1.0.3"
-      },
-      {
-        "Name": "cryptography",
-        "Current": "46.0.4"
-      },
-      {
-        "Name": "cryptography",
-        "Current": "41.0.7"
-      },
-      {
-        "Name": "cycler",
-        "Current": "0.12.1"
       },
       {
         "Name": "cycler",
@@ -1939,16 +1771,8 @@
         "Current": "1.8.1"
       },
       {
-        "Name": "debugpy",
-        "Current": "1.8.20"
-      },
-      {
         "Name": "decorator",
         "Current": "5.1.1"
-      },
-      {
-        "Name": "decorator",
-        "Current": "5.2.1"
       },
       {
         "Name": "defusedxml",
@@ -1976,19 +1800,11 @@
       },
       {
         "Name": "exceptiongroup",
-        "Current": "1.3.1"
-      },
-      {
-        "Name": "exceptiongroup",
         "Current": "1.2.0"
       },
       {
         "Name": "executing",
         "Current": "2.0.1"
-      },
-      {
-        "Name": "executing",
-        "Current": "2.2.1"
       },
       {
         "Name": "expat",
@@ -2005,10 +1821,6 @@
       {
         "Name": "flatbuffers",
         "Current": "23.5.26"
-      },
-      {
-        "Name": "fluent-logger",
-        "Current": "0.10.0"
       },
       {
         "Name": "font-ttf-dejavu-sans-mono",
@@ -2040,10 +1852,6 @@
       },
       {
         "Name": "fonttools",
-        "Current": "4.61.1"
-      },
-      {
-        "Name": "fonttools",
         "Current": "4.49.0"
       },
       {
@@ -2065,14 +1873,6 @@
       {
         "Name": "fsspec_wrapper",
         "Current": "0.1.13"
-      },
-      {
-        "Name": "fsspec_wrapper",
-        "Current": "0.1.13"
-      },
-      {
-        "Name": "fusepy",
-        "Current": "3.0.1"
       },
       {
         "Name": "gast",
@@ -2131,10 +1931,6 @@
         "Current": "2.1.2"
       },
       {
-        "Name": "google-api-core",
-        "Current": "2.17.1"
-      },
-      {
         "Name": "google-auth",
         "Current": "2.28.2"
       },
@@ -2145,10 +1941,6 @@
       {
         "Name": "google-pasta",
         "Current": "0.2.0"
-      },
-      {
-        "Name": "googleapis-common-protos",
-        "Current": "1.63.0"
       },
       {
         "Name": "graphite2",
@@ -2187,16 +1979,8 @@
         "Current": "1.1"
       },
       {
-        "Name": "humanfriendly",
-        "Current": "10.0"
-      },
-      {
         "Name": "icu",
         "Current": "73.2"
-      },
-      {
-        "Name": "idna",
-        "Current": "3.11"
       },
       {
         "Name": "idna",
@@ -2219,10 +2003,6 @@
         "Current": "6.3.0"
       },
       {
-        "Name": "impulse-python-handler",
-        "Current": "1.0.22.1.0.0"
-      },
-      {
         "Name": "interpret",
         "Current": "0.5.0"
       },
@@ -2235,20 +2015,8 @@
         "Current": "6.29.3"
       },
       {
-        "Name": "ipykernel",
-        "Current": "7.1.0"
-      },
-      {
-        "Name": "ipython",
-        "Current": "8.38.0"
-      },
-      {
         "Name": "ipython",
         "Current": "8.14.0"
-      },
-      {
-        "Name": "ipywidgets",
-        "Current": "8.1.8"
       },
       {
         "Name": "ipywidgets",
@@ -2268,31 +2036,15 @@
       },
       {
         "Name": "jedi",
-        "Current": "0.19.2"
-      },
-      {
-        "Name": "jedi",
         "Current": "0.19.1"
-      },
-      {
-        "Name": "jeepney",
-        "Current": "0.8.0"
       },
       {
         "Name": "jinja2",
         "Current": "3.1.3"
       },
       {
-        "Name": "jmespath",
-        "Current": "1.0.1"
-      },
-      {
         "Name": "joblib",
         "Current": "1.3.2"
-      },
-      {
-        "Name": "jsonpickle",
-        "Current": "3.0.3"
       },
       {
         "Name": "jsonpointer",
@@ -2309,22 +2061,6 @@
       {
         "Name": "jsonschema-with-format-nongpl",
         "Current": "4.21.1"
-      },
-      {
-        "Name": "jupyter-client",
-        "Current": "8.8.0"
-      },
-      {
-        "Name": "jupyter-core",
-        "Current": "5.9.1"
-      },
-      {
-        "Name": "jupyter-ui-poll",
-        "Current": "0.2.2"
-      },
-      {
-        "Name": "jupyter-ui-poll",
-        "Current": "1.1.0"
       },
       {
         "Name": "jupyter_client",
@@ -2347,10 +2083,6 @@
         "Current": "0.5.3"
       },
       {
-        "Name": "jupyterlab-widgets",
-        "Current": "3.0.16"
-      },
-      {
         "Name": "jupyterlab_pygments",
         "Current": "0.3.0"
       },
@@ -2371,14 +2103,6 @@
         "Current": "1.4.5"
       },
       {
-        "Name": "kiwisolver",
-        "Current": "1.4.9"
-      },
-      {
-        "Name": "knack",
-        "Current": "0.11.0"
-      },
-      {
         "Name": "krb5",
         "Current": "1.21.2"
       },
@@ -2393,10 +2117,6 @@
       {
         "Name": "ld_impl_linux-64",
         "Current": "2.40"
-      },
-      {
-        "Name": "ld_impl_linux-64",
-        "Current": "2.45"
       },
       {
         "Name": "lerc",
@@ -2503,32 +2223,16 @@
         "Current": "2.6.2"
       },
       {
-        "Name": "libexpat",
-        "Current": "2.7.3"
-      },
-      {
         "Name": "libffi",
         "Current": "3.4.2"
-      },
-      {
-        "Name": "libffi",
-        "Current": "3.5.2"
       },
       {
         "Name": "libflac",
         "Current": "1.4.3"
       },
       {
-        "Name": "libgcc",
-        "Current": "15.2.0"
-      },
-      {
         "Name": "libgcc-ng",
         "Current": "13.2.0"
-      },
-      {
-        "Name": "libgcc-ng",
-        "Current": "15.2.0"
       },
       {
         "Name": "libgcrypt",
@@ -2549,10 +2253,6 @@
       {
         "Name": "libglib",
         "Current": "2.80.0"
-      },
-      {
-        "Name": "libgomp",
-        "Current": "15.2.0"
       },
       {
         "Name": "libgoogle-cloud",
@@ -2587,20 +2287,12 @@
         "Current": "15.0.7"
       },
       {
-        "Name": "liblzma",
-        "Current": "5.8.2"
-      },
-      {
         "Name": "libnghttp2",
         "Current": "1.58.0"
       },
       {
         "Name": "libnl",
         "Current": "3.9.0"
-      },
-      {
-        "Name": "libnsl",
-        "Current": "2.0.1"
       },
       {
         "Name": "libnsl",
@@ -2631,14 +2323,6 @@
         "Current": "4.24.4"
       },
       {
-        "Name": "library-metadata-cooker",
-        "Current": "3.4.1.2"
-      },
-      {
-        "Name": "library-metadata-cooker",
-        "Current": "3.4.1.2"
-      },
-      {
         "Name": "libre2-11",
         "Current": "2023.09.01"
       },
@@ -2657,10 +2341,6 @@
       {
         "Name": "libsqlite",
         "Current": "3.45.2"
-      },
-      {
-        "Name": "libsqlite",
-        "Current": "3.51.2"
       },
       {
         "Name": "libssh2",
@@ -2691,10 +2371,6 @@
         "Current": "2.38.1"
       },
       {
-        "Name": "libuuid",
-        "Current": "2.41.3"
-      },
-      {
         "Name": "libuv",
         "Current": "1.48.0"
       },
@@ -2709,10 +2385,6 @@
       {
         "Name": "libxcb",
         "Current": "1.15"
-      },
-      {
-        "Name": "libxcrypt",
-        "Current": "4.4.36"
       },
       {
         "Name": "libxcrypt",
@@ -2737,10 +2409,6 @@
       {
         "Name": "libzlib",
         "Current": "1.2.13"
-      },
-      {
-        "Name": "libzlib",
-        "Current": "1.3.1"
       },
       {
         "Name": "lightgbm",
@@ -2771,24 +2439,12 @@
         "Current": "2.1.5"
       },
       {
-        "Name": "marshmallow",
-        "Current": "3.21.1"
-      },
-      {
         "Name": "matplotlib",
         "Current": "3.8.2"
-      },
-      {
-        "Name": "matplotlib",
-        "Current": "3.10.8"
       },
       {
         "Name": "matplotlib-base",
         "Current": "3.8.2"
-      },
-      {
-        "Name": "matplotlib-inline",
-        "Current": "0.2.1"
       },
       {
         "Name": "matplotlib-inline",
@@ -2823,10 +2479,6 @@
         "Current": "2.9.2"
       },
       {
-        "Name": "mltable",
-        "Current": "1.6.1"
-      },
-      {
         "Name": "mpc",
         "Current": "1.3.1"
       },
@@ -2847,24 +2499,12 @@
         "Current": "1.27.0"
       },
       {
-        "Name": "msal",
-        "Current": "1.34.0"
-      },
-      {
         "Name": "msal_extensions",
         "Current": "1.1.0"
       },
       {
-        "Name": "msgpack",
-        "Current": "1.0.8"
-      },
-      {
         "Name": "msrest",
         "Current": "0.7.1"
-      },
-      {
-        "Name": "msrestazure",
-        "Current": "0.6.4"
       },
       {
         "Name": "multidict",
@@ -2877,22 +2517,6 @@
       {
         "Name": "munkres",
         "Current": "1.1.4"
-      },
-      {
-        "Name": "mypy",
-        "Current": "1.4.1"
-      },
-      {
-        "Name": "mypy",
-        "Current": "1.4.1"
-      },
-      {
-        "Name": "mypy-extensions",
-        "Current": "1.0.0"
-      },
-      {
-        "Name": "mypy-extensions",
-        "Current": "1.1.0"
       },
       {
         "Name": "mysql-common",
@@ -2919,32 +2543,12 @@
         "Current": "6.4"
       },
       {
-        "Name": "ncurses",
-        "Current": "6.5"
-      },
-      {
-        "Name": "ndg-httpsclient",
-        "Current": "0.5.1"
-      },
-      {
-        "Name": "nest-asyncio",
-        "Current": "1.6.0"
-      },
-      {
         "Name": "nest-asyncio",
         "Current": "1.6.0"
       },
       {
         "Name": "networkx",
         "Current": "3.2.1"
-      },
-      {
-        "Name": "notebookutils",
-        "Current": "1.1.12.34.20251214.2"
-      },
-      {
-        "Name": "notebookutils",
-        "Current": "1.1.12.34.20251214.2"
       },
       {
         "Name": "nspr",
@@ -2959,36 +2563,12 @@
         "Current": "0.59.0"
       },
       {
-        "Name": "numpy",
-        "Current": "1.23.5"
-      },
-      {
-        "Name": "numpy",
-        "Current": "2.2.6"
-      },
-      {
         "Name": "numpy-base",
         "Current": "1.26.4"
       },
       {
         "Name": "oauthlib",
         "Current": "3.2.2"
-      },
-      {
-        "Name": "onnx",
-        "Current": "1.15.0"
-      },
-      {
-        "Name": "opencensus",
-        "Current": "0.11.4"
-      },
-      {
-        "Name": "opencensus-context",
-        "Current": "0.1.3"
-      },
-      {
-        "Name": "opencensus-ext-azure",
-        "Current": "1.1.13"
       },
       {
         "Name": "openjpeg",
@@ -3001,10 +2581,6 @@
       {
         "Name": "openssl",
         "Current": "3.2.1"
-      },
-      {
-        "Name": "openssl",
-        "Current": "3.6.1"
       },
       {
         "Name": "opt_einsum",
@@ -3020,15 +2596,7 @@
       },
       {
         "Name": "packaging",
-        "Current": "26.0"
-      },
-      {
-        "Name": "packaging",
         "Current": "23.2"
-      },
-      {
-        "Name": "pandas",
-        "Current": "2.3.3"
       },
       {
         "Name": "pandas",
@@ -3048,19 +2616,11 @@
       },
       {
         "Name": "parso",
-        "Current": "0.8.5"
-      },
-      {
-        "Name": "parso",
         "Current": "0.8.3"
       },
       {
         "Name": "pathos",
         "Current": "0.3.2"
-      },
-      {
-        "Name": "pathspec",
-        "Current": "0.12.1"
       },
       {
         "Name": "patsy",
@@ -3075,24 +2635,12 @@
         "Current": "4.9.0"
       },
       {
-        "Name": "pexpect",
-        "Current": "4.9.0"
-      },
-      {
         "Name": "pickleshare",
         "Current": "0.7.5"
       },
       {
         "Name": "pillow",
-        "Current": "12.1.0"
-      },
-      {
-        "Name": "pillow",
         "Current": "10.2.0"
-      },
-      {
-        "Name": "pip",
-        "Current": "22.3.1"
       },
       {
         "Name": "pip",
@@ -3103,16 +2651,8 @@
         "Current": "0.43.2"
       },
       {
-        "Name": "pkginfo",
-        "Current": "1.10.0"
-      },
-      {
         "Name": "pkgutil-resolve-name",
         "Current": "1.3.10"
-      },
-      {
-        "Name": "platformdirs",
-        "Current": "4.5.1"
       },
       {
         "Name": "platformdirs",
@@ -3129,14 +2669,6 @@
       {
         "Name": "portalocker",
         "Current": "2.8.2"
-      },
-      {
-        "Name": "powerbiclient",
-        "Current": "3.1.1"
-      },
-      {
-        "Name": "powerbiclient",
-        "Current": "3.1.1"
       },
       {
         "Name": "pox",
@@ -3156,10 +2688,6 @@
       },
       {
         "Name": "prompt-toolkit",
-        "Current": "3.0.52"
-      },
-      {
-        "Name": "prompt-toolkit",
         "Current": "3.0.42"
       },
       {
@@ -3169,10 +2697,6 @@
       {
         "Name": "protobuf",
         "Current": "4.24.4"
-      },
-      {
-        "Name": "psutil",
-        "Current": "7.2.2"
       },
       {
         "Name": "psutil",
@@ -3187,16 +2711,8 @@
         "Current": "0.7.0"
       },
       {
-        "Name": "ptyprocess",
-        "Current": "0.7.0"
-      },
-      {
         "Name": "pulseaudio-client",
         "Current": "16.1"
-      },
-      {
-        "Name": "pure-eval",
-        "Current": "0.2.3"
       },
       {
         "Name": "pure_eval",
@@ -3205,14 +2721,6 @@
       {
         "Name": "py-xgboost",
         "Current": "2.0.3"
-      },
-      {
-        "Name": "py4j",
-        "Current": "0.10.9.7"
-      },
-      {
-        "Name": "py4j",
-        "Current": "0.10.9.7"
       },
       {
         "Name": "pyarrow",
@@ -3239,20 +2747,8 @@
         "Current": "2.21"
       },
       {
-        "Name": "pycparser",
-        "Current": "3.0"
-      },
-      {
-        "Name": "pydash",
-        "Current": "7.0.5"
-      },
-      {
         "Name": "pygments",
         "Current": "2.17.2"
-      },
-      {
-        "Name": "pygments",
-        "Current": "2.19.2"
       },
       {
         "Name": "pygobject",
@@ -3263,24 +2759,12 @@
         "Current": "2.8.0"
       },
       {
-        "Name": "pyjwt",
-        "Current": "2.11.0"
-      },
-      {
         "Name": "pynacl",
         "Current": "1.5.0"
       },
       {
         "Name": "pyodbc",
         "Current": "5.0.1"
-      },
-      {
-        "Name": "pyopenssl",
-        "Current": "23.3.0"
-      },
-      {
-        "Name": "pyparsing",
-        "Current": "3.3.2"
       },
       {
         "Name": "pyparsing",
@@ -3303,28 +2787,12 @@
         "Current": "1.7.1"
       },
       {
-        "Name": "pyspark",
-        "Current": "3.4.1.5.3.20230713"
-      },
-      {
-        "Name": "pyspark",
-        "Current": "20240404"
-      },
-      {
         "Name": "python",
         "Current": "3.10.13"
       },
       {
-        "Name": "python",
-        "Current": "3.10.19"
-      },
-      {
         "Name": "python-dateutil",
         "Current": "2.9.0"
-      },
-      {
-        "Name": "python-dateutil",
-        "Current": "2.9.0.post0"
       },
       {
         "Name": "python-fastjsonschema",
@@ -3359,10 +2827,6 @@
         "Current": "2023.4"
       },
       {
-        "Name": "pytz",
-        "Current": "2025.2"
-      },
-      {
         "Name": "pyu2f",
         "Current": "0.1.5"
       },
@@ -3379,10 +2843,6 @@
         "Current": "25.1.2"
       },
       {
-        "Name": "pyzmq",
-        "Current": "27.1.0"
-      },
-      {
         "Name": "qt-main",
         "Current": "5.15.8"
       },
@@ -3393,10 +2853,6 @@
       {
         "Name": "re2",
         "Current": "2023.09.01"
-      },
-      {
-        "Name": "readline",
-        "Current": "8.3"
       },
       {
         "Name": "readline",
@@ -3413,10 +2869,6 @@
       {
         "Name": "requests",
         "Current": "2.31.0"
-      },
-      {
-        "Name": "requests",
-        "Current": "2.32.5"
       },
       {
         "Name": "requests-oauthlib",
@@ -3479,20 +2931,12 @@
         "Current": "0.13.1"
       },
       {
-        "Name": "secretstorage",
-        "Current": "3.3.3"
-      },
-      {
         "Name": "send2trash",
         "Current": "1.8.2"
       },
       {
         "Name": "setuptools",
         "Current": "69.2.0"
-      },
-      {
-        "Name": "setuptools",
-        "Current": "80.10.2"
       },
       {
         "Name": "shap",
@@ -3505,10 +2949,6 @@
       {
         "Name": "six",
         "Current": "1.16.0"
-      },
-      {
-        "Name": "six",
-        "Current": "1.17.0"
       },
       {
         "Name": "slicer",
@@ -3535,20 +2975,8 @@
         "Current": "2.0.28"
       },
       {
-        "Name": "sqlanalyticsconnectorpy",
-        "Current": "1.0.1"
-      },
-      {
-        "Name": "sqlanalyticsconnectorpy",
-        "Current": "1.0.1"
-      },
-      {
         "Name": "sqlparse",
         "Current": "0.4.4"
-      },
-      {
-        "Name": "stack-data",
-        "Current": "0.6.3"
       },
       {
         "Name": "stack_data",
@@ -3559,40 +2987,8 @@
         "Current": "0.14.1"
       },
       {
-        "Name": "strictyaml",
-        "Current": "1.7.3"
-      },
-      {
         "Name": "sympy",
         "Current": "1.12"
-      },
-      {
-        "Name": "synapseml-cognitive",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-core",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-deep-learning",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-internal",
-        "Current": "1.0.9.0.dev1"
-      },
-      {
-        "Name": "synapseml-lightgbm",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-opencv",
-        "Current": "1.0.9"
-      },
-      {
-        "Name": "synapseml-vw",
-        "Current": "1.0.9"
       },
       {
         "Name": "tabulate",
@@ -3647,10 +3043,6 @@
         "Current": "8.6.13"
       },
       {
-        "Name": "tk",
-        "Current": "8.6.13"
-      },
-      {
         "Name": "toml",
         "Current": "0.10.2"
       },
@@ -3659,16 +3051,8 @@
         "Current": "2.0.1"
       },
       {
-        "Name": "tomli",
-        "Current": "2.4.0"
-      },
-      {
         "Name": "toolz",
         "Current": "0.12.1"
-      },
-      {
-        "Name": "tornado",
-        "Current": "6.5.4"
       },
       {
         "Name": "tornado",
@@ -3683,10 +3067,6 @@
         "Current": "5.14.2"
       },
       {
-        "Name": "traitlets",
-        "Current": "5.14.3"
-      },
-      {
         "Name": "typed-ast",
         "Current": "1.5.5"
       },
@@ -3699,10 +3079,6 @@
         "Current": "4.10.0"
       },
       {
-        "Name": "typing-extensions",
-        "Current": "4.15.0"
-      },
-      {
         "Name": "typing_extensions",
         "Current": "4.10.0"
       },
@@ -3713,10 +3089,6 @@
       {
         "Name": "tzdata",
         "Current": "2024a"
-      },
-      {
-        "Name": "tzdata",
-        "Current": "2025.3"
       },
       {
         "Name": "ucx",
@@ -3739,20 +3111,12 @@
         "Current": "2.1.0"
       },
       {
-        "Name": "urllib3",
-        "Current": "2.6.3"
-      },
-      {
         "Name": "virtualenv",
         "Current": "20.23.1"
       },
       {
         "Name": "wcwidth",
         "Current": "0.2.13"
-      },
-      {
-        "Name": "wcwidth",
-        "Current": "0.5.3"
       },
       {
         "Name": "webcolors",
@@ -3773,14 +3137,6 @@
       {
         "Name": "wheel",
         "Current": "0.42.0"
-      },
-      {
-        "Name": "wheel",
-        "Current": "0.46.3"
-      },
-      {
-        "Name": "widgetsnbextension",
-        "Current": "4.0.15"
       },
       {
         "Name": "widgetsnbextension",
@@ -3904,11 +3260,291 @@
       },
       {
         "Name": "zstd",
-        "Current": "1.5.7"
+        "Current": "1.5.5"
       },
       {
-        "Name": "zstd",
-        "Current": "1.5.5"
+        "Name": "applicationinsights",
+        "Current": "0.11.10"
+      },
+      {
+        "Name": "argcomplete",
+        "Current": "3.2.3"
+      },
+      {
+        "Name": "azure-ai-ml",
+        "Current": "1.12.1"
+      },
+      {
+        "Name": "azure-common",
+        "Current": "1.1.28"
+      },
+      {
+        "Name": "azure-graphrbac",
+        "Current": "0.61.1"
+      },
+      {
+        "Name": "azure-mgmt-authorization",
+        "Current": "4.0.0"
+      },
+      {
+        "Name": "azure-mgmt-containerregistry",
+        "Current": "10.3.0"
+      },
+      {
+        "Name": "azure-mgmt-core",
+        "Current": "1.4.0"
+      },
+      {
+        "Name": "azure-mgmt-keyvault",
+        "Current": "10.3.0"
+      },
+      {
+        "Name": "azure-mgmt-network",
+        "Current": "25.2.0"
+      },
+      {
+        "Name": "azure-mgmt-resource",
+        "Current": "23.0.1"
+      },
+      {
+        "Name": "azure-mgmt-storage",
+        "Current": "21.1.0"
+      },
+      {
+        "Name": "azure-storage-blob",
+        "Current": "12.19.0"
+      },
+      {
+        "Name": "azure-storage-file-share",
+        "Current": "12.15.0"
+      },
+      {
+        "Name": "azureml-core",
+        "Current": "1.55.0"
+      },
+      {
+        "Name": "azureml-dataprep",
+        "Current": "5.1.6"
+      },
+      {
+        "Name": "azureml-dataprep-native",
+        "Current": "41.0.0"
+      },
+      {
+        "Name": "azureml-dataprep-rslex",
+        "Current": "2.22.2"
+      },
+      {
+        "Name": "azureml-dataset-runtime",
+        "Current": "1.55.0"
+      },
+      {
+        "Name": "azureml-mlflow",
+        "Current": "1.55.0"
+      },
+      {
+        "Name": "azureml-opendatasets",
+        "Current": "1.55.0"
+      },
+      {
+        "Name": "azureml-synapse",
+        "Current": "0.0.1"
+      },
+      {
+        "Name": "azureml-telemetry",
+        "Current": "1.55.0"
+      },
+      {
+        "Name": "backports-tempfile",
+        "Current": "1.0"
+      },
+      {
+        "Name": "backports-weakref",
+        "Current": "1.0.post1"
+      },
+      {
+        "Name": "cloudpickle",
+        "Current": "2.2.1"
+      },
+      {
+        "Name": "contextlib2",
+        "Current": "21.6.0"
+      },
+      {
+        "Name": "control-script",
+        "Current": "1.0.3"
+      },
+      {
+        "Name": "cryptography",
+        "Current": "41.0.7"
+      },
+      {
+        "Name": "fluent-logger",
+        "Current": "0.10.0"
+      },
+      {
+        "Name": "fusepy",
+        "Current": "3.0.1"
+      },
+      {
+        "Name": "google-api-core",
+        "Current": "2.17.1"
+      },
+      {
+        "Name": "googleapis-common-protos",
+        "Current": "1.63.0"
+      },
+      {
+        "Name": "humanfriendly",
+        "Current": "10.0"
+      },
+      {
+        "Name": "impulse-python-handler",
+        "Current": "1.0.22.1.0.0"
+      },
+      {
+        "Name": "jeepney",
+        "Current": "0.8.0"
+      },
+      {
+        "Name": "jmespath",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "jsonpickle",
+        "Current": "3.0.3"
+      },
+      {
+        "Name": "jupyter-ui-poll",
+        "Current": "0.2.2"
+      },
+      {
+        "Name": "knack",
+        "Current": "0.11.0"
+      },
+      {
+        "Name": "library-metadata-cooker",
+        "Current": "3.4.1.2"
+      },
+      {
+        "Name": "marshmallow",
+        "Current": "3.21.1"
+      },
+      {
+        "Name": "mltable",
+        "Current": "1.6.1"
+      },
+      {
+        "Name": "msgpack",
+        "Current": "1.0.8"
+      },
+      {
+        "Name": "msrestazure",
+        "Current": "0.6.4"
+      },
+      {
+        "Name": "mypy",
+        "Current": "1.4.1"
+      },
+      {
+        "Name": "mypy-extensions",
+        "Current": "1.0.0"
+      },
+      {
+        "Name": "ndg-httpsclient",
+        "Current": "0.5.1"
+      },
+      {
+        "Name": "notebookutils",
+        "Current": "1.1.12.34.20251214.2"
+      },
+      {
+        "Name": "numpy",
+        "Current": "1.23.5"
+      },
+      {
+        "Name": "onnx",
+        "Current": "1.15.0"
+      },
+      {
+        "Name": "opencensus",
+        "Current": "0.11.4"
+      },
+      {
+        "Name": "opencensus-context",
+        "Current": "0.1.3"
+      },
+      {
+        "Name": "opencensus-ext-azure",
+        "Current": "1.1.13"
+      },
+      {
+        "Name": "pathspec",
+        "Current": "0.12.1"
+      },
+      {
+        "Name": "pkginfo",
+        "Current": "1.10.0"
+      },
+      {
+        "Name": "powerbiclient",
+        "Current": "3.1.1"
+      },
+      {
+        "Name": "py4j",
+        "Current": "0.10.9.7"
+      },
+      {
+        "Name": "pydash",
+        "Current": "7.0.5"
+      },
+      {
+        "Name": "pyopenssl",
+        "Current": "23.3.0"
+      },
+      {
+        "Name": "pyspark",
+        "Current": "3.4.1.5.3.20230713"
+      },
+      {
+        "Name": "secretstorage",
+        "Current": "3.3.3"
+      },
+      {
+        "Name": "sqlanalyticsconnectorpy",
+        "Current": "1.0.1"
+      },
+      {
+        "Name": "strictyaml",
+        "Current": "1.7.3"
+      },
+      {
+        "Name": "synapseml-cognitive",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-core",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-deep-learning",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-internal",
+        "Current": "1.0.9.0.dev1"
+      },
+      {
+        "Name": "synapseml-lightgbm",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-opencv",
+        "Current": "1.0.9"
+      },
+      {
+        "Name": "synapseml-vw",
+        "Current": "1.0.9"
       }
     ],
     "Rlibraries": [
