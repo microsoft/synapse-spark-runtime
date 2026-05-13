@@ -611,7 +611,7 @@ dependencies:
       - flask==3.0.3
       - fluent-logger==0.10.0
       - humanfriendly==10.0
-      - impulse-python-handler==1.0.30.1.0.0
+      - impulse-python-handler==1.5.214702911
       - interpret==0.7.2
       - interpret-core==0.7.2
       - jmespath==1.0.1
