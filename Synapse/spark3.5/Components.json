@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2026-03-11.0-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2026-04-08.3-rc.1",
   "sparkVersion": "spark3.5",
   "operatingSystem": "Azure Linux 3.0",
   "java": "11.0.30",
@@ -12,7 +12,7 @@
     "Spark": [
       {
         "Name": "AutoscaleProbe",
-        "Current": "3.9.5"
+        "Current": "3.9.10"
       },
       {
         "Name": "AzureMLExtensions",
@@ -28,7 +28,7 @@
       },
       {
         "Name": "CSparkMetricUpdate",
-        "Current": "1.0.11"
+        "Current": "1.0.12"
       },
       {
         "Name": "Delta",
@@ -44,7 +44,7 @@
       },
       {
         "Name": "DWConnector",
-        "Current": "2.1.9"
+        "Current": "2.2.0"
       },
       {
         "Name": "EventHubConnector",
@@ -80,15 +80,15 @@
       },
       {
         "Name": "Impulse",
-        "Current": "1.0.30"
+        "Current": "1.5.214702911"
       },
       {
         "Name": "KustoConnector",
-        "Current": "1.5.2"
+        "Current": "1.5.7"
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.4"
+        "Current": "1.0.6"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -164,7 +164,7 @@
       },
       {
         "Name": "SparkSqlConnector",
-        "Current": "1.6.9"
+        "Current": "1.6.10"
       },
       {
         "Name": "SQLServerODBCDriver",
@@ -538,7 +538,7 @@
       },
       {
         "Name": "fluent-logger",
-        "Current": "0.3.4-jar-with-dependencies-provided"
+        "Current": "0.3.4-MSFT-jar-with-dependencies"
       },
       {
         "Name": "gcs-connector-hadoop3",
@@ -686,11 +686,23 @@
       },
       {
         "Name": "impulse-core_spark",
-        "Current": "2.12-1.0.30"
+        "Current": "2.12-1.5.214702911"
+      },
+      {
+        "Name": "impulse-exception_java11",
+        "Current": "2.12-1.5.214702911"
+      },
+      {
+        "Name": "impulse-telemetry-common",
+        "Current": "2.12-1.5.214702911"
       },
       {
         "Name": "impulse-telemetry-mds_spark",
-        "Current": "2.12-1.0.30"
+        "Current": "2.12-1.5.214702911"
+      },
+      {
+        "Name": "impulse-telemetry-pulse_spark",
+        "Current": "2.12-1.5.214702911"
       },
       {
         "Name": "ini4j",
@@ -950,7 +962,7 @@
       },
       {
         "Name": "kusto-spark",
-        "Current": "3.0_2.12-5.2.2-SNAPSHOT"
+        "Current": "3.0_2.12-5.3.4"
       },
       {
         "Name": "lapack",
@@ -1418,7 +1430,7 @@
       },
       {
         "Name": "spark-kusto-synapse-connector",
-        "Current": "3.5_2.12-1.5.2"
+        "Current": "3.5_2.12-1.5.7"
       },
       {
         "Name": "spark-kvstore",
@@ -1450,7 +1462,7 @@
       },
       {
         "Name": "spark-mssql-connector-synapse35",
-        "Current": "1.6.9"
+        "Current": "1.6.10"
       },
       {
         "Name": "spark-network-common",
@@ -4100,7 +4112,7 @@
       },
       {
         "Name": "impulse-python-handler",
-        "Current": "1.0.30.1.0.0"
+        "Current": "1.5.214702911"
       },
       {
         "Name": "interpret",
