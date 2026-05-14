@@ -1,8 +1,8 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2026-04-08.3-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2026-04-08.4-rc.1",
   "sparkVersion": "spark3.5",
   "operatingSystem": "Azure Linux 3.0",
-  "java": "11.0.30",
+  "java": "11.0.31",
   "scala": "2.12.18",
   "python": "3.11/1.0.0",
   "deltaLake": "3.2.1.20251124.1",
