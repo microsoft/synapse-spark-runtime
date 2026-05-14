@@ -589,13 +589,13 @@ dependencies:
       - fabric-connection==0.2.0
       - filelock==3.11.0
       - flaml==2.5.0.post1
-      - flt-python==1.0.1
+      - flt-python==1.3.0
       - fluent-logger==0.10.0
       - fsspec==2024.6.1
       - geoanalytics-fabric==1.0.0
       - gson==0.0.4
       - hcrystalball==0.1.10
-      - impulse-python-handler==1.4.208330617
+      - impulse-python-handler==1.5.214702911
       - interpret==0.6.0
       - interpret-core==0.6.0
       - joblibspark==0.5.2
