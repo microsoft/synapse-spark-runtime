@@ -650,7 +650,7 @@ dependencies:
       - pyspark==3.5.1.5.4.20240407
       - retrying==1.4.2
       - salib==1.5.1
-      - spark-mssql-connector-synapse35==1.0.0
+      - spark-mssql-connector-synapse35==1.1.0
       - sqlanalyticsconnectorpy==1.0.1
       - strictyaml==1.7.3
       - synapseml-cognitive==1.0.10.dev1
