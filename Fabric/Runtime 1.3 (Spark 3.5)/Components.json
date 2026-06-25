@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2026-04-06.1-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2026-04-06.3-rc.1",
   "sparkVersion": "spark3.5",
   "operatingSystem": "CBL-Mariner 2.0.20260331",
   "java": "11.0.27",
@@ -24,7 +24,7 @@
       },
       {
         "Name": "Conda",
-        "Current": "5.2.22"
+        "Current": "5.2.25"
       },
       {
         "Name": "CSparkMetricUpdate",
@@ -44,7 +44,7 @@
       },
       {
         "Name": "Esri",
-        "Current": "1.0.0"
+        "Current": "1.0.1"
       },
       {
         "Name": "EventHubConnector",
@@ -60,7 +60,7 @@
       },
       {
         "Name": "FLTSparkExtensions",
-        "Current": "1.3.0"
+        "Current": "1.4.3"
       },
       {
         "Name": "FLTSparkUtils",
@@ -88,7 +88,7 @@
       },
       {
         "Name": "KustoConnector",
-        "Current": "2.0.2"
+        "Current": "2.0.6"
       },
       {
         "Name": "LibraryManager",
@@ -104,7 +104,7 @@
       },
       {
         "Name": "MMLSpark",
-        "Current": "1.4.29"
+        "Current": "1.4.31"
       },
       {
         "Name": "MySQLJavaConnector",
@@ -112,11 +112,11 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.64"
+        "Current": "1.1.66"
       },
       {
         "Name": "OneLakeClientStarter",
-        "Current": "1.0.26.2"
+        "Current": "1.0.28.1"
       },
       {
         "Name": "OnelakeSparkCatalog",
@@ -144,7 +144,7 @@
       },
       {
         "Name": "SparkJobInsight",
-        "Current": "1.0.1"
+        "Current": "1.0.2"
       },
       {
         "Name": "SparkLighter",
@@ -164,7 +164,7 @@
       },
       {
         "Name": "SparkRPCHistoryServer",
-        "Current": "1.9.0"
+        "Current": "1.11.0"
       },
       {
         "Name": "SparkSqlConnector",
@@ -521,6 +521,10 @@
         "Current": "2.1.0"
       },
       {
+        "Name": "deequ",
+        "Current": "3.0.3-spark-3.5"
+      },
+      {
         "Name": "delta-kernel-api",
         "Current": "3.2.1.20260427.3"
       },
@@ -554,7 +558,7 @@
       },
       {
         "Name": "flt-spark-sql-extensions",
-        "Current": "1.3.0"
+        "Current": "1.4.3"
       },
       {
         "Name": "fluent-logger",
@@ -562,7 +566,7 @@
       },
       {
         "Name": "fmlv-utils",
-        "Current": "1.3.0"
+        "Current": "1.4.3"
       },
       {
         "Name": "gcs-connector-hadoop3",
@@ -574,7 +578,7 @@
       },
       {
         "Name": "geoanalytics-fabric",
-        "Current": "2.12-1.0.0-msfabric-1.3"
+        "Current": "2.12-1.0.1-msfabric-1.3"
       },
       {
         "Name": "gluten-velox-bundle-spark",
@@ -998,7 +1002,7 @@
       },
       {
         "Name": "kusto-spark",
-        "Current": "3.0_2.12-7.0.4"
+        "Current": "3.0_2.12-7.0.7-SNAPSHOT"
       },
       {
         "Name": "lapack",
@@ -1226,7 +1230,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.14-spark35-20260324.6"
+        "Current": "1.1.14-spark35-20260507.11"
       },
       {
         "Name": "objenesis",
@@ -1494,7 +1498,7 @@
       },
       {
         "Name": "spark-kusto-synapse-connector",
-        "Current": "3.5_2.12-2.0.2"
+        "Current": "3.5_2.12-2.0.6"
       },
       {
         "Name": "spark-kvstore",
@@ -1654,35 +1658,35 @@
       },
       {
         "Name": "synapseml-cognitive",
-        "Current": "2.12-1.1.1"
+        "Current": "2.12-1.1.3"
       },
       {
         "Name": "synapseml-core",
-        "Current": "2.12-1.1.1"
+        "Current": "2.12-1.1.3"
       },
       {
         "Name": "synapseml-deep-learning",
-        "Current": "2.12-1.1.1"
+        "Current": "2.12-1.1.3"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "2.12-1.1.1.0"
+        "Current": "2.12-1.1.3.1"
       },
       {
         "Name": "synapseml-lightgbm",
-        "Current": "2.12-1.1.1"
+        "Current": "2.12-1.1.3"
       },
       {
         "Name": "synapseml-opencv",
-        "Current": "2.12-1.1.1"
+        "Current": "2.12-1.1.3"
       },
       {
         "Name": "synapseml-vw",
-        "Current": "2.12-1.1.1"
+        "Current": "2.12-1.1.3"
       },
       {
         "Name": "synfs",
-        "Current": "1.1.14-spark35-20260324.6"
+        "Current": "1.1.14-spark35-20260507.11"
       },
       {
         "Name": "threeten-extra",
@@ -4096,7 +4100,7 @@
       },
       {
         "Name": "flt-python",
-        "Current": "1.3.0"
+        "Current": "1.4.3"
       },
       {
         "Name": "fluent-logger",
@@ -4108,7 +4112,7 @@
       },
       {
         "Name": "geoanalytics-fabric",
-        "Current": "1.0.0"
+        "Current": "1.0.1"
       },
       {
         "Name": "gson",
@@ -4168,7 +4172,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.14.35.20260324.6"
+        "Current": "1.1.14.35.20260507.11"
       },
       {
         "Name": "nvidia-ml-py",
@@ -4244,7 +4248,7 @@
       },
       {
         "Name": "semantic-link-sempy",
-        "Current": "0.11.0"
+        "Current": "0.11.2"
       },
       {
         "Name": "seqeval",
@@ -4264,11 +4268,11 @@
       },
       {
         "Name": "synapseml",
-        "Current": "1.1.1"
+        "Current": "1.1.3"
       },
       {
         "Name": "synapseml-internal",
-        "Current": "1.1.1.0"
+        "Current": "1.1.3.1"
       },
       {
         "Name": "synapseml-mlflow",
@@ -4914,7 +4918,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.14.35.20260324.6"
+        "Current": "1.1.14.35.20260507.11"
       },
       {
         "Name": "numDeriv",
