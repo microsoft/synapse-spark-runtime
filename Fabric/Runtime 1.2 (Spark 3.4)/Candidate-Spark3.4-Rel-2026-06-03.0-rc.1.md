@@ -13,7 +13,6 @@
 |Id|Component|Description|
 |-----|-----|-----|
 |2092596|NotebookUtils:1.1.65|Updates NotebookUtils to support sovereign cloud OneLake endpoints by enhancing URL validation regexes and AzCopy trusted suffix lists for GCC, China, USNat, USSec, and France sovereign clouds.|
-|2040986|VhdCtl:5.20.0|Upgrades VhdCtl version to enhance VHD creation performance and reliability in Spark 3.4 environments.|
 
 
 # Components
