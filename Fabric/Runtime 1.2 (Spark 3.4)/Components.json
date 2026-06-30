@@ -1,7 +1,7 @@
 {
-  "VhdRelease": "Spark3.4-Rel-2026-03-04.3-rc.1",
+  "VhdRelease": "Spark3.4-Rel-2026-06-03.0-rc.1",
   "sparkVersion": "spark3.4",
-  "operatingSystem": "CBL-Mariner 2.0.20260304",
+  "operatingSystem": "CBL-Mariner 2.0.20260331",
   "java": "11.0.27",
   "scala": "2.12.17",
   "python": "3.10/2.0.0",
@@ -72,7 +72,7 @@
       },
       {
         "Name": "HiveMetaStoreClient",
-        "Current": "1.1.21.2"
+        "Current": "1.1.28"
       },
       {
         "Name": "Impulse",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.64"
+        "Current": "1.1.65"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -176,7 +176,7 @@
       },
       {
         "Name": "TridentTokenLibrary",
-        "Current": "1.10.4"
+        "Current": "1.12.0"
       },
       {
         "Name": "Vegas",
@@ -970,7 +970,7 @@
       },
       {
         "Name": "microsoft-catalog-metastore-client",
-        "Current": "1.1.21"
+        "Current": "1.1.28"
       },
       {
         "Name": "microsoft-log4j-etwappender",
@@ -1042,19 +1042,19 @@
       },
       {
         "Name": "netty-transport-native-epoll",
-        "Current": "4.1.87.Final-linux-x86_64"
-      },
-      {
-        "Name": "netty-transport-native-epoll",
         "Current": "4.1.87.Final-linux-aarch_64"
       },
       {
-        "Name": "netty-transport-native-kqueue",
-        "Current": "4.1.87.Final-osx-x86_64"
+        "Name": "netty-transport-native-epoll",
+        "Current": "4.1.87.Final-linux-x86_64"
       },
       {
         "Name": "netty-transport-native-kqueue",
         "Current": "4.1.87.Final-osx-aarch_64"
+      },
+      {
+        "Name": "netty-transport-native-kqueue",
+        "Current": "4.1.87.Final-osx-x86_64"
       },
       {
         "Name": "netty-transport-native-unix-common",
@@ -1062,7 +1062,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.13-spark34-20260208.7"
+        "Current": "1.1.13-spark34-20260508.4"
       },
       {
         "Name": "objenesis",
@@ -1230,11 +1230,11 @@
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
+        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
       },
       {
         "Name": "spark",
-        "Current": "3.4-rpc-history-server-app-listener_2.12-1.0.0"
+        "Current": "3.4-rpc-history-server-core_2.12-1.0.0"
       },
       {
         "Name": "spark-avro",
@@ -1430,7 +1430,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "1.1.13-spark34-20260208.7"
+        "Current": "1.1.13-spark34-20260508.4"
       },
       {
         "Name": "threeten-extra",
@@ -1450,7 +1450,7 @@
       },
       {
         "Name": "tridenttokenlibrary-assembly",
-        "Current": "1.10.4"
+        "Current": "1.12.0"
       },
       {
         "Name": "univocity-parsers",
@@ -3644,7 +3644,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.13.34.20260208.7"
+        "Current": "1.1.13.34.20260508.4"
       },
       {
         "Name": "powerbiclient",
@@ -4358,7 +4358,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.13.34.20260208.7"
+        "Current": "1.1.13.34.20260508.4"
       },
       {
         "Name": "numDeriv",
