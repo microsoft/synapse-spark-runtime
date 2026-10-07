@@ -360,7 +360,7 @@ dependencies:
       - fabric-analytics-sdk==0.0.3.post8
       - fastjsonschema==2.21.2
       - flaml==2.5.0.post6
-      - flt-python==1.7.1
+      - flt-python==1.10.0
       - fluent-logger==0.10.0
       - fsspec==2026.6.0
       - geoanalytics-fabric==2.0.0
@@ -368,7 +368,7 @@ dependencies:
       - hcrystalball==0.1.10
       - holidays==0.100
       - importlib-resources==7.1.0
-      - impulse-python-handler==1.5.226604159
+      - impulse-python-handler==1.5.234214227
       - joblib==1.4.2
       - joblibspark==0.6.0
       - jsonschema==4.26.0
@@ -383,7 +383,7 @@ dependencies:
       - msgpack==1.2.1
       - nbformat==5.10.4
       - nltk==3.10.0
-      - notebookutils==1.1.15.41.20260524.4
+      - notebookutils==1.1.16.41.20260902.1
       - optuna==3.6.1
       - pandasnet==1.0
       - powerbiclient==3.1.1
