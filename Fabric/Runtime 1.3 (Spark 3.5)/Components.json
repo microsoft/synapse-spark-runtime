@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark3.5-default-2026-08-26.1-rc.1",
+  "VhdRelease": "Spark3.5-default-2026-09-08.1.rc.1.0-rc",
   "sparkVersion": "spark3.5",
   "operatingSystem": "CBL-Mariner 2.0.20260331",
   "java": "11.0.27",
