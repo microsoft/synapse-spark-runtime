@@ -1,8 +1,8 @@
 {
-  "VhdRelease": "Spark3.5-Rel-2026-09-15.1-rc.1",
+  "VhdRelease": "Spark3.5-Rel-2026-09-15.3-rc.1",
   "sparkVersion": "spark3.5",
   "operatingSystem": "Azure Linux 3.0",
-  "java": "11.0.32.1",
+  "java": "11.0.33",
   "scala": "2.12.18",
   "python": "3.11/1.0.0",
   "deltaLake": "3.2.1.20260423.5",
@@ -88,7 +88,7 @@
       },
       {
         "Name": "LibraryManager",
-        "Current": "1.0.9"
+        "Current": "1.0.11"
       },
       {
         "Name": "LibraryMetadataCooker",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.64"
+        "Current": "1.1.65"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -442,11 +442,11 @@
       },
       {
         "Name": "commons-io",
-        "Current": "2.11.0"
+        "Current": "2.18.0"
       },
       {
         "Name": "commons-io",
-        "Current": "2.18.0"
+        "Current": "2.11.0"
       },
       {
         "Name": "commons-lang",
@@ -638,11 +638,11 @@
       },
       {
         "Name": "hive-shims",
-        "Current": "0.23-2.3.9"
+        "Current": "2.3.9"
       },
       {
         "Name": "hive-shims",
-        "Current": "2.3.9"
+        "Current": "0.23-2.3.9"
       },
       {
         "Name": "hive-shims-common",
@@ -682,11 +682,11 @@
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.13"
+        "Current": "4.5.14"
       },
       {
         "Name": "httpmime",
-        "Current": "4.5.14"
+        "Current": "4.5.13"
       },
       {
         "Name": "impulse-core_spark",
@@ -1190,7 +1190,7 @@
       },
       {
         "Name": "notebook-utils",
-        "Current": "1.1.12-spark35-20251214.2"
+        "Current": "1.1.12-spark35-20261030.2"
       },
       {
         "Name": "objenesis",
@@ -1394,11 +1394,11 @@
       },
       {
         "Name": "spark-avro",
-        "Current": "2.12-3.5.0"
+        "Current": "2.12-3.5.5.5.4.20260824.232707473"
       },
       {
         "Name": "spark-avro",
-        "Current": "2.12-3.5.5.5.4.20260824.232707473"
+        "Current": "2.12-3.5.0"
       },
       {
         "Name": "spark-catalyst",
@@ -1626,7 +1626,7 @@
       },
       {
         "Name": "synfs",
-        "Current": "1.1.12-spark35-20251214.2"
+        "Current": "1.1.12-spark35-20261030.2"
       },
       {
         "Name": "threeten-extra",
@@ -4172,7 +4172,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.12.35.20251214.2"
+        "Current": "1.1.12.35.20261030.2"
       },
       {
         "Name": "onnx",
@@ -4930,7 +4930,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.12.35.20251214.2"
+        "Current": "1.1.12.35.20261030.2"
       },
       {
         "Name": "numDeriv",
