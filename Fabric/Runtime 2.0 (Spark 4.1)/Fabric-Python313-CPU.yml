@@ -383,7 +383,7 @@ dependencies:
       - msgpack==1.2.1
       - nbformat==5.10.4
       - nltk==3.10.0
-      - notebookutils==1.1.17.41.20260929.1
+      - notebookutils==1.1.18.41
       - optuna==3.6.1
       - pandasnet==1.0
       - powerbiclient==3.1.1
