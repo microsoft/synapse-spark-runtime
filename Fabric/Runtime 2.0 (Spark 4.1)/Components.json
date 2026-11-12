@@ -1,5 +1,5 @@
 {
-  "VhdRelease": "Spark4.1-default-2026-10-05.3-rc.1",
+  "VhdRelease": "Spark4.1-default-2026-10-05.4-rc.1",
   "sparkVersion": "spark4.1",
   "operatingSystem": "Azure Linux 3.0",
   "java": "21.0.13.0.2",
@@ -104,7 +104,7 @@
       },
       {
         "Name": "NotebookUtils",
-        "Current": "1.1.20"
+        "Current": "1.1.21"
       },
       {
         "Name": "OneLakeClientStarter",
@@ -3184,7 +3184,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.17.41.20260929.1"
+        "Current": "1.1.18.41"
       },
       {
         "Name": "optuna",
@@ -3930,7 +3930,7 @@
       },
       {
         "Name": "notebookutils",
-        "Current": "1.1.17.41.20260929.1"
+        "Current": "1.1.18.41"
       },
       {
         "Name": "numDeriv",
