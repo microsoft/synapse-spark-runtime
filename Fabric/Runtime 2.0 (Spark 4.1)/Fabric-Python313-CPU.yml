@@ -359,7 +359,7 @@ dependencies:
       - fabric-analytics-notebook-plugin==0.0.3.post8
       - fabric-analytics-sdk==0.0.3.post8
       - fastjsonschema==2.21.2
-      - flaml==2.5.0.post6
+      - flaml==2.7.0.post1
       - flt-python==1.11.1
       - fluent-logger==0.10.0
       - fsspec==2026.6.0
